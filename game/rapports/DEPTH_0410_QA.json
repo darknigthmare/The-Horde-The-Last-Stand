@@ -1,0 +1,89 @@
+{
+  "passed": 9,
+  "total": 9,
+  "errors": [],
+  "checks": [
+    {
+      "test": "Vue arrière sans arme FPS",
+      "ok": true,
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "test": "Joueur distant visible",
+      "ok": true,
+      "detail": {
+        "x": 720,
+        "feet": 316.3765477057538,
+        "height": 43.967953386744355,
+        "scale": 0.2855061908230153,
+        "flip": false
+      }
+    },
+    {
+      "test": "Muzzle arrière distant",
+      "ok": true,
+      "detail": {
+        "x": 733.8773852876911,
+        "y": 289.03397669337215
+      }
+    },
+    {
+      "test": "Voie répartie sur large bande",
+      "ok": true,
+      "detail": [
+        360.95733724205854,
+        903.6956294382245
+      ]
+    },
+    {
+      "test": "Bandes A/B se recouvrent",
+      "ok": true,
+      "detail": [
+        363.22735042735036,
+        890.6973386597058,
+        559.2343609398995,
+        999.9167099464959
+      ]
+    },
+    {
+      "test": "Hit-test suit projection",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Front conserve arme FPS",
+      "ok": true,
+      "detail": [
+        1,
+        2
+      ]
+    },
+    {
+      "test": "Traceur part du joueur distant",
+      "ok": true,
+      "detail": [
+        {
+          "screen": true,
+          "x": 734.7017844136926,
+          "y": 289.03397669337215,
+          "tx": 1273.5678139534884,
+          "ty": 810,
+          "life": 0.06,
+          "heavy": false
+        },
+        {
+          "x": 734.7017844136926,
+          "y": 289.03397669337215
+        }
+      ]
+    },
+    {
+      "test": "Aucune erreur JS",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

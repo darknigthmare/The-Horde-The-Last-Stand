@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "revision": "19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9",
+    "tree": "f5bfef698dd7c0701222d02d9df88d6ac6ab2043",
+    "license": "Apache-2.0"
+  },
+  "selection": [
+    "router",
+    "game-ai",
+    "performance-optimization",
+    "game-feel",
+    "create-game-assets",
+    "game-ui-ux",
+    "audio-design",
+    "level-design",
+    "save-systems",
+    "input-systems",
+    "physics-tuning",
+    "tower-defense"
+  ],
+  "installation": {
+    "scope": "project",
+    "directory": ".agents/skills",
+    "method": "Complete selected folders, flattened by skill name; upstream file bytes and executable modes preserved.",
+    "upstream_files_modified": false
+  },
+  "files": [
+    {
+      "source_path": "skills/disciplines/audio-design/SKILL.md",
+      "path": ".agents/skills/audio-design/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "37996996f5d9fe438a43d39bfe58004dc0b1e6d8",
+      "size_bytes": 9562,
+      "sha256": "6644943d62dc49b29e142259c54e27d0cca68f404de3f4ade58778b663f7ca02"
+    },
+    {
+      "source_path": "skills/disciplines/audio-design/references/adaptive-music.md",
+      "path": ".agents/skills/audio-design/references/adaptive-music.md",
+      "mode": "100644",
+      "git_blob_sha": "ddc194b7d25e196bc8605eaa9d17a83c219a918a",
+      "size_bytes": 5109,
+      "sha256": "1aa1a14bc163f248583f7385c27cb36aa8748014df2b1d499c77c2b0846365ba"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/SKILL.md",
+      "path": ".agents/skills/create-game-assets/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "e2e6ecad398e46b0a8b4f910ec75b82885505f8b",
+      "size_bytes": 8152,
+      "sha256": "36cd246a434fefe1e36feff066597a6268d9f63364bee387ee65a22f03838b5d"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/agents/openai.yaml",
+      "path": ".agents/skills/create-game-assets/agents/openai.yaml",
+      "mode": "100644",
+      "git_blob_sha": "cba4fa772706ab7d0dac58426d47dc22d969926e",
+      "size_bytes": 231,
+      "sha256": "b5ff9e75ab8a845324d28745aa97af0a3cd4fccc56067a6494947e12e40f1990"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/assets/art-direction-brief.md",
+      "path": ".agents/skills/create-game-assets/assets/art-direction-brief.md",
+      "mode": "100644",
+      "git_blob_sha": "faf39aea6196fcc9e97c6ea249da57f1149cd8eb",
+      "size_bytes": 858,
+      "sha256": "6d5dc4f9f5fcb24300bab9ce7dbd56d5c948ba41da3cca2d3b3d235fee5fb72c"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/assets/asset-manifest.json",
+      "path": ".agents/skills/create-game-assets/assets/asset-manifest.json",
+      "mode": "100644",
+      "git_blob_sha": "548ee4867df3f4a9d49a5134e18b0759d046fd7c",
+      "size_bytes": 969,
+      "sha256": "6cce05638c11b80eb5c8f776cf187f479a2579f1a1729b0970b1cc8e5fab4c8e"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/references/art-direction.md",
+      "path": ".agents/skills/create-game-assets/references/art-direction.md",
+      "mode": "100644",
+      "git_blob_sha": "3cc0543a7f5d58805ff03d133a3881a66e67b21b",
+      "size_bytes": 3876,
+      "sha256": "19b2ccb827eae0c6c4cd3648ab7febb82e44706bef8515f2e8912de23dec0a5c"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/references/provenance.md",
+      "path": ".agents/skills/create-game-assets/references/provenance.md",
+      "mode": "100644",
+      "git_blob_sha": "a62a0d2a1fe7e14ab57a6487b332ca5f190f8770",
+      "size_bytes": 2605,
+      "sha256": "098d3cf915cd66e8ff0ad3a639964167edf2280f9e23efbae3ea6242d5bea3db"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/references/raster-pipeline.md",
+      "path": ".agents/skills/create-game-assets/references/raster-pipeline.md",
+      "mode": "100644",
+      "git_blob_sha": "d4baad060963b877e56ca809260bbdaecdbe87db",
+      "size_bytes": 4236,
+      "sha256": "d7a5714628fd8f4b66d03e060488e353b163b811112b164af218beb2b6450a02"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/references/three-d-pipeline.md",
+      "path": ".agents/skills/create-game-assets/references/three-d-pipeline.md",
+      "mode": "100644",
+      "git_blob_sha": "2ea07a3a9b5395aa58542c15bd1b623fe4a4c1d1",
+      "size_bytes": 3163,
+      "sha256": "ee6ed7c373e15ffeb8e6b275618482f028279a8146f01b6cfe6a8411cb8a3db4"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/scripts/asset_report.py",
+      "path": ".agents/skills/create-game-assets/scripts/asset_report.py",
+      "mode": "100755",
+      "git_blob_sha": "627f42d4bed8191ea9763308a72eb76d38e0ccf9",
+      "size_bytes": 5392,
+      "sha256": "99f4b38f9c4fe036f97ab1d4effd7f6931b62d24a90330a5a2f5ae71e7d1a77c"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/scripts/build_preview_sheet.py",
+      "path": ".agents/skills/create-game-assets/scripts/build_preview_sheet.py",
+      "mode": "100755",
+      "git_blob_sha": "87a656c9dd69791a2aad0a3fd689abbbee670753",
+      "size_bytes": 3353,
+      "sha256": "002a550a7b5fac6d8815078a72afc249dd828c40d975b2323223fc770118c64b"
+    },
+    {
+      "source_path": "skills/disciplines/create-game-assets/scripts/requirements.txt",
+      "path": ".agents/skills/create-game-assets/scripts/requirements.txt",
+      "mode": "100644",
+      "git_blob_sha": "7b8376b4b2b25afe71534d694f72004cb66ca220",
+      "size_bytes": 15,
+      "sha256": "bbced595a25debee9232fbb784d35ee4f04967d3dbc528e8c3073d3e9adbe2ca"
+    },
+    {
+      "source_path": "skills/disciplines/game-ai/SKILL.md",
+      "path": ".agents/skills/game-ai/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "6b90b505ef635cb7f0917de3416670ad1d404790",
+      "size_bytes": 8315,
+      "sha256": "5c193ac1debc8ec9ed8f44be7a05d12d817ac390e1fa82018bcae4f2ff53fbd8"
+    },
+    {
+      "source_path": "skills/disciplines/game-ai/references/behavior-trees.md",
+      "path": ".agents/skills/game-ai/references/behavior-trees.md",
+      "mode": "100644",
+      "git_blob_sha": "c60be39bf94a625bfbfb1b59a0c5d98c61ce77b0",
+      "size_bytes": 5644,
+      "sha256": "eed3fdb943801a7696f2ca03a54d60fc9111a63c5c817e567516b5e2df2c04a9"
+    },
+    {
+      "source_path": "skills/disciplines/game-ai/references/pathfinding.md",
+      "path": ".agents/skills/game-ai/references/pathfinding.md",
+      "mode": "100644",
+      "git_blob_sha": "59a71e4ce3c71adde9b34267dd875b2ee19935eb",
+      "size_bytes": 6179,
+      "sha256": "75d6c8397fc5ff2fb8ac3dd74e7b4f881331f2531f40b6f8db451f14adb6534d"
+    },
+    {
+      "source_path": "skills/disciplines/game-feel/SKILL.md",
+      "path": ".agents/skills/game-feel/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "3dafb5b3f2d9a56f9e9eb8c3bae1805800de6fda",
+      "size_bytes": 9520,
+      "sha256": "48971c7ad1fbb39069cb165f0e45f88c13776585870d69d5de8a04bbe0988e28"
+    },
+    {
+      "source_path": "skills/disciplines/game-feel/references/feedback-recipes.md",
+      "path": ".agents/skills/game-feel/references/feedback-recipes.md",
+      "mode": "100644",
+      "git_blob_sha": "232ccd418320ae6b6c0e43dd96be53f6d2d1070b",
+      "size_bytes": 6158,
+      "sha256": "f8cca962733b0b1f5d1db75fe966f6e13bf11015e39a04a849d6ff5c3e0e835e"
+    },
+    {
+      "source_path": "skills/disciplines/game-ui-ux/SKILL.md",
+      "path": ".agents/skills/game-ui-ux/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "c7088f7d340dd3d68848f7d0d9a954577fde86b3",
+      "size_bytes": 10090,
+      "sha256": "54816447c4d07f9ab65782ebb7138dd0927c9cd84a3647e8806f2a86a3a094ff"
+    },
+    {
+      "source_path": "skills/disciplines/game-ui-ux/references/layout-and-flow.md",
+      "path": ".agents/skills/game-ui-ux/references/layout-and-flow.md",
+      "mode": "100644",
+      "git_blob_sha": "57b7938bf260ba10e2eff602b1cdcbafc2d2dd1c",
+      "size_bytes": 7637,
+      "sha256": "961fc8c8e45a1ee5120e1deef9f6aef932ae3949e6f1ce26548b9d7616775d73"
+    },
+    {
+      "source_path": "skills/disciplines/input-systems/SKILL.md",
+      "path": ".agents/skills/input-systems/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "d20f5a0bdfb5f6c41822dcd138cba305e2ab0d64",
+      "size_bytes": 10913,
+      "sha256": "638bd3c07746a09e3945e81c0b9a2ca90c75d2f8a63c0be3c285d75475790b1f"
+    },
+    {
+      "source_path": "skills/disciplines/input-systems/references/buffering-and-accessibility.md",
+      "path": ".agents/skills/input-systems/references/buffering-and-accessibility.md",
+      "mode": "100644",
+      "git_blob_sha": "1c3be799a1fc494e64d9936f490341a9c3d1a6c0",
+      "size_bytes": 5201,
+      "sha256": "dadd5fc9f7bbe88daeeb506e4e1b447267e232273a08ca32095a78f31aea0d84"
+    },
+    {
+      "source_path": "skills/disciplines/level-design/SKILL.md",
+      "path": ".agents/skills/level-design/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "14337635666aaa38bce83ce797aa89f89e964cc4",
+      "size_bytes": 8907,
+      "sha256": "9dd60fec5dc09957f7836739da96b5a2bcff2b46ecaab020f0a9ccff7463ba3a"
+    },
+    {
+      "source_path": "skills/disciplines/level-design/references/pacing-and-flow.md",
+      "path": ".agents/skills/level-design/references/pacing-and-flow.md",
+      "mode": "100644",
+      "git_blob_sha": "62f19f71cea911dd9ea0d8ed2ed6bc04fd323cf3",
+      "size_bytes": 4500,
+      "sha256": "e8e3940f585e376f353aefea009befe8199a1871f99d34d7b2340cb35cb61872"
+    },
+    {
+      "source_path": "skills/disciplines/performance-optimization/SKILL.md",
+      "path": ".agents/skills/performance-optimization/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "e6878a4552be445b54988bd2fb93619d561f38f3",
+      "size_bytes": 10285,
+      "sha256": "287161d2ed49670a051271c8fade5a7265fda5109d39c218c02598dca7983e2a"
+    },
+    {
+      "source_path": "skills/disciplines/performance-optimization/references/profiling-and-budgets.md",
+      "path": ".agents/skills/performance-optimization/references/profiling-and-budgets.md",
+      "mode": "100644",
+      "git_blob_sha": "3b0592a1527b1e38ee73ac60015679ae99fe7e12",
+      "size_bytes": 7344,
+      "sha256": "e68c43d5e66ec0f2fe60e0c0121c85360144ab7da5876ce6e2e3f26a2244e284"
+    },
+    {
+      "source_path": "skills/disciplines/physics-tuning/SKILL.md",
+      "path": ".agents/skills/physics-tuning/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "4f22e28ebd21d74a40b52951a41f57c73a46d964",
+      "size_bytes": 8708,
+      "sha256": "3e0f3d9ad049e552235cb98612381c82361fff582391c4d5584438309a14c35f"
+    },
+    {
+      "source_path": "skills/disciplines/physics-tuning/references/timestep-and-ccd.md",
+      "path": ".agents/skills/physics-tuning/references/timestep-and-ccd.md",
+      "mode": "100644",
+      "git_blob_sha": "b689f435934d72394eb12d59b74a0a9e5a1f28bb",
+      "size_bytes": 5854,
+      "sha256": "de507b0bee47cfa3ca5d051d0c4100f99736186e26cdb9488c252d6cc8d6f9ab"
+    },
+    {
+      "source_path": "router/SKILL.md",
+      "path": ".agents/skills/router/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "f19eacd9d68dbe8d4c1289032b5957db30ecc41e",
+      "size_bytes": 18693,
+      "sha256": "69c1167073530655dac859e33c4b8893903b94f13326ef1c85f152b8008418ba"
+    },
+    {
+      "source_path": "router/agents/openai.yaml",
+      "path": ".agents/skills/router/agents/openai.yaml",
+      "mode": "100644",
+      "git_blob_sha": "2bc50b9472334813cb0bc0fca5cec3c5862abbc2",
+      "size_bytes": 221,
+      "sha256": "1304cad1da9611f8cf73ffb122bf7628b0fd6f0cce5a9f9072cd3fbdbe9ce128"
+    },
+    {
+      "source_path": "router/references/custom-engines.md",
+      "path": ".agents/skills/router/references/custom-engines.md",
+      "mode": "100644",
+      "git_blob_sha": "82185991fab8df0bc5ea51fe7dc1007479948d0a",
+      "size_bytes": 3808,
+      "sha256": "0880a19b3e150e064751af2890573a47652dffcd7586809c2135d14f47dc151a"
+    },
+    {
+      "source_path": "router/references/engine-detection.md",
+      "path": ".agents/skills/router/references/engine-detection.md",
+      "mode": "100644",
+      "git_blob_sha": "d132b4e7447dfe363fd66ff3b0131324cf4c999a",
+      "size_bytes": 7038,
+      "sha256": "914b3fa795eca0df8842b632e3ee09aabc9c6a81884ece29ac6a67f4907f5f68"
+    },
+    {
+      "source_path": "router/references/routing-table.md",
+      "path": ".agents/skills/router/references/routing-table.md",
+      "mode": "100644",
+      "git_blob_sha": "d0de791a4f081ed75384a73a3c1834e6b0d83f6d",
+      "size_bytes": 14814,
+      "sha256": "2048329d5c29e2d09de7de130a99de44a8a63c7fe27212bea02d53cc59c73a5b"
+    },
+    {
+      "source_path": "skills/disciplines/save-systems/SKILL.md",
+      "path": ".agents/skills/save-systems/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "dbfa017473dd69f28217a620bb1fb73621913d36",
+      "size_bytes": 9241,
+      "sha256": "17a7e580cdb8ee2fe654fe1b2d9ba3066c57ef1ea6a8cd9cc69141ebaea16224"
+    },
+    {
+      "source_path": "skills/disciplines/save-systems/references/versioning-and-migration.md",
+      "path": ".agents/skills/save-systems/references/versioning-and-migration.md",
+      "mode": "100644",
+      "git_blob_sha": "c1d3bd4e45a5af73d6e16a04d7e4f0f8db9507bf",
+      "size_bytes": 6312,
+      "sha256": "a95ee265936b5bb332934ae19a90c02c70f927adb3898e5a95ce1877abe9873c"
+    },
+    {
+      "source_path": "skills/genres/tower-defense/SKILL.md",
+      "path": ".agents/skills/tower-defense/SKILL.md",
+      "mode": "100644",
+      "git_blob_sha": "213977deb38c75826d04408061d21089c7db0bb4",
+      "size_bytes": 6901,
+      "sha256": "5b918ecfc6ed1c797fc1570c5f41c84a816d218589e867723f10af493bcc365c"
+    },
+    {
+      "source_path": "skills/genres/tower-defense/references/balancing.md",
+      "path": ".agents/skills/tower-defense/references/balancing.md",
+      "mode": "100644",
+      "git_blob_sha": "a1c6f77ab2c5d2a33ac023218bac414c48c3d8ab",
+      "size_bytes": 6022,
+      "sha256": "eeb9ae73ae988b11db2186d92ee3ecd2de9f186ea23eec90efd0d25eeebf818f"
+    },
+    {
+      "source_path": "LICENSE",
+      "path": ".agents/third-party/awesome-gamedev-agent-skills/LICENSE",
+      "mode": "100644",
+      "git_blob_sha": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+      "size_bytes": 11395,
+      "sha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c"
+    },
+    {
+      "source_path": "NOTICE",
+      "path": ".agents/third-party/awesome-gamedev-agent-skills/NOTICE",
+      "mode": "100644",
+      "git_blob_sha": "d4204881c3f79f39151a53a6aae476b188a8c51f",
+      "size_bytes": 883,
+      "sha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "source_path": "docs/VERSION-SUPPORT.md",
+      "path": ".agents/third-party/awesome-gamedev-agent-skills/VERSION-SUPPORT.md",
+      "mode": "100644",
+      "git_blob_sha": "baca1e1c0c23fc2de4f77ca8388466f72c47af15",
+      "size_bytes": 3753,
+      "sha256": "a8d30fe79b820a271096cd3bd9cbc249d988af863c5f0c8cfc88cf0558f0abb4"
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "started": "2026-10-29T09:55:37.022Z",
+  "finished": "2026-10-29T09:56:07.242Z",
+  "game": "game/JOUER_DERNIERE_LIGNE.html",
+  "sha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6",
+  "testScriptSha256": "8eb167258cc0b2cb41f2b3c5cd0ab8efa6c08c6fcf98a084adc5bc455ca9ca95",
+  "browser": "156.0.8078.73",
+  "protocol": "file:",
+  "offline": true,
+  "originalImages": true,
+  "testAPIEnabled": false,
+  "inputMethod": "Production UI clicks and keyboard",
+  "passed": 49,
+  "total": 49,
+  "checks": [
+    {
+      "name": "1440x900: production build 0.44.0",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: no test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: menu loaded offline",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: About shows current build",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: Escape closes About",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: campaign preparation",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: preparation fits viewport",
+      "ok": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "1440x900: first wave starts through UI",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: combat fits viewport",
+      "ok": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "1440x900: pause opens",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: resume returns to combat",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: keyboard pause",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: return to menu",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "1440x900: a profile is saved locally",
+      "ok": true,
+      "details": [
+        {
+          "key": "derniere-ligne-v12",
+          "version": 12,
+          "length": 3351
+        },
+        {
+          "key": "derniere-ligne-v12-recovery",
+          "length": 3915
+        }
+      ]
+    },
+    {
+      "name": "1440x900: reload retains a schema-12 profile",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: production build 0.44.0",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: no test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: menu loaded offline",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: About shows current build",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: Escape closes About",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: campaign preparation",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: preparation fits viewport",
+      "ok": true,
+      "details": {
+        "viewport": 896,
+        "width": 896
+      }
+    },
+    {
+      "name": "896x414: first wave starts through UI",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: combat fits viewport",
+      "ok": true,
+      "details": {
+        "viewport": 896,
+        "width": 896
+      }
+    },
+    {
+      "name": "896x414: pause opens",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: resume returns to combat",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: keyboard pause",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: return to menu",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "896x414: a profile is saved locally",
+      "ok": true,
+      "details": [
+        {
+          "key": "derniere-ligne-v12",
+          "version": 12,
+          "length": 3352
+        },
+        {
+          "key": "derniere-ligne-v12-recovery",
+          "length": 3916
+        }
+      ]
+    },
+    {
+      "name": "896x414: reload retains a schema-12 profile",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: production build 0.44.0",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: no test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: menu loaded offline",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: About shows current build",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: Escape closes About",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: campaign preparation",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: preparation fits viewport",
+      "ok": true,
+      "details": {
+        "viewport": 414,
+        "width": 414
+      }
+    },
+    {
+      "name": "414x896: first wave starts through UI",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: combat fits viewport",
+      "ok": true,
+      "details": {
+        "viewport": 414,
+        "width": 414
+      }
+    },
+    {
+      "name": "414x896: pause opens",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: resume returns to combat",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: keyboard pause",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: return to menu",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "414x896: a profile is saved locally",
+      "ok": true,
+      "details": [
+        {
+          "key": "derniere-ligne-v12",
+          "version": 12,
+          "length": 3352
+        },
+        {
+          "key": "derniere-ligne-v12-recovery",
+          "length": 3916
+        }
+      ]
+    },
+    {
+      "name": "414x896: reload retains a schema-12 profile",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "No browser console errors",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "No HTTP(S) dependency requests",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "No failed resource requests",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "runtimeErrors": [],
+  "consoleErrors": [],
+  "networkRequests": [],
+  "failedRequests": [],
+  "screenshots": [
+    "combat-1440x900.png",
+    "camp-414x896.png"
+  ],
+  "error": null,
+  "observations": [
+    "The inherited UI42 splash can recur briefly on scene changes and still displays 0.42.0. The production title, menu, About panel and DL44UI identify 0.44.0. Captures wait for the original splash to disappear naturally; the HTML is not altered."
+  ],
+  "limitations": [
+    "Short smoke of the first campaign wave; not a replay of the 471 historical checks.",
+    "Headless desktop browser with viewport emulation; not physical mobile, audio listening, balancing, or performance certification."
+  ]
+}

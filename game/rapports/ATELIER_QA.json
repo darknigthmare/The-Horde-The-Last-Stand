@@ -1,0 +1,3727 @@
+{
+  "version": "0.40.4",
+  "passed": 79,
+  "total": 79,
+  "checks": [
+    {
+      "test": "73 accessoires uniques",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "45 armes : 2 conversions et 3 plans chacune",
+      "ok": true,
+      "detail": [
+        {
+          "id": "pistol",
+          "cat": "handgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "smg",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "pump",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "revolver",
+          "cat": "handgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "rifle",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "assault",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "autoshot",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "sniper",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "lmg",
+          "cat": "machine",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "launcher",
+          "cat": "launcher",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "crossbow",
+          "cat": "cable",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "dmr",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "flamer",
+          "cat": "tool",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "antimaterial",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "double",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "burst",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "flaregun",
+          "cat": "launcher",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "harpoon",
+          "cat": "cable",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "lever",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "nailer",
+          "cat": "tool",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "flechette",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "netgun",
+          "cat": "cable",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "drumgun",
+          "cat": "machine",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "breachgun",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "foamgun",
+          "cat": "tool",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "northPatrol",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "northStopper",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "northDriller",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "northArc",
+          "cat": "tool",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "metroCoach",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "metroAnchor",
+          "cat": "cable",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "metroShredder",
+          "cat": "launcher",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "airFlak",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "airDoorGun",
+          "cat": "machine",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "airTether",
+          "cat": "cable",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "airRocket",
+          "cat": "launcher",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "deckCarbine",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "marineHarpoon",
+          "cat": "cable",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "flareMortar",
+          "cat": "launcher",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "towerCarbine",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "boltDriver",
+          "cat": "precision",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "doorScatter",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "traceCarbine",
+          "cat": "rifle",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "magnesiumGun",
+          "cat": "shotgun",
+          "conv": 2,
+          "plans": 3
+        },
+        {
+          "id": "signalLauncher",
+          "cat": "launcher",
+          "conv": 2,
+          "plans": 3
+        }
+      ]
+    },
+    {
+      "test": "Cinq onglets intégrés, aucun panneau global",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "32 nouvelles pièces montées sur des armes compatibles",
+      "ok": true,
+      "detail": [
+        {
+          "part": "at2_comp_ct",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_brake_quad",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_choke_patrol",
+          "weapon": "pump",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_nozzle_wide",
+          "weapon": "launcher",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_barrel_fluted",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_barrel_rigid",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_barrel_feed",
+          "weapon": "launcher",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_barrel_industrial",
+          "weapon": "flamer",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_optic_ring",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_optic_protected",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_optic_intermediate",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_optic_siege",
+          "weapon": "rifle",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_under_stop",
+          "weapon": "smg",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_under_joint",
+          "weapon": "smg",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_under_bipod",
+          "weapon": "smg",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_under_cradle",
+          "weapon": "launcher",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_stock_fold",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_stock_damper",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_stock_braced",
+          "weapon": "rifle",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_stock_harness",
+          "weapon": "launcher",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_mag_short",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_mag_mid",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_mag_box",
+          "weapon": "lmg",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_mag_cartridge",
+          "weapon": "flamer",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_grip_texture",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_grip_access",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_grip_precise",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_grip_thermal",
+          "weapon": "lmg",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_ammo_uniform",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_ammo_hard",
+          "weapon": "pistol",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_ammo_focus",
+          "weapon": "launcher",
+          "kept": true,
+          "ammo": true
+        },
+        {
+          "part": "at2_ammo_tension",
+          "weapon": "crossbow",
+          "kept": true,
+          "ammo": true
+        }
+      ]
+    },
+    {
+      "test": "Aucun montage ne crée de munitions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "90 montages de conversion effectifs",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "test": "90 recalculs stables et bornés",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "test": "90 démontages restaurent les propriétés d’origine",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "test": "Conversions sans création de stock",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "test": "135 plans résolus et appliqués sans substitution",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "test": "Comparer ne modifie ni inventaire ni profil",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Aperçu chiffres réels présent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Clic de montage applique la balle unique",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 1 conversion/réglage/nom restitués",
+      "ok": true,
+      "detail": {
+        "kit": "kit2_shot_slug",
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Preset 2 conversion/réglage/nom restitués",
+      "ok": true,
+      "detail": {
+        "kit": "kit2_shot_darts",
+        "pellets": 9
+      }
+    },
+    {
+      "test": "Preset 3 conversion/réglage/nom restitués",
+      "ok": true,
+      "detail": {
+        "kit": "kit2_shot_slug",
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Preset 4 conversion/réglage/nom restitués",
+      "ok": true,
+      "detail": {
+        "kit": "kit2_shot_darts",
+        "pellets": 9
+      }
+    },
+    {
+      "test": "Preset 5 conversion/réglage/nom restitués",
+      "ok": true,
+      "detail": {
+        "kit": "kit2_shot_slug",
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Preset 6 conversion/réglage/nom restitués",
+      "ok": true,
+      "detail": {
+        "kit": "kit2_shot_darts",
+        "pellets": 9
+      }
+    },
+    {
+      "test": "Signatures distinctes pour les 6 configurations",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Conversion et six presets dans le profil validé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Import conversion inconnue refusé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Import conversion incompatible refusé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Import conversion verrouillée refusé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Conversion verrouillée refusée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Plan verrouillé refusé sans montage partiel",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_hand_fast",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 23.5,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_hand_fast",
+      "ok": true,
+      "detail": {
+        "id": "pistol",
+        "mag": 12,
+        "reserve": 500,
+        "cap": 12
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_hand_fast",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_hand_heavy",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 30.75,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_hand_heavy",
+      "ok": true,
+      "detail": {
+        "id": "pistol",
+        "mag": 10,
+        "reserve": 500,
+        "cap": 10
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_hand_heavy",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_rifle_precise",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 32.39999999999418,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_rifle_precise",
+      "ok": true,
+      "detail": {
+        "id": "assault",
+        "mag": 30,
+        "reserve": 470,
+        "cap": 30
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_rifle_precise",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_rifle_short",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 30,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_rifle_short",
+      "ok": true,
+      "detail": {
+        "id": "assault",
+        "mag": 30,
+        "reserve": 470,
+        "cap": 30
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_rifle_short",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_shot_slug",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 66.63999999999942,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Balle unique : un projectile, pas 7 impacts",
+      "ok": true,
+      "detail": {
+        "id": "pump",
+        "spent": 1,
+        "removed": 66.63999999999942,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:pump",
+          "name": "ARMURIER 0/5 · Balle unique de poste",
+          "rank": 0,
+          "spread": 0.55,
+          "rate": 0.86,
+          "damage": 4.760000000000001,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 66.64000000000001,
+          "projectiles": 1,
+          "volley": 66.64000000000001,
+          "head": 143.27600000000004,
+          "magazine": 6,
+          "rate": 0.9460000000000001,
+          "reload": 2.35,
+          "reloadFull": 2.35,
+          "range": 1938,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.06325000000000001,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_shot_slug",
+          "count": 0
+        },
+        "kit": "kit2_shot_slug"
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_shot_slug",
+      "ok": true,
+      "detail": {
+        "id": "pump",
+        "mag": 6,
+        "reserve": 494,
+        "cap": 6
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_shot_slug",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_shot_darts",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 91.13999999997031,
+        "pellets": 9
+      }
+    },
+    {
+      "test": "Fléchettes : 9 projectiles et traversée supplémentaire",
+      "ok": true,
+      "detail": {
+        "id": "pump",
+        "spent": 1,
+        "removed": 91.13999999997031,
+        "pellets": 9,
+        "pierce": 2,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:pump",
+          "name": "ARMURIER 0/5 · Gerbe de fléchettes",
+          "rank": 0,
+          "spread": 0.9,
+          "rate": 0.9,
+          "damage": 0.7233333333333334,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 10.126666666666667,
+          "projectiles": 9,
+          "volley": 91.14,
+          "head": 195.951,
+          "magazine": 6,
+          "rate": 0.9900000000000001,
+          "reload": 2.35,
+          "reloadFull": 2.35,
+          "range": 1550,
+          "pierce": 2,
+          "blast": 0,
+          "spread": 0.10350000000000001,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_shot_darts",
+          "count": 0
+        },
+        "kit": "kit2_shot_darts"
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_shot_darts",
+      "ok": true,
+      "detail": {
+        "id": "pump",
+        "mag": 6,
+        "reserve": 494,
+        "cap": 6
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_shot_darts",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_machine_feed",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 31,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_machine_feed",
+      "ok": true,
+      "detail": {
+        "id": "lmg",
+        "mag": 116,
+        "reserve": 384,
+        "cap": 116
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_machine_feed",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_machine_support",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 33.479999999995925,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_machine_support",
+      "ok": true,
+      "detail": {
+        "id": "lmg",
+        "mag": 70,
+        "reserve": 430,
+        "cap": 70
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_machine_support",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_precision_quick",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 145.6999999999971,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_precision_quick",
+      "ok": true,
+      "detail": {
+        "id": "sniper",
+        "mag": 5,
+        "reserve": 495,
+        "cap": 5
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_precision_quick",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_precision_ap",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 168.9499999999971,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_precision_ap",
+      "ok": true,
+      "detail": {
+        "id": "sniper",
+        "mag": 5,
+        "reserve": 495,
+        "cap": 5
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_precision_ap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_launcher_wide",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 0,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Charge : rayon et dégâts de la vraie grenade",
+      "ok": true,
+      "detail": {
+        "kind": "grenade",
+        "x": 1145,
+        "y": 493,
+        "tx": 910,
+        "ty": 453.05,
+        "startX": 1145,
+        "startY": 493,
+        "t": 0,
+        "duration": 0.42,
+        "dl402Weapon": "launcher",
+        "dmg": 171,
+        "radius": 130,
+        "fire": false,
+        "dl408Launch": {
+          "view": "front",
+          "x": 923.6080492772784,
+          "y": 569.2162918258239
+        }
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_launcher_wide",
+      "ok": true,
+      "detail": {
+        "id": "launcher",
+        "mag": 4,
+        "reserve": 496,
+        "cap": 4
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_launcher_wide",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_launcher_focus",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 0,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Charge : rayon et dégâts de la vraie grenade",
+      "ok": true,
+      "detail": {
+        "kind": "grenade",
+        "x": 1145,
+        "y": 493,
+        "tx": 910,
+        "ty": 453.05,
+        "startX": 1145,
+        "startY": 493,
+        "t": 0,
+        "duration": 0.42,
+        "dl402Weapon": "launcher",
+        "dmg": 220.39999999999998,
+        "radius": 80,
+        "fire": false,
+        "dl408Launch": {
+          "view": "front",
+          "x": 957.1501673899598,
+          "y": 548.4355844932429
+        }
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_launcher_focus",
+      "ok": true,
+      "detail": {
+        "id": "launcher",
+        "mag": 4,
+        "reserve": 496,
+        "cap": 4
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_launcher_focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_cable_winch",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 165,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_cable_winch",
+      "ok": true,
+      "detail": {
+        "id": "harpoon",
+        "mag": 1,
+        "reserve": 499,
+        "cap": 1
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_cable_winch",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_cable_fast",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 135,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_cable_fast",
+      "ok": true,
+      "detail": {
+        "id": "harpoon",
+        "mag": 1,
+        "reserve": 499,
+        "cap": 1
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_cable_fast",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_tool_long",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 22,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_tool_long",
+      "ok": true,
+      "detail": {
+        "id": "flamer",
+        "mag": 75,
+        "reserve": 425,
+        "cap": 75
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_tool_long",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir réel kit2_tool_tank",
+      "ok": true,
+      "detail": {
+        "spent": 1,
+        "damage": 22,
+        "pellets": 1
+      }
+    },
+    {
+      "test": "Recharge réelle kit2_tool_tank",
+      "ok": true,
+      "detail": {
+        "id": "flamer",
+        "mag": 108,
+        "reserve": 392,
+        "cap": 108
+      }
+    },
+    {
+      "test": "Stand sans écriture persistante kit2_tool_tank",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Aucune erreur JavaScript sur les nouveaux parcours",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "coverage": {
+    "newParts": [
+      {
+        "part": "at2_comp_ct",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_brake_quad",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_choke_patrol",
+        "weapon": "pump",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_nozzle_wide",
+        "weapon": "launcher",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_barrel_fluted",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_barrel_rigid",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_barrel_feed",
+        "weapon": "launcher",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_barrel_industrial",
+        "weapon": "flamer",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_optic_ring",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_optic_protected",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_optic_intermediate",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_optic_siege",
+        "weapon": "rifle",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_under_stop",
+        "weapon": "smg",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_under_joint",
+        "weapon": "smg",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_under_bipod",
+        "weapon": "smg",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_under_cradle",
+        "weapon": "launcher",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_stock_fold",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_stock_damper",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_stock_braced",
+        "weapon": "rifle",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_stock_harness",
+        "weapon": "launcher",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_mag_short",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_mag_mid",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_mag_box",
+        "weapon": "lmg",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_mag_cartridge",
+        "weapon": "flamer",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_grip_texture",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_grip_access",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_grip_precise",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_grip_thermal",
+        "weapon": "lmg",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_ammo_uniform",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_ammo_hard",
+        "weapon": "pistol",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_ammo_focus",
+        "weapon": "launcher",
+        "kept": true,
+        "ammo": true
+      },
+      {
+        "part": "at2_ammo_tension",
+        "weapon": "crossbow",
+        "kept": true,
+        "ammo": true
+      }
+    ],
+    "conversionCases": [
+      {
+        "weapon": "pistol",
+        "kit": "kit2_hand_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "pistol",
+        "kit": "kit2_hand_heavy",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "smg",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "smg",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "pump",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "pump",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "revolver",
+        "kit": "kit2_hand_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "revolver",
+        "kit": "kit2_hand_heavy",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "rifle",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "rifle",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "assault",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "assault",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "autoshot",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "autoshot",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "sniper",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "sniper",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "lmg",
+        "kit": "kit2_machine_feed",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "lmg",
+        "kit": "kit2_machine_support",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "launcher",
+        "kit": "kit2_launcher_wide",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "launcher",
+        "kit": "kit2_launcher_focus",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "crossbow",
+        "kit": "kit2_cable_winch",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "crossbow",
+        "kit": "kit2_cable_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "dmr",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "dmr",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flamer",
+        "kit": "kit2_tool_long",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flamer",
+        "kit": "kit2_tool_tank",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "antimaterial",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "antimaterial",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "double",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "double",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "burst",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "burst",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flaregun",
+        "kit": "kit2_launcher_wide",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flaregun",
+        "kit": "kit2_launcher_focus",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "harpoon",
+        "kit": "kit2_cable_winch",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "harpoon",
+        "kit": "kit2_cable_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "lever",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "lever",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "nailer",
+        "kit": "kit2_tool_long",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "nailer",
+        "kit": "kit2_tool_tank",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flechette",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flechette",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "netgun",
+        "kit": "kit2_cable_winch",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "netgun",
+        "kit": "kit2_cable_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "drumgun",
+        "kit": "kit2_machine_feed",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "drumgun",
+        "kit": "kit2_machine_support",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "breachgun",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "breachgun",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "foamgun",
+        "kit": "kit2_tool_long",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "foamgun",
+        "kit": "kit2_tool_tank",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northPatrol",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northPatrol",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northStopper",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northStopper",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northDriller",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northDriller",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northArc",
+        "kit": "kit2_tool_long",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "northArc",
+        "kit": "kit2_tool_tank",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "metroCoach",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "metroCoach",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "metroAnchor",
+        "kit": "kit2_cable_winch",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "metroAnchor",
+        "kit": "kit2_cable_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "metroShredder",
+        "kit": "kit2_launcher_wide",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "metroShredder",
+        "kit": "kit2_launcher_focus",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airFlak",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airFlak",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airDoorGun",
+        "kit": "kit2_machine_feed",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airDoorGun",
+        "kit": "kit2_machine_support",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airTether",
+        "kit": "kit2_cable_winch",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airTether",
+        "kit": "kit2_cable_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airRocket",
+        "kit": "kit2_launcher_wide",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "airRocket",
+        "kit": "kit2_launcher_focus",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "deckCarbine",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "deckCarbine",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "marineHarpoon",
+        "kit": "kit2_cable_winch",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "marineHarpoon",
+        "kit": "kit2_cable_fast",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flareMortar",
+        "kit": "kit2_launcher_wide",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "flareMortar",
+        "kit": "kit2_launcher_focus",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "towerCarbine",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "towerCarbine",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "boltDriver",
+        "kit": "kit2_precision_quick",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "boltDriver",
+        "kit": "kit2_precision_ap",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "doorScatter",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "doorScatter",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "traceCarbine",
+        "kit": "kit2_rifle_precise",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "traceCarbine",
+        "kit": "kit2_rifle_short",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "magnesiumGun",
+        "kit": "kit2_shot_slug",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "magnesiumGun",
+        "kit": "kit2_shot_darts",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "signalLauncher",
+        "kit": "kit2_launcher_wide",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      },
+      {
+        "weapon": "signalLauncher",
+        "kit": "kit2_launcher_focus",
+        "ok": true,
+        "finite": true,
+        "stable": true,
+        "ammo": true,
+        "restore": true
+      }
+    ],
+    "blueprintCases": [
+      {
+        "weapon": "pistol",
+        "plan": "plan2_handgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "pistol",
+        "plan": "plan2_handgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "pistol",
+        "plan": "plan2_handgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "smg",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "smg",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "smg",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "pump",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "pump",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "pump",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "revolver",
+        "plan": "plan2_handgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "revolver",
+        "plan": "plan2_handgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "revolver",
+        "plan": "plan2_handgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "rifle",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "rifle",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "rifle",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "assault",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "assault",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "assault",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "autoshot",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "autoshot",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "autoshot",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "sniper",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "sniper",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "sniper",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "lmg",
+        "plan": "plan2_machine_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "lmg",
+        "plan": "plan2_machine_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "lmg",
+        "plan": "plan2_machine_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "launcher",
+        "plan": "plan2_launcher_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "launcher",
+        "plan": "plan2_launcher_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "launcher",
+        "plan": "plan2_launcher_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "crossbow",
+        "plan": "plan2_cable_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "crossbow",
+        "plan": "plan2_cable_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "crossbow",
+        "plan": "plan2_cable_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "dmr",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "dmr",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "dmr",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flamer",
+        "plan": "plan2_tool_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flamer",
+        "plan": "plan2_tool_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flamer",
+        "plan": "plan2_tool_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "antimaterial",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "antimaterial",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "antimaterial",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "double",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "double",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "double",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "burst",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "burst",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "burst",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flaregun",
+        "plan": "plan2_launcher_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flaregun",
+        "plan": "plan2_launcher_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flaregun",
+        "plan": "plan2_launcher_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "harpoon",
+        "plan": "plan2_cable_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "harpoon",
+        "plan": "plan2_cable_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "harpoon",
+        "plan": "plan2_cable_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "lever",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "lever",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "lever",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "nailer",
+        "plan": "plan2_tool_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "nailer",
+        "plan": "plan2_tool_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "nailer",
+        "plan": "plan2_tool_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flechette",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flechette",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flechette",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "netgun",
+        "plan": "plan2_cable_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "netgun",
+        "plan": "plan2_cable_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "netgun",
+        "plan": "plan2_cable_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "drumgun",
+        "plan": "plan2_machine_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "drumgun",
+        "plan": "plan2_machine_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "drumgun",
+        "plan": "plan2_machine_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "breachgun",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "breachgun",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "breachgun",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "foamgun",
+        "plan": "plan2_tool_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "foamgun",
+        "plan": "plan2_tool_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "foamgun",
+        "plan": "plan2_tool_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northPatrol",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northPatrol",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northPatrol",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northStopper",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northStopper",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northStopper",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northDriller",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northDriller",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northDriller",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northArc",
+        "plan": "plan2_tool_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northArc",
+        "plan": "plan2_tool_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "northArc",
+        "plan": "plan2_tool_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroCoach",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroCoach",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroCoach",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroAnchor",
+        "plan": "plan2_cable_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroAnchor",
+        "plan": "plan2_cable_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroAnchor",
+        "plan": "plan2_cable_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroShredder",
+        "plan": "plan2_launcher_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroShredder",
+        "plan": "plan2_launcher_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "metroShredder",
+        "plan": "plan2_launcher_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airFlak",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airFlak",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airFlak",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airDoorGun",
+        "plan": "plan2_machine_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airDoorGun",
+        "plan": "plan2_machine_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airDoorGun",
+        "plan": "plan2_machine_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airTether",
+        "plan": "plan2_cable_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airTether",
+        "plan": "plan2_cable_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airTether",
+        "plan": "plan2_cable_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airRocket",
+        "plan": "plan2_launcher_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airRocket",
+        "plan": "plan2_launcher_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "airRocket",
+        "plan": "plan2_launcher_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "deckCarbine",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "deckCarbine",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "deckCarbine",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "marineHarpoon",
+        "plan": "plan2_cable_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "marineHarpoon",
+        "plan": "plan2_cable_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "marineHarpoon",
+        "plan": "plan2_cable_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flareMortar",
+        "plan": "plan2_launcher_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flareMortar",
+        "plan": "plan2_launcher_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "flareMortar",
+        "plan": "plan2_launcher_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "towerCarbine",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "towerCarbine",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "towerCarbine",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "boltDriver",
+        "plan": "plan2_precision_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "boltDriver",
+        "plan": "plan2_precision_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "boltDriver",
+        "plan": "plan2_precision_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "doorScatter",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "doorScatter",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "doorScatter",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "traceCarbine",
+        "plan": "plan2_rifle_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "traceCarbine",
+        "plan": "plan2_rifle_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "traceCarbine",
+        "plan": "plan2_rifle_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "magnesiumGun",
+        "plan": "plan2_shotgun_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "magnesiumGun",
+        "plan": "plan2_shotgun_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "magnesiumGun",
+        "plan": "plan2_shotgun_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "signalLauncher",
+        "plan": "plan2_launcher_control",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "signalLauncher",
+        "plan": "plan2_launcher_tempo",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      },
+      {
+        "weapon": "signalLauncher",
+        "plan": "plan2_launcher_sustain",
+        "ok": true,
+        "parts": 5,
+        "kept": true
+      }
+    ],
+    "combatCases": [
+      {
+        "id": "pistol",
+        "spent": 1,
+        "removed": 23.5,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:pistol",
+          "name": "ARMURIER 0/5 · Détente de réaction",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1.13,
+          "damage": 0.94,
+          "reload": 0.87
+        },
+        "metrics": {
+          "impact": 23.5,
+          "projectiles": 1,
+          "volley": 23.5,
+          "head": 50.525,
+          "magazine": 12,
+          "rate": 4.294,
+          "reload": 1.131,
+          "reloadFull": 1.131,
+          "range": 1550,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.013,
+          "recoil": 1.07,
+          "armorPiercing": false,
+          "conversion": "kit2_hand_fast",
+          "count": 0
+        },
+        "kit": "kit2_hand_fast"
+      },
+      {
+        "id": "pistol",
+        "spent": 1,
+        "removed": 30.75,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:pistol",
+          "name": "ARMURIER 0/5 · Chambre de défense",
+          "rank": 0,
+          "spread": 1,
+          "rate": 0.77,
+          "damage": 1.23,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 30.75,
+          "projectiles": 1,
+          "volley": 30.75,
+          "head": 66.1125,
+          "magazine": 10,
+          "rate": 2.9259999999999997,
+          "reload": 1.3,
+          "reloadFull": 1.3,
+          "range": 1550,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.013,
+          "recoil": 1.21,
+          "armorPiercing": false,
+          "conversion": "kit2_hand_heavy",
+          "count": 0
+        },
+        "kit": "kit2_hand_heavy"
+      },
+      {
+        "id": "assault",
+        "spent": 1,
+        "removed": 32.39999999999418,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:assault",
+          "name": "ARMURIER 0/5 · Boîtier de tireur",
+          "rank": 0,
+          "spread": 0.8,
+          "rate": 0.85,
+          "damage": 1.08,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 32.400000000000006,
+          "projectiles": 1,
+          "volley": 32.400000000000006,
+          "head": 69.66000000000001,
+          "magazine": 30,
+          "rate": 6.375,
+          "reload": 2.1,
+          "reloadFull": 2.1,
+          "range": 1751,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.0176,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_rifle_precise",
+          "count": 0
+        },
+        "kit": "kit2_rifle_precise"
+      },
+      {
+        "id": "assault",
+        "spent": 1,
+        "removed": 30,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:assault",
+          "name": "ARMURIER 0/5 · Mécanisme de corridor",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1.11,
+          "damage": 1,
+          "reload": 0.92
+        },
+        "metrics": {
+          "impact": 30,
+          "projectiles": 1,
+          "volley": 30,
+          "head": 64.5,
+          "magazine": 30,
+          "rate": 8.325000000000001,
+          "reload": 1.9320000000000002,
+          "reloadFull": 1.9320000000000002,
+          "range": 1302,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.022,
+          "recoil": 1.12,
+          "armorPiercing": false,
+          "conversion": "kit2_rifle_short",
+          "count": 0
+        },
+        "kit": "kit2_rifle_short"
+      },
+      {
+        "id": "pump",
+        "spent": 1,
+        "removed": 66.63999999999942,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:pump",
+          "name": "ARMURIER 0/5 · Balle unique de poste",
+          "rank": 0,
+          "spread": 0.55,
+          "rate": 0.86,
+          "damage": 4.760000000000001,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 66.64000000000001,
+          "projectiles": 1,
+          "volley": 66.64000000000001,
+          "head": 143.27600000000004,
+          "magazine": 6,
+          "rate": 0.9460000000000001,
+          "reload": 2.35,
+          "reloadFull": 2.35,
+          "range": 1938,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.06325000000000001,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_shot_slug",
+          "count": 0
+        },
+        "kit": "kit2_shot_slug"
+      },
+      {
+        "id": "pump",
+        "spent": 1,
+        "removed": 91.13999999997031,
+        "pellets": 9,
+        "pierce": 2,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:pump",
+          "name": "ARMURIER 0/5 · Gerbe de fléchettes",
+          "rank": 0,
+          "spread": 0.9,
+          "rate": 0.9,
+          "damage": 0.7233333333333334,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 10.126666666666667,
+          "projectiles": 9,
+          "volley": 91.14,
+          "head": 195.951,
+          "magazine": 6,
+          "rate": 0.9900000000000001,
+          "reload": 2.35,
+          "reloadFull": 2.35,
+          "range": 1550,
+          "pierce": 2,
+          "blast": 0,
+          "spread": 0.10350000000000001,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_shot_darts",
+          "count": 0
+        },
+        "kit": "kit2_shot_darts"
+      },
+      {
+        "id": "lmg",
+        "spent": 1,
+        "removed": 31,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:lmg",
+          "name": "ARMURIER 0/5 · Alimentation continue",
+          "rank": 0,
+          "spread": 1.06,
+          "rate": 1,
+          "damage": 1,
+          "reload": 1.3
+        },
+        "metrics": {
+          "impact": 31,
+          "projectiles": 1,
+          "volley": 31,
+          "head": 66.64999999999999,
+          "magazine": 116,
+          "rate": 9,
+          "reload": 5.33,
+          "reloadFull": 5.33,
+          "range": 1550,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.045579999999999996,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_machine_feed",
+          "count": 0
+        },
+        "kit": "kit2_machine_feed"
+      },
+      {
+        "id": "lmg",
+        "spent": 1,
+        "removed": 33.479999999995925,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:lmg",
+          "name": "ARMURIER 0/5 · Affût stabilisé",
+          "rank": 0,
+          "spread": 0.84,
+          "rate": 0.89,
+          "damage": 1.08,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 33.480000000000004,
+          "projectiles": 1,
+          "volley": 33.480000000000004,
+          "head": 71.982,
+          "magazine": 70,
+          "rate": 8.01,
+          "reload": 4.1,
+          "reloadFull": 4.1,
+          "range": 1550,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.03611999999999999,
+          "recoil": 0.68,
+          "armorPiercing": false,
+          "conversion": "kit2_machine_support",
+          "count": 0
+        },
+        "kit": "kit2_machine_support"
+      },
+      {
+        "id": "sniper",
+        "spent": 1,
+        "removed": 145.6999999999971,
+        "pellets": 1,
+        "pierce": 4,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:sniper",
+          "name": "ARMURIER 0/5 · Action rapide",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1.16,
+          "damage": 0.94,
+          "reload": 0.84
+        },
+        "metrics": {
+          "impact": 145.7,
+          "projectiles": 1,
+          "volley": 145.7,
+          "head": 313.25499999999994,
+          "magazine": 5,
+          "rate": 0.9859999999999999,
+          "reload": 2.352,
+          "reloadFull": 2.352,
+          "range": 1550,
+          "pierce": 4,
+          "blast": 0,
+          "spread": 0.002,
+          "recoil": 1.08,
+          "armorPiercing": false,
+          "conversion": "kit2_precision_quick",
+          "count": 0
+        },
+        "kit": "kit2_precision_quick"
+      },
+      {
+        "id": "sniper",
+        "spent": 1,
+        "removed": 168.9499999999971,
+        "pellets": 1,
+        "pierce": 5,
+        "ap": true,
+        "projectile": null,
+        "mod": {
+          "id": "v36:sniper",
+          "name": "ARMURIER 0/5 · Chambre anti-protection",
+          "rank": 0,
+          "spread": 1,
+          "rate": 0.81,
+          "damage": 1.09,
+          "reload": 1.12
+        },
+        "metrics": {
+          "impact": 168.95000000000002,
+          "projectiles": 1,
+          "volley": 168.95000000000002,
+          "head": 363.2425,
+          "magazine": 5,
+          "rate": 0.6885,
+          "reload": 3.136,
+          "reloadFull": 3.136,
+          "range": 1550,
+          "pierce": 5,
+          "blast": 0,
+          "spread": 0.002,
+          "recoil": 1,
+          "armorPiercing": true,
+          "conversion": "kit2_precision_ap",
+          "count": 0
+        },
+        "kit": "kit2_precision_ap"
+      },
+      {
+        "id": "launcher",
+        "spent": 1,
+        "removed": 0,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": {
+          "kind": "grenade",
+          "x": 1145,
+          "y": 493,
+          "tx": 910,
+          "ty": 453.05,
+          "startX": 1145,
+          "startY": 493,
+          "t": 0,
+          "duration": 0.42,
+          "dl402Weapon": "launcher",
+          "dmg": 171,
+          "radius": 130,
+          "fire": false,
+          "dl408Launch": {
+            "view": "front",
+            "x": 923.6080492772784,
+            "y": 569.2162918258239
+          }
+        },
+        "mod": {
+          "id": "v36:launcher",
+          "name": "ARMURIER 0/5 · Charge de couverture",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1,
+          "damage": 0.9,
+          "reload": 1.12
+        },
+        "metrics": {
+          "impact": 171,
+          "projectiles": 1,
+          "volley": 171,
+          "head": null,
+          "magazine": 4,
+          "rate": 0.72,
+          "reload": 3.4720000000000004,
+          "reloadFull": 3.4720000000000004,
+          "range": 1550,
+          "pierce": 1,
+          "blast": 130,
+          "spread": 0,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_launcher_wide",
+          "count": 0
+        },
+        "kit": "kit2_launcher_wide"
+      },
+      {
+        "id": "launcher",
+        "spent": 1,
+        "removed": 0,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": {
+          "kind": "grenade",
+          "x": 1145,
+          "y": 493,
+          "tx": 910,
+          "ty": 453.05,
+          "startX": 1145,
+          "startY": 493,
+          "t": 0,
+          "duration": 0.42,
+          "dl402Weapon": "launcher",
+          "dmg": 220.39999999999998,
+          "radius": 80,
+          "fire": false,
+          "dl408Launch": {
+            "view": "front",
+            "x": 957.1501673899598,
+            "y": 548.4355844932429
+          }
+        },
+        "mod": {
+          "id": "v36:launcher",
+          "name": "ARMURIER 0/5 · Charge de rupture",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1,
+          "damage": 1.16,
+          "reload": 1.16
+        },
+        "metrics": {
+          "impact": 220.39999999999998,
+          "projectiles": 1,
+          "volley": 220.39999999999998,
+          "head": null,
+          "magazine": 4,
+          "rate": 0.72,
+          "reload": 3.5959999999999996,
+          "reloadFull": 3.5959999999999996,
+          "range": 1550,
+          "pierce": 1,
+          "blast": 80,
+          "spread": 0,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_launcher_focus",
+          "count": 0
+        },
+        "kit": "kit2_launcher_focus"
+      },
+      {
+        "id": "harpoon",
+        "spent": 1,
+        "removed": 165,
+        "pellets": 1,
+        "pierce": 4,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:harpoon",
+          "name": "ARMURIER 0/5 · Treuil renforcé",
+          "rank": 0,
+          "spread": 1,
+          "rate": 0.88,
+          "damage": 1.1,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 165,
+          "projectiles": 1,
+          "volley": 165,
+          "head": 354.75,
+          "magazine": 1,
+          "rate": 0.88,
+          "reload": 2,
+          "reloadFull": 2,
+          "range": 1736,
+          "pierce": 4,
+          "blast": 0,
+          "spread": 0.003,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_cable_winch",
+          "count": 0
+        },
+        "kit": "kit2_cable_winch"
+      },
+      {
+        "id": "harpoon",
+        "spent": 1,
+        "removed": 135,
+        "pellets": 1,
+        "pierce": 3,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:harpoon",
+          "name": "ARMURIER 0/5 · Réarmement guidé",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1,
+          "damage": 0.9,
+          "reload": 0.8
+        },
+        "metrics": {
+          "impact": 135,
+          "projectiles": 1,
+          "volley": 135,
+          "head": 290.25,
+          "magazine": 1,
+          "rate": 1,
+          "reload": 1.6,
+          "reloadFull": 1.6,
+          "range": 1488,
+          "pierce": 3,
+          "blast": 0,
+          "spread": 0.003,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_cable_fast",
+          "count": 0
+        },
+        "kit": "kit2_cable_fast"
+      },
+      {
+        "id": "flamer",
+        "spent": 1,
+        "removed": 22,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:flamer",
+          "name": "ARMURIER 0/5 · Buse longue portée",
+          "rank": 0,
+          "spread": 0.85,
+          "rate": 0.86,
+          "damage": 1,
+          "reload": 1
+        },
+        "metrics": {
+          "impact": 22,
+          "projectiles": 1,
+          "volley": 22,
+          "head": null,
+          "magazine": 75,
+          "rate": 6.88,
+          "reload": 3.3,
+          "reloadFull": 3.3,
+          "range": 552,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.2805,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_tool_long",
+          "count": 0
+        },
+        "kit": "kit2_tool_long"
+      },
+      {
+        "id": "flamer",
+        "spent": 1,
+        "removed": 22,
+        "pellets": 1,
+        "pierce": 1,
+        "ap": false,
+        "projectile": null,
+        "mod": {
+          "id": "v36:flamer",
+          "name": "ARMURIER 0/5 · Alimentation industrielle",
+          "rank": 0,
+          "spread": 1,
+          "rate": 1.02,
+          "damage": 1,
+          "reload": 1.2
+        },
+        "metrics": {
+          "impact": 22,
+          "projectiles": 1,
+          "volley": 22,
+          "head": null,
+          "magazine": 108,
+          "rate": 8.16,
+          "reload": 3.9599999999999995,
+          "reloadFull": 3.9599999999999995,
+          "range": 460,
+          "pierce": 1,
+          "blast": 0,
+          "spread": 0.33,
+          "recoil": 1,
+          "armorPiercing": false,
+          "conversion": "kit2_tool_tank",
+          "count": 0
+        },
+        "kit": "kit2_tool_tank"
+      }
+    ]
+  },
+  "method": "Chromium et vrai moteur. Images 1x1 dans le banc rapide; aucune fonction de simulation remplacée."
+}

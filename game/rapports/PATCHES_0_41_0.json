@@ -1,0 +1,31 @@
+{
+  "version": "0.42.0",
+  "patches": [
+    "FPS pose uses stable right-shoulder origin",
+    "Continuous forearms and anatomical grips",
+    "Weapon keeps top above barrel",
+    "Attachments share reflected weapon frame",
+    "Reload mechanisms share weapon frame",
+    "Conversion mark follows weapon underside",
+    "Remove duplicated static belt box",
+    "Remove duplicated static canister",
+    "Separate magazine socket from trigger grip",
+    "Mounted magazine uses feed socket",
+    "Moving magazine uses same feed socket",
+    "Service reload shares fixed canister socket",
+    "Legacy ally source follows figure",
+    "Shooter and sniper traces follow visible ally",
+    "Interrupter effect follows ally",
+    "Northern gunner effect follows ally",
+    "metroCover traced from mounted source",
+    "airGunner traced from mounted source",
+    "Road gunner effect follows ally",
+    "Naval gunner effect follows ally",
+    "Support grenades retain actual launch origin",
+    "Last carriage art shares deck and human scale",
+    "Remove duplicated procedural survivor from rear post",
+    "Native spatial presentation and tests",
+    "Poste de commandement UI"
+  ],
+  "bytes": 27964059
+}

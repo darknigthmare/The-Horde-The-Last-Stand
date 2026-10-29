@@ -1,0 +1,51 @@
+OK Conditions malformées refusées sans changer le profil
+OK Annuler la préparation restaure aussi le hasard du moteur
+OK Pistolet contrôlé : recharge depuis le stock réel
+OK Pistolet contrôlé : aucune cartouche créée après épuisement
+OK Sonde de stock temporaire sans conséquence campagne
+OK Pistolet du stand libre toujours rechargé sans limite
+OK Stand libre restaure le profil initial
+OK Pistolet de campagne garde sa réserve infinie
+OK Cinématiques actives : vrai stand libre lancé
+OK Cinématiques et journal originaux préservés · False
+OK Chapitre initial encore inédit · False
+OK Cinématiques actives : vrai stand contrôlé lancé
+OK Cinématiques et journal originaux préservés · True
+OK Chapitre initial encore inédit · True
+OK Cour pleine signalée dans le bilan
+OK Aucune cible en excès au plafond de huit
+OK Saturation sans perte de sauvegarde
+OK Programme incomplet non présenté comme comparaison certifiée
+OK Défaite réelle : bilan arrêté avant 30 secondes
+OK Rejouer réinitialise lot, passages et horloge
+OK Reconfiguration depuis pause conserve les conditions
+OK Nouvel essai après pause repart de zéro
+OK Défaite, reprise et pause restaurent la campagne intacte
+OK Conversion verrouillée réelle disponible pour le test
+OK B et parcours refusés pour une pièce verrouillée
+OK Instantané personnel invalide le montage · level
+OK Instantané personnel invalide le montage · doctrine
+OK Stand libre : durées différentes explicitement signalées
+OK Essais libres sans mutation
+OK Retour menu nettoie programme, hasard et brouillon
+OK Retour menu garde le bon stock de campagne
+OK 1440×900 : dialogue et grille sans débordement
+OK 1440×900 : portrait ennemi entier
+OK 1440×900 : focus conservé sur les conditions
+OK 1440×900 : barre de temps dans le terrain
+OK 1440×900 : bilan natif sans largeur masquée
+OK 896×414 : dialogue et grille sans débordement
+OK 896×414 : portrait ennemi entier
+OK 896×414 : focus conservé sur les conditions
+OK 896×414 : barre de temps dans le terrain
+OK 896×414 : bilan natif sans largeur masquée
+OK 414×896 : dialogue et grille sans débordement
+OK 414×896 : portrait ennemi entier
+OK 414×896 : focus conservé sur les conditions
+OK 414×896 : barre de temps dans le terrain
+OK 414×896 : bilan natif sans largeur masquée
+OK Production : parcours clics jusqu’au chronomètre
+OK Production : retour au bilan sans outil développeur
+OK Production : introduction du convoi conservée après le stand
+OK Aucune erreur JavaScript
+{"passed": 50, "total": 50, "errors": []}

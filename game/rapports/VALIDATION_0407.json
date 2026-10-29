@@ -1,0 +1,201 @@
+{
+  "version": "0.40.7",
+  "htmlSHA256": "851d9589bfc89c57bf4eba422c969e447cff7eb9fd688249c9ef5486b6115417",
+  "baseSHA256": "30767fedc2ab789f2e29f0bd9cbe6af1d27f6dd47d4a2b7a17bdf88b8f0c183f",
+  "nativeBrowser": {
+    "passed": 724,
+    "total": 724,
+    "inherited": 569,
+    "new": 155
+  },
+  "pixels": {
+    "passed": 268,
+    "total": 268
+  },
+  "inlineSyntax": {
+    "passed": 2,
+    "total": 2
+  },
+  "artLoaded": {
+    "loaded": 252,
+    "total": 252,
+    "settled": true,
+    "failures": [],
+    "draws": {
+      "background": 0,
+      "actors": 0,
+      "props": 0,
+      "textures": 15
+    },
+    "enabled": true,
+    "actors": [
+      "walker",
+      "runner",
+      "crawler",
+      "armored",
+      "bomber",
+      "screamer",
+      "swarm",
+      "spitter",
+      "sprinter",
+      "brute",
+      "shield",
+      "northCable",
+      "northBeacon",
+      "vaulter",
+      "deaf"
+    ]
+  },
+  "suites": [
+    {
+      "script": "syntaxe.py",
+      "exit": 0,
+      "seconds": 1.92,
+      "passed": 2,
+      "total": 2,
+      "errors": null
+    },
+    {
+      "script": "regression_0401.py",
+      "exit": 0,
+      "seconds": 9.05,
+      "passed": 51,
+      "total": 51,
+      "errors": []
+    },
+    {
+      "script": "atelier.py",
+      "exit": 0,
+      "seconds": 28.24,
+      "passed": 79,
+      "total": 79,
+      "errors": []
+    },
+    {
+      "script": "coherence.py",
+      "exit": 0,
+      "seconds": 13.67,
+      "passed": 31,
+      "total": 31,
+      "errors": []
+    },
+    {
+      "script": "visuel.py",
+      "exit": 0,
+      "seconds": 20.25,
+      "passed": 69,
+      "total": 69,
+      "errors": []
+    },
+    {
+      "script": "gestes.py",
+      "exit": 0,
+      "seconds": 22.94,
+      "passed": 35,
+      "total": 35,
+      "errors": []
+    },
+    {
+      "script": "images.py",
+      "exit": 0,
+      "seconds": 3.16,
+      "passed": 268,
+      "total": 268,
+      "errors": null
+    },
+    {
+      "script": "montage.py",
+      "exit": 0,
+      "seconds": 44.4,
+      "passed": 97,
+      "total": 97,
+      "errors": []
+    },
+    {
+      "script": "montage_safety.py",
+      "exit": 0,
+      "seconds": 6.96,
+      "passed": 18,
+      "total": 18,
+      "errors": []
+    },
+    {
+      "script": "protocols.py",
+      "exit": 0,
+      "seconds": 136.76,
+      "passed": 139,
+      "total": 139,
+      "errors": []
+    },
+    {
+      "script": "protocols_safety.py",
+      "exit": 0,
+      "seconds": 23.19,
+      "passed": 50,
+      "total": 50,
+      "errors": []
+    },
+    {
+      "script": "orders.py",
+      "exit": 0,
+      "seconds": 27.64,
+      "passed": 99,
+      "total": 99,
+      "errors": []
+    },
+    {
+      "script": "orders_safety.py",
+      "exit": 0,
+      "seconds": 18.09,
+      "passed": 50,
+      "total": 50,
+      "errors": []
+    },
+    {
+      "script": "before_after_0407.py",
+      "exit": 0,
+      "seconds": 3.5,
+      "passed": 6,
+      "total": 6,
+      "errors": []
+    }
+  ],
+  "reproducedBugs": {
+    "0.40.6": {
+      "airGunnerElsewhere": {
+        "damage": 0,
+        "shotsLeft": null
+      },
+      "specialPriority": "walker",
+      "allyDamageOnMarked": 11.799999999999997,
+      "landMarkAfter6s": 6,
+      "sanaElsewhereHidden": {
+        "hp": 84,
+        "shots": null,
+        "visible": false
+      },
+      "blackout": {
+        "combat": false,
+        "pause": true
+      }
+    },
+    "0.40.7": {
+      "airGunnerElsewhere": {
+        "damage": 42,
+        "shotsLeft": 49
+      },
+      "specialPriority": "darkBoss",
+      "allyDamageOnMarked": 10,
+      "landMarkAfter6s": 0,
+      "sanaElsewhereHidden": {
+        "hp": 84,
+        "shots": 42,
+        "visible": false
+      },
+      "blackout": {
+        "combat": false,
+        "pause": false
+      }
+    }
+  }
+}

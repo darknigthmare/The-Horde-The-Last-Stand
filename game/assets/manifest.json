@@ -1,0 +1,1605 @@
+{
+  "assets": {
+    "v26-player-idle": {
+      "path": "assets/v26-player-idle.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-idle.png",
+      "mime": "image/webp"
+    },
+    "v26-player-walk1": {
+      "path": "assets/v26-player-walk1.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-walk1.png",
+      "mime": "image/webp"
+    },
+    "v26-player-walk2": {
+      "path": "assets/v26-player-walk2.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-walk2.png",
+      "mime": "image/webp"
+    },
+    "v26-player-shoot1": {
+      "path": "assets/v26-player-shoot1.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-shoot1.png",
+      "mime": "image/webp"
+    },
+    "v26-player-shoot2": {
+      "path": "assets/v26-player-shoot2.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-shoot2.png",
+      "mime": "image/webp"
+    },
+    "v26-player-reload": {
+      "path": "assets/v26-player-reload.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-reload.png",
+      "mime": "image/webp"
+    },
+    "v26-player-crouch": {
+      "path": "assets/v26-player-crouch.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-crouch.png",
+      "mime": "image/webp"
+    },
+    "v26-player-hit": {
+      "path": "assets/v26-player-hit.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-hit.png",
+      "mime": "image/webp"
+    },
+    "v26-player-dead": {
+      "path": "assets/v26-player-dead.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-player-dead.png",
+      "mime": "image/webp"
+    },
+    "v26-ally-malik": {
+      "path": "assets/v26-ally-malik.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-ally-malik.png",
+      "mime": "image/webp"
+    },
+    "v26-ally-ines": {
+      "path": "assets/v26-ally-ines.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-ally-ines.png",
+      "mime": "image/webp"
+    },
+    "v26-ally-marius": {
+      "path": "assets/v26-ally-marius.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-ally-marius.png",
+      "mime": "image/webp"
+    },
+    "v26-ally-youssef": {
+      "path": "assets/v26-ally-youssef.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-ally-youssef.png",
+      "mime": "image/webp"
+    },
+    "v26-ally-support": {
+      "path": "assets/v26-ally-support.webp",
+      "width": 320,
+      "height": 320,
+      "source": "assets/v26-ally-support.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-walker": {
+      "path": "assets/v26-gait-walker.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-walker.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-walker": {
+      "path": "assets/v26-enemy-walker.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-walker.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-runner": {
+      "path": "assets/v26-gait-runner.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-runner.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-runner": {
+      "path": "assets/v26-enemy-runner.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-runner.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-crawler": {
+      "path": "assets/v26-gait-crawler.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-crawler.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-crawler": {
+      "path": "assets/v26-enemy-crawler.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-crawler.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-armored": {
+      "path": "assets/v26-gait-armored.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-armored.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-armored": {
+      "path": "assets/v26-enemy-armored.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-armored.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-bomber": {
+      "path": "assets/v26-gait-bomber.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-bomber.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-bomber": {
+      "path": "assets/v26-enemy-bomber.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-bomber.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-screamer": {
+      "path": "assets/v26-gait-screamer.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-screamer.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-screamer": {
+      "path": "assets/v26-enemy-screamer.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-screamer.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-swarm": {
+      "path": "assets/v26-gait-swarm.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-swarm.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-swarm": {
+      "path": "assets/v26-enemy-swarm.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-swarm.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-spitter": {
+      "path": "assets/v26-gait-spitter.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-spitter.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-spitter": {
+      "path": "assets/v26-enemy-spitter.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-spitter.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-sprinter": {
+      "path": "assets/v26-gait-sprinter.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-sprinter.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-sprinter": {
+      "path": "assets/v26-enemy-sprinter.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-sprinter.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-brute": {
+      "path": "assets/v26-gait-brute.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-brute.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-brute": {
+      "path": "assets/v26-enemy-brute.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-brute.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-shield": {
+      "path": "assets/v26-gait-shield.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-shield.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-shield": {
+      "path": "assets/v26-enemy-shield.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-shield.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-northCable": {
+      "path": "assets/v26-gait-northCable.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-northCable.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-northCable": {
+      "path": "assets/v26-enemy-northCable.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-northCable.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-northBeacon": {
+      "path": "assets/v26-gait-northBeacon.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-northBeacon.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-northBeacon": {
+      "path": "assets/v26-enemy-northBeacon.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-northBeacon.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-vaulter": {
+      "path": "assets/v26-gait-vaulter.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-vaulter.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-vaulter": {
+      "path": "assets/v26-enemy-vaulter.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-vaulter.png",
+      "mime": "image/webp"
+    },
+    "v26-gait-deaf": {
+      "path": "assets/v26-gait-deaf.webp",
+      "width": 1536,
+      "height": 1152,
+      "source": "assets/v26-gait-deaf.png",
+      "mime": "image/webp"
+    },
+    "v26-enemy-deaf": {
+      "path": "assets/v26-enemy-deaf.webp",
+      "width": 384,
+      "height": 384,
+      "source": "assets/v26-enemy-deaf.png",
+      "mime": "image/webp"
+    }
+  },
+  "frames": {
+    "walker": [
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          239.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          247.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          235.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          239.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          247.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          235.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          239.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          247.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          235.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ],
+    "runner": [
+      {
+        "head": [
+          257.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          279.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          270.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          257.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          257.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          279.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          270.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          257.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          257.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          279.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          270.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          257.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ],
+    "crawler": [
+      {
+        "head": [
+          288.0,
+          154.78
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          303.0,
+          93.68
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          312.0,
+          132.22
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          192.38
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          288.0,
+          154.78
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          303.0,
+          93.68
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          312.0,
+          132.22
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          192.38
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          288.0,
+          154.78
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          303.0,
+          93.68
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          312.0,
+          132.22
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          192.38
+        ],
+        "baseline": 355
+      }
+    ],
+    "armored": [
+      {
+        "head": [
+          209.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          228.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          247.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          209.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          209.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          228.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          247.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          209.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          209.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          228.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          247.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          209.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ],
+    "bomber": [
+      {
+        "head": [
+          222.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          193.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          187.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          169.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          222.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          193.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          187.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          169.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          222.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          193.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          187.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          169.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ],
+    "screamer": [
+      {
+        "head": [
+          238.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          248.5,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          225.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          191.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          238.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          248.5,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          225.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          191.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          238.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          248.5,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          225.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          191.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ],
+    "swarm": [
+      {
+        "head": [
+          262.0,
+          64.53999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          71.12
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          270.0,
+          65.48
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          225.0,
+          128.46
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          64.53999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          71.12
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          270.0,
+          65.48
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          225.0,
+          128.46
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          64.53999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          71.12
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          270.0,
+          65.48
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          225.0,
+          128.46
+        ],
+        "baseline": 355
+      }
+    ],
+    "spitter": [
+      {
+        "head": [
+          229.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          266.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          264.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          274.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          229.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          266.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          264.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          274.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          229.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          266.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          264.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          274.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ],
+    "sprinter": [
+      {
+        "head": [
+          293.0,
+          91.8
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          289.0,
+          107.78
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          131.28
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          278.0,
+          72.06
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          293.0,
+          91.8
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          289.0,
+          107.78
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          131.28
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          278.0,
+          72.06
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          293.0,
+          91.8
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          289.0,
+          107.78
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          262.0,
+          131.28
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          278.0,
+          72.06
+        ],
+        "baseline": 355
+      }
+    ],
+    "brute": [
+      {
+        "head": [
+          186.0,
+          77.7
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          173.0,
+          111.53999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          142.0,
+          89.92
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          166.0,
+          88.98
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          186.0,
+          77.7
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          173.0,
+          111.53999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          142.0,
+          89.92
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          166.0,
+          88.98
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          186.0,
+          77.7
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          173.0,
+          111.53999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          142.0,
+          89.92
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          166.0,
+          88.98
+        ],
+        "baseline": 355
+      }
+    ],
+    "shield": [
+      {
+        "head": [
+          254.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          230.0,
+          160.42
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          256.0,
+          149.14
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          258.0,
+          100.25999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          254.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          230.0,
+          160.42
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          256.0,
+          149.14
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          258.0,
+          100.25999999999999
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          254.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          230.0,
+          160.42
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          256.0,
+          149.14
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          258.0,
+          100.25999999999999
+        ],
+        "baseline": 355
+      }
+    ],
+    "northCable": [
+      {
+        "head": [
+          163.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          190.5
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          163.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          190.5
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          163.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          190.5
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          163.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          190.5
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          163.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          190.5
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          163.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          291.0,
+          190.5
+        ],
+        "baseline": 355
+      }
+    ],
+    "northBeacon": [
+      {
+        "head": [
+          198.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          216.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          175.0,
+          62.66
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          138.0,
+          146.32
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          198.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          216.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          175.0,
+          62.66
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          138.0,
+          146.32
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          198.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          216.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          175.0,
+          62.66
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          138.0,
+          146.32
+        ],
+        "baseline": 355
+      }
+    ],
+    "vaulter": [
+      {
+        "head": [
+          271.0,
+          74.88
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          243.0,
+          101.2
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          241.0,
+          113.42
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          219.0,
+          144.44
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          271.0,
+          74.88
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          243.0,
+          101.2
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          241.0,
+          113.42
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          219.0,
+          144.44
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          271.0,
+          74.88
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          243.0,
+          101.2
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          241.0,
+          113.42
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          219.0,
+          144.44
+        ],
+        "baseline": 355
+      }
+    ],
+    "deaf": [
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          253.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          220.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          253.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          220.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          253.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          220.0,
+          57.96
+        ],
+        "baseline": 355
+      },
+      {
+        "head": [
+          251.0,
+          57.96
+        ],
+        "baseline": 355
+      }
+    ]
+  },
+  "method": "Rectangles vérifiés sur les sources ; alpha de silhouette opaque, atlas 4 poses distinctes réutilisées sur 12 cellules. Les anciennes poses amputées sont remplacées, pas complétées artificiellement."
+}

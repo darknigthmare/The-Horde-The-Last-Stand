@@ -1,0 +1,32 @@
+OK Armure standard réellement percée — right
+OK Armure standard réellement percée — left
+OK Armure standard réellement percée — front
+OK Armure standard réellement percée — rear
+OK Buse longue : le cône atteint réellement une cible au-delà de 460
+OK Lance-filets : immobilisation native conservée
+OK Mousse : ralentissement sans dégâts conservé
+OK Explosion attribuée au lanceur après changement d’arme
+OK Le pistolet ne reçoit pas le crédit de l’explosion
+OK Rapport après action contient la conversion utilisée
+OK Signature de mission identique au montage initial
+OK La conversion survit à la validation des rapports
+OK Comparateur de presets inclut le mécanisme
+OK Profil antérieur sans conversions accepté sans cadeau
+OK Transition rapide effectivement inférieure à 0,18 s
+OK Production sans API de test
+OK Conversions accessibles avec la souris en production
+OK Comparaison accessible sans déblocage ni API de test
+OK build utilisable à 1440×900
+OK kits utilisable à 1440×900
+OK plans utilisable à 1440×900
+OK presets utilisable à 1440×900
+OK build utilisable à 896×414
+OK kits utilisable à 896×414
+OK plans utilisable à 896×414
+OK presets utilisable à 896×414
+OK build utilisable à 414×896
+OK kits utilisable à 414×896
+OK plans utilisable à 414×896
+OK presets utilisable à 414×896
+OK Aucune erreur JavaScript dans cette passe
+{"passed": 31, "total": 31, "errors": []}

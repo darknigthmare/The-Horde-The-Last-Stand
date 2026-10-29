@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Dernière Ligne — Zéro Repli</title>
+  <rect width="64" height="64" rx="12" fill="#102326"/>
+  <path d="M12 48V27h8v8h8V21h8v14h8v-8h8v21Z" fill="#d6b66f"/>
+  <path d="M10 51h44v4H10zM28 9h8v7h-8z" fill="#8fbdb4"/>
+</svg>

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# Preserve the imported archive and upstream guides byte for byte on every OS.
+game/** -text
+.agents/** -text
+game/JOUER_DERNIERE_LIGNE.html linguist-generated=true
+game/base/** linguist-vendored=true
+.agents/skills/** linguist-vendored=true

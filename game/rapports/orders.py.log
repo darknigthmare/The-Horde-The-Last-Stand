@@ -1,0 +1,100 @@
+OK Version 0.40.7 et vraie préparation
+OK Devis sans mutation ni sélection implicite
+OK Tarifs natifs de réparation/soins
+OK Munitions au même tarif que le ravitaillement natif
+OK Sélection inconnue ou répétée refusée
+OK Devis réserve explicitement les frais
+OK Sélection ne prélève pas les ressources
+OK Une seule dépense groupée
+OK Réparations exactes sans dépassement
+OK Chargement après livraison sans munitions créées
+OK Seuls les consommables sélectionnés changent
+OK Dispositifs distincts et remplis du bon lot
+OK Frais non prélevés avant le départ
+OK Transaction présente dans le profil schéma 12
+OK Le vrai départ prélève les frais une seule fois
+OK Consultation et annulation intactes · campaign
+OK Retour exact au camp · campaign
+OK Devis périmé refusé · campaign
+OK Consultation et annulation intactes · north
+OK Retour exact au camp · north
+OK Devis périmé refusé · north
+OK Consultation et annulation intactes · metro
+OK Retour exact au camp · metro
+OK Devis périmé refusé · metro
+OK Consultation et annulation intactes · air
+OK Retour exact au camp · air
+OK Devis périmé refusé · air
+OK Consultation et annulation intactes · highway
+OK Retour exact au camp · highway
+OK Devis périmé refusé · highway
+OK Consultation et annulation intactes · water
+OK Retour exact au camp · water
+OK Devis périmé refusé · water
+OK Consultation et annulation intactes · tower
+OK Retour exact au camp · tower
+OK Devis périmé refusé · tower
+OK Consultation et annulation intactes · dark
+OK Retour exact au camp · dark
+OK Devis périmé refusé · dark
+OK Lots partiels carburant et tourelle
+OK Dernières cartouches au plafond facturées au prorata
+OK Stocks pleins sans ligne d’achat superflue
+OK Bornes réelles conservées après lot partiel
+OK Révision voie A ne touche ni voie B ni barricade
+OK Six circuits révisés exportables
+OK Spécialiste réel, une action par vue · airGunner · air
+OK Réserve épuisée non recréée · airGunner · air
+OK Spécialiste réel, une action par vue · airGunner · campaign
+OK Réserve épuisée non recréée · airGunner · campaign
+OK Spécialiste réel, une action par vue · airEngineer · air
+OK Réserve épuisée non recréée · airEngineer · air
+OK Spécialiste réel, une action par vue · airEngineer · campaign
+OK Réserve épuisée non recréée · airEngineer · campaign
+OK Spécialiste réel, une action par vue · airObserver · air
+OK Réserve épuisée non recréée · airObserver · air
+OK Spécialiste réel, une action par vue · airObserver · campaign
+OK Réserve épuisée non recréée · airObserver · campaign
+OK Spécialiste réel, une action par vue · roadGunner · highway
+OK Réserve épuisée non recréée · roadGunner · highway
+OK Spécialiste réel, une action par vue · roadGunner · campaign
+OK Réserve épuisée non recréée · roadGunner · campaign
+OK Spécialiste réel, une action par vue · roadMechanic · highway
+OK Réserve épuisée non recréée · roadMechanic · highway
+OK Spécialiste réel, une action par vue · roadMechanic · campaign
+OK Réserve épuisée non recréée · roadMechanic · campaign
+OK Spécialiste réel, une action par vue · waterGunner · water
+OK Réserve épuisée non recréée · waterGunner · water
+OK Spécialiste réel, une action par vue · waterGunner · campaign
+OK Réserve épuisée non recréée · waterGunner · campaign
+OK Spécialiste réel, une action par vue · waterMechanic · water
+OK Réserve épuisée non recréée · waterMechanic · water
+OK Spécialiste réel, une action par vue · waterMechanic · campaign
+OK Réserve épuisée non recréée · waterMechanic · campaign
+OK Spécialiste réel, une action par vue · towerGuard · tower
+OK Réserve épuisée non recréée · towerGuard · tower
+OK Spécialiste réel, une action par vue · towerGuard · campaign
+OK Réserve épuisée non recréée · towerGuard · campaign
+OK Spécialiste réel, une action par vue · towerTech · tower
+OK Réserve épuisée non recréée · towerTech · tower
+OK Spécialiste réel, une action par vue · towerTech · campaign
+OK Réserve épuisée non recréée · towerTech · campaign
+OK Tous les boss et nouveaux spéciaux prioritaires
+OK Priorité manuelle de voie respectée avant le type
+OK Marquage bonus réservé au joueur · player
+OK Marquage bonus réservé au joueur · ally
+OK Marquage expire aussi sur un infecté terrestre
+OK Sana ne consomme pas ses tirs sur un ennemi caché
+OK Préparation de toutes les étapes · campaign
+OK Préparation de toutes les étapes · relief
+OK Préparation de toutes les étapes · north
+OK Préparation de toutes les étapes · metro
+OK Préparation de toutes les étapes · air
+OK Préparation de toutes les étapes · highway
+OK Préparation de toutes les étapes · water
+OK Préparation de toutes les étapes · tower
+OK Préparation de toutes les étapes · dark
+OK 124 étapes de préparation parcourues
+OK Build de production sans API de test
+OK Aucune erreur JavaScript dans la matrice
+{"passed": 99, "total": 99, "errors": []}

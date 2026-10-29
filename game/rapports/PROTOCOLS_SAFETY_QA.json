@@ -1,0 +1,712 @@
+{
+  "version": "0.40.6",
+  "passed": 50,
+  "total": 50,
+  "checks": [
+    {
+      "test": "Conditions malformées refusées sans changer le profil",
+      "ok": true,
+      "detail": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "test": "Annuler la préparation restaure aussi le hasard du moteur",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Pistolet contrôlé : recharge depuis le stock réel",
+      "ok": true,
+      "detail": {
+        "mag": 5,
+        "reserve": 0,
+        "phase": "combat"
+      }
+    },
+    {
+      "test": "Pistolet contrôlé : aucune cartouche créée après épuisement",
+      "ok": true,
+      "detail": {
+        "mag": 0,
+        "reserve": 0,
+        "reload": 0,
+        "shots": 0
+      }
+    },
+    {
+      "test": "Sonde de stock temporaire sans conséquence campagne",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Pistolet du stand libre toujours rechargé sans limite",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Stand libre restaure le profil initial",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Pistolet de campagne garde sa réserve infinie",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cinématiques actives : vrai stand libre lancé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cinématiques et journal originaux préservés · False",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Chapitre initial encore inédit · False",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cinématiques actives : vrai stand contrôlé lancé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cinématiques et journal originaux préservés · True",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Chapitre initial encore inédit · True",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cour pleine signalée dans le bilan",
+      "ok": true,
+      "detail": {
+        "protocol": "swarm",
+        "name": "Déferlante courte",
+        "conditions": {
+          "protocol": "swarm",
+          "view": "front",
+          "seed": 6012
+        },
+        "duration": 30,
+        "elapsed": 30,
+        "completed": true,
+        "reason": "time",
+        "ammoStart": 300,
+        "ammoLeft": 300,
+        "planned": 30,
+        "offered": 6,
+        "skipped": 24,
+        "passages": 10,
+        "events": [
+          {
+            "at": 0,
+            "index": 0,
+            "spawned": 3,
+            "skipped": 0,
+            "targets": [
+              {
+                "type": "swarm",
+                "lane": 0,
+                "x": 340,
+                "feet": 494,
+                "size": 0.7280000000000001,
+                "hp": 22,
+                "speed": 42,
+                "attack": 0.6577673360705376
+              },
+              {
+                "type": "swarm",
+                "lane": 1,
+                "x": 340,
+                "feet": 620,
+                "size": 0.8400000000000001,
+                "hp": 22,
+                "speed": 42,
+                "attack": 0.648584567476064
+              },
+              {
+                "type": "swarm",
+                "lane": 0,
+                "x": 250,
+                "feet": 494,
+                "size": 0.7280000000000001,
+                "hp": 22,
+                "speed": 42,
+                "attack": 0.6282890963833779
+              }
+            ]
+          },
+          {
+            "at": 3,
+            "index": 1,
+            "spawned": 3,
+            "skipped": 0,
+            "targets": [
+              {
+                "type": "swarm",
+                "lane": 0,
+                "x": 340,
+                "feet": 494,
+                "size": 0.7280000000000001,
+                "hp": 22,
+                "speed": 42,
+                "attack": 0.425546236243099
+              },
+              {
+                "type": "swarm",
+                "lane": 1,
+                "x": 340,
+                "feet": 620,
+                "size": 0.8400000000000001,
+                "hp": 22,
+                "speed": 42,
+                "attack": 0.757732065487653
+              },
+              {
+                "type": "swarm",
+                "lane": 0,
+                "x": 250,
+                "feet": 494,
+                "size": 0.7280000000000001,
+                "hp": 22,
+                "speed": 42,
+                "attack": 0.6956076490227133
+              }
+            ]
+          },
+          {
+            "at": 6,
+            "index": 2,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 9,
+            "index": 3,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 12,
+            "index": 4,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 15,
+            "index": 5,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 18,
+            "index": 6,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 21,
+            "index": 7,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 24,
+            "index": 8,
+            "spawned": 0,
+            "skipped": 3
+          },
+          {
+            "at": 27,
+            "index": 9,
+            "spawned": 0,
+            "skipped": 3
+          }
+        ],
+        "wall": 40,
+        "health": 100,
+        "shots": 0,
+        "contacts": 0,
+        "damage": 0,
+        "kills": 0
+      }
+    },
+    {
+      "test": "Aucune cible en excès au plafond de huit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Saturation sans perte de sauvegarde",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Programme incomplet non présenté comme comparaison certifiée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Défaite réelle : bilan arrêté avant 30 secondes",
+      "ok": true,
+      "detail": {
+        "protocol": "rush",
+        "name": "Double approche",
+        "conditions": {
+          "protocol": "rush",
+          "view": "front",
+          "seed": 6012
+        },
+        "duration": 30,
+        "elapsed": 0.2,
+        "completed": false,
+        "reason": "post",
+        "ammoStart": 300,
+        "ammoLeft": 300,
+        "planned": 18,
+        "offered": 3,
+        "skipped": 0,
+        "passages": 1,
+        "events": [
+          {
+            "at": 0,
+            "index": 0,
+            "spawned": 3,
+            "skipped": 0,
+            "targets": [
+              {
+                "type": "runner",
+                "lane": 0,
+                "x": 340,
+                "feet": 494,
+                "size": 0.8190000000000001,
+                "hp": 47,
+                "speed": 58,
+                "attack": 0.6577673360705376
+              },
+              {
+                "type": "runner",
+                "lane": 1,
+                "x": 340,
+                "feet": 620,
+                "size": 0.9450000000000001,
+                "hp": 47,
+                "speed": 58,
+                "attack": 0.648584567476064
+              },
+              {
+                "type": "runner",
+                "lane": 0,
+                "x": 250,
+                "feet": 494,
+                "size": 0.8190000000000001,
+                "hp": 47,
+                "speed": 58,
+                "attack": 0.6282890963833779
+              }
+            ]
+          }
+        ],
+        "wall": 0,
+        "health": 0,
+        "shots": 0,
+        "contacts": 0,
+        "damage": 0,
+        "kills": 0
+      }
+    },
+    {
+      "test": "Rejouer réinitialise lot, passages et horloge",
+      "ok": true,
+      "detail": {
+        "protocol": "rush",
+        "name": "Double approche",
+        "conditions": {
+          "protocol": "rush",
+          "view": "front",
+          "seed": 6012
+        },
+        "duration": 30,
+        "elapsed": 0,
+        "completed": false,
+        "reason": "manual",
+        "ammoStart": 300,
+        "ammoLeft": 300,
+        "planned": 18,
+        "offered": 3,
+        "skipped": 0,
+        "passages": 1,
+        "events": [
+          {
+            "at": 0,
+            "index": 0,
+            "spawned": 3,
+            "skipped": 0,
+            "targets": [
+              {
+                "type": "runner",
+                "lane": 0,
+                "x": 340,
+                "feet": 494,
+                "size": 0.8190000000000001,
+                "hp": 47,
+                "speed": 58,
+                "attack": 0.6577673360705376
+              },
+              {
+                "type": "runner",
+                "lane": 1,
+                "x": 340,
+                "feet": 620,
+                "size": 0.9450000000000001,
+                "hp": 47,
+                "speed": 58,
+                "attack": 0.648584567476064
+              },
+              {
+                "type": "runner",
+                "lane": 0,
+                "x": 250,
+                "feet": 494,
+                "size": 0.8190000000000001,
+                "hp": 47,
+                "speed": 58,
+                "attack": 0.6282890963833779
+              }
+            ]
+          }
+        ],
+        "wall": 340,
+        "health": 100,
+        "shots": 0,
+        "contacts": 0,
+        "damage": 0,
+        "kills": 0
+      }
+    },
+    {
+      "test": "Reconfiguration depuis pause conserve les conditions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Nouvel essai après pause repart de zéro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Défaite, reprise et pause restaurent la campagne intacte",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Conversion verrouillée réelle disponible pour le test",
+      "ok": true,
+      "detail": "kit2_precision_quick"
+    },
+    {
+      "test": "B et parcours refusés pour une pièce verrouillée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Instantané personnel invalide le montage · level",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Instantané personnel invalide le montage · doctrine",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Stand libre : durées différentes explicitement signalées",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Essais libres sans mutation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour menu nettoie programme, hasard et brouillon",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour menu garde le bon stock de campagne",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "1440×900 : dialogue et grille sans débordement",
+      "ok": true,
+      "detail": [
+        {
+          "name": "",
+          "cw": 1440,
+          "sw": 1440,
+          "left": 0,
+          "right": 1440
+        },
+        {
+          "name": "dialogBody",
+          "cw": 1198,
+          "sw": 1198,
+          "left": 120,
+          "right": 1320
+        },
+        {
+          "name": "dl406-conditions",
+          "cw": 1124,
+          "sw": 1124,
+          "left": 156,
+          "right": 1284
+        },
+        {
+          "name": "dl405-layout",
+          "cw": 1128,
+          "sw": 1128,
+          "left": 156,
+          "right": 1284
+        },
+        {
+          "name": "dl406-preview",
+          "cw": 1094,
+          "sw": 1094,
+          "left": 174,
+          "right": 1268
+        }
+      ]
+    },
+    {
+      "test": "1440×900 : portrait ennemi entier",
+      "ok": true,
+      "detail": {
+        "fit": "contain",
+        "inside": true
+      }
+    },
+    {
+      "test": "1440×900 : focus conservé sur les conditions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "1440×900 : barre de temps dans le terrain",
+      "ok": true,
+      "detail": {
+        "cw": 858,
+        "sw": 858,
+        "left": 43.1875,
+        "right": 903.1875,
+        "top": 153,
+        "bottom": 272.1875,
+        "iw": 1440,
+        "ih": 900
+      }
+    },
+    {
+      "test": "1440×900 : bilan natif sans largeur masquée",
+      "ok": true,
+      "detail": {
+        "cw": 678,
+        "sw": 678,
+        "left": 380,
+        "right": 1060
+      }
+    },
+    {
+      "test": "896×414 : dialogue et grille sans débordement",
+      "ok": true,
+      "detail": [
+        {
+          "name": "",
+          "cw": 896,
+          "sw": 896,
+          "left": 0,
+          "right": 896
+        },
+        {
+          "name": "dialogBody",
+          "cw": 858,
+          "sw": 858,
+          "left": 17.921875,
+          "right": 878.078125
+        },
+        {
+          "name": "dl406-conditions",
+          "cw": 800,
+          "sw": 800,
+          "left": 45.796875,
+          "right": 850.203125
+        },
+        {
+          "name": "dl405-layout",
+          "cw": 804,
+          "sw": 804,
+          "left": 45.796875,
+          "right": 850.203125
+        },
+        {
+          "name": "dl406-preview",
+          "cw": 770,
+          "sw": 770,
+          "left": 63.796875,
+          "right": 834.203125
+        }
+      ]
+    },
+    {
+      "test": "896×414 : portrait ennemi entier",
+      "ok": true,
+      "detail": {
+        "fit": "contain",
+        "inside": true
+      }
+    },
+    {
+      "test": "896×414 : focus conservé sur les conditions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "896×414 : barre de temps dans le terrain",
+      "ok": true,
+      "detail": {
+        "cw": 840,
+        "sw": 840,
+        "left": 26.875,
+        "right": 869.125,
+        "top": 103,
+        "bottom": 146,
+        "iw": 896,
+        "ih": 414
+      }
+    },
+    {
+      "test": "896×414 : bilan natif sans largeur masquée",
+      "ok": true,
+      "detail": {
+        "cw": 678,
+        "sw": 678,
+        "left": 108,
+        "right": 788
+      }
+    },
+    {
+      "test": "414×896 : dialogue et grille sans débordement",
+      "ok": true,
+      "detail": [
+        {
+          "name": "",
+          "cw": 414,
+          "sw": 414,
+          "left": 0,
+          "right": 414
+        },
+        {
+          "name": "dialogBody",
+          "cw": 395,
+          "sw": 395,
+          "left": 8.28125,
+          "right": 405.71875
+        },
+        {
+          "name": "dl406-conditions",
+          "cw": 353,
+          "sw": 353,
+          "left": 28.28125,
+          "right": 385.71875
+        },
+        {
+          "name": "dl405-layout",
+          "cw": 357,
+          "sw": 357,
+          "left": 28.28125,
+          "right": 385.71875
+        },
+        {
+          "name": "dl406-preview",
+          "cw": 323,
+          "sw": 323,
+          "left": 46.28125,
+          "right": 369.71875
+        }
+      ]
+    },
+    {
+      "test": "414×896 : portrait ennemi entier",
+      "ok": true,
+      "detail": {
+        "fit": "contain",
+        "inside": true
+      }
+    },
+    {
+      "test": "414×896 : focus conservé sur les conditions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "414×896 : barre de temps dans le terrain",
+      "ok": true,
+      "detail": {
+        "cw": 387,
+        "sw": 387,
+        "left": 12.40625,
+        "right": 401.59375,
+        "top": 122,
+        "bottom": 217.78125,
+        "iw": 414,
+        "ih": 896
+      }
+    },
+    {
+      "test": "414×896 : bilan natif sans largeur masquée",
+      "ok": true,
+      "detail": {
+        "cw": 379,
+        "sw": 379,
+        "left": 16.5625,
+        "right": 397.4375
+      }
+    },
+    {
+      "test": "Production : parcours clics jusqu’au chronomètre",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production : retour au bilan sans outil développeur",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production : introduction du convoi conservée après le stand",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "method": "Moteur réel, uniquement URI images réduites. Épuisement, post faible et origine modifiée sont des états de QA explicitement arrangés."
+}

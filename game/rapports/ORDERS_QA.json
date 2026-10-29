@@ -1,0 +1,3786 @@
+{
+  "version": "0.40.7",
+  "passed": 99,
+  "total": 99,
+  "checks": [
+    {
+      "test": "Version 0.40.7 et vraie préparation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis sans mutation ni sélection implicite",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tarifs natifs de réparation/soins",
+      "ok": true,
+      "detail": [
+        {
+          "id": "wall",
+          "name": "Remettre le poste en état",
+          "amount": 227,
+          "cost": 454,
+          "desc": "Deux crédits par point manquant.",
+          "kind": "wall"
+        },
+        {
+          "id": "health",
+          "name": "Soins au camp",
+          "amount": 29,
+          "cost": 58,
+          "desc": "Deux crédits par point manquant.",
+          "kind": "health"
+        },
+        {
+          "id": "ammo:rifle",
+          "name": "Carabine de chasse · un lot",
+          "amount": 24,
+          "cost": 85,
+          "desc": "Livré dans la réserve, aux tarifs de l’arsenal.",
+          "kind": "ammo",
+          "key": "rifle"
+        },
+        {
+          "id": "supply:0",
+          "name": "Grenade",
+          "amount": 1,
+          "cost": 85,
+          "desc": "Une unité. Stock limité à cinq.",
+          "kind": "supply",
+          "key": 0
+        },
+        {
+          "id": "supply:1",
+          "name": "Kit de réparation",
+          "amount": 1,
+          "cost": 120,
+          "desc": "Une unité. Stock limité à cinq.",
+          "kind": "supply",
+          "key": 1
+        },
+        {
+          "id": "supply:2",
+          "name": "Trousse de soins",
+          "amount": 1,
+          "cost": 90,
+          "desc": "Une unité. Stock limité à cinq.",
+          "kind": "supply",
+          "key": 2
+        },
+        {
+          "id": "fuel",
+          "name": "Carburant du générateur",
+          "amount": 100,
+          "cost": 60,
+          "desc": "Lot plafonné à cent unités ; surplus non facturé.",
+          "kind": "resource",
+          "key": "fuel"
+        },
+        {
+          "id": "turret",
+          "name": "Munitions de tourelle",
+          "amount": 100,
+          "cost": 100,
+          "desc": "Lot plafonné à cent tirs.",
+          "kind": "resource",
+          "key": "turretAmmo"
+        },
+        {
+          "id": "lure",
+          "name": "Leurre",
+          "amount": 1,
+          "cost": 70,
+          "desc": "Une unité, sans modifier les pièges fixes.",
+          "kind": "resource",
+          "key": "lures"
+        },
+        {
+          "id": "local",
+          "name": "Herse de service",
+          "amount": 1,
+          "cost": 90,
+          "desc": "Stoppe pendant 7 s les infectés déjà présents dans la voie visée. Un déclenchement par nuit. Peut interrompre une attaque de boss.",
+          "kind": "local"
+        }
+      ]
+    },
+    {
+      "test": "Munitions au même tarif que le ravitaillement natif",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Sélection inconnue ou répétée refusée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis réserve explicitement les frais",
+      "ok": true,
+      "detail": {
+        "rows": [
+          {
+            "id": "wall",
+            "name": "Remettre le poste en état",
+            "amount": 227,
+            "cost": 454,
+            "desc": "Deux crédits par point manquant.",
+            "kind": "wall"
+          },
+          {
+            "id": "health",
+            "name": "Soins au camp",
+            "amount": 29,
+            "cost": 58,
+            "desc": "Deux crédits par point manquant.",
+            "kind": "health"
+          },
+          {
+            "id": "ammo:rifle",
+            "name": "Carabine de chasse · un lot",
+            "amount": 24,
+            "cost": 85,
+            "desc": "Livré dans la réserve, aux tarifs de l’arsenal.",
+            "kind": "ammo",
+            "key": "rifle"
+          },
+          {
+            "id": "supply:0",
+            "name": "Grenade",
+            "amount": 1,
+            "cost": 85,
+            "desc": "Une unité. Stock limité à cinq.",
+            "kind": "supply",
+            "key": 0
+          },
+          {
+            "id": "fuel",
+            "name": "Carburant du générateur",
+            "amount": 100,
+            "cost": 60,
+            "desc": "Lot plafonné à cent unités ; surplus non facturé.",
+            "kind": "resource",
+            "key": "fuel"
+          },
+          {
+            "id": "turret",
+            "name": "Munitions de tourelle",
+            "amount": 100,
+            "cost": 100,
+            "desc": "Lot plafonné à cent tirs.",
+            "kind": "resource",
+            "key": "turretAmmo"
+          },
+          {
+            "id": "local",
+            "name": "Herse de service",
+            "amount": 1,
+            "cost": 90,
+            "desc": "Stoppe pendant 7 s les infectés déjà présents dans la voie visée. Un déclenchement par nuit. Peut interrompre une attaque de boss.",
+            "kind": "local"
+          }
+        ],
+        "cost": 932,
+        "fee": 65,
+        "after": 24003,
+        "valid": true,
+        "ready": true
+      }
+    },
+    {
+      "test": "Sélection ne prélève pas les ressources",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Une seule dépense groupée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Réparations exactes sans dépassement",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Chargement après livraison sans munitions créées",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Seuls les consommables sélectionnés changent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Dispositifs distincts et remplis du bon lot",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Frais non prélevés avant le départ",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Transaction présente dans le profil schéma 12",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Le vrai départ prélève les frais une seule fois",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · campaign",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · campaign",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · campaign",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · north",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · north",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · north",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · metro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · metro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · metro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · air",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · air",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · air",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · highway",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · highway",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · highway",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · water",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · water",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · water",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · tower",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · tower",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · tower",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Consultation et annulation intactes · dark",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour exact au camp · dark",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Devis périmé refusé · dark",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Lots partiels carburant et tourelle",
+      "ok": true,
+      "detail": [
+        {
+          "id": "wall",
+          "name": "Remettre le poste en état",
+          "amount": 227,
+          "cost": 454,
+          "desc": "Deux crédits par point manquant.",
+          "kind": "wall"
+        },
+        {
+          "id": "health",
+          "name": "Soins au camp",
+          "amount": 29,
+          "cost": 58,
+          "desc": "Deux crédits par point manquant.",
+          "kind": "health"
+        },
+        {
+          "id": "ammo:rifle",
+          "name": "Carabine de chasse · un lot",
+          "amount": 2,
+          "cost": 8,
+          "desc": "Livré dans la réserve, aux tarifs de l’arsenal.",
+          "kind": "ammo",
+          "key": "rifle"
+        },
+        {
+          "id": "fuel",
+          "name": "Carburant du générateur",
+          "amount": 2.5,
+          "cost": 2,
+          "desc": "Lot plafonné à cent unités ; surplus non facturé.",
+          "kind": "resource",
+          "key": "fuel"
+        },
+        {
+          "id": "turret",
+          "name": "Munitions de tourelle",
+          "amount": 1,
+          "cost": 1,
+          "desc": "Lot plafonné à cent tirs.",
+          "kind": "resource",
+          "key": "turretAmmo"
+        },
+        {
+          "id": "local",
+          "name": "Herse de service",
+          "amount": 1,
+          "cost": 90,
+          "desc": "Stoppe pendant 7 s les infectés déjà présents dans la voie visée. Un déclenchement par nuit. Peut interrompre une attaque de boss.",
+          "kind": "local"
+        }
+      ]
+    },
+    {
+      "test": "Dernières cartouches au plafond facturées au prorata",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Stocks pleins sans ligne d’achat superflue",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Bornes réelles conservées après lot partiel",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Révision voie A ne touche ni voie B ni barricade",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Six circuits révisés exportables",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · airGunner · air",
+      "ok": true,
+      "detail": [
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · airGunner · air",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · airGunner · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · airGunner · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · airEngineer · air",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · airEngineer · air",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · airEngineer · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · airEngineer · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · airObserver · air",
+      "ok": true,
+      "detail": [
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · airObserver · air",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · airObserver · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · airObserver · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · roadGunner · highway",
+      "ok": true,
+      "detail": [
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · roadGunner · highway",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · roadGunner · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · roadGunner · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · roadMechanic · highway",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · roadMechanic · highway",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · roadMechanic · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · roadMechanic · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · waterGunner · water",
+      "ok": true,
+      "detail": [
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · waterGunner · water",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · waterGunner · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · waterGunner · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · waterMechanic · water",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · waterMechanic · water",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · waterMechanic · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · waterMechanic · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · towerGuard · tower",
+      "ok": true,
+      "detail": [
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · towerGuard · tower",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · towerGuard · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · towerGuard · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · towerTech · tower",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · towerTech · tower",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Spécialiste réel, une action par vue · towerTech · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "test": "Réserve épuisée non recréée · towerTech · campaign",
+      "ok": true,
+      "detail": {
+        "value": 0,
+        "damage": 0,
+        "wall": 100
+      }
+    },
+    {
+      "test": "Tous les boss et nouveaux spéciaux prioritaires",
+      "ok": true,
+      "detail": [
+        {
+          "id": "ram",
+          "special": "ram",
+          "normal": "walker"
+        },
+        {
+          "id": "iron",
+          "special": "iron",
+          "normal": "walker"
+        },
+        {
+          "id": "mortar",
+          "special": "mortar",
+          "normal": "walker"
+        },
+        {
+          "id": "conductor",
+          "special": "conductor",
+          "normal": "walker"
+        },
+        {
+          "id": "alpha",
+          "special": "alpha",
+          "normal": "walker"
+        },
+        {
+          "id": "chainwarden",
+          "special": "chainwarden",
+          "normal": "walker"
+        },
+        {
+          "id": "foreman",
+          "special": "foreman",
+          "normal": "walker"
+        },
+        {
+          "id": "demolisher",
+          "special": "demolisher",
+          "normal": "walker"
+        },
+        {
+          "id": "northHauler",
+          "special": "northHauler",
+          "normal": "walker"
+        },
+        {
+          "id": "northStoker",
+          "special": "northStoker",
+          "normal": "walker"
+        },
+        {
+          "id": "metroWorm",
+          "special": "metroWorm",
+          "normal": "walker"
+        },
+        {
+          "id": "airLeviathan",
+          "special": "airLeviathan",
+          "normal": "walker"
+        },
+        {
+          "id": "waterBoss",
+          "special": "waterBoss",
+          "normal": "walker"
+        },
+        {
+          "id": "towerBoss",
+          "special": "towerBoss",
+          "normal": "walker"
+        },
+        {
+          "id": "darkBoss",
+          "special": "darkBoss",
+          "normal": "walker"
+        },
+        {
+          "id": "roadBoss",
+          "special": "roadBoss",
+          "normal": "walker"
+        },
+        {
+          "id": "roadSpitter",
+          "special": "roadSpitter",
+          "normal": "walker"
+        },
+        {
+          "id": "waterSpitter",
+          "special": "waterSpitter",
+          "normal": "walker"
+        },
+        {
+          "id": "towerAlarm",
+          "special": "towerAlarm",
+          "normal": "walker"
+        },
+        {
+          "id": "darkSpitter",
+          "special": "darkSpitter",
+          "normal": "walker"
+        },
+        {
+          "id": "waterHowler",
+          "special": "waterHowler",
+          "normal": "walker"
+        },
+        {
+          "id": "waterBulwark",
+          "special": "waterBulwark",
+          "normal": "walker"
+        },
+        {
+          "id": "northCable",
+          "special": "northCable",
+          "normal": "walker"
+        }
+      ]
+    },
+    {
+      "test": "Priorité manuelle de voie respectée avant le type",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Marquage bonus réservé au joueur · player",
+      "ok": true,
+      "detail": [
+        10,
+        11.799999999999997
+      ]
+    },
+    {
+      "test": "Marquage bonus réservé au joueur · ally",
+      "ok": true,
+      "detail": [
+        10,
+        10
+      ]
+    },
+    {
+      "test": "Marquage expire aussi sur un infecté terrestre",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "test": "Sana ne consomme pas ses tirs sur un ennemi caché",
+      "ok": true,
+      "detail": {
+        "lit": false,
+        "used": 0
+      }
+    },
+    {
+      "test": "Préparation de toutes les étapes · campaign",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Le signal",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Faire le plein",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Les affamés",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Départ du dépôt",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "Le champ noyé",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "La clôture cède",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "Les ombres des granges",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Dernier silo",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "Sous les néons",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "La citerne",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "La radio hurle",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Les crocs du convoi",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 13,
+          "unchanged": true,
+          "name": "Les ambulances",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 14,
+          "unchanged": true,
+          "name": "L’aile condamnée",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 15,
+          "unchanged": true,
+          "name": "Le couloir des vivants",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 16,
+          "unchanged": true,
+          "name": "Dernière civière",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 17,
+          "unchanged": true,
+          "name": "Les aiguillages",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 18,
+          "unchanged": true,
+          "name": "L’appel des rails",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 19,
+          "unchanged": true,
+          "name": "La locomotive",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 20,
+          "unchanged": true,
+          "name": "Le verrou du Nord",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 21,
+          "unchanged": true,
+          "name": "Les passerelles",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 22,
+          "unchanged": true,
+          "name": "Le phare",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 23,
+          "unchanged": true,
+          "name": "Tout le monde à bord",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 24,
+          "unchanged": true,
+          "name": "La ligne de l’aube",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · relief",
+      "ok": true,
+      "detail": [
+        {
+          "night": 25,
+          "unchanged": true,
+          "name": "Le bus immobile",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 26,
+          "unchanged": true,
+          "name": "La galerie de service",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 27,
+          "unchanged": true,
+          "name": "Les voix sous la montagne",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 28,
+          "unchanged": true,
+          "name": "Le gardien des trappes",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 29,
+          "unchanged": true,
+          "name": "Les bassins froids",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 30,
+          "unchanged": true,
+          "name": "La pompe auxiliaire",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 31,
+          "unchanged": true,
+          "name": "La conduite rompue",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 32,
+          "unchanged": true,
+          "name": "Rendre l’eau",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 33,
+          "unchanged": true,
+          "name": "Les draps blancs",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 34,
+          "unchanged": true,
+          "name": "La place assiégée",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 35,
+          "unchanged": true,
+          "name": "Le dernier carrefour",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 36,
+          "unchanged": true,
+          "name": "Ceux du dernier bus",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · north",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Les feux sur la route",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Le guichet fermé",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Le passage de service",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "La dernière barrière",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "Les voisins d’Inès",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "Le bois de traverse",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "La cabine vide",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Au bout de la chaîne",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "L’autorail froid",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Les lampes manquantes",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "Les voies sans nom",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Personne sur le quai",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 13,
+          "unchanged": true,
+          "name": "Le premier départ",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 14,
+          "unchanged": true,
+          "name": "Une fenêtre allumée",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 15,
+          "unchanged": true,
+          "name": "Le couloir des turbines",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 16,
+          "unchanged": true,
+          "name": "Ceux qui verront le matin",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · metro",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Les derniers sur le quai",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Les lampes défilent",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Le signal éteint",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Une trace sous les rails",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "L’eau dans les câbles",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "Le fleuve au-dessus",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "Au-dessus des toits",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Le corps entre les piliers",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "La dernière passerelle",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Les marques dans le béton",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "L’aiguillage manuel",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Pas un wagon de moins",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · air",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Au-dessus des lampadaires",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Les fenêtres en dessous",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Le pont sans phares",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Dans la couche",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "La foudre sur l’aile",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "Sous les cumulonimbus",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "Entre les crêtes",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Le souffle contre la soute",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "Le dernier col",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Plus de balise",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "Le noir derrière nous",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Le ciel ouvert",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · highway",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Sortie du dépôt",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "La bretelle 9",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Le pont des enseignes",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Le bus des Forges",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "Sous les échangeurs",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "La trémie noire",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "La montée des Pins",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Pluie sur les glissières",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "Le tunnel court",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Les viaducs",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "Barrière de péage",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "La dernière sortie",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · water",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Le sas de service",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Sous les maisons",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "La porte descend",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Les toits de l’estuaire",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "Marée contraire",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "La balise couchée",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "Les cuves noyées",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Feu sur l’eau",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "Le pont des grues",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Le dernier amer",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "La houle noire",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Les feux du large",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · tower",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "Niveau -4",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Archives basses",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Hall de service",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Plateau 18",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "Passerelle vitrée",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "Salle du conseil",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "Machinerie 34",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Gaines verticales",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "Contrepoids",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Suites hautes",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "Toit technique",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Couronne",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "Préparation de toutes les étapes · dark",
+      "ok": true,
+      "detail": [
+        {
+          "night": 1,
+          "unchanged": true,
+          "name": "La première ampoule",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 2,
+          "unchanged": true,
+          "name": "Entre les piliers",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 3,
+          "unchanged": true,
+          "name": "Tableau 0",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 4,
+          "unchanged": true,
+          "name": "Le bruit de l’eau",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 5,
+          "unchanged": true,
+          "name": "Vapeur froide",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 6,
+          "unchanged": true,
+          "name": "La porte sans plaque",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 7,
+          "unchanged": true,
+          "name": "Salle des relais",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 8,
+          "unchanged": true,
+          "name": "Fusibles vivants",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 9,
+          "unchanged": true,
+          "name": "Le dernier tableau",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 10,
+          "unchanged": true,
+          "name": "Niveau négatif",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 11,
+          "unchanged": true,
+          "name": "Tout éteindre",
+          "valid": true,
+          "review": true
+        },
+        {
+          "night": 12,
+          "unchanged": true,
+          "name": "Le Noyau",
+          "valid": true,
+          "review": true
+        }
+      ]
+    },
+    {
+      "test": "124 étapes de préparation parcourues",
+      "ok": true,
+      "detail": 124
+    },
+    {
+      "test": "Build de production sans API de test",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Aucune erreur JavaScript dans la matrice",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "crewCases": [
+    {
+      "ally": "airGunner",
+      "route": "air",
+      "views": [
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "airGunner",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 49,
+          "expected": 49,
+          "damage": 42,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 49,
+            "max": 50,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "airEngineer",
+      "route": "air",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "airEngineer",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 45,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "airObserver",
+      "route": "air",
+      "views": [
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "airObserver",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 5,
+          "expected": 5,
+          "damage": 0,
+          "repair": 0,
+          "mark": 6,
+          "pool": {
+            "value": 5,
+            "max": 6,
+            "unit": "marquages"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "roadGunner",
+      "route": "highway",
+      "views": [
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "roadGunner",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 47,
+          "expected": 47,
+          "damage": 45,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 47,
+            "max": 48,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "roadMechanic",
+      "route": "highway",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "roadMechanic",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "waterGunner",
+      "route": "water",
+      "views": [
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "waterGunner",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 43,
+          "expected": 43,
+          "damage": 48,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 43,
+            "max": 44,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "waterMechanic",
+      "route": "water",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "waterMechanic",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 55,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "réparations"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "towerGuard",
+      "route": "tower",
+      "views": [
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "towerGuard",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 41,
+          "expected": 41,
+          "damage": 34,
+          "repair": 0,
+          "mark": 0,
+          "pool": {
+            "value": 41,
+            "max": 42,
+            "unit": "cartouches"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "towerTech",
+      "route": "tower",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        }
+      ]
+    },
+    {
+      "ally": "towerTech",
+      "route": "campaign",
+      "views": [
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        },
+        {
+          "value": 2,
+          "expected": 2,
+          "damage": 0,
+          "repair": 50,
+          "mark": 0,
+          "pool": {
+            "value": 2,
+            "max": 3,
+            "unit": "interventions"
+          },
+          "phase": "combat"
+        }
+      ]
+    }
+  ],
+  "method": "Vrai HTML dans Chromium ; seuls les URI raster sont réduits. Budgets, placements et chronomètre de QA arrangés ; calculs d’achat, sauvegarde, IA et dégâts natifs."
+}

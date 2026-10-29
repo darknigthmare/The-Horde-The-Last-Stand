@@ -1,0 +1,19 @@
+OK 135 inspections sans changement de profil ou stock
+OK Identifiants, compatibilités et réglages invalides refusés
+OK Focus conservé sur la pièce simulée
+OK Croix droite manette règle la simulation et conserve le focus
+OK Retour depuis préparation du stand sans essai
+OK Tir au stand cohérent avec amélioration et doctrine sélectionnées
+OK Pause de l’essai fige la simulation
+OK Arme non substituable dans un essai A/B
+OK Défaite au stand ouvre son vrai bilan
+OK Défaite puis retour ne touche pas la campagne
+OK Cas de chargeur réduit existant dans le catalogue
+OK Réserve pleine : application bloquée plutôt que stock perdu
+OK Retour au menu nettoie les essais et le montage temporaire
+OK Le stand ne diffuse pas les transmissions de la campagne
+OK Les avertissements utiles du stand restent présents
+OK Les notifications temporaires du stand ne recouvrent pas le retour
+OK Les transmissions du convoi restent actives en mission
+OK Aucune erreur JavaScript
+{"passed": 18, "total": 18, "errors": []}

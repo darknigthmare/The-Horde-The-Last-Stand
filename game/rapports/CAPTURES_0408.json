@@ -1,0 +1,2721 @@
+{
+  "version": "0.40.8",
+  "art": {
+    "avant": {
+      "loaded": 252,
+      "total": 252,
+      "settled": true,
+      "failures": [],
+      "draws": {
+        "background": 0,
+        "actors": 0,
+        "props": 0,
+        "textures": 15
+      },
+      "enabled": true,
+      "actors": [
+        "walker",
+        "runner",
+        "crawler",
+        "armored",
+        "bomber",
+        "screamer",
+        "swarm",
+        "spitter",
+        "sprinter",
+        "brute",
+        "shield",
+        "northCable",
+        "northBeacon",
+        "vaulter",
+        "deaf"
+      ]
+    },
+    "apres": {
+      "loaded": 252,
+      "total": 252,
+      "settled": true,
+      "failures": [],
+      "draws": {
+        "background": 0,
+        "actors": 0,
+        "props": 0,
+        "textures": 15
+      },
+      "enabled": true,
+      "actors": [
+        "walker",
+        "runner",
+        "crawler",
+        "armored",
+        "bomber",
+        "screamer",
+        "swarm",
+        "spitter",
+        "sprinter",
+        "brute",
+        "shield",
+        "northCable",
+        "northBeacon",
+        "vaulter",
+        "deaf"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "version": "avant",
+      "name": "profil",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "right",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "right",
+        "phase": "combat",
+        "pose": null
+      },
+      "file": "previews/0408/avant-profil.webp"
+    },
+    {
+      "version": "avant",
+      "name": "profil-inverse",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "left",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "left",
+        "phase": "combat",
+        "pose": null
+      },
+      "file": "previews/0408/avant-profil-inverse.webp"
+    },
+    {
+      "version": "avant",
+      "name": "fps",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 770,
+          "angle": -2.5553951022334327,
+          "muzzleX": 963.7340521380964,
+          "muzzleY": 638.3390189979547,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-fps.webp"
+    },
+    {
+      "version": "avant",
+      "name": "contrechamp",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "rear",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "rear",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "rear",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1128,
+          "anchorY": 770,
+          "angle": -2.5233249327493987,
+          "muzzleX": 934.0576674715741,
+          "muzzleY": 632.0493869044669,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-contrechamp.webp"
+    },
+    {
+      "version": "avant",
+      "name": "recharge",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "assault",
+        "reload": 0.6,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 838.4760691732511,
+          "angle": -2.2589592346328833,
+          "muzzleX": 1010.841616385846,
+          "muzzleY": 654.6415156661471,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-recharge.webp"
+    },
+    {
+      "version": "avant",
+      "name": "metro",
+      "settings": {
+        "family": "metro",
+        "night": 1,
+        "view": "right",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "metroDepot",
+        "view": "right",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 838.4760691732511,
+          "angle": -2.2589592346328833,
+          "muzzleX": 1010.841616385846,
+          "muzzleY": 654.6415156661471,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-metro.webp"
+    },
+    {
+      "version": "avant",
+      "name": "autoroute",
+      "settings": {
+        "family": "highway",
+        "night": 7,
+        "view": "left",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "highwayForest",
+        "view": "left",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 838.4760691732511,
+          "angle": -2.2589592346328833,
+          "muzzleX": 1010.841616385846,
+          "muzzleY": 654.6415156661471,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-autoroute.webp"
+    },
+    {
+      "version": "avant",
+      "name": "navire",
+      "settings": {
+        "family": "water",
+        "night": 5,
+        "view": "right",
+        "gun": "deckCarbine",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "waterEstuary",
+        "view": "right",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 838.4760691732511,
+          "angle": -2.2589592346328833,
+          "muzzleX": 1010.841616385846,
+          "muzzleY": 654.6415156661471,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-navire.webp"
+    },
+    {
+      "version": "avant",
+      "name": "avion",
+      "settings": {
+        "family": "air",
+        "night": 1,
+        "view": "front",
+        "gun": "airDoorGun",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "airCity",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "airDoorGun",
+          "family": "machine",
+          "profile": {
+            "family": "machine",
+            "length": 268,
+            "width": 38,
+            "recoil": 0.44,
+            "recover": 11,
+            "stock": 62,
+            "barrel": 92,
+            "accent": "#c4a863"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 770,
+          "angle": -2.5553951022334327,
+          "muzzleX": 938.7425461050834,
+          "muzzleY": 621.743097022907,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-avion.webp"
+    },
+    {
+      "version": "avant",
+      "name": "palier",
+      "settings": {
+        "family": "tower",
+        "night": 4,
+        "view": "right",
+        "gun": "towerCarbine",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "towerOffices",
+        "view": "right",
+        "phase": "combat",
+        "pose": {
+          "id": "airDoorGun",
+          "family": "machine",
+          "profile": {
+            "family": "machine",
+            "length": 268,
+            "width": 38,
+            "recoil": 0.44,
+            "recover": 11,
+            "stock": 62,
+            "barrel": 92,
+            "accent": "#c4a863"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 770,
+          "angle": -2.5553951022334327,
+          "muzzleX": 938.7425461050834,
+          "muzzleY": 621.743097022907,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-palier.webp"
+    },
+    {
+      "version": "avant",
+      "name": "ombre",
+      "settings": {
+        "family": "dark",
+        "night": 4,
+        "view": "front",
+        "gun": "pump",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "darkTunnels",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "pump",
+          "family": "shotgun",
+          "profile": {
+            "family": "shotgun",
+            "length": 260,
+            "width": 34,
+            "recoil": 0.92,
+            "recover": 6.4,
+            "stock": 66,
+            "barrel": 98,
+            "accent": "#9e7d53"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 770,
+          "angle": -2.5553951022334327,
+          "muzzleX": 945.4069477138869,
+          "muzzleY": 626.1686762162531,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-ombre.webp"
+    },
+    {
+      "version": "avant",
+      "name": "pistolet",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "pistol",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "pistol",
+          "family": "handgun",
+          "profile": {
+            "family": "handgun",
+            "length": 142,
+            "width": 24,
+            "recoil": 0.65,
+            "recover": 10,
+            "stock": 20,
+            "barrel": 40,
+            "accent": "#b7c1b6"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 770,
+          "angle": -2.5553951022334327,
+          "muzzleX": 1043.7068714437382,
+          "muzzleY": 691.4459693181075,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-pistolet.webp"
+    },
+    {
+      "version": "avant",
+      "name": "barillet",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "revolver",
+        "reload": 0.45,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "revolver",
+          "family": "handgun",
+          "profile": {
+            "family": "handgun",
+            "length": 142,
+            "width": 24,
+            "recoil": 0.65,
+            "recover": 10,
+            "stock": 20,
+            "barrel": 40,
+            "accent": "#b7c1b6"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 841.1135605228499,
+          "angle": -2.2477603295205024,
+          "muzzleX": 1073.047022202101,
+          "muzzleY": 730.4276637659166,
+          "reloadPct": 0.44999999999999996,
+          "reloadArc": 0.9876883405951377,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-barillet.webp"
+    },
+    {
+      "version": "avant",
+      "name": "bascule",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "double",
+        "reload": 0.55,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "double",
+          "family": "shotgun",
+          "profile": {
+            "family": "shotgun",
+            "length": 260,
+            "width": 34,
+            "recoil": 0.92,
+            "recover": 6.4,
+            "stock": 66,
+            "barrel": 98,
+            "accent": "#9e7d53"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 841.1135605228499,
+          "angle": -2.2477603295205024,
+          "muzzleX": 999.1283505108893,
+          "muzzleY": 638.4492425171973,
+          "reloadPct": 0.55,
+          "reloadArc": 0.9876883405951377,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-bascule.webp"
+    },
+    {
+      "version": "avant",
+      "name": "reservoir",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "flamer",
+        "reload": 0.55,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "flamer",
+          "family": "tool",
+          "profile": {
+            "family": "tool",
+            "length": 232,
+            "width": 42,
+            "recoil": 0.52,
+            "recover": 8.5,
+            "stock": 44,
+            "barrel": 78,
+            "accent": "#b89961"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 841.1135605228499,
+          "angle": -2.2477603295205024,
+          "muzzleX": 1016.6683743020243,
+          "muzzleY": 660.2746306101137,
+          "reloadPct": 0.55,
+          "reloadArc": 0.9876883405951377,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-reservoir.webp"
+    },
+    {
+      "version": "avant",
+      "name": "bande",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "lmg",
+        "reload": 0.5,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "lmg",
+          "family": "machine",
+          "profile": {
+            "family": "machine",
+            "length": 268,
+            "width": 38,
+            "recoil": 0.44,
+            "recover": 11,
+            "stock": 62,
+            "barrel": 92,
+            "accent": "#c4a863"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 842,
+          "angle": -2.2440000080698677,
+          "muzzleX": 994.903631913651,
+          "muzzleY": 632.4700408715942,
+          "reloadPct": 0.5,
+          "reloadArc": 1,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-bande.webp"
+    },
+    {
+      "version": "avant",
+      "name": "tube",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "lever",
+        "reload": 0.42,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "lever",
+          "family": "precision",
+          "profile": {
+            "family": "precision",
+            "length": 300,
+            "width": 29,
+            "recoil": 1.08,
+            "recover": 5.8,
+            "stock": 72,
+            "barrel": 128,
+            "accent": "#93aea3"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 839.7379876012615,
+          "angle": -2.2535991039638525,
+          "muzzleX": 972.7090256591704,
+          "muzzleY": 606.9957975430355,
+          "reloadPct": 0.4199999999999998,
+          "reloadArc": 0.968583161128631,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-tube.webp"
+    },
+    {
+      "version": "avant",
+      "name": "chambre",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "launcher",
+        "reload": 0.64,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "launcher",
+          "family": "launcher",
+          "profile": {
+            "family": "launcher",
+            "length": 252,
+            "width": 46,
+            "recoil": 1.18,
+            "recover": 5.2,
+            "stock": 48,
+            "barrel": 112,
+            "accent": "#b08a55"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 835.1475477775534,
+          "angle": -2.2731148573975837,
+          "muzzleX": 999.2107054357238,
+          "muzzleY": 642.7842311725799,
+          "reloadPct": 0.6400000000000001,
+          "reloadArc": 0.9048270524660195,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-chambre.webp"
+    },
+    {
+      "version": "avant",
+      "name": "cable",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "harpoon",
+        "reload": 0.48,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "harpoon",
+          "family": "tether",
+          "profile": {
+            "family": "tether",
+            "length": 282,
+            "width": 31,
+            "recoil": 0.78,
+            "recover": 6.7,
+            "stock": 54,
+            "barrel": 134,
+            "accent": "#8fa99d"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1162,
+          "anchorY": 841.8579244468356,
+          "angle": -2.2446025801526224,
+          "muzzleX": 986.0418966776099,
+          "muzzleY": 621.4883578656329,
+          "reloadPct": 0.48,
+          "reloadArc": 0.9980267284282716,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-cable.webp"
+    },
+    {
+      "version": "avant",
+      "name": "visee-basse",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          1200,
+          745
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 1200,
+          "targetY": 735,
+          "anchorX": 1004.3450020276829,
+          "anchorY": 915.2085507639763,
+          "angle": -0.7443253848069942,
+          "muzzleX": 1179.4047370555454,
+          "muzzleY": 753.9693211330502,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0
+        }
+      },
+      "file": "previews/0408/avant-visee-basse.webp"
+    },
+    {
+      "version": "apres",
+      "name": "profil",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "right",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "right",
+        "phase": "combat",
+        "pose": null
+      },
+      "file": "previews/0408/apres-profil.webp"
+    },
+    {
+      "version": "apres",
+      "name": "profil-inverse",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "left",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "left",
+        "phase": "combat",
+        "pose": null
+      },
+      "file": "previews/0408/apres-profil-inverse.webp"
+    },
+    {
+      "version": "apres",
+      "name": "fps",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 740,
+          "angle": -2.485465078517866,
+          "muzzleX": 864.0581887860885,
+          "muzzleY": 594.807367682514,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-fps.webp"
+    },
+    {
+      "version": "apres",
+      "name": "contrechamp",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "rear",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "rear",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "rear",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1031.04,
+          "anchorY": 740,
+          "angle": -2.458636202449793,
+          "muzzleX": 846.4209420832053,
+          "muzzleY": 589.8007874390973,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-contrechamp.webp"
+    },
+    {
+      "version": "apres",
+      "name": "recharge",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "assault",
+        "reload": 0.6,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 701.9577393481939,
+          "angle": -2.6997122411833803,
+          "muzzleX": 837.5001089022943,
+          "muzzleY": 600.1794152390428,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-recharge.webp"
+    },
+    {
+      "version": "apres",
+      "name": "metro",
+      "settings": {
+        "family": "metro",
+        "night": 1,
+        "view": "right",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "metroDepot",
+        "view": "right",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 701.9577393481939,
+          "angle": -2.6997122411833803,
+          "muzzleX": 837.5001089022943,
+          "muzzleY": 600.1794152390428,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-metro.webp"
+    },
+    {
+      "version": "apres",
+      "name": "autoroute",
+      "settings": {
+        "family": "highway",
+        "night": 7,
+        "view": "left",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "highwayForest",
+        "view": "left",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 701.9577393481939,
+          "angle": -2.6997122411833803,
+          "muzzleX": 837.5001089022943,
+          "muzzleY": 600.1794152390428,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-autoroute.webp"
+    },
+    {
+      "version": "apres",
+      "name": "navire",
+      "settings": {
+        "family": "water",
+        "night": 5,
+        "view": "right",
+        "gun": "deckCarbine",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "waterEstuary",
+        "view": "right",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 701.9577393481939,
+          "angle": -2.6997122411833803,
+          "muzzleX": 837.5001089022943,
+          "muzzleY": 600.1794152390428,
+          "reloadPct": 0.6,
+          "reloadArc": 0.9510565162951536,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-navire.webp"
+    },
+    {
+      "version": "apres",
+      "name": "avion",
+      "settings": {
+        "family": "air",
+        "night": 1,
+        "view": "front",
+        "gun": "airDoorGun",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "airCity",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "airDoorGun",
+          "family": "machine",
+          "profile": {
+            "family": "machine",
+            "length": 268,
+            "width": 38,
+            "recoil": 0.44,
+            "recover": 11,
+            "stock": 62,
+            "barrel": 92,
+            "accent": "#c4a863"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 740,
+          "angle": -2.485465078517866,
+          "muzzleX": 840.2873722465198,
+          "muzzleY": 576.5057753735872,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-avion.webp"
+    },
+    {
+      "version": "apres",
+      "name": "palier",
+      "settings": {
+        "family": "tower",
+        "night": 4,
+        "view": "right",
+        "gun": "towerCarbine",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "towerOffices",
+        "view": "right",
+        "phase": "combat",
+        "pose": {
+          "id": "airDoorGun",
+          "family": "machine",
+          "profile": {
+            "family": "machine",
+            "length": 268,
+            "width": 38,
+            "recoil": 0.44,
+            "recover": 11,
+            "stock": 62,
+            "barrel": 92,
+            "accent": "#c4a863"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 740,
+          "angle": -2.485465078517866,
+          "muzzleX": 840.2873722465198,
+          "muzzleY": 576.5057753735872,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-palier.webp"
+    },
+    {
+      "version": "apres",
+      "name": "ombre",
+      "settings": {
+        "family": "dark",
+        "night": 4,
+        "view": "front",
+        "gun": "pump",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "darkTunnels",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "pump",
+          "family": "shotgun",
+          "profile": {
+            "family": "shotgun",
+            "length": 260,
+            "width": 34,
+            "recoil": 0.92,
+            "recover": 6.4,
+            "stock": 66,
+            "barrel": 98,
+            "accent": "#9e7d53"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 740,
+          "angle": -2.485465078517866,
+          "muzzleX": 846.6262566570714,
+          "muzzleY": 581.3861999893011,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-ombre.webp"
+    },
+    {
+      "version": "apres",
+      "name": "pistolet",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "pistol",
+        "reload": 0,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "pistol",
+          "family": "handgun",
+          "profile": {
+            "family": "handgun",
+            "length": 142,
+            "width": 24,
+            "recoil": 0.65,
+            "recover": 10,
+            "stock": 20,
+            "barrel": 40,
+            "accent": "#b7c1b6"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 740,
+          "angle": -2.485465078517866,
+          "muzzleX": 940.1248017127082,
+          "muzzleY": 653.3724630710798,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-pistolet.webp"
+    },
+    {
+      "version": "apres",
+      "name": "barillet",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "revolver",
+        "reload": 0.45,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "revolver",
+          "family": "handgun",
+          "profile": {
+            "family": "handgun",
+            "length": 142,
+            "width": 24,
+            "recoil": 0.65,
+            "recover": 10,
+            "stock": 20,
+            "barrel": 40,
+            "accent": "#b7c1b6"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 700.4924663761944,
+          "angle": -2.7080766110290004,
+          "muzzleX": 923.7757953920762,
+          "muzzleY": 640.8433526294908,
+          "reloadPct": 0.44999999999999996,
+          "reloadArc": 0.9876883405951377,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-barillet.webp"
+    },
+    {
+      "version": "apres",
+      "name": "bascule",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "double",
+        "reload": 0.55,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "double",
+          "family": "shotgun",
+          "profile": {
+            "family": "shotgun",
+            "length": 260,
+            "width": 34,
+            "recoil": 0.92,
+            "recover": 6.4,
+            "stock": 66,
+            "barrel": 98,
+            "accent": "#9e7d53"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 700.4924663761944,
+          "angle": -2.7080766110290004,
+          "muzzleX": 816.6914563516889,
+          "muzzleY": 591.2757792343427,
+          "reloadPct": 0.55,
+          "reloadArc": 0.9876883405951377,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-bascule.webp"
+    },
+    {
+      "version": "apres",
+      "name": "reservoir",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "flamer",
+        "reload": 0.55,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "flamer",
+          "family": "tool",
+          "profile": {
+            "family": "tool",
+            "length": 232,
+            "width": 42,
+            "recoil": 0.52,
+            "recover": 8.5,
+            "stock": 44,
+            "barrel": 78,
+            "accent": "#b89961"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 700.4924663761944,
+          "angle": -2.7080766110290004,
+          "muzzleX": 842.1012995138148,
+          "muzzleY": 603.0375763111575,
+          "reloadPct": 0.55,
+          "reloadArc": 0.9876883405951377,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-reservoir.webp"
+    },
+    {
+      "version": "apres",
+      "name": "bande",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "lmg",
+        "reload": 0.5,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "lmg",
+          "family": "machine",
+          "profile": {
+            "family": "machine",
+            "length": 268,
+            "width": 38,
+            "recoil": 0.44,
+            "recover": 11,
+            "stock": 62,
+            "barrel": 92,
+            "accent": "#c4a863"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 700,
+          "angle": -2.7108897041868913,
+          "muzzleX": 809.1157737412325,
+          "muzzleY": 588.107412108448,
+          "reloadPct": 0.5,
+          "reloadArc": 1,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-bande.webp"
+    },
+    {
+      "version": "apres",
+      "name": "tube",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "lever",
+        "reload": 0.42,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "lever",
+          "family": "precision",
+          "profile": {
+            "family": "precision",
+            "length": 300,
+            "width": 29,
+            "recoil": 1.08,
+            "recover": 5.8,
+            "stock": 72,
+            "barrel": 128,
+            "accent": "#93aea3"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 701.2566735548547,
+          "angle": -2.703713154526016,
+          "muzzleX": 780.9441499621773,
+          "muzzleY": 574.0506789153525,
+          "reloadPct": 0.4199999999999998,
+          "reloadArc": 0.968583161128631,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-tube.webp"
+    },
+    {
+      "version": "apres",
+      "name": "chambre",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "launcher",
+        "reload": 0.64,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "launcher",
+          "family": "launcher",
+          "profile": {
+            "family": "launcher",
+            "length": 252,
+            "width": 46,
+            "recoil": 1.18,
+            "recover": 5.2,
+            "stock": 48,
+            "barrel": 112,
+            "accent": "#b08a55"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 703.8069179013593,
+          "angle": -2.689168423534793,
+          "muzzleX": 825.993719760294,
+          "muzzleY": 593.6458374168947,
+          "reloadPct": 0.6400000000000001,
+          "reloadArc": 0.9048270524660195,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-chambre.webp"
+    },
+    {
+      "version": "apres",
+      "name": "cable",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "harpoon",
+        "reload": 0.48,
+        "aim": [
+          650,
+          430
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "harpoon",
+          "family": "tether",
+          "profile": {
+            "family": "tether",
+            "length": 282,
+            "width": 31,
+            "recoil": 0.78,
+            "recover": 6.7,
+            "stock": 54,
+            "barrel": 134,
+            "accent": "#8fa99d"
+          },
+          "view": "front",
+          "targetX": 650,
+          "targetY": 430,
+          "anchorX": 1052.6399999999999,
+          "anchorY": 700.0789308628691,
+          "angle": -2.710438766795465,
+          "muzzleX": 796.4474773296633,
+          "muzzleY": 582.2256690165839,
+          "reloadPct": 0.48,
+          "reloadArc": 0.9980267284282716,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-cable.webp"
+    },
+    {
+      "version": "apres",
+      "name": "visee-basse",
+      "settings": {
+        "family": "main",
+        "night": 1,
+        "view": "front",
+        "gun": "assault",
+        "reload": 0,
+        "aim": [
+          1200,
+          745
+        ]
+      },
+      "scene": {
+        "site": "depot",
+        "view": "front",
+        "phase": "combat",
+        "pose": {
+          "id": "assault",
+          "family": "rifle",
+          "profile": {
+            "family": "rifle",
+            "length": 238,
+            "width": 30,
+            "recoil": 0.48,
+            "recover": 7.8,
+            "stock": 58,
+            "barrel": 70,
+            "accent": "#c79d62"
+          },
+          "view": "front",
+          "targetX": 1200,
+          "targetY": 735,
+          "anchorX": 1364.5360844219988,
+          "anchorY": 946.5463942568554,
+          "angle": -2.231839495645584,
+          "muzzleX": 1218.4182184054475,
+          "muzzleY": 758.6805665212898,
+          "reloadPct": 0,
+          "reloadArc": 0,
+          "repairDrop": 0,
+          "parity": -1
+        }
+      },
+      "file": "previews/0408/apres-visee-basse.webp"
+    }
+  ],
+  "gallery": [
+    {
+      "site": "depot",
+      "view": "right",
+      "family": "main",
+      "file": "previews/0408/terrains/depot-right.webp"
+    },
+    {
+      "site": "depot",
+      "view": "left",
+      "family": "main",
+      "file": "previews/0408/terrains/depot-left.webp"
+    },
+    {
+      "site": "depot",
+      "view": "front",
+      "family": "main",
+      "file": "previews/0408/terrains/depot-front.webp"
+    },
+    {
+      "site": "depot",
+      "view": "rear",
+      "family": "main",
+      "file": "previews/0408/terrains/depot-rear.webp"
+    },
+    {
+      "site": "farm",
+      "view": "right",
+      "family": "main",
+      "file": "previews/0408/terrains/farm-right.webp"
+    },
+    {
+      "site": "farm",
+      "view": "left",
+      "family": "main",
+      "file": "previews/0408/terrains/farm-left.webp"
+    },
+    {
+      "site": "farm",
+      "view": "front",
+      "family": "main",
+      "file": "previews/0408/terrains/farm-front.webp"
+    },
+    {
+      "site": "farm",
+      "view": "rear",
+      "family": "main",
+      "file": "previews/0408/terrains/farm-rear.webp"
+    },
+    {
+      "site": "station",
+      "view": "right",
+      "family": "main",
+      "file": "previews/0408/terrains/station-right.webp"
+    },
+    {
+      "site": "station",
+      "view": "left",
+      "family": "main",
+      "file": "previews/0408/terrains/station-left.webp"
+    },
+    {
+      "site": "station",
+      "view": "front",
+      "family": "main",
+      "file": "previews/0408/terrains/station-front.webp"
+    },
+    {
+      "site": "station",
+      "view": "rear",
+      "family": "main",
+      "file": "previews/0408/terrains/station-rear.webp"
+    },
+    {
+      "site": "hospital",
+      "view": "right",
+      "family": "main",
+      "file": "previews/0408/terrains/hospital-right.webp"
+    },
+    {
+      "site": "hospital",
+      "view": "left",
+      "family": "main",
+      "file": "previews/0408/terrains/hospital-left.webp"
+    },
+    {
+      "site": "hospital",
+      "view": "front",
+      "family": "main",
+      "file": "previews/0408/terrains/hospital-front.webp"
+    },
+    {
+      "site": "hospital",
+      "view": "rear",
+      "family": "main",
+      "file": "previews/0408/terrains/hospital-rear.webp"
+    },
+    {
+      "site": "rail",
+      "view": "right",
+      "family": "main",
+      "file": "previews/0408/terrains/rail-right.webp"
+    },
+    {
+      "site": "rail",
+      "view": "left",
+      "family": "main",
+      "file": "previews/0408/terrains/rail-left.webp"
+    },
+    {
+      "site": "rail",
+      "view": "front",
+      "family": "main",
+      "file": "previews/0408/terrains/rail-front.webp"
+    },
+    {
+      "site": "rail",
+      "view": "rear",
+      "family": "main",
+      "file": "previews/0408/terrains/rail-rear.webp"
+    },
+    {
+      "site": "harbor",
+      "view": "right",
+      "family": "main",
+      "file": "previews/0408/terrains/harbor-right.webp"
+    },
+    {
+      "site": "harbor",
+      "view": "left",
+      "family": "main",
+      "file": "previews/0408/terrains/harbor-left.webp"
+    },
+    {
+      "site": "harbor",
+      "view": "front",
+      "family": "main",
+      "file": "previews/0408/terrains/harbor-front.webp"
+    },
+    {
+      "site": "harbor",
+      "view": "rear",
+      "family": "main",
+      "file": "previews/0408/terrains/harbor-rear.webp"
+    },
+    {
+      "site": "tunnel",
+      "view": "right",
+      "family": "relief",
+      "file": "previews/0408/terrains/tunnel-right.webp"
+    },
+    {
+      "site": "tunnel",
+      "view": "left",
+      "family": "relief",
+      "file": "previews/0408/terrains/tunnel-left.webp"
+    },
+    {
+      "site": "tunnel",
+      "view": "front",
+      "family": "relief",
+      "file": "previews/0408/terrains/tunnel-front.webp"
+    },
+    {
+      "site": "tunnel",
+      "view": "rear",
+      "family": "relief",
+      "file": "previews/0408/terrains/tunnel-rear.webp"
+    },
+    {
+      "site": "pumping",
+      "view": "right",
+      "family": "relief",
+      "file": "previews/0408/terrains/pumping-right.webp"
+    },
+    {
+      "site": "pumping",
+      "view": "left",
+      "family": "relief",
+      "file": "previews/0408/terrains/pumping-left.webp"
+    },
+    {
+      "site": "pumping",
+      "view": "front",
+      "family": "relief",
+      "file": "previews/0408/terrains/pumping-front.webp"
+    },
+    {
+      "site": "pumping",
+      "view": "rear",
+      "family": "relief",
+      "file": "previews/0408/terrains/pumping-rear.webp"
+    },
+    {
+      "site": "square",
+      "view": "right",
+      "family": "relief",
+      "file": "previews/0408/terrains/square-right.webp"
+    },
+    {
+      "site": "square",
+      "view": "left",
+      "family": "relief",
+      "file": "previews/0408/terrains/square-left.webp"
+    },
+    {
+      "site": "square",
+      "view": "front",
+      "family": "relief",
+      "file": "previews/0408/terrains/square-front.webp"
+    },
+    {
+      "site": "square",
+      "view": "rear",
+      "family": "relief",
+      "file": "previews/0408/terrains/square-rear.webp"
+    },
+    {
+      "site": "northToll",
+      "view": "right",
+      "family": "north",
+      "file": "previews/0408/terrains/northToll-right.webp"
+    },
+    {
+      "site": "northToll",
+      "view": "left",
+      "family": "north",
+      "file": "previews/0408/terrains/northToll-left.webp"
+    },
+    {
+      "site": "northToll",
+      "view": "front",
+      "family": "north",
+      "file": "previews/0408/terrains/northToll-front.webp"
+    },
+    {
+      "site": "northToll",
+      "view": "rear",
+      "family": "north",
+      "file": "previews/0408/terrains/northToll-rear.webp"
+    },
+    {
+      "site": "northMill",
+      "view": "right",
+      "family": "north",
+      "file": "previews/0408/terrains/northMill-right.webp"
+    },
+    {
+      "site": "northMill",
+      "view": "left",
+      "family": "north",
+      "file": "previews/0408/terrains/northMill-left.webp"
+    },
+    {
+      "site": "northMill",
+      "view": "front",
+      "family": "north",
+      "file": "previews/0408/terrains/northMill-front.webp"
+    },
+    {
+      "site": "northMill",
+      "view": "rear",
+      "family": "north",
+      "file": "previews/0408/terrains/northMill-rear.webp"
+    },
+    {
+      "site": "northYard",
+      "view": "right",
+      "family": "north",
+      "file": "previews/0408/terrains/northYard-right.webp"
+    },
+    {
+      "site": "northYard",
+      "view": "left",
+      "family": "north",
+      "file": "previews/0408/terrains/northYard-left.webp"
+    },
+    {
+      "site": "northYard",
+      "view": "front",
+      "family": "north",
+      "file": "previews/0408/terrains/northYard-front.webp"
+    },
+    {
+      "site": "northYard",
+      "view": "rear",
+      "family": "north",
+      "file": "previews/0408/terrains/northYard-rear.webp"
+    },
+    {
+      "site": "northPower",
+      "view": "right",
+      "family": "north",
+      "file": "previews/0408/terrains/northPower-right.webp"
+    },
+    {
+      "site": "northPower",
+      "view": "left",
+      "family": "north",
+      "file": "previews/0408/terrains/northPower-left.webp"
+    },
+    {
+      "site": "northPower",
+      "view": "front",
+      "family": "north",
+      "file": "previews/0408/terrains/northPower-front.webp"
+    },
+    {
+      "site": "northPower",
+      "view": "rear",
+      "family": "north",
+      "file": "previews/0408/terrains/northPower-rear.webp"
+    },
+    {
+      "site": "metroDepot",
+      "view": "right",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroDepot-right.webp"
+    },
+    {
+      "site": "metroDepot",
+      "view": "left",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroDepot-left.webp"
+    },
+    {
+      "site": "metroDepot",
+      "view": "front",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroDepot-front.webp"
+    },
+    {
+      "site": "metroDepot",
+      "view": "rear",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroDepot-rear.webp"
+    },
+    {
+      "site": "metroFlood",
+      "view": "right",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroFlood-right.webp"
+    },
+    {
+      "site": "metroFlood",
+      "view": "left",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroFlood-left.webp"
+    },
+    {
+      "site": "metroFlood",
+      "view": "front",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroFlood-front.webp"
+    },
+    {
+      "site": "metroFlood",
+      "view": "rear",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroFlood-rear.webp"
+    },
+    {
+      "site": "metroViaduct",
+      "view": "right",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroViaduct-right.webp"
+    },
+    {
+      "site": "metroViaduct",
+      "view": "left",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroViaduct-left.webp"
+    },
+    {
+      "site": "metroViaduct",
+      "view": "front",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroViaduct-front.webp"
+    },
+    {
+      "site": "metroViaduct",
+      "view": "rear",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroViaduct-rear.webp"
+    },
+    {
+      "site": "metroTerminus",
+      "view": "right",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroTerminus-right.webp"
+    },
+    {
+      "site": "metroTerminus",
+      "view": "left",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroTerminus-left.webp"
+    },
+    {
+      "site": "metroTerminus",
+      "view": "front",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroTerminus-front.webp"
+    },
+    {
+      "site": "metroTerminus",
+      "view": "rear",
+      "family": "metro",
+      "file": "previews/0408/terrains/metroTerminus-rear.webp"
+    },
+    {
+      "site": "airCity",
+      "view": "right",
+      "family": "air",
+      "file": "previews/0408/terrains/airCity-right.webp"
+    },
+    {
+      "site": "airCity",
+      "view": "left",
+      "family": "air",
+      "file": "previews/0408/terrains/airCity-left.webp"
+    },
+    {
+      "site": "airCity",
+      "view": "front",
+      "family": "air",
+      "file": "previews/0408/terrains/airCity-front.webp"
+    },
+    {
+      "site": "airCity",
+      "view": "rear",
+      "family": "air",
+      "file": "previews/0408/terrains/airCity-rear.webp"
+    },
+    {
+      "site": "airStorm",
+      "view": "right",
+      "family": "air",
+      "file": "previews/0408/terrains/airStorm-right.webp"
+    },
+    {
+      "site": "airStorm",
+      "view": "left",
+      "family": "air",
+      "file": "previews/0408/terrains/airStorm-left.webp"
+    },
+    {
+      "site": "airStorm",
+      "view": "front",
+      "family": "air",
+      "file": "previews/0408/terrains/airStorm-front.webp"
+    },
+    {
+      "site": "airStorm",
+      "view": "rear",
+      "family": "air",
+      "file": "previews/0408/terrains/airStorm-rear.webp"
+    },
+    {
+      "site": "airCanyon",
+      "view": "right",
+      "family": "air",
+      "file": "previews/0408/terrains/airCanyon-right.webp"
+    },
+    {
+      "site": "airCanyon",
+      "view": "left",
+      "family": "air",
+      "file": "previews/0408/terrains/airCanyon-left.webp"
+    },
+    {
+      "site": "airCanyon",
+      "view": "front",
+      "family": "air",
+      "file": "previews/0408/terrains/airCanyon-front.webp"
+    },
+    {
+      "site": "airCanyon",
+      "view": "rear",
+      "family": "air",
+      "file": "previews/0408/terrains/airCanyon-rear.webp"
+    },
+    {
+      "site": "airNight",
+      "view": "right",
+      "family": "air",
+      "file": "previews/0408/terrains/airNight-right.webp"
+    },
+    {
+      "site": "airNight",
+      "view": "left",
+      "family": "air",
+      "file": "previews/0408/terrains/airNight-left.webp"
+    },
+    {
+      "site": "airNight",
+      "view": "front",
+      "family": "air",
+      "file": "previews/0408/terrains/airNight-front.webp"
+    },
+    {
+      "site": "airNight",
+      "view": "rear",
+      "family": "air",
+      "file": "previews/0408/terrains/airNight-rear.webp"
+    },
+    {
+      "site": "highwayRing",
+      "view": "right",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayRing-right.webp"
+    },
+    {
+      "site": "highwayRing",
+      "view": "left",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayRing-left.webp"
+    },
+    {
+      "site": "highwayRing",
+      "view": "front",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayRing-front.webp"
+    },
+    {
+      "site": "highwayRing",
+      "view": "rear",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayRing-rear.webp"
+    },
+    {
+      "site": "highwayIndustrial",
+      "view": "right",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayIndustrial-right.webp"
+    },
+    {
+      "site": "highwayIndustrial",
+      "view": "left",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayIndustrial-left.webp"
+    },
+    {
+      "site": "highwayIndustrial",
+      "view": "front",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayIndustrial-front.webp"
+    },
+    {
+      "site": "highwayIndustrial",
+      "view": "rear",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayIndustrial-rear.webp"
+    },
+    {
+      "site": "highwayForest",
+      "view": "right",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayForest-right.webp"
+    },
+    {
+      "site": "highwayForest",
+      "view": "left",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayForest-left.webp"
+    },
+    {
+      "site": "highwayForest",
+      "view": "front",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayForest-front.webp"
+    },
+    {
+      "site": "highwayForest",
+      "view": "rear",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayForest-rear.webp"
+    },
+    {
+      "site": "highwayLast",
+      "view": "right",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayLast-right.webp"
+    },
+    {
+      "site": "highwayLast",
+      "view": "left",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayLast-left.webp"
+    },
+    {
+      "site": "highwayLast",
+      "view": "front",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayLast-front.webp"
+    },
+    {
+      "site": "highwayLast",
+      "view": "rear",
+      "family": "highway",
+      "file": "previews/0408/terrains/highwayLast-rear.webp"
+    },
+    {
+      "site": "waterCanal",
+      "view": "right",
+      "family": "water",
+      "file": "previews/0408/terrains/waterCanal-right.webp"
+    },
+    {
+      "site": "waterCanal",
+      "view": "left",
+      "family": "water",
+      "file": "previews/0408/terrains/waterCanal-left.webp"
+    },
+    {
+      "site": "waterCanal",
+      "view": "front",
+      "family": "water",
+      "file": "previews/0408/terrains/waterCanal-front.webp"
+    },
+    {
+      "site": "waterCanal",
+      "view": "rear",
+      "family": "water",
+      "file": "previews/0408/terrains/waterCanal-rear.webp"
+    },
+    {
+      "site": "waterEstuary",
+      "view": "right",
+      "family": "water",
+      "file": "previews/0408/terrains/waterEstuary-right.webp"
+    },
+    {
+      "site": "waterEstuary",
+      "view": "left",
+      "family": "water",
+      "file": "previews/0408/terrains/waterEstuary-left.webp"
+    },
+    {
+      "site": "waterEstuary",
+      "view": "front",
+      "family": "water",
+      "file": "previews/0408/terrains/waterEstuary-front.webp"
+    },
+    {
+      "site": "waterEstuary",
+      "view": "rear",
+      "family": "water",
+      "file": "previews/0408/terrains/waterEstuary-rear.webp"
+    },
+    {
+      "site": "waterIndustrial",
+      "view": "right",
+      "family": "water",
+      "file": "previews/0408/terrains/waterIndustrial-right.webp"
+    },
+    {
+      "site": "waterIndustrial",
+      "view": "left",
+      "family": "water",
+      "file": "previews/0408/terrains/waterIndustrial-left.webp"
+    },
+    {
+      "site": "waterIndustrial",
+      "view": "front",
+      "family": "water",
+      "file": "previews/0408/terrains/waterIndustrial-front.webp"
+    },
+    {
+      "site": "waterIndustrial",
+      "view": "rear",
+      "family": "water",
+      "file": "previews/0408/terrains/waterIndustrial-rear.webp"
+    },
+    {
+      "site": "waterOpen",
+      "view": "right",
+      "family": "water",
+      "file": "previews/0408/terrains/waterOpen-right.webp"
+    },
+    {
+      "site": "waterOpen",
+      "view": "left",
+      "family": "water",
+      "file": "previews/0408/terrains/waterOpen-left.webp"
+    },
+    {
+      "site": "waterOpen",
+      "view": "front",
+      "family": "water",
+      "file": "previews/0408/terrains/waterOpen-front.webp"
+    },
+    {
+      "site": "waterOpen",
+      "view": "rear",
+      "family": "water",
+      "file": "previews/0408/terrains/waterOpen-rear.webp"
+    },
+    {
+      "site": "towerBasement",
+      "view": "right",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerBasement-right.webp"
+    },
+    {
+      "site": "towerBasement",
+      "view": "left",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerBasement-left.webp"
+    },
+    {
+      "site": "towerBasement",
+      "view": "front",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerBasement-front.webp"
+    },
+    {
+      "site": "towerBasement",
+      "view": "rear",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerBasement-rear.webp"
+    },
+    {
+      "site": "towerOffices",
+      "view": "right",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerOffices-right.webp"
+    },
+    {
+      "site": "towerOffices",
+      "view": "left",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerOffices-left.webp"
+    },
+    {
+      "site": "towerOffices",
+      "view": "front",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerOffices-front.webp"
+    },
+    {
+      "site": "towerOffices",
+      "view": "rear",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerOffices-rear.webp"
+    },
+    {
+      "site": "towerPlant",
+      "view": "right",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerPlant-right.webp"
+    },
+    {
+      "site": "towerPlant",
+      "view": "left",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerPlant-left.webp"
+    },
+    {
+      "site": "towerPlant",
+      "view": "front",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerPlant-front.webp"
+    },
+    {
+      "site": "towerPlant",
+      "view": "rear",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerPlant-rear.webp"
+    },
+    {
+      "site": "towerCrown",
+      "view": "right",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerCrown-right.webp"
+    },
+    {
+      "site": "towerCrown",
+      "view": "left",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerCrown-left.webp"
+    },
+    {
+      "site": "towerCrown",
+      "view": "front",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerCrown-front.webp"
+    },
+    {
+      "site": "towerCrown",
+      "view": "rear",
+      "family": "tower",
+      "file": "previews/0408/terrains/towerCrown-rear.webp"
+    },
+    {
+      "site": "darkDepot",
+      "view": "right",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkDepot-right.webp"
+    },
+    {
+      "site": "darkDepot",
+      "view": "left",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkDepot-left.webp"
+    },
+    {
+      "site": "darkDepot",
+      "view": "front",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkDepot-front.webp"
+    },
+    {
+      "site": "darkDepot",
+      "view": "rear",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkDepot-rear.webp"
+    },
+    {
+      "site": "darkTunnels",
+      "view": "right",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkTunnels-right.webp"
+    },
+    {
+      "site": "darkTunnels",
+      "view": "left",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkTunnels-left.webp"
+    },
+    {
+      "site": "darkTunnels",
+      "view": "front",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkTunnels-front.webp"
+    },
+    {
+      "site": "darkTunnels",
+      "view": "rear",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkTunnels-rear.webp"
+    },
+    {
+      "site": "darkPlant",
+      "view": "right",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkPlant-right.webp"
+    },
+    {
+      "site": "darkPlant",
+      "view": "left",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkPlant-left.webp"
+    },
+    {
+      "site": "darkPlant",
+      "view": "front",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkPlant-front.webp"
+    },
+    {
+      "site": "darkPlant",
+      "view": "rear",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkPlant-rear.webp"
+    },
+    {
+      "site": "darkCore",
+      "view": "right",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkCore-right.webp"
+    },
+    {
+      "site": "darkCore",
+      "view": "left",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkCore-left.webp"
+    },
+    {
+      "site": "darkCore",
+      "view": "front",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkCore-front.webp"
+    },
+    {
+      "site": "darkCore",
+      "view": "rear",
+      "family": "dark",
+      "file": "previews/0408/terrains/darkCore-rear.webp"
+    }
+  ],
+  "errors": [],
+  "method": "Moteur réel, images intégrales. Scènes arrangées identiques avant/après ; notifications fugitives masquées. localStorage en mémoire dans about:blank uniquement pour captures. Aucun rendu de jeu factice."
+}

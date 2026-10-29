@@ -1,0 +1,13 @@
+{
+  "version": "0.43.0",
+  "passed": 36,
+  "total": 36,
+  "failed": [],
+  "errors": [],
+  "group_visible_counts": {
+    "mission": 6,
+    "equipment": 7,
+    "team": 2,
+    "archives": 2
+  }
+}

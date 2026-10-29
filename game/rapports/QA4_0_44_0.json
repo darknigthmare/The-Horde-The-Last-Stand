@@ -1,0 +1,315 @@
+{
+  "version": "0.44.0",
+  "passed": 30,
+  "total": 30,
+  "failed": [],
+  "errors": [],
+  "checks": [
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Campagne démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "campaign",
+        "enemies": 5
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Nord démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "north",
+        "enemies": 5
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Métro démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "metro",
+        "enemies": 3
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "ARGO-17 démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "air",
+        "enemies": 5
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Autoroute démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "highway",
+        "enemies": 4
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Eaux Noires démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "water",
+        "enemies": 4
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Ascension démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "tower",
+        "enemies": 3
+      }
+    },
+    {
+      "tester": "QA1 FONCTIONNEL",
+      "test": "Zone Noire démarre et reste cohérent",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "bad": [],
+        "phase": "combat",
+        "mode": "dark",
+        "enemies": 5
+      }
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "Titre et couche QA 0.44",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "À propos reste en 0.44 après navigation",
+      "ok": true,
+      "detail": "À PROPOS · 0.44.0"
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "À propos affiche la build actuelle",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "Échap ferme À propos",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "Camp en lecture essentielle",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "Détails réouvrables",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "Renseignements en tiroir",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA2 UX",
+      "test": "Échap ferme seulement le tiroir",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Deux groupes d’actions seulement",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Pause possède un nom accessible",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Audio expose son état",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Vues latérales montrent le survivant",
+      "ok": true,
+      "detail": {
+        "right": {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": null
+        },
+        "left": {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": null
+        },
+        "front": {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": null
+        },
+        "rear": {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": {
+            "x": 720,
+            "feet": 316.3765477057538,
+            "height": 43.967953386744355,
+            "scale": 0.2855061908230153,
+            "flip": false
+          }
+        }
+      }
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Vue avant garde une arme FPS unique",
+      "ok": true,
+      "detail": {
+        "view": "front",
+        "gun": 1,
+        "player": 0,
+        "rear": null
+      }
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Vue arrière garde le survivant distant sans arme FPS",
+      "ok": true,
+      "detail": {
+        "view": "rear",
+        "gun": 0,
+        "player": 1,
+        "rear": {
+          "x": 720,
+          "feet": 316.3765477057538,
+          "height": 43.967953386744355,
+          "scale": 0.2855061908230153,
+          "flip": false
+        }
+      }
+    },
+    {
+      "tester": "QA3 COMBAT",
+      "test": "Objectif compact ne détruit plus le texte complet",
+      "ok": true,
+      "detail": {
+        "a": {
+          "text": "SITE DE TEST  ·  7/40",
+          "title": "SITE DE TEST · 7/40 · 01:24 · CONTRAT LONG",
+          "full": "SITE DE TEST · 7/40 · 01:24 · CONTRAT LONG"
+        },
+        "b": {
+          "text": "SITE DE TEST  ·  7/40",
+          "title": "SITE DE TEST · 7/40 · 01:24 · CONTRAT LONG",
+          "full": "SITE DE TEST · 7/40 · 01:24 · CONTRAT LONG"
+        }
+      }
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "Export/validation schéma courant",
+      "ok": true,
+      "detail": 12
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "Sauvegarde incompatible refusée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "HUD jouable 1920×1080",
+      "ok": true,
+      "detail": {
+        "sw": 1920,
+        "vw": 1920,
+        "combat": true,
+        "buttons": true
+      }
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "HUD jouable 1280×720",
+      "ok": true,
+      "detail": {
+        "sw": 1280,
+        "vw": 1280,
+        "combat": true,
+        "buttons": true
+      }
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "HUD jouable 896×414",
+      "ok": true,
+      "detail": {
+        "sw": 896,
+        "vw": 896,
+        "combat": true,
+        "buttons": true
+      }
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "HUD jouable 414×896",
+      "ok": true,
+      "detail": {
+        "sw": 414,
+        "vw": 414,
+        "combat": true,
+        "buttons": true
+      }
+    },
+    {
+      "tester": "QA4 EXTRÊMES",
+      "test": "Aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

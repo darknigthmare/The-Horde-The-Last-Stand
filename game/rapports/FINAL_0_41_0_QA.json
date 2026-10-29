@@ -1,0 +1,56 @@
+{
+  "version": "0.41.0",
+  "fresh_completed_suites": [
+    {
+      "name": "SYNTAXE",
+      "path": "rapports/SYNTAXE.json",
+      "passed": 2,
+      "total": 2,
+      "cases": null
+    },
+    {
+      "name": "RÉGRESSION PRINCIPALE",
+      "path": "rapports/REGRESSION_0401.json",
+      "passed": 51,
+      "total": 51,
+      "cases": null
+    },
+    {
+      "name": "SPATIAL 0.41.0",
+      "path": "rapports/SPATIAL_QA.json",
+      "passed": 38,
+      "total": 38,
+      "cases": null
+    },
+    {
+      "name": "PROFONDEUR / CONTRECHAMP",
+      "path": "rapports/DEPTH_0410_QA.json",
+      "passed": 9,
+      "total": 9,
+      "cases": null
+    },
+    {
+      "name": "FRONTS VIVANTS",
+      "path": "rapports/FRONTS_0410_QA.json",
+      "passed": 20,
+      "total": 20,
+      "cases": null
+    },
+    {
+      "name": "BALISTIQUE EXHAUSTIVE",
+      "path": "rapports/BALLISTICS_0410_QA.json",
+      "passed": 4,
+      "total": 4,
+      "cases": 180
+    }
+  ],
+  "assertions_passed": 124,
+  "assertions_total": 124,
+  "ballistic_case_comparisons": 180,
+  "ballistic_case_failures": 0,
+  "notes": [
+    "Les suites historiques montage_safety/orders_safety ont été lancées mais non comptées ici car leur durée a dépassé la fenêtre d’exécution avant leur rapport final.",
+    "Aucun timeout n’est présenté comme une réussite.",
+    "Les trois captures 0.41.0 automatisées utilisent les mêmes géométries du moteur avec raster allégé pour accélérer Chromium."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6",
+  "passed": 4,
+  "total": 4,
+  "scripts": [
+    {
+      "script": 0,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "script": 1,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "script": 2,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "script": 3,
+      "ok": true,
+      "stderr": ""
+    }
+  ]
+}

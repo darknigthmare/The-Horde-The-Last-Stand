@@ -1,0 +1,33 @@
+{
+  "version": "0.41.0",
+  "passed": 4,
+  "total": 4,
+  "cases": 180,
+  "checks": [
+    {
+      "view": "right",
+      "ok": true,
+      "cases": 45,
+      "failed": 0
+    },
+    {
+      "view": "left",
+      "ok": true,
+      "cases": 45,
+      "failed": 0
+    },
+    {
+      "view": "front",
+      "ok": true,
+      "cases": 45,
+      "failed": 0
+    },
+    {
+      "view": "rear",
+      "ok": true,
+      "cases": 45,
+      "failed": 0
+    }
+  ],
+  "bad": []
+}

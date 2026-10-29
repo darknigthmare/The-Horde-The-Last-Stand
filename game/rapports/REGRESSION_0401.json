@@ -1,0 +1,414 @@
+{
+  "version": "0.41.0",
+  "passed": 50,
+  "total": 51,
+  "checks": [
+    {
+      "test": "Titre de la build inspectée",
+      "ok": false,
+      "detail": null
+    },
+    {
+      "test": "Menu sans panneaux parasites",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Événements non bloqués",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Armurier véritable affiché",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Six emplacements de presets",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Catalogue conservé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cinq montages conservés après rendu",
+      "ok": true,
+      "detail": {
+        "optic": "optic_reflex",
+        "muzzle": "muzzle_comp",
+        "barrel": "barrel_long",
+        "magazine": "mag_extended",
+        "grip": "grip_quick"
+      }
+    },
+    {
+      "test": "Sixième pièce refusée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Montage sans création de munitions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Recalcul sans accumulation des bonus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 1 restitué",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 2 restitué",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 3 restitué",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 4 restitué",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 5 restitué",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Preset 6 restitué",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Démontage conserve le stock total",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Six presets dans le profil validé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Zone Noire démarre",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Six circuits du moteur",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Panne A2 isolée",
+      "ok": true,
+      "detail": [
+        100,
+        0,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "test": "Cible masquée seulement dans A2",
+      "ok": true,
+      "detail": [
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "test": "Panne cohérente vue right",
+      "ok": true,
+      "detail": {
+        "view": "right",
+        "vis": [
+          true,
+          false,
+          true
+        ],
+        "quad": [
+          {
+            "x": 350,
+            "y": 220,
+            "scale": 1
+          },
+          {
+            "x": 700,
+            "y": 220,
+            "scale": 1
+          },
+          {
+            "x": 700,
+            "y": 550,
+            "scale": 1
+          },
+          {
+            "x": 350,
+            "y": 550,
+            "scale": 1
+          }
+        ]
+      }
+    },
+    {
+      "test": "Panne cohérente vue left",
+      "ok": true,
+      "detail": {
+        "view": "left",
+        "vis": [
+          true,
+          false,
+          true
+        ],
+        "quad": [
+          {
+            "x": 1090,
+            "y": 220,
+            "scale": 1
+          },
+          {
+            "x": 740,
+            "y": 220,
+            "scale": 1
+          },
+          {
+            "x": 740,
+            "y": 550,
+            "scale": 1
+          },
+          {
+            "x": 1090,
+            "y": 550,
+            "scale": 1
+          }
+        ]
+      }
+    },
+    {
+      "test": "Panne cohérente vue front",
+      "ok": true,
+      "detail": {
+        "view": "front",
+        "vis": [
+          true,
+          false,
+          true
+        ],
+        "quad": [
+          {
+            "x": 552.1816216216216,
+            "y": 337.1351351351351,
+            "scale": 0.38054054054054054
+          },
+          {
+            "x": 459.5436241610738,
+            "y": 389.6510067114094,
+            "scale": 0.5906040268456376
+          },
+          {
+            "x": 720,
+            "y": 389.6510067114094,
+            "scale": 0.5906040268456376
+          },
+          {
+            "x": 720,
+            "y": 337.1351351351351,
+            "scale": 0.38054054054054054
+          }
+        ]
+      }
+    },
+    {
+      "test": "Panne cohérente vue rear",
+      "ok": true,
+      "detail": {
+        "view": "rear",
+        "vis": [
+          true,
+          false,
+          true
+        ],
+        "quad": [
+          {
+            "x": 384.4890829694323,
+            "y": 432.1989325570112,
+            "scale": 0.7607957302280447
+          },
+          {
+            "x": 533.4139233675121,
+            "y": 347.774419859687,
+            "scale": 0.423097679438748
+          },
+          {
+            "x": 720,
+            "y": 347.774419859687,
+            "scale": 0.423097679438748
+          },
+          {
+            "x": 720,
+            "y": 432.1989325570112,
+            "scale": 0.7607957302280447
+          }
+        ]
+      }
+    },
+    {
+      "test": "Q répare seulement A2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Q consomme un fusible du jeu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Q ne répare pas la barricade",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Bouton réparation actif sans charge de soutien",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Bouton natif répare B2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Pas de réparation sans fusible",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Fusée révèle temporairement A3",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Extinction revient après la fusée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Incident déclenché par le temps de vague",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Circuits exportés et validés",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Circuits malformés refusés",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Ancien profil sans circuits accepté",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "HUD lumière retiré au menu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Départ combat Convoi",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Départ combat Nord",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Départ combat Métro",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Départ combat Avion",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Départ combat Autoroute",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Départ combat Eaux Noires",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Départ combat Ascension",
+      "ok": true,
+      "detail": "combat"
+    },
+    {
+      "test": "Production sans API de test",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Parcours souris de production",
+      "ok": true,
+      "detail": [
+        "⛶",
+        "AUDIO · OFF",
+        "Ⅱ",
+        "CLEURRE 1",
+        "TPRIORITÉ : AUTO",
+        "1PISTOLET",
+        "2Vide",
+        "3Secours",
+        "RRecharger",
+        "G · 2Grenade"
+      ]
+    },
+    {
+      "test": "Armurier sans débordement 896x414",
+      "ok": true,
+      "detail": {
+        "w": 896,
+        "s": 896
+      }
+    },
+    {
+      "test": "Armurier sans débordement 414x896",
+      "ok": true,
+      "detail": {
+        "w": 414,
+        "s": 414
+      }
+    },
+    {
+      "test": "Aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "test_mode": "Vrai moteur, images 1x1 uniquement dans cette matrice. Aucun système de jeu remplacé."
+}

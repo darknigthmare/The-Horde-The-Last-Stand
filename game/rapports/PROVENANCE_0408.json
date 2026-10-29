@@ -1,0 +1,24 @@
+{
+  "version": "0.40.8",
+  "sourceArchive": {
+    "name": "DERNIERE_LIGNE_0_40_7_PROJET(1).zip",
+    "bytes": 79401859,
+    "sha256": "19b95435925fbf811cd8d7e0dc8566bec5c2184bf61b1ad5ae49f1c981e66c8b"
+  },
+  "sourcePlayable": {
+    "name": "0.40.7.html",
+    "bytes": 27898867,
+    "sha256": "851d9589bfc89c57bf4eba422c969e447cff7eb9fd688249c9ef5486b6115417"
+  },
+  "module": {
+    "name": "spatial.js",
+    "bytes": 15207,
+    "sha256": "5e014a929278bb9e5f22a6fe8e6b2dc69a4c96e7b405fe33241d6c179ecec42c"
+  },
+  "build": {
+    "name": "build.mjs",
+    "bytes": 6033,
+    "sha256": "443fdbd272d75f20c42a1acea74c30d79a3d6e6023ea4164468a1e87a4b31d6e"
+  },
+  "scope": "Presentation scale, viewmodel frame, grip contacts and visual launch positions. Native collision and damage rules retained."
+}

@@ -1,0 +1,70 @@
+OK Accueil limité aux deux actions de départ
+OK Sous-menu campaigns: actions isolées
+OK Échap revient accueil depuis campaigns
+OK Sous-menu modes: actions isolées
+OK Échap revient accueil depuis modes
+OK Sous-menu dossiers: actions isolées
+OK Échap revient accueil depuis dossiers
+OK Sous-menu options: actions isolées
+OK Échap revient accueil depuis options
+OK Manuel natif accessible dans Dossiers
+OK Retour conserve le sous-menu courant
+OK À propos nouvelle version
+OK Groupe équipement affiche atelier et arsenal
+OK Groupe équipe donne accès aux alliés
+OK Groupe dossiers sans arsenal
+OK Préparation native visible dans Reprendre
+OK Cadres d’images contrôlés dans 48 contextes
+OK main: perspectives et passe d’arme uniques
+OK relief: perspectives et passe d’arme uniques
+OK north: perspectives et passe d’arme uniques
+OK metro: perspectives et passe d’arme uniques
+OK air: perspectives et passe d’arme uniques
+OK highway: perspectives et passe d’arme uniques
+OK water: perspectives et passe d’arme uniques
+OK tower: perspectives et passe d’arme uniques
+OK dark: perspectives et passe d’arme uniques
+OK Les 37 décors ont tous été rendus dans les 4 vues
+OK Option flashes réduits respectée par le départ
+OK 1920x1080: navigation home
+OK 1920x1080: navigation campaigns
+OK 1920x1080: navigation modes
+OK 1920x1080: navigation dossiers
+OK 1920x1080: navigation options
+OK 1920x1080: navigation resume
+OK 1920x1080: groupe camp mission
+OK 1920x1080: groupe camp equipment
+OK 1920x1080: groupe camp team
+OK 1920x1080: groupe camp archives
+OK 1280x720: navigation home
+OK 1280x720: navigation campaigns
+OK 1280x720: navigation modes
+OK 1280x720: navigation dossiers
+OK 1280x720: navigation options
+OK 1280x720: navigation resume
+OK 1280x720: groupe camp mission
+OK 1280x720: groupe camp equipment
+OK 1280x720: groupe camp team
+OK 1280x720: groupe camp archives
+OK 896x414: navigation home
+OK 896x414: navigation campaigns
+OK 896x414: navigation modes
+OK 896x414: navigation dossiers
+OK 896x414: navigation options
+OK 896x414: navigation resume
+OK 896x414: groupe camp mission
+OK 896x414: groupe camp equipment
+OK 896x414: groupe camp team
+OK 896x414: groupe camp archives
+OK 414x896: navigation home
+OK 414x896: navigation campaigns
+OK 414x896: navigation modes
+OK 414x896: navigation dossiers
+OK 414x896: navigation options
+OK 414x896: navigation resume
+OK 414x896: groupe camp mission
+OK 414x896: groupe camp equipment
+OK 414x896: groupe camp team
+OK 414x896: groupe camp archives
+OK Aucune erreur JavaScript pendant l’audit visuel
+{"passed": 69, "total": 69, "errors": []}

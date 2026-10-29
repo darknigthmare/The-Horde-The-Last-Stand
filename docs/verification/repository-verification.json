@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-29T09:53:06.042880+00:00",
+  "checks": {
+    "game_manifest": {
+      "version": "0.44.0",
+      "hashed_files": 458,
+      "total_files": 459
+    },
+    "gamedev_guides": {
+      "skills": 12,
+      "upstream_files": 40,
+      "local_references": 21,
+      "python_scripts_parsed": 2,
+      "revision": "19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9"
+    },
+    "reproducible_build_and_syntax": {
+      "identical_outputs": [
+        "JOUER_DERNIERE_LIGNE.html",
+        "rapports/PATCHES_0_44_0.json"
+      ],
+      "inline_scripts_parsed": 4,
+      "build": {
+        "version": "0.44.0",
+        "patches": 26,
+        "bytes": 28008369
+      },
+      "node_version": "v24.22.1"
+    }
+  },
+  "ok": true
+}

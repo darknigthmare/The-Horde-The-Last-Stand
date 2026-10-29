@@ -1,0 +1,36 @@
+OK 45 armes reliées aux familles natives
+OK Neuf mécanismes différenciés
+OK Axe et bouche identiques au modèle — front
+OK Axe et bouche identiques au modèle — rear
+OK Recharge réelle et pose unique des 45 armes — front
+OK Recharge ne crée pas de munitions — front
+OK Recharge réelle et pose unique des 45 armes — rear
+OK Recharge ne crée pas de munitions — rear
+OK Tirs réels et départ des traceurs — right
+OK Tirs réels et départ des traceurs — left
+OK Tirs réels et départ des traceurs — front
+OK Tirs réels et départ des traceurs — rear
+OK Canon dessiné et bouche identiques à l’échelle quality
+OK Canon dessiné et bouche identiques à l’échelle balanced
+OK Canon dessiné et bouche identiques à l’échelle performance
+OK Option recharge détaillée : zéro ou une manipulation
+OK Deux insertions progressives, deux cycles distincts
+OK Cinq repères sonores complets au dernier cycle
+OK Pause fige les timers et le recul
+OK Retour manette depuis Manuel conserve Dossiers
+OK Deuxième Retour mène à Accueil
+OK Croix droite change la difficulté dans le menu
+OK Retour Équipement retrouve l’Armurier
+OK Focus conservé sur la pièce montée
+OK Fiche de manipulation dans le dialogue natif
+OK Retour fiche retrouve son bouton
+OK Fiche consultative ne modifie pas le profil
+OK Accès réel au stand depuis la fiche
+OK 896×414: fiche sans débordement
+OK 896×414: retour Armurier utilisable
+OK 414×896: fiche sans débordement
+OK 414×896: retour Armurier utilisable
+OK Aucune API de test en production
+OK Accueil sans fiche ni arme ajoutée
+OK Aucune erreur JavaScript dans la matrice
+{"passed": 35, "total": 35, "errors": []}

@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-29T09:53:31.259617+00:00",
+  "archive": "DERNIERE_LIGNE_0_44_0_PROJET_COMPLET.zip",
+  "archive_sha256": "db6585acec03760a7a146b6d62a7b0f12f20684d1c1e1289844a53bc1d123154",
+  "archive_size_bytes": 135117787,
+  "original_files_compared": 458,
+  "original_files_identical": 458,
+  "differences": [],
+  "original_manifest_preserved_at": "docs/source-MANIFEST_SHA256_0_44_0.json",
+  "added_game_files": [
+    "assets/icons/icon.svg"
+  ],
+  "updated_game_files": [
+    "MANIFEST_SHA256.json"
+  ],
+  "gameplay_html_sha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6"
+}

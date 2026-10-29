@@ -1,0 +1,18 @@
+[
+  {
+    "script": "syntaxe.py",
+    "exit": 0,
+    "seconds": 3.16,
+    "passed": 4,
+    "total": 4,
+    "errors": null
+  },
+  {
+    "script": "regression_0401.py",
+    "exit": 1,
+    "seconds": 14.46,
+    "passed": 50,
+    "total": 51,
+    "errors": []
+  }
+]

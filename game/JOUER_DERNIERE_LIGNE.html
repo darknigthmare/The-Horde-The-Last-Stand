@@ -10,7 +10,7 @@
 <meta name="application-name" content="Dernière Ligne">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Dernière Ligne — QA intégrale 0.44.0</title>
+<title>Dernière Ligne — Poste stabilisé 0.44.1</title>
 <style>
 :root{--ink:#e8e8db;--muted:#97a3a0;--accent:#ecc481;--red:#e66d55;--green:#9fbfa5;--line:#62736c44;--panel:#10191bf5;--sans:Arial,Helvetica,sans-serif;--display:Impact,'Arial Narrow',sans-serif;--mono:'Courier New',monospace}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#080e11;color:var(--ink);font-family:var(--sans)}body{display:flex;align-items:center;justify-content:center}button,input{font:inherit}button{cursor:pointer;border:1px solid var(--line);color:var(--ink);background:#263233;padding:11px 15px;font-size:12px;letter-spacing:.04em;transition:background .15s,border-color .15s,transform .15s;border-radius:2px;min-height:40px}button:hover:not(:disabled){background:#344342;border-color:var(--accent)}button:active:not(:disabled){transform:translateY(1px)}button:disabled{opacity:.38;cursor:not-allowed}button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button.primary{background:var(--accent);color:#142021;border-color:var(--accent);font-weight:800}button.primary:hover{background:#f8dbaa}button.danger{border-color:#da735b88;color:#f3a28b}button.small{min-height:32px;padding:7px 10px;font-size:11px}button.icon{padding:8px 11px}.hidden{display:none!important}#shell{position:relative;width:100%;height:100dvh;max-width:1920px;max-height:1200px;overflow:hidden;background:#080e11;isolation:isolate}#game{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;touch-action:none;user-select:none}#vignette{position:absolute;inset:0;box-shadow:inset 0 0 120px #02070966;pointer-events:none}#hud{z-index:7;position:absolute;left:3%;right:3%;top:max(18px,env(safe-area-inset-top));display:flex;gap:32px;align-items:flex-start;pointer-events:none}#hud>*{pointer-events:auto}.brand{font-family:var(--display);font-size:20px;letter-spacing:2px;border-right:1px solid var(--line);padding-right:24px}.brand small{display:block;font:9px var(--mono);color:var(--muted);letter-spacing:3px;margin-top:5px}.hudstat .label{color:var(--muted);font:10px var(--mono);letter-spacing:1.3px;display:block;margin-bottom:7px}.hudstat strong{font:22px var(--mono)}.hudstat .meter{width:128px;height:4px;background:#ffffff15;margin-top:7px}.hudstat .meter i{display:block;width:100%;height:100%;background:var(--green);transition:width .15s}.hudstat.health .meter i{background:var(--red)}.hudstat.cash strong{color:var(--accent)}.hud-end{margin-left:auto;display:flex;gap:7px}#waveStrip{position:absolute;top:104px;left:3%;right:3%;height:2px;background:#ffffff13;pointer-events:none}#waveStrip i{height:100%;display:block;background:var(--accent);width:0;transition:width .25s}#objective{position:absolute;right:3%;top:124px;text-align:right;font:11px var(--mono);color:#ced3c6;letter-spacing:1px;pointer-events:none}#toast{position:absolute;left:50%;transform:translateX(-50%);bottom:130px;z-index:12;background:#111c20ef;border:1px solid #dbb97a66;border-left:3px solid var(--accent);font-size:13px;padding:13px 20px;max-width:85%;text-align:center;pointer-events:none;opacity:0;transition:opacity .2s}#toast.visible{opacity:1}#bigAnnouncement{position:absolute;left:50%;top:26%;transform:translateX(-50%);text-align:center;pointer-events:none;width:90%;font:45px var(--display);letter-spacing:4px;text-shadow:0 3px 25px #000;opacity:0;transition:opacity .3s}#bigAnnouncement small{display:block;font:11px var(--mono);letter-spacing:3px;margin-top:10px;color:var(--accent)}#bigAnnouncement.visible{opacity:1}#combatBar{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));left:3%;right:3%;display:flex;align-items:end;gap:12px}#weaponReadout{background:#111b1fdc;border-left:3px solid var(--accent);padding:13px 19px;min-width:240px}#weaponReadout .label{font:10px var(--mono);color:var(--accent);letter-spacing:2px}#weaponName{font:19px var(--display);letter-spacing:1px;margin-top:4px}#ammo{font:28px var(--mono);margin-left:10px;float:right}#ammo small{font-size:14px;color:var(--muted)}#reloadTrack{height:3px;background:#ffffff15;margin-top:8px}#reloadTrack i{display:block;height:100%;background:var(--accent);width:0}#actions{display:flex;gap:6px;flex-wrap:wrap;max-width:760px}#actions button{background:#122023e8;text-align:left;min-width:92px;font-size:11px;padding:10px 12px}#actions button b{font:10px var(--mono);color:var(--accent);display:block;margin-bottom:4px}#actions button.active{border-color:var(--accent)}#actions button span{color:var(--muted)}#combatTip{margin-left:auto;font:10px/1.8 var(--mono);color:var(--muted);text-align:right}.screen{position:absolute;inset:0;z-index:5}.scrim{position:absolute;inset:0;background:linear-gradient(90deg,#080f12f5 0%,#0a121acc 39%,#101a1d38 75%,transparent)}.menu-content{position:absolute;left:8%;top:21%;max-width:610px;width:68%}.eyebrow{font:11px var(--mono);letter-spacing:4px;color:var(--accent);text-transform:uppercase}.menu-content h1{font-family:var(--display);font-weight:normal;line-height:.88;font-size:clamp(58px,7.8vw,116px);letter-spacing:1px;margin:24px 0 9px}.subtitle{font:18px var(--mono);letter-spacing:11px;color:var(--accent)}.menu-desc{font:14px/1.8 var(--sans);max-width:380px;color:#b1bfbc;margin:25px 0}.menu-buttons{display:flex;flex-wrap:wrap;gap:9px;max-width:460px}.menu-buttons button{min-height:48px;padding:14px 21px}.menu-footer{position:absolute;left:8%;bottom:6%;font:10px/1.9 var(--mono);color:var(--muted);letter-spacing:1px}#menuProgress{margin-top:23px;font:11px/1.8 var(--mono);color:var(--green)}.version-tag{position:absolute;right:3%;bottom:5%;font:10px var(--mono);color:#899896;writing-mode:vertical-rl;letter-spacing:2px}.camp-shade{position:absolute;inset:0;background:#071116b8;backdrop-filter:blur(3px)}.camp-wrap{position:absolute;left:4%;top:135px;bottom:6%;width:65%;max-width:1000px;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);box-shadow:0 20px 90px #0005}.camp-heading{display:flex;align-items:center;justify-content:space-between;padding:20px 23px 17px;border-bottom:1px solid var(--line);gap:12px}.camp-heading h2{font:29px var(--display);letter-spacing:1px;margin:0}.camp-heading p{font:11px var(--mono);color:var(--muted);margin:7px 0 0}.camp-heading .budget{color:var(--accent);font:26px var(--mono);white-space:nowrap}.tabs{display:flex;padding:0 14px;border-bottom:1px solid var(--line);flex:none;overflow-x:auto}.tabs button{background:none;border:0;border-bottom:2px solid transparent;border-radius:0;font-size:11px;padding:15px 12px;color:var(--muted);white-space:nowrap}.tabs button.selected{border-bottom-color:var(--accent);color:var(--accent)}#shopBody{overflow-y:auto;padding:18px 21px;flex:1;overscroll-behavior:contain;scrollbar-color:#53635d #172022}.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{position:relative;border:1px solid var(--line);background:linear-gradient(140deg,#243031aa,#19242688);padding:15px;display:flex;flex-direction:column;min-width:0}.card.locked{opacity:.55}.card-top{display:flex;align-items:center;gap:13px}.card-icon{width:66px;height:37px;flex:none;color:#b7c6ba}.card-icon svg{width:100%;height:100%;fill:currentColor}.card h3{font-size:14px;letter-spacing:.2px;margin:0 0 5px}.card .tag{font:9px var(--mono);color:var(--accent);letter-spacing:1px}.card p{font:11px/1.65 var(--sans);color:#a7b6b0;margin:12px 0}.stats{font:10px/1.9 var(--mono);color:#cad1c6;margin-bottom:12px;flex:1}.card-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.card-actions button{flex:1;white-space:nowrap;min-height:33px;padding:8px;font-size:10px}.card .price{font:12px var(--mono);color:var(--accent)}.camp-bottom{padding:15px 21px;border-top:1px solid var(--line);display:flex;align-items:center;gap:13px;background:#141e21;flex:none}.camp-bottom button.primary{margin-left:auto;min-width:195px}.camp-bottom .ledger{font:10px/1.7 var(--mono);color:var(--muted)}.camp-bottom .ledger strong{color:var(--ink)}.intel{position:absolute;right:4%;width:24%;top:157px;bottom:8%;display:flex;flex-direction:column}.intel h3{font:13px var(--mono);letter-spacing:2px;color:var(--accent);margin:0 0 17px}.intel .night{font:88px var(--display);line-height:1;color:#d7dfd2}.intel .sub{font:10px var(--mono);letter-spacing:3px;color:var(--muted);margin:8px 0 22px}.intel p{font:12px/1.9 var(--sans);color:#b3c1ba}.intel hr{border:0;border-top:1px solid var(--line);margin:18px 0}.intel .intel-bottom{margin-top:auto;font:11px/1.8 var(--mono);color:#96a99d}.notice{border-left:2px solid var(--accent);background:#e5bc7310;padding:12px 14px;font:11px/1.8 var(--sans);color:#d3d6c7;margin:0 0 14px}.notice strong{color:var(--accent)}.slotgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.slotgrid button{padding:10px 7px;background:#1f2c2d;font:10px/1.7 var(--mono)}.slotgrid button.selected{border-color:var(--accent);color:var(--accent)}.section-label{font:10px var(--mono);letter-spacing:2px;color:var(--muted);margin:5px 0 12px}.fullcard{grid-column:1/-1}.summaryline{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font:12px var(--mono);gap:15px}.summaryline em{font-style:normal;color:var(--accent)}.center-shade{position:absolute;inset:0;background:#071014d9;backdrop-filter:blur(5px)}.dialog{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(590px,90%);max-height:86%;overflow:auto;background:#111d21;border:1px solid var(--line);padding:34px}.dialog h2{font:48px var(--display);letter-spacing:2px;margin:10px 0 17px}.dialog p{font:13px/1.9 var(--sans);color:#b7c4bd}.dialog .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.help-grid{display:grid;grid-template-columns:80px 1fr;gap:10px;font:12px/1.7 var(--sans)}.help-grid b{font-family:var(--mono);color:var(--accent)}#rotateNotice{display:none;position:absolute;top:110px;left:10%;right:10%;font:11px/1.7 var(--mono);text-align:center;color:var(--muted);pointer-events:none}.status-pill{display:inline-block;background:#d4b27313;color:var(--accent);border:1px solid #d4b27333;padding:4px 8px;font:9px var(--mono);margin-left:7px}.test-info{font:10px var(--mono);color:var(--muted)}
@@ -3646,7 +3646,7 @@ startWave=function(){if(phase!=='camp')return;ensureRoster(run);const scout=hasC
 };
 const rosterLimit=timeLimit;timeLimit=()=>rosterLimit()+(hasCrewService('malik')?8:0);
 const rosterSpawns=advanceSpawns;
-advanceSpawns=function(dt){const previous=wave?.intermission||0;rosterSpawns(dt);if(wave?.roster?.scout&&previous<=0&&wave.intermission>0)wave.intermission+=2;};
+advanceSpawns=function(dt){const previous=wave?.intermission||0;rosterSpawns(dt);if(wave?.roster?.scout&&previous<=0&&wave.intermission>0){wave.intermission+=2;wave.spawnTimer=Math.max(wave.spawnTimer,wave.intermission);}};
 const rosterBuild=buildWave;
 buildWave=function(n){let list=rosterBuild(n);const op=QUICK_OPS.find(o=>o.id===run?.operationId),mix=op?.roster;
  list=list.map((id,i)=>{
@@ -6933,7 +6933,8 @@ const v20StartWavePrior=startWave;
 startWave=function(){const out=v20StartWavePrior();if(phase==='combat'&&wave){wave.v20Start={cash:run.cash,wall:run.wall,health:run.health};v20ScorePending=null;}return out;};
 const v20FinishWavePrior=finishWave;
 finishWave=function(){
- const score=phase==='combat'&&!wave?.paid?v20ComputeScore():null;v20ScorePending=score;const out=v20FinishWavePrior();
+ const completingWave=wave,score=phase==='combat'&&!wave?.paid?v20ComputeScore():null;v20ScorePending=score;const out=v20FinishWavePrior();
+ if(!completingWave?.paid){v20ScorePending=null;return out;}
  if(score){v20EnsureData();const prior=data.meta.missionScores[score.key];if(!prior||score.score>prior.score){data.meta.missionScores[score.key]={score:score.score,grade:score.grade,seconds:score.seconds,accuracy:score.accuracy,at:Date.now()};score.newRecord=true;}if(run?.report)Object.assign(run.report,{v20Score:score.score,v20Grade:score.grade,v20Accuracy:score.accuracy,v20Record:!!score.newRecord});persist();if(phase==='camp'){saveCamp();renderCamp();}else if(phase==='victory'&&$('dialogBody')){const buttons=$('dialogBody').querySelector('.buttons');(buttons||$('dialogBody')).insertAdjacentHTML(buttons?'beforebegin':'beforeend',v20RecordScoreHTML(score));}}
  return out;
 };
@@ -7113,8 +7114,8 @@ animate=function(t){
 const v20MenuProfilePrior=renderMenuProfile;
 renderMenuProfile=function(){v20MenuProfilePrior();v20EnsureData();const card=$('menuProfileCard');if(!card)return;const grades=Object.values(data.meta.missionScores||{}),s=grades.filter(g=>g.grade==='S').length,a=grades.filter(g=>g.grade==='A').length,mastered=WEAPONS.filter(w=>v20MasteryTier(v20MasteryFor(w.id).kills)>=3).length;card.insertAdjacentHTML('beforeend',`<div class="v20-profile-extra"><span><b>${s}</b> rangs S</span><span><b>${a}</b> rangs A</span><span><b>${mastered}/${WEAPONS.length}</b> armes maîtrisées</span></div>`);};
 
-// PWA registration is only attempted on a real HTTP(S) origin. Standalone file play is unchanged.
-if(location.protocol==='http:'||location.protocol==='https:')window.addEventListener('load',()=>navigator.serviceWorker?.register('./sw.js').catch(()=>{}));
+// Standalone delivery keeps file play offline; HTTP uses the supplied manifest without a service-worker cache.
+/* No service worker is shipped: do not request a missing worker or cache stale HTML. */
 
 queueMicrotask(()=>{if(window.__DL)Object.assign(window.__DL,{
  step:dt=>{dt=Math.max(0,Math.min(.25,Number(dt)||0));if(v20SimulationAllowed()){worldTime+=dt;tick(dt);v20UpdateEffects(dt);}},
@@ -7301,11 +7302,11 @@ v20CommercialTick=function(dt){v21MetricTickPrior(dt);const m=wave?.v21Metrics;i
 const v21ScorePrior=v20ComputeScore;
 v20ComputeScore=function(){const score=v21ScorePrior();if(!score)return score;const combo=wave?.v21Metrics?.maxCombo||0;score.combo=combo;score.comboBonus=Math.min(300,combo*12);score.score+=score.comboBonus;score.grade=v20Grade(score.score);return score;};
 function v21AmmoCost(byWeapon){let total=0;for(const [id,m] of Object.entries(byWeapon||{})){const w=weapon(id);if(id==='pistol'||!w.pack||!w.ammoPrice)continue;total+=m.shots*(w.ammoPrice/w.pack);}return Math.round(total);}
-function v21BuildSession(result){const m=wave?.v21Metrics;if(!m||m.recorded||!run)return null;m.recorded=true;const shots=Object.values(m.byWeapon).reduce((n,v)=>n+v.shots,0),hits=Object.values(m.byWeapon).reduce((n,v)=>n+v.hits,0);const score=run.report?.v20Score||v20ScorePending?.score||0,grade=run.report?.v20Grade||v20ScorePending?.grade||'D';return{id:m.id,at:Date.now(),missionKey:m.missionKey,label:m.label,mode:m.mode,night:m.night,difficulty:m.difficulty,directive:m.directive,challenge:m.challenge,result,duration:Math.round((wave.time||0)*10)/10,shots,hits,accuracy:shots?Math.min(1,hits/shots):0,kills:wave.kills||0,headshots:wave.headshots||0,maxCombo:m.maxCombo,score,grade,cashStart:m.startCash,cashEnd:run.cash,wallStart:m.startWall,wallEnd:run.wall,healthStart:m.startHealth,healthEnd:run.health,wallDamage:Math.round(m.wallDamage),healthDamage:Math.round(m.healthDamage),grenades:m.grenades,repairs:m.repairs,medkits:m.medkits,ammoCost:v21AmmoCost(m.byWeapon),byWeapon:clone(m.byWeapon),feedback:null};}
+function v21BuildSession(result){const m=wave?.v21Metrics;if(!m||m.recorded||!run)return null;m.recorded=true;const shots=Object.values(m.byWeapon).reduce((n,v)=>n+v.shots,0),hits=Object.values(m.byWeapon).reduce((n,v)=>n+v.hits,0);const report=run.report?.night===m.night?run.report:null,score=report?.v20Score??v20ScorePending?.score??0,grade=report?.v20Grade??v20ScorePending?.grade??'D';return{id:m.id,at:Date.now(),missionKey:m.missionKey,label:m.label,mode:m.mode,night:m.night,difficulty:m.difficulty,directive:m.directive,challenge:m.challenge,result,duration:Math.round((wave.time||0)*10)/10,shots,hits,accuracy:shots?Math.min(1,hits/shots):0,kills:wave.kills||0,headshots:wave.headshots||0,maxCombo:m.maxCombo,score,grade,cashStart:m.startCash,cashEnd:run.cash,wallStart:m.startWall,wallEnd:run.wall,healthStart:m.startHealth,healthEnd:run.health,wallDamage:Math.round(m.wallDamage),healthDamage:Math.round(m.healthDamage),grenades:m.grenades,repairs:m.repairs,medkits:m.medkits,ammoCost:v21AmmoCost(m.byWeapon),byWeapon:clone(m.byWeapon),feedback:null};}
 function v21ChallengeRecordKey(c){return c?`${c.week}:${c.index}:${c.id}:${c.operationId}`:null;}
 function v21CommitSession(result){const session=v21BuildSession(result);if(!session)return null;run.v21LastSession=session;if(data.settings.v21Telemetry!==false){data.meta.v21Playtests.push(session);data.meta.v21Playtests=data.meta.v21Playtests.slice(-80);}const c=run.v21Challenge;if(result==='victory'&&c){const key=v21ChallengeRecordKey(c),prior=data.meta.v21Weekly[key];if(!prior||session.score>prior.score)data.meta.v21Weekly[key]={score:session.score,grade:session.grade,at:Date.now(),wins:(prior?.wins||0)+1};else prior.wins=(prior.wins||0)+1;}if(phase==='camp')saveCamp();else persist();return session;}
 const v21MetricFinishPrior=finishWave;
-finishWave=function(){const out=v21MetricFinishPrior();v21CommitSession('victory');return out;};
+finishWave=function(){const completingWave=wave,out=v21MetricFinishPrior();if(wave===completingWave&&completingWave?.paid)v21CommitSession('victory');return out;};
 const v21MetricEndPrior=endRun;
 endRun=function(victory){const session=v21CommitSession(victory?'victory':'defeat');const out=v21MetricEndPrior(victory);if(session)v21InjectDialogReport(session);return out;};
 function v21BestWeapon(session){const rows=Object.entries(session?.byWeapon||{}).sort((a,b)=>b[1].damage-a[1].damage);if(!rows.length)return null;return{id:rows[0][0],...rows[0][1]};}
@@ -7491,7 +7492,7 @@ advanceSpawns=function(dt){const d=wave?.v22Director;if(!d?.enabled)return v22Ad
  d.forcedLane=d.packRemaining>0&&!v22Boss(next)?d.pattern[d.packStep%d.pattern.length]:null;
  if(active>=profile.cap&&!v22Boss(next))wave.spawnTimer=Math.max(wave.spawnTimer,.18);
  const out=v22AdvancePrior(dt);const spawned=wave.spawned-before;
- if(interBefore<=0&&(wave.intermission||0)>0){const extra=Math.max(0,wave.intermission-6);wave.intermission=profile.intermission+extra;wave.spawnTimer=Math.max(wave.spawnTimer,wave.intermission);v22OpenBreather();}
+ if(interBefore<=0&&(wave.intermission||0)>0){const extra=Math.max(0,wave.intermission-6);wave.intermission=profile.intermission+extra;wave.spawnTimer=wave.intermission;v22OpenBreather();}
  if(spawned>0){d.packRemaining=Math.max(0,d.packRemaining-spawned);d.packStep+=spawned;if(d.packRemaining>0)wave.spawnTimer=Math.max(.11,wave.spawnTimer*profile.intra);else wave.spawnTimer=Math.max(wave.spawnTimer,profile.pause+(active/profile.cap)*.75);}
  d.forcedLane=null;return out;};
 
@@ -8722,7 +8723,7 @@ function tickWaterJourney(dt){const a=wave?.water;if(!a||!isWaterRun())return;co
  let speed=spec.speed;if(a.hazard==='active')speed-=site.id==='waterOpen'?16:site.id==='waterEstuary'?13:site.id==='waterCanal'?10:8;if(localEffect?.id==='waterCanal')speed+=28;a.speed=Math.max(16,Math.round(speed));a.distance+=a.speed/3.6*dt;}
 function waterModuleTick(){if(!isWaterRun()||!wave?.fronts)return;run.traps.forEach((t,i)=>{if(!t||!WATER_MODULE_IDS.includes(t.id))return;const s=SLOTS[i],hit=enemies.find(z=>!z.dead&&z.lane===s.lane&&Math.abs(z.x-s.x)<42);if(!hit)return;run.traps[i]=null;recordTrap(i);const targets=enemies.filter(z=>!z.dead&&Math.abs(z.x-s.x)<170).slice(0,t.id==='waterShock'?1:6);if(t.id==='waterShock')for(const z of targets){hitZombie(z,185,false,'trap');z.stun=Math.max(z.stun||0,2);interruptBoss(z);}else if(t.id==='waterDepth'){for(const z of targets)hitZombie(z,z.lane===s.lane?250:125,false,'trap');explosion(s.x,s.y-24,145,80);}else for(const z of targets){z.stun=Math.max(z.stun||0,4.5);interruptBoss(z);z.water??={};z.water.grip=4.5;}addParticle(s.x,s.y-35,'spark',t.id==='waterDepth'?'#d2d9b2':'#9ddbd5',22);});}
 function tickWaterAllies(dt){const c=wave?.waterCrew;if(!c||!run)return;const active=activeAllies().map(a=>a.id);c.shotTimer=Math.max(0,c.shotTimer-dt);c.repairCooldown=Math.max(0,c.repairCooldown-dt);if(active.includes('waterGunner')&&c.shots>0&&c.shotTimer===0){const z=chooseTarget();if(z){c.shots--;c.shotTimer=1.15;hitZombie(z,48,false,'ally');tracers.push(dl408AllyTrace('waterGunner',{x:1230,y:402,tx:z.x,ty:z.feet-frontBody(z)*z.size,life:.1,ally:true}));}}if(active.includes('waterMechanic')&&c.repairs>0&&!c.repairCooldown&&run.wall>0&&run.wall<run.wallMax*.5){const gain=Math.min(55,run.wallMax-run.wall);run.wall+=gain;c.repairs--;c.repairCooldown=10;textFloat(1110,440,'LÉONIE +'+gain,'#bfe2d7');}}
-function tickWaterSpitters(dt){if(!isWaterRun()||!wave)return;for(const z of enemies){if(z.dead||z.type!=='waterSpitter'||!z.water)continue;z.water.spit-=dt;if(z.water.spit<=0&&z.x>620){z.water.spit=3.4;projectiles.push({kind:'acid',x:z.x,y:z.feet-70*z.size,tx:1060,ty:z.feet-45,damage:z.damage,vx:220,vy:0});addParticle(z.x,z.feet-70*z.size,'hit','#9cc49a',7);}}}
+function tickWaterSpitters(dt){if(!isWaterRun()||!wave)return;for(const z of enemies){if(!dl441EnemyCanAct(z)||z.type!=='waterSpitter'||!z.water)continue;z.water.spit-=dt;if(z.water.spit<=0&&z.x>620){z.water.spit=3.4;projectiles.push({kind:'acid',x:z.x,y:z.feet-70*z.size,tx:1060,ty:z.feet-45,damage:z.damage,vx:220,vy:0});addParticle(z.x,z.feet-70*z.size,'hit','#9cc49a',7);}}}
 const v30TickPrior=tick;
 tick=function(dt){if(phase==='combat'&&isWaterRun()&&wave){const d=Math.min(dt,.1);tickWaterJourney(d);waterModuleTick();tickWaterSpitters(d);}v30TickPrior(dt);if(phase==='combat'&&isWaterRun()&&wave)tickWaterAllies(Math.min(dt,.1));for(const z of enemies)if(z.water)z.water.grip=Math.max(0,(z.water.grip||0)-Math.min(dt,.1));};
 const v30FinishPrior=finishWave;
@@ -9202,7 +9203,7 @@ hitZombie=function(z,damage,head=false,source='player'){
  return v32HitPrior(z,damage,head,source);
 };
 function v32SpecialTick(dt){if(phase!=='combat'||!wave)return;
- for(const z of enemies){if(z.dead)continue;
+ for(const z of enemies){if(!dl441EnemyCanAct(z)){dl441CancelRoadJump(z);continue;}
   if(z.type==='roadSpitter'&&z.road){z.road.spit-=dt;if(z.road.spit<=0&&z.x>560){z.road.spit=3.5;projectiles.push({kind:'acid',x:z.x,y:z.feet-70*z.size,tx:1060,ty:z.feet-45,damage:z.damage,vx:220,vy:0});addParticle(z.x,z.feet-70*z.size,'hit','#b99c63',7);}}
   if(z.type==='roadJumper'&&z.road){z.road.jump-=dt;if(z.road.warn>0){z.road.warn-=dt;if(z.road.warn<=0){z.lane=1-z.lane;z.feet=z.lane===0?486:619;z.road.jump=6;}}else if(z.road.jump<=0&&z.x<820){z.road.warn=.85;textFloat(z.x,z.feet-95,'CHANGEMENT','#e6c889');}}
   if(z.type==='darkSpitter'&&z.dark){z.dark.spit-=dt;if(z.dark.spit<=0&&z.x>560){z.dark.spit=3.7;projectiles.push({kind:'acid',x:z.x,y:z.feet-70*z.size,tx:1060,ty:z.feet-45,damage:z.damage,vx:215,vy:0});}}
@@ -11474,22 +11475,24 @@ function dl411Hash01(z){
  for(let i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),2246822519)>>>0;h^=h>>>13;}
  h=Math.imul(h^(h>>>16),3266489917)>>>0;return (h>>>0)/4294967295;
 }
-function dl411Corridor(z,view=currentView()){
- const p=depthGround(z.x,z.feet,view),a=depthGround(z.x,426,view),b=depthGround(z.x,688,view),left=Math.min(a.x,b.x),right=Math.max(a.x,b.x),width=Math.max(24,right-left);
+function dl411Corridor(z,view=currentView(),projection=null){
+ // A frame uses one depth/scale for a given x; the corridor edges only change feet.
+ const p=projection||depthGround(z.x,z.feet,view),a=720+(426-557)*3.0*p.scale,b=720+(688-557)*3.0*p.scale,left=Math.min(a,b),right=Math.max(a,b),width=Math.max(24,right-left);
  const margin=clamp((14+6*(z.size||1))*p.scale,3,Math.max(4,width*.09)),innerL=left+margin,innerR=right-margin,center=(innerL+innerR)/2,overlap=(innerR-innerL)*.24;
  const lane=Number(z.lane)||0,lo=lane===0?innerL:center-overlap,hi=lane===0?center+overlap:innerR;
  return {left,right,innerL,innerR,lo,hi,width,scale:p.scale,center};
 }
-function dl411ProjectedX(z,view=currentView()){
+function dl411ProjectedX(z,view=currentView(),projection=null){
  if(view!=='front'&&view!=='rear')return dl410ProjectedPrior(z,view).x;
- const c=dl411Corridor(z,view),u=dl411Hash01(z),phase=(u+((Number(z.id)||0)*.618033988749895))%1;
+ const c=dl411Corridor(z,view,projection),u=dl411Hash01(z),phase=(u+((Number(z.id)||0)*.618033988749895))%1;
  const sway=Math.sin((z.step||0)*.34+u*Math.PI*2)*Math.min(12,(c.hi-c.lo)*.035);
  return clamp(c.lo+(c.hi-c.lo)*phase+sway,c.innerL,c.innerR);
 }
 const dl411ProjectedPrior=projectedEnemy;
 projectedEnemy=function(z,view=currentView()){
- const p=dl411ProjectedPrior(z,view);
- if(view==='front'||view==='rear'){p.x=dl411ProjectedX(z,view);DL411.wideProjectionPasses++;}
+ // 0.41 owns the final horizontal position; earlier 0.40.9/0.40.10 offsets were overwritten.
+ const p=dl409ProjectedEnemyPrior(z,view);
+ if(view==='front'||view==='rear'){p.x=dl411ProjectedX(z,view,p);DL411.wideProjectionPasses++;}
  return p;
 };
 function dl411VisualFeet(z,view=currentView()){
@@ -11546,6 +11549,21 @@ function dl411About(){clearCombatInput();phase='about';showScreen('dialogScreen'
 const dl411InstallPrior=dl403InstallMenu;dl403InstallMenu=function(){const out=dl411InstallPrior();dl411Version();return out;};
 const dl411MenuPrior=dl403MenuPage;dl403MenuPage=function(...args){const out=dl411MenuPrior(...args);dl411Version();return out;};
 queueMicrotask(()=>{dl411Version();if(window.__DL)Object.assign(window.__DL,{fire:()=>fireGun(),grenade:()=>grenade(),hit:(...a)=>hitZombie(...a),projectedEnemy,dl411:{version:DL411.version,state:()=>({...DL411}),corridor:(z,v)=>dl411Corridor(z,v),projected:(z,v)=>projectedEnemy(z,v),visualFeet:(z,v)=>dl411VisualFeet(z,v),worldPoint:(z,y,v)=>dl411WorldVisualPoint(z,y,v),thrown:p=>depthThrownScreen(p)}});});
+
+/* 0.44.1 — Special attacks obey the same control effects as ordinary enemies. */
+function dl441EnemyCanAct(z) {
+  return !!z && !z.dead && !(z.stun > 0) && !distracted(z);
+}
+
+// The field guide promises that control cancels this announced lane change.
+// Clearing only the warning would immediately start another jump after release;
+// restore its normal cooldown so the next attempt has its own visible warning.
+function dl441CancelRoadJump(z) {
+  if (!z || z.dead || z.type !== 'roadJumper' || !z.road || z.road.warn <= 0) return;
+  if (!(z.stun > 0) && !distracted(z)) return;
+  z.road.warn = 0;
+  z.road.jump = 6;
+}
 
 
 })();
@@ -11738,21 +11756,26 @@ ensureLayer();requestAnimationFrame(tick);requestAnimationFrame(gamepadTick);
 <script id="dl42-ui-script">/* DERNIERE LIGNE 0.42.0 — POSTE DE COMMANDEMENT UI */
 (()=>{
 'use strict';
-const VERSION='0.42.0';
+const VERSION='0.44.1';
 const $id=id=>document.getElementById(id);
 const shell=$id('shell');
 if(!shell||shell.dataset.dl42Installed==='1')return;
 shell.dataset.dl42Installed='1';shell.classList.add('dl42-ui');
 
 function safe(fn){try{return fn();}catch(e){console.warn('[DL42 UI]',e);}}
+// A scene refresh must never restart the document's opening animation.
+let bootShown=false;
 function addChrome(){
  const testMode=/[?&]test=1(?:&|$)/.test(location.search);
- if(!testMode&&!$id('dl42Boot')){
-  const boot=document.createElement('div');boot.id='dl42Boot';boot.innerHTML='<div class="dl42-boot-core"><div class="dl42-boot-kicker">CONVOI // TERMINAL DE DEFENSE</div><div class="dl42-boot-title">DERNIERE<br>LIGNE</div><div class="dl42-boot-sub">ZERO REPLI</div><div class="dl42-boot-line"><i></i></div><div class="dl42-boot-state">POSTE 07 · SYNCHRONISATION LOCALE · 0.42.0</div></div>';shell.appendChild(boot);
-  let hidden=false;const close=()=>{if(hidden)return;hidden=true;boot.classList.add('hide');setTimeout(()=>boot.remove(),650)};setTimeout(close,1150);window.addEventListener('pointerdown',close,{once:true,capture:true});window.addEventListener('keydown',close,{once:true,capture:true});
+ if(!testMode&&!bootShown){
+  bootShown=true;
+  const boot=document.createElement('div');boot.id='dl42Boot';boot.innerHTML='<div class="dl42-boot-core"><div class="dl42-boot-kicker">CONVOI // TERMINAL DE DEFENSE</div><div class="dl42-boot-title">DERNIERE<br>LIGNE</div><div class="dl42-boot-sub">ZERO REPLI</div><div class="dl42-boot-line"><i></i></div><div class="dl42-boot-state">POSTE 07 · SYNCHRONISATION LOCALE · '+VERSION+'</div></div>';shell.appendChild(boot);
+  let hidden=false,closeTimer;
+  const close=()=>{if(hidden)return;hidden=true;clearTimeout(closeTimer);window.removeEventListener('pointerdown',close,true);window.removeEventListener('keydown',close,true);boot.classList.add('hide');setTimeout(()=>boot.remove(),650);};
+  closeTimer=setTimeout(close,1150);window.addEventListener('pointerdown',close,{once:true,capture:true});window.addEventListener('keydown',close,{once:true,capture:true});
  }
  if(!$id('dl42SceneWipe')){const e=document.createElement('div');e.id='dl42SceneWipe';shell.appendChild(e);}
- if(!$id('dl42TopStamp')){const e=document.createElement('div');e.id='dl42TopStamp';e.innerHTML='<i class="dl42-live-dot"></i><span>POSTE 07</span><span>//</span><span>RESEAU LOCAL</span><span>//</span><span>0.42.0</span>';shell.appendChild(e);}
+ if(!$id('dl42TopStamp')){const e=document.createElement('div');e.id='dl42TopStamp';e.innerHTML='<i class="dl42-live-dot"></i><span>POSTE 07</span><span>//</span><span>RESEAU LOCAL</span><span>//</span><span>'+VERSION+'</span>';shell.appendChild(e);}
  if(!$id('dl42ControlLegend')){const e=document.createElement('div');e.id='dl42ControlLegend';e.innerHTML='<span data-kb><kbd>↑↓←→</kbd>NAVIGUER</span><span data-kb><kbd>ENTRÉE</kbd>VALIDER</span><span data-kb><kbd>ÉCHAP</kbd>RETOUR</span><span data-pad hidden><kbd>LS</kbd>NAVIGUER</span><span data-pad hidden><kbd>A</kbd>VALIDER</span><span data-pad hidden><kbd>B</kbd>RETOUR</span><span><kbd>F10</kbd>PLEIN ÉCRAN</span>';shell.appendChild(e);}
  if(!$id('dl42TacticalLine')){const e=document.createElement('div');e.id='dl42TacticalLine';e.innerHTML='<span id="dl42Route">POSTE</span><span>•</span><b id="dl42View">VUE AVANT</b><span>•</span><span id="dl42Contacts">CONTACTS 0</span>';shell.appendChild(e);}
 }
@@ -11765,16 +11788,20 @@ function ensureFullscreenControls(){
  fullscreenLabel();
 }
 function versionPass(){
- document.title='Dernière Ligne — Poste de commandement 0.42.0';
- const tag=document.querySelector('.version-tag');if(tag)tag.textContent='0.42.0 // POSTE DE COMMANDEMENT';
- const foot=document.querySelector('.menu-footer');if(foot)foot.innerHTML='LA ROUTE RESTE OUVERTE TANT QUE VOUS TENEZ.<br>Version 0.42.0 · Interface de terrain';
+ // The current UI owns release labels once its layer is installed.
+ if(typeof window.DL44UI?.syncVersion==='function')window.DL44UI.syncVersion();
+ else{
+  document.title='Dernière Ligne — Poste stabilisé '+VERSION;
+  const tag=document.querySelector('.version-tag');if(tag)tag.textContent=VERSION+' // POSTE STABILISÉ';
+  const foot=document.querySelector('.menu-footer');if(foot)foot.innerHTML='LA ROUTE RESTE OUVERTE TANT QUE VOUS TENEZ.<br>Version '+VERSION+' · Interface de terrain';
+ }
  const desc=document.querySelector('#menuScreen .menu-desc');if(desc&&!desc.dataset.dl42){desc.dataset.dl42='1';desc.innerHTML='Un poste. Une barricade. Aucun repli.<br>Préparez la défense, choisissez votre route et tenez jusqu’au convoi.';}
 }
 function showDL42About(){
  safe(()=>{if(typeof clearCombatInput==='function')clearCombatInput();});
  if(typeof showScreen==='function')showScreen('dialogScreen');
  const body=$id('dialogBody');if(!body)return;
- body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · 0.42.0</div><h2>POSTE DE COMMANDEMENT</h2><p>Cette version unifie l’accueil, la préparation, le combat et les écrans système sous une même interface de terrain.</p><div class="notice"><strong>Gameplay conservé.</strong> 45 armes, six presets, Armurier, campagnes, Zone Noire et sauvegardes schéma 12 restent compatibles.</div><p>F10 bascule le plein écran. La légende de commandes suit automatiquement le clavier ou la manette détectée. Aucune donnée n’est envoyée en ligne.</p><div class="buttons"><button id="dl42-about-back" class="primary">RETOUR AU POSTE</button></div>';
+ body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · '+VERSION+'</div><h2>POSTE DE COMMANDEMENT</h2><p>Cette version unifie l’accueil, la préparation, le combat et les écrans système sous une même interface de terrain.</p><div class="notice"><strong>Gameplay conservé.</strong> 45 armes, six presets, Armurier, campagnes, Zone Noire et sauvegardes schéma 12 restent compatibles.</div><p>F10 bascule le plein écran. La légende de commandes suit automatiquement le clavier ou la manette détectée. Aucune donnée n’est envoyée en ligne.</p><div class="buttons"><button id="dl42-about-back" class="primary">RETOUR AU POSTE</button></div>';
  const back=$id('dl42-about-back');if(back)back.onclick=()=>{if(typeof showMenu==='function')showMenu();};
 }
 function aboutPass(){const b=$id('aboutGame');if(b&&!b.dataset.dl42About){b.dataset.dl42About='1';b.onclick=showDL42About;}}
@@ -11828,11 +11855,11 @@ addChrome();decorate();combatLine();
 window.DL42UI={version:VERSION,toggleFullscreen,decorate,combatLine,sceneFlash};
 })();
 </script>
-<script id="dl44-ui-script">/* DERNIERE LIGNE 0.44.0 — QA INTÉGRALE
+<script id="dl44-ui-script">/* DERNIERE LIGNE 0.44.1 — QA INTÉGRALE
    Progressive disclosure / compact HUD. Presentation only. */
 (()=>{
 'use strict';
-const VERSION='0.44.0';
+const VERSION='0.44.1';
 const $=id=>document.getElementById(id),shell=$('shell');
 if(!shell||shell.dataset.dl44Installed==='1')return;
 shell.dataset.dl44Installed='1';shell.classList.add('dl43-ui');
@@ -11840,12 +11867,12 @@ let detailsOpen=false,intelOpen=false,decorating=false;
 const tabCopy={
  readiness:['PRÉPARATION','Les points à vérifier avant de partir.'],operation:['MISSION','Objectif, décision du jour et contrat.'],approaches:['APPROCHES','Entrées, caméra et lecture du terrain.'],arsenal:['ARSENAL','Choisissez vos armes sans perdre le fil de la nuit.'],workshop:['ARMURIER','Montage, conversions et essais.'],convoy:['CONVOI','État de la route et ressources mobiles.'],traps:['DÉFENSES','Pièges et dispositifs de terrain.'],personnel:['PERSONNEL','Affectations et spécialistes.'],support:['ALLIÉS','Soutiens recrutés pour la prochaine défense.'],base:['STOCKS','Réserves, consommables et état du poste.'],projects:['PROJETS','Améliorations à moyen terme.'],equipment:['INSTALLATIONS','Équipements permanents du poste.'],training:['DOCTRINES','Progression et spécialisations.'],codex:['DOSSIERS','Archives et renseignements.'],report:['BILAN','Résultats et historique récent.'],metro:['LIGNE M','Préparation spécifique de la rame.'],air:['ARGO-17','Préparation spécifique du vol.'],north:['VALCENDRE','Préparation spécifique du Nord.'],water:['EAUX NOIRES','Préparation de la flottille.'],highway:['AUTOROUTE','Préparation du convoi mobile.']
 };
-function safe(fn){try{return fn();}catch(e){console.warn('[DL43 UI]',e);}}
+function safe(fn){try{return fn();}catch(e){console.warn('[DL44 UI]',e);}}
 function versionPass(){
- if(document.title!=='Dernière Ligne — QA intégrale 0.44.0')document.title='Dernière Ligne — QA intégrale 0.44.0';
- const tag=document.querySelector('.version-tag');if(tag&&tag.textContent!=='0.44.0 // QA INTÉGRALE')tag.textContent='0.44.0 // QA INTÉGRALE';
- const foot=document.querySelector('.menu-footer'),footHTML='QA INTÉGRALE · 4 PROFILS · AUCUN SYSTÈME RETIRÉ.<br>Version 0.44.0 · Poste stabilisé';if(foot&&foot.innerHTML!==footHTML)foot.innerHTML=footHTML;
- const stamp=$('dl42TopStamp');if(stamp){const s=stamp.querySelectorAll('span');if(s.length&&s[s.length-1].textContent!=='0.44.0')s[s.length-1].textContent='0.44.0';}
+ if(document.title!=='Dernière Ligne — Poste stabilisé '+VERSION)document.title='Dernière Ligne — Poste stabilisé '+VERSION;
+ const tag=document.querySelector('.version-tag');if(tag&&tag.textContent!==VERSION+' // POSTE STABILISÉ')tag.textContent=VERSION+' // POSTE STABILISÉ';
+ const foot=document.querySelector('.menu-footer'),footHTML='LA ROUTE RESTE OUVERTE TANT QUE VOUS TENEZ.<br>Version '+VERSION+' · Poste stabilisé';if(foot&&foot.innerHTML!==footHTML)foot.innerHTML=footHTML;
+ const stamp=$('dl42TopStamp');if(stamp){const s=stamp.querySelectorAll('span');if(s.length&&s[s.length-1].textContent!==VERSION)s[s.length-1].textContent=VERSION;}
 }
 function ensureCampTools(){
  const heading=document.querySelector('#campScreen .camp-heading');if(!heading)return;
@@ -11966,9 +11993,9 @@ function showAbout(){
  if(typeof phase!=='undefined')phase='about';
  shell.dataset.phase='about';
  if(typeof showScreen==='function')showScreen('dialogScreen');
- const body=$('dialogBody');if(!body)return;body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · 0.44.0</div><h2>POSTE STABILISÉ</h2><p>Cette passe QA intégrale stabilise l’interface et les parcours sans retirer les systèmes : menus, préparation, HUD, sauvegardes et huit familles jouables ont été contrôlés sous quatre profils de test.</p><div class="notice"><strong>Aucun système supprimé.</strong> Le bouton DÉTAILS restaure les explications secondaires de la préparation. Les corrections QA n’altèrent ni les dégâts, ni les prix, ni la balistique, ni le schéma 12 des sauvegardes.</div><div class="buttons"><button id="dl43AboutBack" class="primary">RETOUR AU MENU</button></div>';$('dl43AboutBack').onclick=()=>{if(typeof showMenu==='function')showMenu();};decorateDialog();
+ const body=$('dialogBody');if(!body)return;body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · '+VERSION+'</div><h2>POSTE STABILISÉ</h2><p>Préparez votre poste, équipez vos armes et tenez la ligne jusqu’à l’arrivée du convoi. Le démarrage et les changements d’écran partagent désormais la même version du poste.</p><div class="notice"><strong>Votre préparation reste accessible.</strong> Le bouton DÉTAILS affiche les explications secondaires. Vos profils restent compatibles avec les sauvegardes de schéma 12 ; utilisez l’export et l’import JSON pour les déplacer.</div><div class="buttons"><button id="dl43AboutBack" class="primary">RETOUR AU MENU</button></div>';$('dl43AboutBack').onclick=()=>{if(typeof showMenu==='function')showMenu();};decorateDialog();
 }
-function installAbout(){const b=$('aboutGame');if(!b)return;b.dataset.dl44About='1';b.onclick=showAbout;if(b.textContent!=='À PROPOS · 0.44.0')b.textContent='À PROPOS · 0.44.0';}
+function installAbout(){const b=$('aboutGame');if(!b)return;b.dataset.dl44About='1';b.onclick=showAbout;if(b.textContent!=='À PROPOS · '+VERSION)b.textContent='À PROPOS · '+VERSION;}
 // Re-decorate when legacy renderers replace the two dynamic roots.
 const watch=el=>{if(!el)return;new MutationObserver(()=>queueMicrotask(()=>{if(!decorating){decorate();installAbout();}})).observe(el,{childList:true});};
 watch($('shopBody'));watch($('dialogBody'));
@@ -11990,7 +12017,7 @@ document.addEventListener('pointerdown',e=>{if(intelOpen&&shell.dataset.phase===
 setInterval(()=>{versionPass();installAbout();if(shell.dataset.phase==='combat'){compactObjective();compactCombatChrome();}},240);
 
 installAbout();decorate();
-window.DL44UI={version:VERSION,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
+window.DL44UI={version:VERSION,syncVersion:versionPass,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
 })();
 </script>
 </body>

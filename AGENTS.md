@@ -2,10 +2,10 @@
 
 ## Projet vérifié
 
-- Jeu navigateur HTML/CSS/JavaScript, Canvas et Web Audio, version importée 0.44.0.
+- Jeu navigateur HTML/CSS/JavaScript, Canvas et Web Audio, version courante 0.44.1, import initial 0.44.0.
 - Entrée jouable hors ligne : `game/JOUER_DERNIERE_LIGNE.html`.
 - Build : `node game/build.mjs`, dépendances Node intégrées uniquement.
-- Le build part de `game/base/0.40.7.html`, applique ses remplacements contrôlés et injecte `src/spatial.js`, `src/ui_v42.css`, `src/ui_v42.js`, `src/ui_v44.css` et `src/ui_v44.js`.
+- Le build part de `game/base/0.40.7.html`, applique ses remplacements contrôlés et injecte `src/spatial.js`, `src/combat_v441.js`, `src/ui_v42.css`, `src/ui_v42.js`, `src/ui_v44.css` et `src/ui_v44.js`. Le rapport courant est `rapports/PATCHES_0_44_1.json`.
 - `src/orders.*` et `src/ui_v43.*` sont des sources historiques ; les modifier seuls ne modifie pas la sortie du build actuel. Suivre le chemin d'exécution réel avant toute édition.
 - Les bases `game/base/0.40.6.html` et `0.40.7.html` servent aussi aux comparaisons historiques. Préférer les sources actives et le build pour une correction. Une modification de base doit expliquer son effet sur ces comparaisons.
 - Les anciennes mentions de version du HTML de base sont reprises par les couches actuelles. Vérifier la version effective dans le navigateur ; ne pas remplacer globalement les numéros historiques.
@@ -55,6 +55,8 @@ Les tests Python de `game/tests/` ont des générations différentes. `verifier_
 Ne pas utiliser `game/tests/run_checks.py` comme gate universel : cet agrégateur historique appelle notamment une régression dont le titre attendu est 0.42.0. Voir `docs/IMPORT_0_44_0.md` pour la différence entre les anciens rapports et les contrôles de l'import.
 
 Après une modification intentionnelle du jeu, reconstruire, effectuer les contrôles pertinents, puis actualiser `game/MANIFEST_SHA256.json` avec les octets effectivement livrés. Ne pas régénérer les empreintes pour masquer un échec inexpliqué. Distinguer prévu, implémenté, intégré et vérifié en jeu dans le suivi.
+
+Les suites courantes sont `scripts/test-combat-0441.cjs` (contrôle des ennemis, cadence et journaux), `scripts/test-startup-web.cjs` (production file/HTTP), `scripts/regression-0441.cjs` (huit routes, armes, circuits et import 0.44.0), `scripts/smoke_game.cjs` (trois fenêtres) et `scripts/benchmark-projection-0441.cjs --correctness-only` (géométrie et pixels). La dernière nécessite le commit `f7a3c3c` dans l'historique ; utiliser `fetch-depth: 0` en CI. Les chronométrages du benchmark complet sont des observations locales, pas des seuils de CI ni des FPS garantis.
 
 ## Provenance des guides
 

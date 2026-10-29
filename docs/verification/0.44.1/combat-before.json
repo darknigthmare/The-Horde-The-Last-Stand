@@ -1,0 +1,3092 @@
+{
+  "started": "2026-10-29T11:01:04.484Z",
+  "finished": "2026-10-29T11:01:11.116Z",
+  "browser": "153.0.8010.0",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "game": "JOUER_DERNIERE_LIGNE.html",
+  "sha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6",
+  "mode": "file://, offline, original embedded images, opt-in ?test=1",
+  "passed": 36,
+  "failed": 31,
+  "checks": [
+    {
+      "name": "roadSpitter: ready shot remains functional",
+      "passed": true,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.45,
+          "stun": 0,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.45,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "roadSpitter: stun prevents attack and freezes its timer",
+      "passed": false,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.45,
+          "stun": 0.2,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.0500000000000016,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "roadSpitter: fires after stun expires",
+      "passed": true,
+      "details": {
+        "projectiles": 1,
+        "timer": 3.0500000000000016,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "roadSpitter: lure prevents attack and freezes its timer",
+      "passed": false,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.45,
+          "stun": 0,
+          "distracted": true
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.0500000000000016,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "roadSpitter: fires after lure expires",
+      "passed": true,
+      "details": {
+        "projectiles": 1,
+        "timer": 3.0500000000000016,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "roadSpitter: defeated enemy emits no projectile",
+      "passed": true,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 0,
+          "timer": 0.01,
+          "stun": 0,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 0,
+          "timer": 0.01,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "waterSpitter: ready shot remains functional",
+      "passed": true,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.35,
+          "stun": 0,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.35,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "waterSpitter: stun prevents attack and freezes its timer",
+      "passed": false,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.35,
+          "stun": 0.2,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 2.9500000000000015,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "waterSpitter: fires after stun expires",
+      "passed": true,
+      "details": {
+        "projectiles": 1,
+        "timer": 2.9500000000000015,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "waterSpitter: lure prevents attack and freezes its timer",
+      "passed": false,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.35,
+          "stun": 0,
+          "distracted": true
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 2.9500000000000015,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "waterSpitter: fires after lure expires",
+      "passed": true,
+      "details": {
+        "projectiles": 1,
+        "timer": 2.9500000000000015,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "waterSpitter: defeated enemy emits no projectile",
+      "passed": true,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 0,
+          "timer": 0.01,
+          "stun": 0,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 0,
+          "timer": 0.01,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "darkSpitter: ready shot remains functional",
+      "passed": true,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.6500000000000004,
+          "stun": 0,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.6500000000000004,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "darkSpitter: stun prevents attack and freezes its timer",
+      "passed": false,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.6500000000000004,
+          "stun": 0.2,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.2500000000000018,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "darkSpitter: fires after stun expires",
+      "passed": true,
+      "details": {
+        "projectiles": 1,
+        "timer": 3.2500000000000018,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "darkSpitter: lure prevents attack and freezes its timer",
+      "passed": false,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 1,
+          "timer": 3.6500000000000004,
+          "stun": 0,
+          "distracted": true
+        },
+        "resumed": {
+          "projectiles": 1,
+          "timer": 3.2500000000000018,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "darkSpitter: fires after lure expires",
+      "passed": true,
+      "details": {
+        "projectiles": 1,
+        "timer": 3.2500000000000018,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "darkSpitter: defeated enemy emits no projectile",
+      "passed": true,
+      "details": {
+        "timerBefore": 0.01,
+        "first": {
+          "projectiles": 0,
+          "timer": 0.01,
+          "stun": 0,
+          "distracted": false
+        },
+        "resumed": {
+          "projectiles": 0,
+          "timer": 0.01,
+          "stun": 0,
+          "distracted": false
+        }
+      }
+    },
+    {
+      "name": "roadJumper: announced lane change still completes without control",
+      "passed": true,
+      "details": {
+        "initialLane": 0,
+        "first": {
+          "lane": 1,
+          "warn": -0.04,
+          "jump": 5.95
+        }
+      }
+    },
+    {
+      "name": "roadJumper: stun cancels the announced jump",
+      "passed": false,
+      "details": {
+        "initialLane": 0,
+        "first": {
+          "lane": 1,
+          "warn": -0.04,
+          "jump": 5.95
+        },
+        "released": {
+          "lane": 1,
+          "warn": -0.04,
+          "jump": 5.550000000000002,
+          "stun": 0,
+          "distracted": false
+        },
+        "reannounced": {
+          "lane": 1,
+          "warn": 0.7999999999999999
+        },
+        "final": {
+          "lane": 0,
+          "warn": -2.0816681711721685e-16,
+          "jump": 5.9
+        }
+      }
+    },
+    {
+      "name": "roadJumper: no stale jump after stun expires",
+      "passed": false,
+      "details": {
+        "lane": 1,
+        "warn": -0.04,
+        "jump": 5.550000000000002,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "roadJumper: new attempt has a fresh warning after stun",
+      "passed": false,
+      "details": {
+        "initialLane": 0,
+        "first": {
+          "lane": 1,
+          "warn": -0.04,
+          "jump": 5.95
+        },
+        "released": {
+          "lane": 1,
+          "warn": -0.04,
+          "jump": 5.550000000000002,
+          "stun": 0,
+          "distracted": false
+        },
+        "reannounced": {
+          "lane": 1,
+          "warn": 0.7999999999999999
+        },
+        "final": {
+          "lane": 0,
+          "warn": -2.0816681711721685e-16,
+          "jump": 5.9
+        }
+      }
+    },
+    {
+      "name": "roadJumper: lure cancels the announced jump",
+      "passed": false,
+      "details": {
+        "initialLane": 1,
+        "first": {
+          "lane": 0,
+          "warn": -0.04,
+          "jump": 5.95
+        },
+        "released": {
+          "lane": 0,
+          "warn": -0.04,
+          "jump": 5.550000000000002,
+          "stun": 0,
+          "distracted": false
+        },
+        "reannounced": {
+          "lane": 0,
+          "warn": 0.7999999999999999
+        },
+        "final": {
+          "lane": 1,
+          "warn": -2.0816681711721685e-16,
+          "jump": 5.9
+        }
+      }
+    },
+    {
+      "name": "roadJumper: no stale jump after lure expires",
+      "passed": false,
+      "details": {
+        "lane": 0,
+        "warn": -0.04,
+        "jump": 5.550000000000002,
+        "stun": 0,
+        "distracted": false
+      }
+    },
+    {
+      "name": "roadJumper: new attempt has a fresh warning after lure",
+      "passed": false,
+      "details": {
+        "initialLane": 1,
+        "first": {
+          "lane": 0,
+          "warn": -0.04,
+          "jump": 5.95
+        },
+        "released": {
+          "lane": 0,
+          "warn": -0.04,
+          "jump": 5.550000000000002,
+          "stun": 0,
+          "distracted": false
+        },
+        "reannounced": {
+          "lane": 0,
+          "warn": 0.7999999999999999
+        },
+        "final": {
+          "lane": 1,
+          "warn": -2.0816681711721685e-16,
+          "jump": 5.9
+        }
+      }
+    },
+    {
+      "name": "roadJumper: defeated enemy never changes lane",
+      "passed": true,
+      "details": {
+        "initialLane": 1,
+        "first": {
+          "lane": 1,
+          "warn": 0.01,
+          "jump": 0
+        }
+      }
+    },
+    {
+      "name": "Breather classic, scout absent: countdown and spawn timer agree",
+      "passed": true,
+      "details": {
+        "spawned": 5,
+        "intermission": 6,
+        "timer": 6,
+        "scout": false
+      }
+    },
+    {
+      "name": "Breather classic, scout absent: arrival honors announced duration",
+      "passed": true,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 6,
+          "timer": 6,
+          "scout": false
+        },
+        "elapsed": 6.0499999999999865,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 1.3104892057480526
+        }
+      }
+    },
+    {
+      "name": "Breather classic, scout paid: countdown and spawn timer agree",
+      "passed": false,
+      "details": {
+        "spawned": 5,
+        "intermission": 8,
+        "timer": 6,
+        "scout": true
+      }
+    },
+    {
+      "name": "Breather classic, scout paid: arrival honors announced duration",
+      "passed": false,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 8,
+          "timer": 6,
+          "scout": true
+        },
+        "elapsed": 6.0499999999999865,
+        "earlyArrival": true,
+        "final": {
+          "spawned": 6,
+          "intermission": 1.9500000000000213,
+          "timer": 1.3611794983115748
+        }
+      }
+    },
+    {
+      "name": "Breather tactical, scout absent: countdown and spawn timer agree",
+      "passed": true,
+      "details": {
+        "spawned": 5,
+        "intermission": 6,
+        "timer": 6,
+        "scout": false
+      }
+    },
+    {
+      "name": "Breather tactical, scout absent: arrival honors announced duration",
+      "passed": true,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 6,
+          "timer": 6,
+          "scout": false
+        },
+        "elapsed": 6.0499999999999865,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 0.7967292265042495
+        }
+      }
+    },
+    {
+      "name": "Breather tactical, scout paid: countdown and spawn timer agree",
+      "passed": true,
+      "details": {
+        "spawned": 5,
+        "intermission": 8,
+        "timer": 8,
+        "scout": true
+      }
+    },
+    {
+      "name": "Breather tactical, scout paid: arrival honors announced duration",
+      "passed": true,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 8,
+          "timer": 8,
+          "scout": true
+        },
+        "elapsed": 8.04999999999998,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 1.2073959778478107
+        }
+      }
+    },
+    {
+      "name": "Breather nervous, scout absent: countdown and spawn timer agree",
+      "passed": false,
+      "details": {
+        "spawned": 5,
+        "intermission": 4.5,
+        "timer": 6,
+        "scout": false
+      }
+    },
+    {
+      "name": "Breather nervous, scout absent: arrival honors announced duration",
+      "passed": false,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 4.5,
+          "timer": 6,
+          "scout": false
+        },
+        "elapsed": 6.0499999999999865,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 0.6890856919063073
+        }
+      }
+    },
+    {
+      "name": "Breather nervous, scout paid: countdown and spawn timer agree",
+      "passed": true,
+      "details": {
+        "spawned": 5,
+        "intermission": 6.5,
+        "timer": 6.5,
+        "scout": true
+      }
+    },
+    {
+      "name": "Breather nervous, scout paid: arrival honors announced duration",
+      "passed": true,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 6.5,
+          "timer": 6.5,
+          "scout": true
+        },
+        "elapsed": 6.549999999999985,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 0.522604475496987
+        }
+      }
+    },
+    {
+      "name": "Breather relentless, scout absent: countdown and spawn timer agree",
+      "passed": false,
+      "details": {
+        "spawned": 5,
+        "intermission": 3.5,
+        "timer": 6,
+        "scout": false
+      }
+    },
+    {
+      "name": "Breather relentless, scout absent: arrival honors announced duration",
+      "passed": false,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 3.5,
+          "timer": 6,
+          "scout": false
+        },
+        "elapsed": 6.0499999999999865,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 0.3453664132258232
+        }
+      }
+    },
+    {
+      "name": "Breather relentless, scout paid: countdown and spawn timer agree",
+      "passed": false,
+      "details": {
+        "spawned": 5,
+        "intermission": 5.5,
+        "timer": 6,
+        "scout": true
+      }
+    },
+    {
+      "name": "Breather relentless, scout paid: arrival honors announced duration",
+      "passed": false,
+      "details": {
+        "initial": {
+          "spawned": 5,
+          "intermission": 5.5,
+          "timer": 6,
+          "scout": true
+        },
+        "elapsed": 6.0499999999999865,
+        "earlyArrival": false,
+        "final": {
+          "spawned": 6,
+          "intermission": 0,
+          "timer": 0.4453788478234532
+        }
+      }
+    },
+    {
+      "name": "Boss: stun still interrupts a mortar windup once",
+      "passed": true,
+      "details": {
+        "state": "recover",
+        "projectiles": 0,
+        "interruptions": 1
+      }
+    },
+    {
+      "name": "Boss: uncontested mortar salvo still creates three projectiles",
+      "passed": true,
+      "details": {
+        "state": "recover",
+        "projectiles": 3
+      }
+    },
+    {
+      "name": "Journey metro, later victory: no victory report or mission score before arrival",
+      "passed": false,
+      "details": {
+        "phase": "combat",
+        "paid": false,
+        "recorded": true,
+        "cash": 2320,
+        "xp": 0,
+        "time": 0.2,
+        "distance": 1.2222222222222223,
+        "target": 366,
+        "sessions": [
+          {
+            "id": "mvtfnfbk-41un6",
+            "at": 1793271668824,
+            "missionKey": "metro:1",
+            "label": "Trajet 1 · Les derniers sur le quai",
+            "mode": "metro",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2320,
+            "cashEnd": 2320,
+            "wallStart": 500,
+            "wallEnd": 500,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271668818
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later victory: no early cash, XP or career award",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": false,
+          "cash": 2320,
+          "xp": 0,
+          "time": 0,
+          "distance": 0,
+          "target": 366,
+          "sessions": [],
+          "score": null,
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "waiting": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2320,
+          "xp": 0,
+          "time": 0.2,
+          "distance": 1.2222222222222223,
+          "target": 366,
+          "sessions": [
+            {
+              "id": "mvtfnfbk-41un6",
+              "at": 1793271668824,
+              "missionKey": "metro:1",
+              "label": "Trajet 1 · Les derniers sur le quai",
+              "mode": "metro",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2320,
+              "cashEnd": 2320,
+              "wallStart": 500,
+              "wallEnd": 500,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271668818
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later victory: records the actual outcome and final totals once",
+      "passed": false,
+      "details": {
+        "phase": "camp",
+        "paid": true,
+        "recorded": true,
+        "cash": 2600,
+        "xp": 40,
+        "time": 0.9,
+        "distance": 366.30555555555554,
+        "target": 366,
+        "sessions": [
+          {
+            "id": "mvtfnfbk-41un6",
+            "at": 1793271668824,
+            "missionKey": "metro:1",
+            "label": "Trajet 1 · Les derniers sur le quai",
+            "mode": "metro",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2320,
+            "cashEnd": 2320,
+            "wallStart": 500,
+            "wallEnd": 500,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271668818
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later victory: repeated completion cannot duplicate records or rewards",
+      "passed": true,
+      "details": {
+        "finished": {
+          "phase": "camp",
+          "paid": true,
+          "recorded": true,
+          "cash": 2600,
+          "xp": 40,
+          "time": 0.9,
+          "distance": 366.30555555555554,
+          "target": 366,
+          "sessions": [
+            {
+              "id": "mvtfnfbk-41un6",
+              "at": 1793271668824,
+              "missionKey": "metro:1",
+              "label": "Trajet 1 · Les derniers sur le quai",
+              "mode": "metro",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2320,
+              "cashEnd": 2320,
+              "wallStart": 500,
+              "wallEnd": 500,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271668818
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "repeated": {
+          "phase": "camp",
+          "paid": true,
+          "recorded": true,
+          "cash": 2600,
+          "xp": 40,
+          "time": 0.9,
+          "distance": 366.30555555555554,
+          "target": 366,
+          "sessions": [
+            {
+              "id": "mvtfnfbk-41un6",
+              "at": 1793271668824,
+              "missionKey": "metro:1",
+              "label": "Trajet 1 · Les derniers sur le quai",
+              "mode": "metro",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2320,
+              "cashEnd": 2320,
+              "wallStart": 500,
+              "wallEnd": 500,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271668818
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later defeat: no victory report or mission score before arrival",
+      "passed": false,
+      "details": {
+        "phase": "combat",
+        "paid": false,
+        "recorded": true,
+        "cash": 2320,
+        "xp": 40,
+        "time": 0.2,
+        "distance": 1.2222222222222223,
+        "target": 366,
+        "sessions": [
+          {
+            "id": "mvtfnflb-35inv",
+            "at": 1793271669173,
+            "missionKey": "metro:1",
+            "label": "Trajet 1 · Les derniers sur le quai",
+            "mode": "metro",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2320,
+            "cashEnd": 2320,
+            "wallStart": 500,
+            "wallEnd": 500,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669168
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later defeat: no early cash, XP or career award",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": false,
+          "cash": 2320,
+          "xp": 40,
+          "time": 0,
+          "distance": 0,
+          "target": 366,
+          "sessions": [],
+          "score": null,
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "waiting": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2320,
+          "xp": 40,
+          "time": 0.2,
+          "distance": 1.2222222222222223,
+          "target": 366,
+          "sessions": [
+            {
+              "id": "mvtfnflb-35inv",
+              "at": 1793271669173,
+              "missionKey": "metro:1",
+              "label": "Trajet 1 · Les derniers sur le quai",
+              "mode": "metro",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2320,
+              "cashEnd": 2320,
+              "wallStart": 500,
+              "wallEnd": 500,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669168
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later defeat: records the actual outcome and final totals once",
+      "passed": false,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "recorded": true,
+        "cash": 2320,
+        "xp": 40,
+        "time": 0.8,
+        "distance": 5.194444444444443,
+        "target": 366,
+        "sessions": [
+          {
+            "id": "mvtfnflb-35inv",
+            "at": 1793271669173,
+            "missionKey": "metro:1",
+            "label": "Trajet 1 · Les derniers sur le quai",
+            "mode": "metro",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2320,
+            "cashEnd": 2320,
+            "wallStart": 500,
+            "wallEnd": 500,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669168
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey metro, later defeat: repeated completion cannot duplicate records or rewards",
+      "passed": true,
+      "details": {
+        "finished": {
+          "phase": "defeat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2320,
+          "xp": 40,
+          "time": 0.8,
+          "distance": 5.194444444444443,
+          "target": 366,
+          "sessions": [
+            {
+              "id": "mvtfnflb-35inv",
+              "at": 1793271669173,
+              "missionKey": "metro:1",
+              "label": "Trajet 1 · Les derniers sur le quai",
+              "mode": "metro",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2320,
+              "cashEnd": 2320,
+              "wallStart": 500,
+              "wallEnd": 500,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669168
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "repeated": {
+          "phase": "defeat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2320,
+          "xp": 40,
+          "time": 0.8,
+          "distance": 5.194444444444443,
+          "target": 366,
+          "sessions": [
+            {
+              "id": "mvtfnflb-35inv",
+              "at": 1793271669173,
+              "missionKey": "metro:1",
+              "label": "Trajet 1 · Les derniers sur le quai",
+              "mode": "metro",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2320,
+              "cashEnd": 2320,
+              "wallStart": 500,
+              "wallEnd": 500,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669168
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey air, later victory: no victory report or mission score before arrival",
+      "passed": false,
+      "details": {
+        "phase": "combat",
+        "paid": false,
+        "recorded": true,
+        "cash": 2510,
+        "xp": 40,
+        "time": 0.2,
+        "distance": 17.77777777777778,
+        "target": 4830,
+        "sessions": [
+          {
+            "id": "mvtfnfst-z7mk",
+            "at": 1793271669446,
+            "missionKey": "air:1",
+            "label": "Sortie 1 · Au-dessus des lampadaires",
+            "mode": "air",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2510,
+            "cashEnd": 2510,
+            "wallStart": 520,
+            "wallEnd": 520,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669439
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey air, later victory: no early cash, XP or career award",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": false,
+          "cash": 2510,
+          "xp": 40,
+          "time": 0,
+          "distance": 0,
+          "target": 4830,
+          "sessions": [],
+          "score": null,
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "waiting": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2510,
+          "xp": 40,
+          "time": 0.2,
+          "distance": 17.77777777777778,
+          "target": 4830,
+          "sessions": [
+            {
+              "id": "mvtfnfst-z7mk",
+              "at": 1793271669446,
+              "missionKey": "air:1",
+              "label": "Sortie 1 · Au-dessus des lampadaires",
+              "mode": "air",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2510,
+              "cashEnd": 2510,
+              "wallStart": 520,
+              "wallEnd": 520,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669439
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey air, later victory: records the actual outcome and final totals once",
+      "passed": false,
+      "details": {
+        "phase": "camp",
+        "paid": true,
+        "recorded": true,
+        "cash": 2790,
+        "xp": 40,
+        "time": 0.9,
+        "distance": 4834.444444444444,
+        "target": 4830,
+        "sessions": [
+          {
+            "id": "mvtfnfst-z7mk",
+            "at": 1793271669446,
+            "missionKey": "air:1",
+            "label": "Sortie 1 · Au-dessus des lampadaires",
+            "mode": "air",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2510,
+            "cashEnd": 2510,
+            "wallStart": 520,
+            "wallEnd": 520,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669439
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey air, later victory: repeated completion cannot duplicate records or rewards",
+      "passed": true,
+      "details": {
+        "finished": {
+          "phase": "camp",
+          "paid": true,
+          "recorded": true,
+          "cash": 2790,
+          "xp": 40,
+          "time": 0.9,
+          "distance": 4834.444444444444,
+          "target": 4830,
+          "sessions": [
+            {
+              "id": "mvtfnfst-z7mk",
+              "at": 1793271669446,
+              "missionKey": "air:1",
+              "label": "Sortie 1 · Au-dessus des lampadaires",
+              "mode": "air",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2510,
+              "cashEnd": 2510,
+              "wallStart": 520,
+              "wallEnd": 520,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669439
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "repeated": {
+          "phase": "camp",
+          "paid": true,
+          "recorded": true,
+          "cash": 2790,
+          "xp": 40,
+          "time": 0.9,
+          "distance": 4834.444444444444,
+          "target": 4830,
+          "sessions": [
+            {
+              "id": "mvtfnfst-z7mk",
+              "at": 1793271669446,
+              "missionKey": "air:1",
+              "label": "Sortie 1 · Au-dessus des lampadaires",
+              "mode": "air",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2510,
+              "cashEnd": 2510,
+              "wallStart": 520,
+              "wallEnd": 520,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669439
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey air, later defeat: no victory report or mission score before arrival",
+      "passed": false,
+      "details": {
+        "phase": "combat",
+        "paid": false,
+        "recorded": true,
+        "cash": 2510,
+        "xp": 40,
+        "time": 0.2,
+        "distance": 17.77777777777778,
+        "target": 4830,
+        "sessions": [
+          {
+            "id": "mvtfng3u-4g6tl",
+            "at": 1793271669840,
+            "missionKey": "air:1",
+            "label": "Sortie 1 · Au-dessus des lampadaires",
+            "mode": "air",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2510,
+            "cashEnd": 2510,
+            "wallStart": 520,
+            "wallEnd": 520,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669834
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey air, later defeat: no early cash, XP or career award",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": false,
+          "cash": 2510,
+          "xp": 40,
+          "time": 0,
+          "distance": 0,
+          "target": 4830,
+          "sessions": [],
+          "score": null,
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "waiting": {
+          "phase": "combat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2510,
+          "xp": 40,
+          "time": 0.2,
+          "distance": 17.77777777777778,
+          "target": 4830,
+          "sessions": [
+            {
+              "id": "mvtfng3u-4g6tl",
+              "at": 1793271669840,
+              "missionKey": "air:1",
+              "label": "Sortie 1 · Au-dessus des lampadaires",
+              "mode": "air",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2510,
+              "cashEnd": 2510,
+              "wallStart": 520,
+              "wallEnd": 520,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669834
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Journey air, later defeat: records the actual outcome and final totals once",
+      "passed": false,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "recorded": true,
+        "cash": 2510,
+        "xp": 40,
+        "time": 0.8,
+        "distance": 75.55555555555554,
+        "target": 4830,
+        "sessions": [
+          {
+            "id": "mvtfng3u-4g6tl",
+            "at": 1793271669840,
+            "missionKey": "air:1",
+            "label": "Sortie 1 · Au-dessus des lampadaires",
+            "mode": "air",
+            "night": 1,
+            "difficulty": "standard",
+            "directive": "none",
+            "challenge": null,
+            "result": "victory",
+            "duration": 0.1,
+            "shots": 0,
+            "hits": 0,
+            "accuracy": 0,
+            "kills": 0,
+            "headshots": 0,
+            "maxCombo": 0,
+            "score": 1164,
+            "grade": "C",
+            "cashStart": 2510,
+            "cashEnd": 2510,
+            "wallStart": 520,
+            "wallEnd": 520,
+            "healthStart": 100,
+            "healthEnd": 100,
+            "wallDamage": 0,
+            "healthDamage": 0,
+            "grenades": 0,
+            "repairs": 0,
+            "medkits": 0,
+            "ammoCost": 0,
+            "byWeapon": {},
+            "feedback": null,
+            "flow": {
+              "maxPressure": 0,
+              "maxActive": 0,
+              "packs": 0,
+              "surges": 0,
+              "choices": 0
+            },
+            "builds": {}
+          }
+        ],
+        "score": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669834
+        },
+        "career": {
+          "kills": {},
+          "awards": {}
+        }
+      }
+    },
+    {
+      "name": "Journey air, later defeat: repeated completion cannot duplicate records or rewards",
+      "passed": true,
+      "details": {
+        "finished": {
+          "phase": "defeat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2510,
+          "xp": 40,
+          "time": 0.8,
+          "distance": 75.55555555555554,
+          "target": 4830,
+          "sessions": [
+            {
+              "id": "mvtfng3u-4g6tl",
+              "at": 1793271669840,
+              "missionKey": "air:1",
+              "label": "Sortie 1 · Au-dessus des lampadaires",
+              "mode": "air",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2510,
+              "cashEnd": 2510,
+              "wallStart": 520,
+              "wallEnd": 520,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669834
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        },
+        "repeated": {
+          "phase": "defeat",
+          "paid": false,
+          "recorded": true,
+          "cash": 2510,
+          "xp": 40,
+          "time": 0.8,
+          "distance": 75.55555555555554,
+          "target": 4830,
+          "sessions": [
+            {
+              "id": "mvtfng3u-4g6tl",
+              "at": 1793271669840,
+              "missionKey": "air:1",
+              "label": "Sortie 1 · Au-dessus des lampadaires",
+              "mode": "air",
+              "night": 1,
+              "difficulty": "standard",
+              "directive": "none",
+              "challenge": null,
+              "result": "victory",
+              "duration": 0.1,
+              "shots": 0,
+              "hits": 0,
+              "accuracy": 0,
+              "kills": 0,
+              "headshots": 0,
+              "maxCombo": 0,
+              "score": 1164,
+              "grade": "C",
+              "cashStart": 2510,
+              "cashEnd": 2510,
+              "wallStart": 520,
+              "wallEnd": 520,
+              "healthStart": 100,
+              "healthEnd": 100,
+              "wallDamage": 0,
+              "healthDamage": 0,
+              "grenades": 0,
+              "repairs": 0,
+              "medkits": 0,
+              "ammoCost": 0,
+              "byWeapon": {},
+              "feedback": null,
+              "flow": {
+                "maxPressure": 0,
+                "maxActive": 0,
+                "packs": 0,
+                "surges": 0,
+                "choices": 0
+              },
+              "builds": {}
+            }
+          ],
+          "score": {
+            "score": 1164,
+            "grade": "C",
+            "seconds": 0,
+            "accuracy": 0,
+            "at": 1793271669834
+          },
+          "career": {
+            "kills": {},
+            "awards": {}
+          }
+        }
+      }
+    },
+    {
+      "name": "Consecutive campaign: later defeat cannot inherit the previous victory score",
+      "passed": false,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "previous": {
+          "id": "mvtfngbd-354dh",
+          "at": 1793271670235,
+          "missionKey": "campaign:1",
+          "label": "Nuit 1 · Dépôt 07",
+          "mode": "campaign",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 950,
+          "cashEnd": 1230,
+          "wallStart": 340,
+          "wallEnd": 340,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "current": {
+          "id": "mvtfngf9-98wc",
+          "at": 1793271670246,
+          "missionKey": "campaign:2",
+          "label": "Nuit 2 · Dépôt 07",
+          "mode": "campaign",
+          "night": 2,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "defeat",
+          "duration": 0,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 1230,
+          "cashEnd": 1230,
+          "wallStart": 340,
+          "wallEnd": 340,
+          "healthStart": 100,
+          "healthEnd": 0,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "previousAfter": {
+          "id": "mvtfngbd-354dh",
+          "at": 1793271670235,
+          "missionKey": "campaign:1",
+          "label": "Nuit 1 · Dépôt 07",
+          "mode": "campaign",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 950,
+          "cashEnd": 1230,
+          "wallStart": 340,
+          "wallEnd": 340,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "priorRecord": {
+          "score": 1154,
+          "grade": "C",
+          "seconds": 12,
+          "accuracy": 0,
+          "at": 1793271670195
+        },
+        "priorRecordAfter": {
+          "score": 1154,
+          "grade": "C",
+          "seconds": 12,
+          "accuracy": 0,
+          "at": 1793271670195
+        }
+      }
+    },
+    {
+      "name": "Consecutive campaign: previous victory and its record remain intact",
+      "passed": true,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "previous": {
+          "id": "mvtfngbd-354dh",
+          "at": 1793271670235,
+          "missionKey": "campaign:1",
+          "label": "Nuit 1 · Dépôt 07",
+          "mode": "campaign",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 950,
+          "cashEnd": 1230,
+          "wallStart": 340,
+          "wallEnd": 340,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "current": {
+          "id": "mvtfngf9-98wc",
+          "at": 1793271670246,
+          "missionKey": "campaign:2",
+          "label": "Nuit 2 · Dépôt 07",
+          "mode": "campaign",
+          "night": 2,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "defeat",
+          "duration": 0,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 1230,
+          "cashEnd": 1230,
+          "wallStart": 340,
+          "wallEnd": 340,
+          "healthStart": 100,
+          "healthEnd": 0,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "previousAfter": {
+          "id": "mvtfngbd-354dh",
+          "at": 1793271670235,
+          "missionKey": "campaign:1",
+          "label": "Nuit 1 · Dépôt 07",
+          "mode": "campaign",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 950,
+          "cashEnd": 1230,
+          "wallStart": 340,
+          "wallEnd": 340,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "priorRecord": {
+          "score": 1154,
+          "grade": "C",
+          "seconds": 12,
+          "accuracy": 0,
+          "at": 1793271670195
+        },
+        "priorRecordAfter": {
+          "score": 1154,
+          "grade": "C",
+          "seconds": 12,
+          "accuracy": 0,
+          "at": 1793271670195
+        }
+      }
+    },
+    {
+      "name": "Consecutive metro: later defeat cannot inherit the previous victory score",
+      "passed": false,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "previous": {
+          "id": "mvtfngjl-1hkop",
+          "at": 1793271670562,
+          "missionKey": "metro:1",
+          "label": "Trajet 1 · Les derniers sur le quai",
+          "mode": "metro",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2320,
+          "cashEnd": 2600,
+          "wallStart": 500,
+          "wallEnd": 500,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "current": {
+          "id": "mvtfngoi-5s7kn",
+          "at": 1793271670578,
+          "missionKey": "metro:2",
+          "label": "Trajet 2 · Les lampes défilent",
+          "mode": "metro",
+          "night": 2,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "defeat",
+          "duration": 0,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2520,
+          "cashEnd": 2520,
+          "wallStart": 500,
+          "wallEnd": 500,
+          "healthStart": 100,
+          "healthEnd": 0,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "previousAfter": {
+          "id": "mvtfngjl-1hkop",
+          "at": 1793271670562,
+          "missionKey": "metro:1",
+          "label": "Trajet 1 · Les derniers sur le quai",
+          "mode": "metro",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2320,
+          "cashEnd": 2600,
+          "wallStart": 500,
+          "wallEnd": 500,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "priorRecord": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669168
+        },
+        "priorRecordAfter": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669168
+        }
+      }
+    },
+    {
+      "name": "Consecutive metro: previous victory and its record remain intact",
+      "passed": true,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "previous": {
+          "id": "mvtfngjl-1hkop",
+          "at": 1793271670562,
+          "missionKey": "metro:1",
+          "label": "Trajet 1 · Les derniers sur le quai",
+          "mode": "metro",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2320,
+          "cashEnd": 2600,
+          "wallStart": 500,
+          "wallEnd": 500,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "current": {
+          "id": "mvtfngoi-5s7kn",
+          "at": 1793271670578,
+          "missionKey": "metro:2",
+          "label": "Trajet 2 · Les lampes défilent",
+          "mode": "metro",
+          "night": 2,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "defeat",
+          "duration": 0,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2520,
+          "cashEnd": 2520,
+          "wallStart": 500,
+          "wallEnd": 500,
+          "healthStart": 100,
+          "healthEnd": 0,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "previousAfter": {
+          "id": "mvtfngjl-1hkop",
+          "at": 1793271670562,
+          "missionKey": "metro:1",
+          "label": "Trajet 1 · Les derniers sur le quai",
+          "mode": "metro",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2320,
+          "cashEnd": 2600,
+          "wallStart": 500,
+          "wallEnd": 500,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "priorRecord": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669168
+        },
+        "priorRecordAfter": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669168
+        }
+      }
+    },
+    {
+      "name": "Consecutive air: later defeat cannot inherit the previous victory score",
+      "passed": false,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "previous": {
+          "id": "mvtfngtl-5k4sq",
+          "at": 1793271670929,
+          "missionKey": "air:1",
+          "label": "Sortie 1 · Au-dessus des lampadaires",
+          "mode": "air",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2510,
+          "cashEnd": 2790,
+          "wallStart": 520,
+          "wallEnd": 520,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "current": {
+          "id": "mvtfngyw-1ge2i",
+          "at": 1793271670953,
+          "missionKey": "air:2",
+          "label": "Sortie 2 · Les fenêtres en dessous",
+          "mode": "air",
+          "night": 2,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "defeat",
+          "duration": 0,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2700,
+          "cashEnd": 2700,
+          "wallStart": 520,
+          "wallEnd": 520,
+          "healthStart": 100,
+          "healthEnd": 0,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "previousAfter": {
+          "id": "mvtfngtl-5k4sq",
+          "at": 1793271670929,
+          "missionKey": "air:1",
+          "label": "Sortie 1 · Au-dessus des lampadaires",
+          "mode": "air",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2510,
+          "cashEnd": 2790,
+          "wallStart": 520,
+          "wallEnd": 520,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "priorRecord": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669834
+        },
+        "priorRecordAfter": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669834
+        }
+      }
+    },
+    {
+      "name": "Consecutive air: previous victory and its record remain intact",
+      "passed": true,
+      "details": {
+        "phase": "defeat",
+        "paid": false,
+        "previous": {
+          "id": "mvtfngtl-5k4sq",
+          "at": 1793271670929,
+          "missionKey": "air:1",
+          "label": "Sortie 1 · Au-dessus des lampadaires",
+          "mode": "air",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2510,
+          "cashEnd": 2790,
+          "wallStart": 520,
+          "wallEnd": 520,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "current": {
+          "id": "mvtfngyw-1ge2i",
+          "at": 1793271670953,
+          "missionKey": "air:2",
+          "label": "Sortie 2 · Les fenêtres en dessous",
+          "mode": "air",
+          "night": 2,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "defeat",
+          "duration": 0,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2700,
+          "cashEnd": 2700,
+          "wallStart": 520,
+          "wallEnd": 520,
+          "healthStart": 100,
+          "healthEnd": 0,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "previousAfter": {
+          "id": "mvtfngtl-5k4sq",
+          "at": 1793271670929,
+          "missionKey": "air:1",
+          "label": "Sortie 1 · Au-dessus des lampadaires",
+          "mode": "air",
+          "night": 1,
+          "difficulty": "standard",
+          "directive": "none",
+          "challenge": null,
+          "result": "victory",
+          "duration": 12.1,
+          "shots": 0,
+          "hits": 0,
+          "accuracy": 0,
+          "kills": 0,
+          "headshots": 0,
+          "maxCombo": 0,
+          "score": 1154,
+          "grade": "C",
+          "cashStart": 2510,
+          "cashEnd": 2790,
+          "wallStart": 520,
+          "wallEnd": 520,
+          "healthStart": 100,
+          "healthEnd": 100,
+          "wallDamage": 0,
+          "healthDamage": 0,
+          "grenades": 0,
+          "repairs": 0,
+          "medkits": 0,
+          "ammoCost": 0,
+          "byWeapon": {},
+          "feedback": null,
+          "flow": {
+            "maxPressure": 0,
+            "maxActive": 0,
+            "packs": 0,
+            "surges": 0,
+            "choices": 0
+          },
+          "builds": {}
+        },
+        "priorRecord": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669834
+        },
+        "priorRecordAfter": {
+          "score": 1164,
+          "grade": "C",
+          "seconds": 0,
+          "accuracy": 0,
+          "at": 1793271669834
+        }
+      }
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "runtimeErrors": [],
+  "fatal": null,
+  "limitations": [
+    "Controlled combat regressions; not a full campaign replay or difficulty-balancing certification.",
+    "Headless desktop browser; physical device interaction and audio listening are covered separately."
+  ]
+}

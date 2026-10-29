@@ -1,0 +1,19 @@
+{
+  "name": "Dernière Ligne — Zéro Repli",
+  "short_name": "Dernière Ligne",
+  "description": "Préparez votre poste et défendez la dernière ligne jusqu’au convoi.",
+  "lang": "fr",
+  "start_url": "./JOUER_DERNIERE_LIGNE.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080e11",
+  "theme_color": "#071216",
+  "icons": [
+    {
+      "src": "assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

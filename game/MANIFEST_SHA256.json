@@ -1,5 +1,5 @@
 {
-  "version": "0.44.0",
+  "version": "0.44.1",
   "files": [
     {
       "path": "GALERIE_TERRAINS.html",
@@ -8,8 +8,8 @@
     },
     {
       "path": "JOUER_DERNIERE_LIGNE.html",
-      "bytes": 28008369,
-      "sha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6"
+      "bytes": 28009917,
+      "sha256": "41cbdef473793442577e366212f229cce62f73d73e4951837da12115207921e4"
     },
     {
       "path": "RAPPORT_GEOMETRIE_0_41_0.html",
@@ -38,8 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2943,
-      "sha256": "3090eb26d677da01f1740bf4b99f1617eb136491d9a61177921aeae0b1ddde2a"
+      "bytes": 3354,
+      "sha256": "0fdfadd20257fabfaf16ce969dcb625cde0cf769cb8a38f7e4ecefe004a85ac7"
+    },
+    {
+      "path": "assets/audio/manifest.json",
+      "bytes": 20,
+      "sha256": "1f4e9f0d8a9f27b3a757aabad980e5230ac8cbb203a438ae60df176492e2f39b"
     },
     {
       "path": "assets/icons/icon.svg",
@@ -523,8 +528,8 @@
     },
     {
       "path": "build.mjs",
-      "bytes": 6844,
-      "sha256": "cc6c32f2925e3475cf16ccf587f128bc8a410627c1395321c015b99a1902bbe6"
+      "bytes": 9904,
+      "sha256": "18b8065f277f92696ffc181947599245a9578fc1e44a3bebdb53ecdc681f8adb"
     },
     {
       "path": "docs/CHANGEMENTS_0407.md",
@@ -640,6 +645,11 @@
       "path": "docs/VALIDATION_0_44_0.md",
       "bytes": 1815,
       "sha256": "32a1e377d726eb25fd4935227477f0ccf2a1fd8505dc3e0997cd010b7c61adeb"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 487,
+      "sha256": "459c75d68d59a1defa825eae737e13133b45fa0f4860937eb6546c0b375a5571"
     },
     {
       "path": "previews/0408/apercu.jpg",
@@ -1612,6 +1622,16 @@
       "sha256": "35ce11736c94f23ac45b9ae8b63113abbc8156f0976220cccf1e1bc2aa790c45"
     },
     {
+      "path": "previews/0410/front-large-horde.png",
+      "bytes": 421942,
+      "sha256": "c84b32e9054585b757293e06bf99960c0dda4b74362fe22442aac3fb8a67ef5b"
+    },
+    {
+      "path": "previews/0410/rear-countershot.png",
+      "bytes": 757763,
+      "sha256": "4a0f2c9ddce2c749d901dbe793c7957d50a1a4ceae8a82710aae0917d9a62db0"
+    },
+    {
       "path": "previews/0410-final/front-large-horde.png",
       "bytes": 348533,
       "sha256": "fb55b268ce39f04cfcb803424da5bdd6d712367597daf02d495880c85243deca"
@@ -1625,16 +1645,6 @@
       "path": "previews/0410-final/rear-impact-aligned.png",
       "bytes": 352758,
       "sha256": "5878e2ba2083424edd0bd6c5be556686beac8d0ae7f8157e01f26e8d1a8a5e46"
-    },
-    {
-      "path": "previews/0410/front-large-horde.png",
-      "bytes": 421942,
-      "sha256": "c84b32e9054585b757293e06bf99960c0dda4b74362fe22442aac3fb8a67ef5b"
-    },
-    {
-      "path": "previews/0410/rear-countershot.png",
-      "bytes": 757763,
-      "sha256": "4a0f2c9ddce2c749d901dbe793c7957d50a1a4ceae8a82710aae0917d9a62db0"
     },
     {
       "path": "previews/0420/camp-ui-light.png",
@@ -1897,6 +1907,11 @@
       "sha256": "ff353fa0d0082cf100c25693f34e4715d0f73a7301f02dc7bc5892033ec211b5"
     },
     {
+      "path": "rapports/PATCHES_0_44_1.json",
+      "bytes": 1803,
+      "sha256": "f63132cd6dbba0f5059d1b277ed3e69d8a5e6e700bb156571c6b8b760d594280"
+    },
+    {
       "path": "rapports/PROTOCOLS_PROD_044.json",
       "bytes": 545,
       "sha256": "501ad84f2693693d92ea67e0354a2a96fd06dc72566d095c87505076c4636c2e"
@@ -2087,6 +2102,11 @@
       "sha256": "836f2af7be07ce705bb9e944313804fca1e438bb9a06d55e77f6a7869d5e5253"
     },
     {
+      "path": "src/combat_v441.js",
+      "bytes": 623,
+      "sha256": "05ab5959fcc976ecda1754abea1e8f8f181428ff73415501f0caef8505a3a069"
+    },
+    {
       "path": "src/orders.css",
       "bytes": 4775,
       "sha256": "1cb746522c51a91ae975b46562aa0acff4793c3054c236d29f787206c278a667"
@@ -2098,8 +2118,8 @@
     },
     {
       "path": "src/spatial.js",
-      "bytes": 30508,
-      "sha256": "e29e18e4ef9f3a62dc29ddcfaa9f820e9298ca1c16355f900e87494903f1f439"
+      "bytes": 30741,
+      "sha256": "9687f01b45a2bb1fbde00e8bdee7da10dd3fc708c67587953d53f36bb5f1ba59"
     },
     {
       "path": "src/ui_v42.css",
@@ -2108,8 +2128,8 @@
     },
     {
       "path": "src/ui_v42.js",
-      "bytes": 8813,
-      "sha256": "214968ff68cd2c9a9bf0ebe0674c9869168ac6dd2eb07e74a685b5434497c7e2"
+      "bytes": 9249,
+      "sha256": "1befe9601121e1a9bd448cdd0bff2740eaf2d2768fdf4dd7e019c4e436cdfe79"
     },
     {
       "path": "src/ui_v43.css",
@@ -2128,8 +2148,8 @@
     },
     {
       "path": "src/ui_v44.js",
-      "bytes": 17222,
-      "sha256": "91cb8e4976df974632f0aa372a0f30994c5f883c0cc6ff7c6be95e0272f80831"
+      "bytes": 17249,
+      "sha256": "5ea66e07f9780a97a0db2e5477162d4e34cb2f3a179a4945ef477bfd6f8b7a28"
     },
     {
       "path": "tests/atelier.py",

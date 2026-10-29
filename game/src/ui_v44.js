@@ -1,8 +1,8 @@
-/* DERNIERE LIGNE 0.44.0 — QA INTÉGRALE
+/* DERNIERE LIGNE 0.44.1 — QA INTÉGRALE
    Progressive disclosure / compact HUD. Presentation only. */
 (()=>{
 'use strict';
-const VERSION='0.44.0';
+const VERSION='0.44.1';
 const $=id=>document.getElementById(id),shell=$('shell');
 if(!shell||shell.dataset.dl44Installed==='1')return;
 shell.dataset.dl44Installed='1';shell.classList.add('dl43-ui');
@@ -10,12 +10,12 @@ let detailsOpen=false,intelOpen=false,decorating=false;
 const tabCopy={
  readiness:['PRÉPARATION','Les points à vérifier avant de partir.'],operation:['MISSION','Objectif, décision du jour et contrat.'],approaches:['APPROCHES','Entrées, caméra et lecture du terrain.'],arsenal:['ARSENAL','Choisissez vos armes sans perdre le fil de la nuit.'],workshop:['ARMURIER','Montage, conversions et essais.'],convoy:['CONVOI','État de la route et ressources mobiles.'],traps:['DÉFENSES','Pièges et dispositifs de terrain.'],personnel:['PERSONNEL','Affectations et spécialistes.'],support:['ALLIÉS','Soutiens recrutés pour la prochaine défense.'],base:['STOCKS','Réserves, consommables et état du poste.'],projects:['PROJETS','Améliorations à moyen terme.'],equipment:['INSTALLATIONS','Équipements permanents du poste.'],training:['DOCTRINES','Progression et spécialisations.'],codex:['DOSSIERS','Archives et renseignements.'],report:['BILAN','Résultats et historique récent.'],metro:['LIGNE M','Préparation spécifique de la rame.'],air:['ARGO-17','Préparation spécifique du vol.'],north:['VALCENDRE','Préparation spécifique du Nord.'],water:['EAUX NOIRES','Préparation de la flottille.'],highway:['AUTOROUTE','Préparation du convoi mobile.']
 };
-function safe(fn){try{return fn();}catch(e){console.warn('[DL43 UI]',e);}}
+function safe(fn){try{return fn();}catch(e){console.warn('[DL44 UI]',e);}}
 function versionPass(){
- if(document.title!=='Dernière Ligne — QA intégrale 0.44.0')document.title='Dernière Ligne — QA intégrale 0.44.0';
- const tag=document.querySelector('.version-tag');if(tag&&tag.textContent!=='0.44.0 // QA INTÉGRALE')tag.textContent='0.44.0 // QA INTÉGRALE';
- const foot=document.querySelector('.menu-footer'),footHTML='QA INTÉGRALE · 4 PROFILS · AUCUN SYSTÈME RETIRÉ.<br>Version 0.44.0 · Poste stabilisé';if(foot&&foot.innerHTML!==footHTML)foot.innerHTML=footHTML;
- const stamp=$('dl42TopStamp');if(stamp){const s=stamp.querySelectorAll('span');if(s.length&&s[s.length-1].textContent!=='0.44.0')s[s.length-1].textContent='0.44.0';}
+ if(document.title!=='Dernière Ligne — Poste stabilisé '+VERSION)document.title='Dernière Ligne — Poste stabilisé '+VERSION;
+ const tag=document.querySelector('.version-tag');if(tag&&tag.textContent!==VERSION+' // POSTE STABILISÉ')tag.textContent=VERSION+' // POSTE STABILISÉ';
+ const foot=document.querySelector('.menu-footer'),footHTML='LA ROUTE RESTE OUVERTE TANT QUE VOUS TENEZ.<br>Version '+VERSION+' · Poste stabilisé';if(foot&&foot.innerHTML!==footHTML)foot.innerHTML=footHTML;
+ const stamp=$('dl42TopStamp');if(stamp){const s=stamp.querySelectorAll('span');if(s.length&&s[s.length-1].textContent!==VERSION)s[s.length-1].textContent=VERSION;}
 }
 function ensureCampTools(){
  const heading=document.querySelector('#campScreen .camp-heading');if(!heading)return;
@@ -136,9 +136,9 @@ function showAbout(){
  if(typeof phase!=='undefined')phase='about';
  shell.dataset.phase='about';
  if(typeof showScreen==='function')showScreen('dialogScreen');
- const body=$('dialogBody');if(!body)return;body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · 0.44.0</div><h2>POSTE STABILISÉ</h2><p>Cette passe QA intégrale stabilise l’interface et les parcours sans retirer les systèmes : menus, préparation, HUD, sauvegardes et huit familles jouables ont été contrôlés sous quatre profils de test.</p><div class="notice"><strong>Aucun système supprimé.</strong> Le bouton DÉTAILS restaure les explications secondaires de la préparation. Les corrections QA n’altèrent ni les dégâts, ni les prix, ni la balistique, ni le schéma 12 des sauvegardes.</div><div class="buttons"><button id="dl43AboutBack" class="primary">RETOUR AU MENU</button></div>';$('dl43AboutBack').onclick=()=>{if(typeof showMenu==='function')showMenu();};decorateDialog();
+ const body=$('dialogBody');if(!body)return;body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · '+VERSION+'</div><h2>POSTE STABILISÉ</h2><p>Préparez votre poste, équipez vos armes et tenez la ligne jusqu’à l’arrivée du convoi. Le démarrage et les changements d’écran partagent désormais la même version du poste.</p><div class="notice"><strong>Votre préparation reste accessible.</strong> Le bouton DÉTAILS affiche les explications secondaires. Vos profils restent compatibles avec les sauvegardes de schéma 12 ; utilisez l’export et l’import JSON pour les déplacer.</div><div class="buttons"><button id="dl43AboutBack" class="primary">RETOUR AU MENU</button></div>';$('dl43AboutBack').onclick=()=>{if(typeof showMenu==='function')showMenu();};decorateDialog();
 }
-function installAbout(){const b=$('aboutGame');if(!b)return;b.dataset.dl44About='1';b.onclick=showAbout;if(b.textContent!=='À PROPOS · 0.44.0')b.textContent='À PROPOS · 0.44.0';}
+function installAbout(){const b=$('aboutGame');if(!b)return;b.dataset.dl44About='1';b.onclick=showAbout;if(b.textContent!=='À PROPOS · '+VERSION)b.textContent='À PROPOS · '+VERSION;}
 // Re-decorate when legacy renderers replace the two dynamic roots.
 const watch=el=>{if(!el)return;new MutationObserver(()=>queueMicrotask(()=>{if(!decorating){decorate();installAbout();}})).observe(el,{childList:true});};
 watch($('shopBody'));watch($('dialogBody'));
@@ -160,5 +160,5 @@ document.addEventListener('pointerdown',e=>{if(intelOpen&&shell.dataset.phase===
 setInterval(()=>{versionPass();installAbout();if(shell.dataset.phase==='combat'){compactObjective();compactCombatChrome();}},240);
 
 installAbout();decorate();
-window.DL44UI={version:VERSION,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
+window.DL44UI={version:VERSION,syncVersion:versionPass,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
 })();

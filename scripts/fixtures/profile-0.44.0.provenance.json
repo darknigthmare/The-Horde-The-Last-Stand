@@ -1,0 +1,90 @@
+{
+  "sourceCommit": "f7a3c3cf53e9a9fb6056033db8e84a3bacffee68",
+  "sourceVersion": "0.44.0",
+  "sourceHtmlSha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6",
+  "kind": "Synthetic profile exported by the unchanged 0.44.0 runtime; no personal player data",
+  "setup": "Create each of eight campaigns; XP 25000; cash 1200 + route index * 113; rifle 20 rounds loaded and 120 + route index * 7 reserve; save each preparation.",
+  "schema": 12,
+  "checkpoints": [
+    {
+      "mode": "dark",
+      "night": 1,
+      "cash": 1991,
+      "rifle": {
+        "mag": 8,
+        "reserve": 181,
+        "level": 0
+      }
+    },
+    {
+      "mode": "tower",
+      "night": 1,
+      "cash": 1878,
+      "rifle": {
+        "mag": 8,
+        "reserve": 174,
+        "level": 0
+      }
+    },
+    {
+      "mode": "water",
+      "night": 1,
+      "cash": 1765,
+      "rifle": {
+        "mag": 8,
+        "reserve": 167,
+        "level": 0
+      }
+    },
+    {
+      "mode": "highway",
+      "night": 1,
+      "cash": 1652,
+      "rifle": {
+        "mag": 8,
+        "reserve": 160,
+        "level": 0
+      }
+    },
+    {
+      "mode": "air",
+      "night": 1,
+      "cash": 1539,
+      "rifle": {
+        "mag": 8,
+        "reserve": 153,
+        "level": 0
+      }
+    },
+    {
+      "mode": "metro",
+      "night": 1,
+      "cash": 1426,
+      "rifle": {
+        "mag": 8,
+        "reserve": 146,
+        "level": 0
+      }
+    },
+    {
+      "mode": "north",
+      "night": 1,
+      "cash": 1313,
+      "rifle": {
+        "mag": 8,
+        "reserve": 139,
+        "level": 0
+      }
+    },
+    {
+      "mode": "campaign",
+      "night": 1,
+      "cash": 1200,
+      "rifle": {
+        "mag": 8,
+        "reserve": 132,
+        "level": 0
+      }
+    }
+  ]
+}

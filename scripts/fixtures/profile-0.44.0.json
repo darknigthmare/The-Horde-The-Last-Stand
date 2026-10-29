@@ -1,0 +1,1712 @@
+{
+  "version": 12,
+  "meta": {
+    "xp": 25000,
+    "kills": 0,
+    "best": 0,
+    "runs": 8,
+    "doctrines": {
+      "marksman": 0,
+      "loader": 0,
+      "quartermaster": 0,
+      "builder": 0
+    },
+    "achievements": {},
+    "operations": {},
+    "dossiers": {
+      "abel": 0,
+      "jeanne": 0,
+      "malik": 0
+    },
+    "reliefBest": 0,
+    "reliefWins": 0,
+    "northWins": 0,
+    "northBest": 0,
+    "metroBest": 0,
+    "metroWins": 0,
+    "airBest": 0,
+    "airWins": 0,
+    "storySeen": [],
+    "trainingComplete": false,
+    "missionScores": {},
+    "weaponMastery": {},
+    "v21Presets": {
+      "main": [
+        null,
+        null,
+        null
+      ],
+      "operation": [
+        null,
+        null,
+        null
+      ],
+      "north": [
+        null,
+        null,
+        null
+      ],
+      "metro": [
+        null,
+        null,
+        null
+      ],
+      "air": [
+        null,
+        null,
+        null
+      ],
+      "highway": [
+        null,
+        null,
+        null
+      ],
+      "water": [
+        null,
+        null,
+        null
+      ],
+      "tower": [
+        null,
+        null,
+        null
+      ],
+      "dark": [
+        null,
+        null,
+        null
+      ]
+    },
+    "v21Playtests": [],
+    "v21Weekly": {},
+    "v21Favorites": [],
+    "v26EnemyKills": {},
+    "v26Awards": {},
+    "v26CareerOpened": false,
+    "highwayBest": 0,
+    "highwayWins": 0,
+    "waterBest": 0,
+    "waterWins": 0,
+    "towerBest": 0,
+    "towerWins": 0,
+    "darkBest": 0,
+    "darkWins": 0,
+    "gunsmithV36": {
+      "version": 1,
+      "selected": "pistol",
+      "weapons": {
+        "pistol": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "rifle": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "northPatrol": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "northStopper": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "assault": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "metroAnchor": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "airFlak": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "airTether": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "lmg": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "deckCarbine": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "marineHarpoon": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "towerCarbine": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "doorScatter": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "traceCarbine": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        },
+        "magnesiumGun": {
+          "active": {},
+          "tuning": {},
+          "conversion": null,
+          "legacyUnlocks": [],
+          "presets": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "migrated": true
+        }
+      }
+    }
+  },
+  "settings": {
+    "sound": false,
+    "activeReload": true,
+    "motion": true,
+    "touchContinuous": true,
+    "targetHints": true,
+    "threatCues": true,
+    "hitFeedback": true,
+    "woundedBars": true,
+    "reticleSize": 1,
+    "masterVolume": 0.82,
+    "sfxVolume": 0.88,
+    "ambienceVolume": 0.42,
+    "musicVolume": 0.26,
+    "nightMix": false,
+    "audioSubtitles": true,
+    "uiScale": 1,
+    "uiDensity": "comfortable",
+    "compactHUD": false,
+    "highContrast": false,
+    "reducedFlashes": false,
+    "contextHelp": true,
+    "cinematics": false,
+    "performanceMode": "auto",
+    "showFps": false,
+    "colorMode": "default",
+    "damageNumbers": true,
+    "aimAssist": "off",
+    "cameraImpact": true,
+    "combatHints": true,
+    "v21Bindings": {
+      "pause": "KeyP",
+      "reload": "KeyR",
+      "grenade": "KeyG",
+      "repair": "KeyF",
+      "medkit": "KeyV",
+      "weapon1": "Digit1",
+      "weapon2": "Digit2",
+      "pistol": "Digit3",
+      "local": "KeyQ",
+      "pulse": "KeyE",
+      "lure": "KeyC",
+      "priority": "KeyT",
+      "secondary": "KeyX",
+      "surge": "KeyB",
+      "breatherMagazines": "Digit4",
+      "breatherFocus": "Digit5",
+      "breatherCover": "Digit6"
+    },
+    "v21Telemetry": true,
+    "v21Combo": true,
+    "v22HordeFlow": true,
+    "v22FlowMode": "nervous",
+    "v22AutoSurge": true,
+    "artImages": true,
+    "artCreatures": true,
+    "artTexturesV25": true,
+    "artActorsV26": true,
+    "artBossesV26": true,
+    "artEffectsV26": true,
+    "illustratedMenusV28": true,
+    "storyBarksV28": true,
+    "compactCardsV28": true,
+    "v37BuildAnalytics": true,
+    "v37DetailedReload": true,
+    "v37ReloadCues": true
+  },
+  "save": {
+    "mode": "dark",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 1129532102,
+    "cash": 1991,
+    "health": 100,
+    "wallMax": 480,
+    "wall": 480,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "traceCarbine": {
+        "mag": 24,
+        "reserve": 216,
+        "level": 0
+      },
+      "magnesiumGun": {
+        "mag": 5,
+        "reserve": 60,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 181,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "darkBeacon",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "darkMotion",
+        "uses": 1
+      },
+      {
+        "id": "darkFlashMine",
+        "uses": 1
+      },
+      null,
+      null
+    ],
+    "allies": {
+      "darkTech": {
+        "active": true
+      },
+      "darkListener": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 1,
+      "spotlight": 1,
+      "pulse": 1
+    },
+    "turretAmmo": 0,
+    "fuel": 170,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "traceCarbine": {
+        "owned": [
+          "v36:traceCarbine"
+        ],
+        "active": "v36:traceCarbine"
+      },
+      "magnesiumGun": {
+        "owned": [
+          "v36:magnesiumGun"
+        ],
+        "active": "v36:magnesiumGun"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2500,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0,
+    "dark": {
+      "services": {
+        "night": 1,
+        "samiaDark": false,
+        "eloiDark": false
+      },
+      "goals": [],
+      "log": [],
+      "fuses": 5,
+      "projectors": [
+        100,
+        100
+      ],
+      "upgrades": 0,
+      "circuits": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    }
+  },
+  "reserve": {
+    "mode": "tower",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 1958751405,
+    "cash": 1878,
+    "health": 100,
+    "wallMax": 500,
+    "wall": 500,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "towerCarbine": {
+        "mag": 21,
+        "reserve": 189,
+        "level": 0
+      },
+      "doorScatter": {
+        "mag": 6,
+        "reserve": 72,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 174,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "towerDoorMine",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "towerArc",
+        "uses": 1
+      },
+      {
+        "id": "towerShutter",
+        "uses": 1
+      },
+      null,
+      null
+    ],
+    "allies": {
+      "towerGuard": {
+        "active": true
+      },
+      "towerTech": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 1,
+      "spotlight": 1,
+      "pulse": 1
+    },
+    "turretAmmo": 0,
+    "fuel": 140,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "towerCarbine": {
+        "owned": [
+          "v36:towerCarbine"
+        ],
+        "active": "v36:towerCarbine"
+      },
+      "doorScatter": {
+        "owned": [
+          "v36:doorScatter"
+        ],
+        "active": "v36:doorScatter"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2450,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0,
+    "tower": {
+      "services": {
+        "night": 1,
+        "samiraTower": false,
+        "karimTower": false
+      },
+      "goals": [],
+      "log": [],
+      "floor": 1,
+      "motor": 100
+    }
+  },
+  "northReserve": {
+    "mode": "water",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 944609037,
+    "cash": 1765,
+    "health": 100,
+    "wallMax": 380,
+    "wall": 380,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "deckCarbine": {
+        "mag": 24,
+        "reserve": 216,
+        "level": 0
+      },
+      "marineHarpoon": {
+        "mag": 1,
+        "reserve": 30,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 167,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "waterNet",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "waterShock",
+        "uses": 1
+      },
+      {
+        "id": "waterDepth",
+        "uses": 1
+      },
+      null,
+      null
+    ],
+    "allies": {
+      "waterGunner": {
+        "active": true
+      },
+      "waterMechanic": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 0,
+      "spotlight": 1,
+      "pulse": 1
+    },
+    "turretAmmo": 0,
+    "fuel": 180,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "deckCarbine": {
+        "owned": [
+          "v36:deckCarbine"
+        ],
+        "active": "v36:deckCarbine"
+      },
+      "marineHarpoon": {
+        "owned": [
+          "v36:marineHarpoon"
+        ],
+        "active": "v36:marineHarpoon"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2550,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0,
+    "water": {
+      "services": {
+        "night": 1,
+        "maudWater": false,
+        "jonasWater": false
+      },
+      "distance": 0,
+      "goals": [],
+      "log": [],
+      "vessel": "rib"
+    }
+  },
+  "metroReserve": {
+    "mode": "highway",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 2112981130,
+    "cash": 1652,
+    "health": 100,
+    "wallMax": 420,
+    "wall": 420,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "assault": {
+        "mag": 30,
+        "reserve": 270,
+        "level": 0
+      },
+      "lmg": {
+        "mag": 70,
+        "reserve": 420,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 160,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "roadFlares",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "roadShock",
+        "uses": 1
+      },
+      {
+        "id": "roadSpikes",
+        "uses": 1
+      },
+      null,
+      null
+    ],
+    "allies": {
+      "roadGunner": {
+        "active": true
+      },
+      "roadMechanic": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 0,
+      "spotlight": 1,
+      "pulse": 1
+    },
+    "turretAmmo": 0,
+    "fuel": 180,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "assault": {
+        "owned": [
+          "v36:assault"
+        ],
+        "active": "v36:assault"
+      },
+      "lmg": {
+        "owned": [
+          "v36:lmg"
+        ],
+        "active": "v36:lmg"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2450,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0,
+    "highway": {
+      "services": {
+        "night": 1,
+        "lilaRoad": false
+      },
+      "distance": 0,
+      "goals": [],
+      "log": [],
+      "vehicle": "pickup"
+    }
+  },
+  "airReserve": {
+    "mode": "air",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 455412060,
+    "cash": 1539,
+    "health": 100,
+    "wallMax": 520,
+    "wall": 520,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "airFlak": {
+        "mag": 8,
+        "reserve": 128,
+        "level": 0
+      },
+      "airTether": {
+        "mag": 1,
+        "reserve": 56,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 153,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "airFlareRack",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "airShockGate",
+        "uses": 1
+      },
+      {
+        "id": "airNetRack",
+        "uses": 1
+      },
+      null,
+      null
+    ],
+    "allies": {
+      "airGunner": {
+        "active": true
+      },
+      "airEngineer": {
+        "active": false
+      },
+      "airObserver": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 1,
+      "spotlight": 1,
+      "pulse": 1
+    },
+    "turretAmmo": 0,
+    "fuel": 160,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "airFlak": {
+        "owned": [
+          "v36:airFlak"
+        ],
+        "active": "v36:airFlak"
+      },
+      "airTether": {
+        "owned": [
+          "v36:airTether"
+        ],
+        "active": "v36:airTether"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2600,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "air": {
+      "services": {
+        "night": 1,
+        "celine": false,
+        "youssef": false
+      },
+      "distance": 0,
+      "goals": [],
+      "log": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0
+  },
+  "highwayReserve": {
+    "mode": "metro",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 479990274,
+    "cash": 1426,
+    "health": 100,
+    "wallMax": 500,
+    "wall": 500,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "assault": {
+        "mag": 30,
+        "reserve": 360,
+        "level": 0
+      },
+      "metroAnchor": {
+        "mag": 1,
+        "reserve": 48,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 146,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "metroNails",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "metroShock",
+        "uses": 1
+      },
+      {
+        "id": "metroNails",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "metroSnare",
+        "uses": 1
+      }
+    ],
+    "allies": {
+      "metroCover": {
+        "active": true
+      },
+      "metroWelder": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 1,
+      "spotlight": 1,
+      "pulse": 1
+    },
+    "turretAmmo": 0,
+    "fuel": 150,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "assault": {
+        "owned": [
+          "v36:assault"
+        ],
+        "active": "v36:assault"
+      },
+      "metroAnchor": {
+        "owned": [
+          "v36:metroAnchor"
+        ],
+        "active": "v36:metroAnchor"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2400,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "metro": {
+      "services": {
+        "night": 1,
+        "jade": false,
+        "marius": false
+      },
+      "distance": 0,
+      "goals": [],
+      "log": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0
+  },
+  "waterReserve": {
+    "mode": "north",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 1668406571,
+    "cash": 1313,
+    "health": 100,
+    "wallMax": 480,
+    "wall": 480,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "northPatrol": {
+        "mag": 24,
+        "reserve": 216,
+        "level": 0
+      },
+      "northStopper": {
+        "mag": 5,
+        "reserve": 60,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 139,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      3,
+      2,
+      2
+    ],
+    "traps": [
+      {
+        "id": "wire",
+        "uses": 3
+      },
+      {
+        "id": "mine",
+        "uses": 1
+      },
+      null,
+      {
+        "id": "wire",
+        "uses": 3
+      },
+      null,
+      {
+        "id": "flashmine",
+        "uses": 1
+      }
+    ],
+    "allies": {
+      "northGunner": {
+        "active": true
+      },
+      "northRescuer": {
+        "active": false
+      }
+    },
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 1,
+      "spotlight": 1,
+      "pulse": 0
+    },
+    "turretAmmo": 0,
+    "fuel": 100,
+    "lures": 2,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "northPatrol": {
+        "owned": [
+          "v36:northPatrol"
+        ],
+        "active": "v36:northPatrol"
+      },
+      "northStopper": {
+        "owned": [
+          "v36:northStopper"
+        ],
+        "active": "v36:northStopper"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": true,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 2000,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0
+  },
+  "towerReserve": {
+    "mode": "campaign",
+    "night": 1,
+    "difficulty": "standard",
+    "seed": 2123532783,
+    "cash": 1200,
+    "health": 100,
+    "wallMax": 340,
+    "wall": 340,
+    "wallLevel": 0,
+    "weapons": {
+      "pistol": {
+        "mag": 12,
+        "reserve": 0,
+        "level": 0
+      },
+      "rifle": {
+        "mag": 8,
+        "reserve": 132,
+        "level": 0
+      }
+    },
+    "loadout": [
+      "rifle",
+      null
+    ],
+    "activeId": "rifle",
+    "inventory": [
+      2,
+      1,
+      1
+    ],
+    "traps": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "allies": {},
+    "kills": 0,
+    "headshots": 0,
+    "totalSpent": 0,
+    "equipment": {
+      "turret": 0,
+      "generator": 0,
+      "spotlight": 0,
+      "pulse": 0
+    },
+    "turretAmmo": 0,
+    "fuel": 0,
+    "lures": 1,
+    "contract": "none",
+    "contractsWon": 0,
+    "eventChoice": null,
+    "eventNight": 1,
+    "eventRisk": 0,
+    "eventDelay": false,
+    "archives": [],
+    "history": [],
+    "lastSettled": 0,
+    "boltKills": 0,
+    "report": null,
+    "modifications": {
+      "pistol": {
+        "owned": [
+          "v36:pistol"
+        ],
+        "active": "v36:pistol"
+      },
+      "rifle": {
+        "owned": [
+          "v36:rifle"
+        ],
+        "active": "v36:rifle"
+      }
+    },
+    "completedSorties": [],
+    "localUsed": [],
+    "localCharge": false,
+    "bossKills": {},
+    "sortieLog": [],
+    "sortie": null,
+    "bastionReport": null,
+    "viewOverride": null,
+    "operationId": null,
+    "viewsWon": [],
+    "objectivesWon": 0,
+    "frontReport": null,
+    "economy": "field",
+    "projects": {
+      "armor": 0,
+      "seals": 0,
+      "repair": 0
+    },
+    "ledgerOpening": 950,
+    "ledgerSpentAnchor": 0,
+    "ledgerHistory": [],
+    "reliefReport": null,
+    "crewServices": {
+      "night": 1,
+      "abel": false,
+      "jeanne": false,
+      "malik": false
+    },
+    "rosterReport": null,
+    "north": {
+      "services": {
+        "night": 1,
+        "ines": false,
+        "basile": false
+      },
+      "goals": [],
+      "routeLog": []
+    },
+    "directive": "none",
+    "v21Challenge": null,
+    "v21LastSession": null,
+    "v21Retries": 0
+  },
+  "darkReserve": null
+}

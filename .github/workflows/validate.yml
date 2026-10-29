@@ -29,3 +29,35 @@ jobs:
           name: repository-verification
           path: artifacts/repository-verification.json
           if-no-files-found: ignore
+
+  browser-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Install the pinned browser test runner
+        run: npm install --no-save --package-lock=false playwright@1.62.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Exercise combat status effects, wave pacing and journey reports
+        run: node scripts/test-combat-0441.cjs
+      - name: Verify startup and HTTP companion resources
+        run: node scripts/test-startup-web.cjs --out artifacts/startup-web-0441
+      - name: Verify campaigns, weapons, lighting and legacy profile transfer
+        run: node scripts/regression-0441.cjs
+      - name: Compare projected geometry and pixels with the imported release
+        run: node scripts/benchmark-projection-0441.cjs --correctness-only --out artifacts/projection-correctness-0441
+      - name: Play the production UI at three viewport sizes
+        run: node scripts/smoke_game.cjs --out artifacts/smoke-0441
+      - name: Keep browser reports and screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: browser-regression
+          path: artifacts/
+          if-no-files-found: ignore

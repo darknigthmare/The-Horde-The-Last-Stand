@@ -1,61 +1,80 @@
 # The Horde — The Last Stand
 
-## Dernière Ligne — Zéro Repli · 0.44.0
+## Dernière Ligne — Zéro Repli · 0.44.1
 
-Ce dépôt contient la version complète **0.44.0 « QA intégrale — Poste stabilisé »** de Dernière Ligne — Zéro Repli, importée depuis la dernière archive complète retrouvée, livrée le 24 septembre 2026.
+La version **0.44.1** applique les guides intégrés avec la livraison 0.44.0 : attaques spéciales interrompues correctement, accalmies synchronisées, journaux de voyage fiables, démarrage stabilisé et projection des hordes simplifiée.
 
-Le jeu est une application HTML/JavaScript autonome. Son rendu Canvas, ses images intégrées et son audio procédural permettent de jouer hors ligne dans un navigateur récent.
+Le jeu conserve son moteur HTML/CSS/JavaScript, ses images intégrées et son audio procédural. Il reste jouable hors ligne. Les anciennes sauvegardes de schéma **12** sont compatibles ; un profil synthétique exporté par la 0.44.0, contenant huit campagnes indépendantes, est inclus dans les tests de transfert.
 
 ### Jouer
 
 1. Télécharger le dépôt avec **Code → Download ZIP**, puis extraire entièrement le ZIP.
-2. Ouvrir **[game/JOUER_DERNIERE_LIGNE.html](game/JOUER_DERNIERE_LIGNE.html)** dans le navigateur.
-3. Choisir une campagne et suivre sa préparation avant de lancer la nuit.
+2. Ouvrir **[game/JOUER_DERNIERE_LIGNE.html](game/JOUER_DERNIERE_LIGNE.html)** dans un navigateur récent.
+3. Choisir une campagne, préparer le poste et lancer la nuit.
 
-Aucune installation npm, compilation ou connexion à un serveur n'est nécessaire pour jouer. Le lien HTML affiché par GitHub montre le code source : ouvrir le fichier extrait pour lancer le jeu.
+Aucune installation npm ni compilation n'est nécessaire pour jouer. Le lien HTML affiché par GitHub montre le code source : ouvrir le fichier extrait pour lancer le jeu.
 
-Les sauvegardes utilisent le stockage local du navigateur. Pour déplacer le jeu, changer de navigateur ou remplacer un ancien dossier, utiliser l'export/import JSON proposé dans le jeu ; les profils locaux ne sont pas transférés par GitHub.
+Pour changer de navigateur ou déplacer le dossier, utiliser l'export/import JSON du jeu. GitHub ne transfère pas les profils conservés dans le stockage local du navigateur.
+
+### Corrections de la 0.44.1
+
+- Les cracheurs de l'Autoroute, des Eaux Noires et de la Zone Noire cessent d'attaquer pendant un étourdissement ou un leurre applicable. Le Sauteur de glissière annule son saut interrompu et annonce le suivant.
+- Les durées réelles des accalmies correspondent à leur affichage. Le service de Malik ajoute bien deux secondes dans chaque cadence.
+- Les voyages attendent leur arrivée effective avant d'enregistrer une victoire et un score. Une défaite ultérieure ne reprend plus le score de la nuit précédente.
+- Le splash affiche la version courante une seule fois au démarrage. Le manifeste web et le catalogue audio accompagnent l'ouverture HTTP ; le jeu ne demande plus un service worker absent.
+- Les vues en profondeur évitent des calculs de projection redondants. La géométrie et les pixels sont comparés à la version importée ; les mesures de temps CPU et leurs limites sont publiées séparément.
+
+Voir le [bilan détaillé et les tâches restantes](docs/SUIVI_0_44_1.md).
 
 ### Contenu du dépôt
 
 | Chemin | Contenu |
 | --- | --- |
-| [`game/`](game/) | 459 fichiers : contenu complet de l'archive, manifeste actualisé et favicon manquant ajouté. |
-| [`game/build.mjs`](game/build.mjs) | Reconstruction du HTML autonome avec Node.js, sans paquet externe. |
-| [`game/MANIFEST_SHA256.json`](game/MANIFEST_SHA256.json) | Empreintes des 458 autres fichiers livrés, dont le favicon ajouté. |
-| [`.agents/skills/`](.agents/skills/) | 12 guides de développement, avec leurs références et ressources. |
-| [`AGENTS.md`](AGENTS.md) | Instructions spécifiques à ce jeu pour les agents de développement. |
-| [`docs/DEVELOPPEMENT_GAMEDEV.md`](docs/DEVELOPPEMENT_GAMEDEV.md) | Choix des guides selon le chantier et critères de validation. |
-| [`docs/IMPORT_0_44_0.md`](docs/IMPORT_0_44_0.md) | Provenance de l'import et portée des vérifications. |
+| [`game/`](game/) | Jeu autonome, sources, assets, tests historiques et rapports de livraison. |
+| [`game/build.mjs`](game/build.mjs) | Reconstruction avec Node.js, sans paquet externe. |
+| [`game/MANIFEST_SHA256.json`](game/MANIFEST_SHA256.json) | Inventaire et empreintes de la livraison courante. |
+| [`.agents/skills/`](.agents/skills/) | 12 guides, références, ressources et provenance verrouillée. |
+| [`AGENTS.md`](AGENTS.md) | Instructions adaptées au moteur et aux invariants du jeu. |
+| [`docs/DEVELOPPEMENT_GAMEDEV.md`](docs/DEVELOPPEMENT_GAMEDEV.md) | Choix des guides et critères d'acceptation. |
+| [`docs/verification/0.44.1/`](docs/verification/0.44.1/) | Rapports de cette passe, comparaisons et captures. |
+| [`docs/IMPORT_0_44_0.md`](docs/IMPORT_0_44_0.md) | Provenance et résultats historiques de l'import initial. |
 
-### Vérifier et reconstruire
+### Reconstruire et vérifier
 
-Pour vérifier le dépôt avec **Python 3.11** et **Node.js 24** :
+Avec Python 3.11+ et Node.js 24 :
 
 ```sh
 python3 scripts/verify_repository.py --report artifacts/repository-verification.json
 ```
 
-Cette commande vérifie les empreintes du jeu et des guides, reconstruit le jeu dans un dossier temporaire, compare les deux sorties à la livraison et analyse ses quatre scripts JavaScript. Elle conserve les fichiers de `game/` intacts.
+Cette commande vérifie le manifeste courant, les guides, la syntaxe JavaScript et la reconstruction exacte du HTML et du rapport de patches. Les fichiers livrés restent intacts.
 
-Pour reconstruire volontairement le jeu dans son dossier :
+Pour reconstruire volontairement :
 
 ```sh
 node game/build.mjs
 ```
 
-Cette seconde commande écrit `game/JOUER_DERNIERE_LIGNE.html` et `game/rapports/PATCHES_0_44_0.json`. Après une modification intentionnelle, mettre à jour le manifeste de livraison et les preuves correspondantes.
+Le build produit `game/JOUER_DERNIERE_LIGNE.html` et `game/rapports/PATCHES_0_44_1.json`. Après une modification du jeu, vérifier le résultat puis actualiser son manifeste ; les rapports historiques restent conservés.
 
-La CI exécute les contrôles d'intégrité, de reconstruction et de syntaxe. Les essais interactifs en navigateur sont décrits dans le document d'import ; ils ne sont pas remplacés par ces contrôles statiques.
+Les tests navigateur nécessitent Playwright et Chromium :
 
-### Guides de développement
+```sh
+npm install --no-save --package-lock=false playwright@1.62.1
+npx playwright install chromium
+node scripts/test-combat-0441.cjs
+node scripts/test-startup-web.cjs --out artifacts/startup-web-0441
+node scripts/regression-0441.cjs
+node scripts/benchmark-projection-0441.cjs --correctness-only --out artifacts/projection-correctness-0441
+node scripts/smoke_game.cjs --out artifacts/smoke-0441
+```
 
-Les guides proviennent de [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills), révision `19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9`.
+La comparaison de projection nécessite l'historique Git contenant le commit `f7a3c3c`. Un Chromium installé peut être choisi avec `HORDE_BROWSER_EXECUTABLE`. La CI exécute les cinq suites sur le HTML livré et publie les rapports et captures. Le benchmark complet, sans `--correctness-only`, ajoute les mesures CPU ; les chronométrages ne sont pas un seuil de réussite CI.
 
-La sélection couvre le routeur, l'IA, les performances, les sensations de jeu, les assets, l'interface, l'audio, le level design, les sauvegardes, les entrées, la physique et les principes de défense par vagues. Les agents chargent les guides utiles à la tâche et adaptent leurs exemples au moteur HTML/JavaScript existant.
+### Guides et provenance
 
-La [licence Apache-2.0](.agents/third-party/awesome-gamedev-agent-skills/LICENSE) et le [NOTICE](.agents/third-party/awesome-gamedev-agent-skills/NOTICE) s'appliquent aux fichiers amont identifiés dans [le manifeste des guides](.agents/gamedev-skills.lock.json). Cet ajout ne définit pas une nouvelle licence générale pour le jeu ou ses assets.
+Les guides proviennent de [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills), révision `19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9`. La sélection couvre le routeur, l'IA, les performances, les sensations de jeu, les assets, l'interface, l'audio, le level design, les sauvegardes, les entrées, la physique et la défense par vagues.
 
-### État de la livraison
+La [licence Apache-2.0](.agents/third-party/awesome-gamedev-agent-skills/LICENSE) et le [NOTICE](.agents/third-party/awesome-gamedev-agent-skills/NOTICE) s'appliquent aux fichiers amont identifiés dans [leur manifeste](.agents/gamedev-skills.lock.json). Cet ajout ne définit pas une nouvelle licence générale pour le jeu ou ses assets.
 
-Les 457 fichiers de contenu d'origine sont conservés octet pour octet depuis l'archive 0.44.0. Le favicon référencé mais absent a été ajouté ; le manifeste courant le référence, et le [manifeste d'origine](docs/source-MANIFEST_SHA256_0_44_0.json) est conservé séparément. Les anciens totaux de QA sont distingués des vérifications effectuées pour cet import dans [`docs/IMPORT_0_44_0.md`](docs/IMPORT_0_44_0.md).
+L'archive 0.44.0 et ses anciens totaux de QA sont documentés séparément. Les résultats de cette mise à jour ne constituent pas la certification d'une campagne entière, de l'équilibrage ou des performances sur le matériel du joueur.

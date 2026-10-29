@@ -1,0 +1,78 @@
+{
+  "mode": "correctness-only",
+  "browser": "156.0.8078.73",
+  "viewport": [
+    1440,
+    900
+  ],
+  "enemies": 96,
+  "originalImages": true,
+  "testAPI": true,
+  "baseline": "f7a3c3cf53e9a9fb6056033db8e84a3bacffee68",
+  "protocol": "file:",
+  "offline": true,
+  "fixture": "Historical production HTML with current spatial.js and an A/B switch only in the temporary fixture",
+  "baselineHTMLSha256": "89dfe476726ea3e90bae8a398087fc4cd1092a47ba541e18fa9bf0110ba4c8c6",
+  "candidateSourceSha256": "9687f01b45a2bb1fbde00e8bdee7da10dd3fc708c67587953d53f36bb5f1ba59",
+  "geometry": {
+    "routes": [
+      "campaign",
+      "north",
+      "metro",
+      "air",
+      "highway",
+      "water",
+      "tower",
+      "dark"
+    ],
+    "types": 69,
+    "views": [
+      "right",
+      "left",
+      "front",
+      "rear"
+    ],
+    "positions": [
+      -80,
+      0,
+      120,
+      240,
+      550,
+      1040,
+      1120
+    ],
+    "cases": 61824,
+    "differences": []
+  },
+  "pixels": [
+    {
+      "view": "right",
+      "channelValues": 4665600,
+      "changed": 0
+    },
+    {
+      "view": "left",
+      "channelValues": 4665600,
+      "changed": 0
+    },
+    {
+      "view": "front",
+      "channelValues": 4665600,
+      "changed": 0
+    },
+    {
+      "view": "rear",
+      "channelValues": 4665600,
+      "changed": 0
+    }
+  ],
+  "projectionRuns": [],
+  "renderRuns": [],
+  "projectionSummary": [],
+  "renderSummary": [],
+  "errors": [],
+  "limitations": [
+    "Timing measurements were skipped.",
+    "Comparative fixture exposes opt-in test API and uses a toggle absent from the production HTML."
+  ]
+}

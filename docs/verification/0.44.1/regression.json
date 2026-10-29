@@ -1,0 +1,1053 @@
+{
+  "started": "2026-10-29T11:02:26.345Z",
+  "finished": "2026-10-29T11:02:41.066Z",
+  "browser": "156.0.8078.73",
+  "gameSha256": "41cbdef473793442577e366212f229cce62f73d73e4951837da12115207921e4",
+  "testScriptSha256": "83ea007dbd18b2f02a9a62cf1dab6c08feaba892cac426262ad9602e71d16739",
+  "originalImages": true,
+  "protocol": "file:",
+  "offline": true,
+  "passed": 61,
+  "total": 61,
+  "checks": [
+    {
+      "name": "Original image catalogue finishes loading without missing assets",
+      "ok": true,
+      "details": {
+        "loaded": 252,
+        "total": 252,
+        "settled": true,
+        "failures": [],
+        "draws": {
+          "background": 0,
+          "actors": 0,
+          "props": 0,
+          "textures": 15
+        },
+        "enabled": true,
+        "actors": [
+          "walker",
+          "runner",
+          "crawler",
+          "armored",
+          "bomber",
+          "screamer",
+          "swarm",
+          "spitter",
+          "sprinter",
+          "brute",
+          "shield",
+          "northCable",
+          "northBeacon",
+          "vaulter",
+          "deaf"
+        ]
+      }
+    },
+    {
+      "name": "campaign: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "campaign"
+      }
+    },
+    {
+      "name": "campaign: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 5,
+        "alive": 5
+      }
+    },
+    {
+      "name": "campaign: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": false
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": false
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": false
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "campaign: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "campaign: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "campaign",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": null
+      }
+    },
+    {
+      "name": "north: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "north"
+      }
+    },
+    {
+      "name": "north: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 7,
+        "alive": 5
+      }
+    },
+    {
+      "name": "north: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "north: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "north: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "north",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": null
+      }
+    },
+    {
+      "name": "metro: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "metro"
+      }
+    },
+    {
+      "name": "metro: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 6,
+        "alive": 4
+      }
+    },
+    {
+      "name": "metro: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "metro: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "metro: clearing contacts cannot finish the journey before arrival",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "metro: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "metro",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": true
+      }
+    },
+    {
+      "name": "air: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "air"
+      }
+    },
+    {
+      "name": "air: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 7,
+        "alive": 6
+      }
+    },
+    {
+      "name": "air: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "air: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "air: clearing contacts cannot finish the journey before arrival",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "air: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "air",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": true
+      }
+    },
+    {
+      "name": "highway: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "highway"
+      }
+    },
+    {
+      "name": "highway: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 7,
+        "alive": 5
+      }
+    },
+    {
+      "name": "highway: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "highway: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "highway: clearing contacts cannot finish the journey before arrival",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "highway: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "highway",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": true
+      }
+    },
+    {
+      "name": "water: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "water"
+      }
+    },
+    {
+      "name": "water: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 7,
+        "alive": 6
+      }
+    },
+    {
+      "name": "water: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "water: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "water: clearing contacts cannot finish the journey before arrival",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "water: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "water",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": true
+      }
+    },
+    {
+      "name": "tower: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "tower"
+      }
+    },
+    {
+      "name": "tower: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 7,
+        "alive": 5
+      }
+    },
+    {
+      "name": "tower: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "tower: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "tower: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "tower",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": null
+      }
+    },
+    {
+      "name": "dark: route enters combat",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "mode": "dark"
+      }
+    },
+    {
+      "name": "dark: six seconds of real simulation keep resources finite",
+      "ok": true,
+      "details": {
+        "phase": "combat",
+        "bad": [],
+        "time": 5.999999999999987,
+        "spawned": 6,
+        "alive": 6
+      }
+    },
+    {
+      "name": "dark: four views preserve the correct survivor and FPS weapon",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "rear": true
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "rear": true
+        }
+      ]
+    },
+    {
+      "name": "dark: pause freezes the combat and economy",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "time": 0,
+        "cash": 0,
+        "health": 0
+      }
+    },
+    {
+      "name": "dark: controlled wave completion saves and resumes the next preparation",
+      "ok": true,
+      "details": {
+        "before": 1,
+        "night": 2,
+        "mode": "dark",
+        "phase": "camp",
+        "version": 12,
+        "resumed": true,
+        "savedNight": 2,
+        "arrivalGuarded": null
+      }
+    },
+    {
+      "name": "Gunsmith respects five-part limit and conserves ammunition",
+      "ok": true,
+      "details": {
+        "before": 140,
+        "after": 140,
+        "count": 5,
+        "sixth": false,
+        "stable": true,
+        "presets": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "stored": 6
+      }
+    },
+    {
+      "name": "Gunsmith recalculation is stable and all six presets survive serialization",
+      "ok": true,
+      "details": {
+        "before": 140,
+        "after": 140,
+        "count": 5,
+        "sixth": false,
+        "stable": true,
+        "presets": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "stored": 6
+      }
+    },
+    {
+      "name": "Darkness hides only the broken circuit in all four views",
+      "ok": true,
+      "details": [
+        {
+          "view": "right",
+          "visible": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "view": "left",
+          "visible": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "view": "front",
+          "visible": [
+            true,
+            false,
+            true
+          ]
+        },
+        {
+          "view": "rear",
+          "visible": [
+            true,
+            false,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Native Q repairs the circuit using one fuse and leaves the barricade unchanged",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Future or malformed profiles are rejected without changing the live profile",
+      "ok": true,
+      "details": {
+        "results": [
+          true,
+          true
+        ],
+        "unchanged": true
+      }
+    },
+    {
+      "name": "Losing focus pauses and releases combat input",
+      "ok": true,
+      "details": {
+        "phase": "paused",
+        "aimPointerId": null,
+        "aimPointerType": null,
+        "touchResumeFire": false,
+        "shootHeld": false
+      }
+    },
+    {
+      "name": "Resuming does not fire without a new press",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Profile transfer runs without the test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Production export creates a valid schema-12 preparation",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Invalid JSON shows an error and preserves the stored preparation",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Cancelling a validated import preserves the stored profile",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Confirmed file import survives reload and retains a backup",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "The original 0.44.0 profile retains eight independent routes and ammunition reserves",
+      "ok": true,
+      "details": [
+        {
+          "mode": "air",
+          "night": 1,
+          "cash": 1539,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "airFlak": {
+              "mag": 8,
+              "reserve": 128,
+              "level": 0
+            },
+            "airTether": {
+              "mag": 1,
+              "reserve": 56,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 153,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "campaign",
+          "night": 1,
+          "cash": 1200,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 132,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "dark",
+          "night": 1,
+          "cash": 1991,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "traceCarbine": {
+              "mag": 24,
+              "reserve": 216,
+              "level": 0
+            },
+            "magnesiumGun": {
+              "mag": 5,
+              "reserve": 60,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 181,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "highway",
+          "night": 1,
+          "cash": 1652,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "assault": {
+              "mag": 30,
+              "reserve": 270,
+              "level": 0
+            },
+            "lmg": {
+              "mag": 70,
+              "reserve": 420,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 160,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "metro",
+          "night": 1,
+          "cash": 1426,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "assault": {
+              "mag": 30,
+              "reserve": 360,
+              "level": 0
+            },
+            "metroAnchor": {
+              "mag": 1,
+              "reserve": 48,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 146,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "north",
+          "night": 1,
+          "cash": 1313,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "northPatrol": {
+              "mag": 24,
+              "reserve": 216,
+              "level": 0
+            },
+            "northStopper": {
+              "mag": 5,
+              "reserve": 60,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 139,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "tower",
+          "night": 1,
+          "cash": 1878,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "towerCarbine": {
+              "mag": 21,
+              "reserve": 189,
+              "level": 0
+            },
+            "doorScatter": {
+              "mag": 6,
+              "reserve": 72,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 174,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        },
+        {
+          "mode": "water",
+          "night": 1,
+          "cash": 1765,
+          "weapons": {
+            "pistol": {
+              "mag": 12,
+              "reserve": 0,
+              "level": 0
+            },
+            "deckCarbine": {
+              "mag": 24,
+              "reserve": 216,
+              "level": 0
+            },
+            "marineHarpoon": {
+              "mag": 1,
+              "reserve": 30,
+              "level": 0
+            },
+            "rifle": {
+              "mag": 8,
+              "reserve": 167,
+              "level": 0
+            }
+          },
+          "loadout": [
+            "rifle",
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Imported preparation resumes through the production Continue button",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "No browser console errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "error": null,
+  "limitations": [
+    "Controlled combat and forced wave completion exercise transitions, not campaign balance or a naturally won campaign.",
+    "Headless desktop Chromium; physical phones, controllers and audio listening remain separate checks."
+  ]
+}

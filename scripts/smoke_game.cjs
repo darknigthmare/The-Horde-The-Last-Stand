@@ -58,13 +58,13 @@ async function runViewport(width, height) {
   page.on('requestfailed', request => failedRequests.push({ viewport: label, url: request.url().slice(0,200), error: request.failure()?.errorText }));
   try {
     await load(page);
-    check(`${label}: production build 0.44.0`, (await page.title()).endsWith('0.44.0') && await page.evaluate(() => window.DL44UI?.version === '0.44.0'));
+    check(`${label}: production build 0.44.1`, (await page.title()).endsWith('0.44.1') && await page.evaluate(() => window.DL44UI?.version === '0.44.1'));
     check(`${label}: no test API`, await page.evaluate(() => typeof window.__DL === 'undefined'));
     check(`${label}: menu loaded offline`, await page.locator('#menuScreen').isVisible());
 
     await page.locator('[data-page="options"]').click();
     await page.locator('#aboutGame').click();
-    check(`${label}: About shows current build`, (await page.locator('#dialogBody').innerText()).includes('0.44.0'));
+    check(`${label}: About shows current build`, (await page.locator('#dialogBody').innerText()).includes('0.44.1'));
     await page.keyboard.press('Escape');
     await page.locator('#menuScreen').waitFor({ state: 'visible' });
     check(`${label}: Escape closes About`, await page.locator('#menuScreen').isVisible());
@@ -79,8 +79,9 @@ async function runViewport(width, height) {
     check(`${label}: preparation fits viewport`, campSize.width <= campSize.viewport + 2, campSize);
 
     if (width === 414) {
-      // The legacy UI42 splash can recur on scene changes; let it finish naturally.
-      await page.locator('#dl42Boot').waitFor({ state: 'detached' });
+      check(`${label}: opening splash stays closed during preparation`, await page.locator('#dl42Boot').count() === 0);
+      // Let the native 240 ms contentEnter animation finish before recording pixels.
+      await page.waitForFunction(() => Number(getComputedStyle(document.getElementById('shopBody')).opacity) >= .999);
       const name = `camp-${label}.png`;
       await page.screenshot({ path: path.join(out, name) });
       screenshots.push(name);
@@ -95,7 +96,7 @@ async function runViewport(width, height) {
     check(`${label}: combat fits viewport`, hudSize.width <= hudSize.viewport + 2, hudSize);
 
     if (width === 1440) {
-      await page.locator('#dl42Boot').waitFor({ state: 'detached' });
+      check(`${label}: opening splash stays closed during combat`, await page.locator('#dl42Boot').count() === 0);
       await page.waitForTimeout(1500); // Let the real wave and its graphics advance.
       const name = `combat-${label}.png`;
       await page.screenshot({ path: path.join(out, name) });
@@ -158,7 +159,7 @@ async function runViewport(width, height) {
       testAPIEnabled: false, inputMethod: 'Production UI clicks and keyboard',
       passed: checks.filter(item=>item.ok).length, total: checks.length,
       checks, runtimeErrors, consoleErrors, networkRequests, failedRequests, screenshots, error,
-      observations: ['The inherited UI42 splash can recur briefly on scene changes and still displays 0.42.0. The production title, menu, About panel and DL44UI identify 0.44.0. Captures wait for the original splash to disappear naturally; the HTML is not altered.'],
+      observations: ['The opening splash runs once per document load. The production title, menu, About panel and DL44UI identify 0.44.1. Captures use the shipped HTML and its original images.'],
       limitations: ['Short smoke of the first campaign wave; not a replay of the 471 historical checks.', 'Headless desktop browser with viewport emulation; not physical mobile, audio listening, balancing, or performance certification.'],
     };
     fs.writeFileSync(path.join(out, 'smoke-game.json'), JSON.stringify(report, null, 2)+'\n');

@@ -50,6 +50,14 @@ jobs:
         run: node scripts/test-startup-web.cjs --out artifacts/startup-web-0441
       - name: Verify campaigns, weapons, lighting and legacy profile transfer
         run: node scripts/regression-0441.cjs
+      - name: Verify campaign endings, paid resources and defeat retry
+        run: node scripts/test-progression-0442.cjs
+      - name: Verify rebinding, gamepad transitions and touch input
+        run: node scripts/test-input-0442.cjs
+      - name: Verify audio routing, mute and motion preferences
+        run: node scripts/test-feedback-0442.cjs
+      - name: Verify profile previews, storage failures and concurrent tabs
+        run: node scripts/test-storage-0442.cjs
       - name: Compare projected geometry and pixels with the imported release
         run: node scripts/benchmark-projection-0441.cjs --correctness-only --out artifacts/projection-correctness-0441
       - name: Play the production UI at three viewport sizes

@@ -1,0 +1,66 @@
+{
+  "version": "0.42.0",
+  "label": "Poste de commandement",
+  "completed_suites": [
+    {
+      "name": "UI / UX 0.42.0",
+      "passed": 42,
+      "total": 42
+    },
+    {
+      "name": "Régression fonctionnelle",
+      "passed": 51,
+      "total": 51
+    },
+    {
+      "name": "Fronts / contrechamp",
+      "passed": 20,
+      "total": 20
+    },
+    {
+      "name": "Profondeur",
+      "passed": 9,
+      "total": 9
+    },
+    {
+      "name": "Balistique (assertions)",
+      "passed": 4,
+      "total": 4
+    },
+    {
+      "name": "Spatial quatre vues",
+      "passed": 38,
+      "total": 38
+    },
+    {
+      "name": "Sécurité montage",
+      "passed": 18,
+      "total": 18
+    },
+    {
+      "name": "Syntaxe",
+      "passed": 3,
+      "total": 3
+    }
+  ],
+  "assertions": {
+    "passed": 185,
+    "total": 185
+  },
+  "ballistic_cases": {
+    "passed": 180,
+    "total": 180,
+    "weapons": 45,
+    "views": 4
+  },
+  "captures": [
+    "previews/0420/menu-ui-light.png",
+    "previews/0420/camp-ui-light.png",
+    "previews/0410-final/front-large-horde.png",
+    "previews/0410-final/rear-countershot.png"
+  ],
+  "notes": [
+    "Les suites historiques interrompues par timeout ne sont pas comptées comme réussies.",
+    "La couche ui_v42 ne contient aucun accès réseau ni mutation directe des règles de gameplay."
+  ]
+}

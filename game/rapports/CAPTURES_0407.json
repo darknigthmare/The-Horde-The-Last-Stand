@@ -1,0 +1,274 @@
+{
+  "version": "0.40.7",
+  "method": "HTML final avec 252 ressources originales. Profils/cas arrangés pour montrer les fonctions, moteur et boutons réels. Captures about:blank avec Storage en mémoire propre au banc ; aucune CSS ne masque un contrôle.",
+  "errors": [],
+  "captures": [
+    {
+      "file": "avant-preparation.png",
+      "phase": "camp",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "accueil.png",
+      "phase": "menu",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "preparation.png",
+      "phase": "camp",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "devis.png",
+      "phase": "departureReview",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "defenseurs.png",
+      "phase": "camp",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "couverture-en-combat.png",
+      "phase": "combat",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "situation-poste.png",
+      "phase": "postStatus",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "preparation-zone-noire.png",
+      "phase": "camp",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "circuits-devis.png",
+      "phase": "departureReview",
+      "viewport": {
+        "width": 1600,
+        "height": 1000
+      },
+      "originalArt": true
+    },
+    {
+      "file": "devis-paysage.png",
+      "phase": "departureReview",
+      "viewport": {
+        "width": 896,
+        "height": 414
+      },
+      "originalArt": true
+    },
+    {
+      "file": "devis-portrait.png",
+      "phase": "departureReview",
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "originalArt": true
+    },
+    {
+      "file": "situation-portrait.png",
+      "phase": "postStatus",
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "originalArt": true
+    }
+  ],
+  "art": {
+    "loaded": 252,
+    "total": 252,
+    "settled": true,
+    "failures": [],
+    "draws": {
+      "background": 0,
+      "actors": 0,
+      "props": 0,
+      "textures": 15
+    },
+    "enabled": true,
+    "actors": [
+      "walker",
+      "runner",
+      "crawler",
+      "armored",
+      "bomber",
+      "screamer",
+      "swarm",
+      "spitter",
+      "sprinter",
+      "brute",
+      "shield",
+      "northCable",
+      "northBeacon",
+      "vaulter",
+      "deaf"
+    ]
+  },
+  "quote": {
+    "rows": [
+      {
+        "id": "health",
+        "name": "Soins au camp",
+        "amount": 24,
+        "cost": 48,
+        "desc": "Deux crédits par point manquant.",
+        "kind": "health"
+      },
+      {
+        "id": "ammo:rifle",
+        "name": "Carabine de chasse · un lot",
+        "amount": 24,
+        "cost": 85,
+        "desc": "Livré dans la réserve, aux tarifs de l’arsenal.",
+        "kind": "ammo",
+        "key": "rifle"
+      },
+      {
+        "id": "ammo:pump",
+        "name": "Fusil à pompe · un lot",
+        "amount": 18,
+        "cost": 75,
+        "desc": "Livré dans la réserve, aux tarifs de l’arsenal.",
+        "kind": "ammo",
+        "key": "pump"
+      },
+      {
+        "id": "supply:1",
+        "name": "Kit de réparation",
+        "amount": 1,
+        "cost": 120,
+        "desc": "Une unité. Stock limité à cinq.",
+        "kind": "supply",
+        "key": 1
+      },
+      {
+        "id": "fuel",
+        "name": "Carburant du générateur",
+        "amount": 100,
+        "cost": 60,
+        "desc": "Lot plafonné à cent unités ; surplus non facturé.",
+        "kind": "resource",
+        "key": "fuel"
+      },
+      {
+        "id": "turret",
+        "name": "Munitions de tourelle",
+        "amount": 100,
+        "cost": 100,
+        "desc": "Lot plafonné à cent tirs.",
+        "kind": "resource",
+        "key": "turretAmmo"
+      }
+    ],
+    "cost": 488,
+    "fee": 190,
+    "after": 772,
+    "valid": true,
+    "ready": true
+  },
+  "post": {
+    "mission": "Le signal",
+    "time": 11.05000000000003,
+    "wall": 135,
+    "max": 340,
+    "health": 100,
+    "seen": [
+      0,
+      0
+    ],
+    "fuel": 105.68499999999987,
+    "online": true,
+    "turret": 0,
+    "local": false,
+    "interacting": false,
+    "objective": "none",
+    "circuits": null,
+    "hazard": "idle",
+    "crew": [
+      {
+        "id": "airGunner",
+        "pool": {
+          "value": 49,
+          "max": 50,
+          "unit": "cartouches"
+        }
+      },
+      {
+        "id": "airObserver",
+        "pool": {
+          "value": 5,
+          "max": 6,
+          "unit": "marquages"
+        }
+      }
+    ]
+  },
+  "artFinal": {
+    "loaded": 252,
+    "total": 252,
+    "settled": true,
+    "failures": [],
+    "draws": {
+      "background": 0,
+      "actors": 0,
+      "props": 12,
+      "textures": 41
+    },
+    "enabled": true,
+    "actors": [
+      "walker",
+      "runner",
+      "crawler",
+      "armored",
+      "bomber",
+      "screamer",
+      "swarm",
+      "spitter",
+      "sprinter",
+      "brute",
+      "shield",
+      "northCable",
+      "northBeacon",
+      "vaulter",
+      "deaf"
+    ]
+  }
+}

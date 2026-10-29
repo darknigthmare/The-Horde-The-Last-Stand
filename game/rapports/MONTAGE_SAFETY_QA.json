@@ -1,0 +1,930 @@
+{
+  "version": "0.40.5",
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "test": "135 inspections sans changement de profil ou stock",
+      "ok": true,
+      "detail": [
+        {
+          "id": "pistol",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "pistol",
+          "kit": "kit2_hand_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "pistol",
+          "kit": "kit2_hand_heavy",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "smg",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "smg",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "smg",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "pump",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "pump",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "pump",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "revolver",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "revolver",
+          "kit": "kit2_hand_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "revolver",
+          "kit": "kit2_hand_heavy",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "rifle",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "rifle",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "rifle",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "assault",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "assault",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "assault",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "autoshot",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "autoshot",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "autoshot",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "sniper",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "sniper",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "sniper",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "lmg",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "lmg",
+          "kit": "kit2_machine_feed",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "lmg",
+          "kit": "kit2_machine_support",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "launcher",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "launcher",
+          "kit": "kit2_launcher_wide",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "launcher",
+          "kit": "kit2_launcher_focus",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "crossbow",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "crossbow",
+          "kit": "kit2_cable_winch",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "crossbow",
+          "kit": "kit2_cable_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "dmr",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "dmr",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "dmr",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flamer",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flamer",
+          "kit": "kit2_tool_long",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flamer",
+          "kit": "kit2_tool_tank",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "antimaterial",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "antimaterial",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "antimaterial",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "double",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "double",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "double",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "burst",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "burst",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "burst",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flaregun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flaregun",
+          "kit": "kit2_launcher_wide",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flaregun",
+          "kit": "kit2_launcher_focus",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "harpoon",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "harpoon",
+          "kit": "kit2_cable_winch",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "harpoon",
+          "kit": "kit2_cable_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "lever",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "lever",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "lever",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "nailer",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "nailer",
+          "kit": "kit2_tool_long",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "nailer",
+          "kit": "kit2_tool_tank",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flechette",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flechette",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flechette",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "netgun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "netgun",
+          "kit": "kit2_cable_winch",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "netgun",
+          "kit": "kit2_cable_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "drumgun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "drumgun",
+          "kit": "kit2_machine_feed",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "drumgun",
+          "kit": "kit2_machine_support",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "breachgun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "breachgun",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "breachgun",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "foamgun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "foamgun",
+          "kit": "kit2_tool_long",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "foamgun",
+          "kit": "kit2_tool_tank",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northPatrol",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northPatrol",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northPatrol",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northStopper",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northStopper",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northStopper",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northDriller",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northDriller",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northDriller",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northArc",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northArc",
+          "kit": "kit2_tool_long",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "northArc",
+          "kit": "kit2_tool_tank",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroCoach",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroCoach",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroCoach",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroAnchor",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroAnchor",
+          "kit": "kit2_cable_winch",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroAnchor",
+          "kit": "kit2_cable_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroShredder",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroShredder",
+          "kit": "kit2_launcher_wide",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "metroShredder",
+          "kit": "kit2_launcher_focus",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airFlak",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airFlak",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airFlak",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airDoorGun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airDoorGun",
+          "kit": "kit2_machine_feed",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airDoorGun",
+          "kit": "kit2_machine_support",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airTether",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airTether",
+          "kit": "kit2_cable_winch",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airTether",
+          "kit": "kit2_cable_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airRocket",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airRocket",
+          "kit": "kit2_launcher_wide",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "airRocket",
+          "kit": "kit2_launcher_focus",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "deckCarbine",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "deckCarbine",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "deckCarbine",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "marineHarpoon",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "marineHarpoon",
+          "kit": "kit2_cable_winch",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "marineHarpoon",
+          "kit": "kit2_cable_fast",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flareMortar",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flareMortar",
+          "kit": "kit2_launcher_wide",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "flareMortar",
+          "kit": "kit2_launcher_focus",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "towerCarbine",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "towerCarbine",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "towerCarbine",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "boltDriver",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "boltDriver",
+          "kit": "kit2_precision_quick",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "boltDriver",
+          "kit": "kit2_precision_ap",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "doorScatter",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "doorScatter",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "doorScatter",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "traceCarbine",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "traceCarbine",
+          "kit": "kit2_rifle_precise",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "traceCarbine",
+          "kit": "kit2_rifle_short",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "magnesiumGun",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "magnesiumGun",
+          "kit": "kit2_shot_slug",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "magnesiumGun",
+          "kit": "kit2_shot_darts",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "signalLauncher",
+          "kit": null,
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "signalLauncher",
+          "kit": "kit2_launcher_wide",
+          "ready": true,
+          "finite": true
+        },
+        {
+          "id": "signalLauncher",
+          "kit": "kit2_launcher_focus",
+          "ready": true,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "test": "Identifiants, compatibilités et réglages invalides refusés",
+      "ok": true,
+      "detail": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "test": "Focus conservé sur la pièce simulée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Croix droite manette règle la simulation et conserve le focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Retour depuis préparation du stand sans essai",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Tir au stand cohérent avec amélioration et doctrine sélectionnées",
+      "ok": true,
+      "detail": {
+        "damage": 106.94999999999709,
+        "expected": 106.94999999999999,
+        "level": 2,
+        "doctrine": {
+          "marksman": 3,
+          "loader": 2
+        }
+      }
+    },
+    {
+      "test": "Pause de l’essai fige la simulation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Arme non substituable dans un essai A/B",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Défaite au stand ouvre son vrai bilan",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Défaite puis retour ne touche pas la campagne",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Cas de chargeur réduit existant dans le catalogue",
+      "ok": true,
+      "detail": "mag_fast"
+    },
+    {
+      "test": "Réserve pleine : application bloquée plutôt que stock perdu",
+      "ok": true,
+      "detail": "La réserve est pleine. Ce chargeur plus petit ferait perdre des cartouches : conservez la capacité actuelle ou utilisez une partie du stock avant le montage."
+    },
+    {
+      "test": "Retour au menu nettoie les essais et le montage temporaire",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Le stand ne diffuse pas les transmissions de la campagne",
+      "ok": true,
+      "detail": {
+        "progress": 0,
+        "text": "•\n\nStockage local indisponible : progression conservée pour cette session seulement."
+      }
+    },
+    {
+      "test": "Les avertissements utiles du stand restent présents",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Les notifications temporaires du stand ne recouvrent pas le retour",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Les transmissions du convoi restent actives en mission",
+      "ok": true,
+      "detail": {
+        "phase": "combat",
+        "progress": 3,
+        "text": "•\n\n« Le prochain groupe est presque passé. »\n\n•\n\n« Le convoi roule. Gardez la route ouverte. »\n\n•\n\nStockage local indisponible : progression conservée pour cette session seulement."
+      }
+    },
+    {
+      "test": "Aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

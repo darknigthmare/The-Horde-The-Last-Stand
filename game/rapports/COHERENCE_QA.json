@@ -1,0 +1,904 @@
+{
+  "version": "0.40.4",
+  "passed": 31,
+  "total": 31,
+  "checks": [
+    {
+      "test": "Armure standard réellement percée — right",
+      "ok": true,
+      "detail": [
+        {
+          "damage": 66.64999999999418,
+          "impact": 155,
+          "ap": false
+        },
+        {
+          "damage": 168.9499999999971,
+          "impact": 168.95000000000002,
+          "ap": true
+        }
+      ]
+    },
+    {
+      "test": "Armure standard réellement percée — left",
+      "ok": true,
+      "detail": [
+        {
+          "damage": 66.64999999999418,
+          "impact": 155,
+          "ap": false
+        },
+        {
+          "damage": 168.9499999999971,
+          "impact": 168.95000000000002,
+          "ap": true
+        }
+      ]
+    },
+    {
+      "test": "Armure standard réellement percée — front",
+      "ok": true,
+      "detail": [
+        {
+          "damage": 66.64999999999418,
+          "impact": 155,
+          "ap": false
+        },
+        {
+          "damage": 168.9499999999971,
+          "impact": 168.95000000000002,
+          "ap": true
+        }
+      ]
+    },
+    {
+      "test": "Armure standard réellement percée — rear",
+      "ok": true,
+      "detail": [
+        {
+          "damage": 66.64999999999418,
+          "impact": 155,
+          "ap": false
+        },
+        {
+          "damage": 168.9499999999971,
+          "impact": 168.95000000000002,
+          "ap": true
+        }
+      ]
+    },
+    {
+      "test": "Buse longue : le cône atteint réellement une cible au-delà de 460",
+      "ok": true,
+      "detail": [
+        {
+          "damage": 0,
+          "range": 460
+        },
+        {
+          "damage": 22,
+          "range": 552
+        }
+      ]
+    },
+    {
+      "test": "Lance-filets : immobilisation native conservée",
+      "ok": true,
+      "detail": {
+        "payload": "net",
+        "damage": 15.80999999999949,
+        "stun": 3.95,
+        "slow": 1,
+        "effects": {
+          "projectiles": [],
+          "fires": [],
+          "tracers": [],
+          "particles": [
+            {
+              "x": 908.1100603555901,
+              "y": 411.4443883768983,
+              "vx": 81.10060355590156,
+              "vy": -45.000265130009296,
+              "life": 0.14124779663545445,
+              "max": 0.7,
+              "size": 2.103193690247102,
+              "type": "hit",
+              "color": "#854b40",
+              "ground": 458.24441488989925,
+              "dl411TargetId": 11
+            },
+            {
+              "x": 897.4482671214494,
+              "y": 420.6617758887126,
+              "vx": -25.517328785505683,
+              "vy": 47.17360998813317,
+              "life": 0.5744651696723029,
+              "max": 0.7,
+              "size": 3.826642953550782,
+              "type": "hit",
+              "color": "#854b40",
+              "ground": 458.24441488989925,
+              "dl411TargetId": 11
+            },
+            {
+              "x": 898.6242246536569,
+              "y": 451.56055729670214,
+              "vx": -13.757753463431385,
+              "vy": -1.3944270329786448,
+              "life": 0.3107326440223121,
+              "max": 0.7,
+              "size": 2.8304445764034023,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.2619478623969,
+              "y": 454.542714610722,
+              "vx": 62.61947862396892,
+              "vy": 28.427146107219354,
+              "life": 0.155208603186824,
+              "max": 0.7,
+              "size": 2.533708549382938,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 907.2924918807012,
+              "y": 442.6408104743623,
+              "vx": 72.92491880701272,
+              "vy": -90.59189525637738,
+              "life": 0.44879806445534104,
+              "max": 0.7,
+              "size": 1.5175999738319559,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.3936083665374,
+              "y": 455.73467219527777,
+              "vx": 63.936083665373616,
+              "vy": 40.34672195277779,
+              "life": 0.16337106475911511,
+              "max": 0.7,
+              "size": 1.866377305578736,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 902.3214831224607,
+              "y": 451.4939613706431,
+              "vx": 23.214831224607423,
+              "vy": -2.0603862935693984,
+              "life": 0.3537948793072758,
+              "max": 0.7,
+              "size": 2.82923255207609,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 896.1416954374831,
+              "y": 450.9767821786337,
+              "vx": -38.58304562516865,
+              "vy": -7.232178213662981,
+              "life": 0.4705210420535879,
+              "max": 0.7,
+              "size": 2.4941692590157025,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 901.0758370466122,
+              "y": 450.24270676897004,
+              "vx": 10.758370466121889,
+              "vy": -14.572932310299809,
+              "life": 0.28325278894517,
+              "max": 0.7,
+              "size": 3.53824891338223,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 907.4873873207696,
+              "y": 452.12839475946896,
+              "vx": 74.8738732076958,
+              "vy": 4.283947594689049,
+              "life": 0.5068558191094017,
+              "max": 0.7,
+              "size": 3.068628509065343,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.2344299712775,
+              "y": 446.9520794482061,
+              "vx": 62.34429971277402,
+              "vy": -47.47920551793889,
+              "life": 0.10683744769541735,
+              "max": 0.7,
+              "size": 3.628681899371165,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 908.1506709048454,
+              "y": 450.10382461447534,
+              "vx": 81.5067090484537,
+              "vy": -15.961753855246943,
+              "life": 0.2226424147422666,
+              "max": 0.7,
+              "size": 2.8090515727885075,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 899.4407891581466,
+              "y": 443.3278480212183,
+              "vx": -5.59210841853384,
+              "vy": -83.72151978781726,
+              "life": 0.11943473038758688,
+              "max": 0.7,
+              "size": 2.5333268197193632,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 907.6985677124503,
+              "y": 449.7769756892037,
+              "vx": 76.9856771245033,
+              "vy": -19.23024310796311,
+              "life": 0.5820307900021644,
+              "max": 0.7,
+              "size": 3.163730630116978,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 894.3579056864971,
+              "y": 442.51824561852607,
+              "vx": -56.42094313502777,
+              "vy": -91.81754381473924,
+              "life": 0.4756557145774394,
+              "max": 0.7,
+              "size": 1.4790696114778985,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 903.1998509283396,
+              "y": 449.84262445860145,
+              "vx": 31.998509283396942,
+              "vy": -18.573755413985626,
+              "life": 0.4451854679638035,
+              "max": 0.7,
+              "size": 1.7368634015710929,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.6119377659038,
+              "y": 456.2753449019742,
+              "vx": 66.11937765903744,
+              "vy": 45.75344901974183,
+              "life": 0.45322513826495225,
+              "max": 0.7,
+              "size": 2.7647314798474607,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 891.3608189763131,
+              "y": 451.28590014837187,
+              "vx": -86.39181023686953,
+              "vy": -4.140998516281603,
+              "life": 0.5256110344838083,
+              "max": 0.7,
+              "size": 2.798886268451184,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 900.9025545242162,
+              "y": 442.7378158618309,
+              "vx": 9.025545242161073,
+              "vy": -89.62184138169133,
+              "life": 0.23044501454650196,
+              "max": 0.7,
+              "size": 1.5756361146674263,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.4054950968052,
+              "y": 449.95495907814336,
+              "vx": 64.05495096805177,
+              "vy": -17.450409218566694,
+              "life": 0.5737189846460786,
+              "max": 0.7,
+              "size": 3.660617819607927,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 895.9497386114165,
+              "y": 452.6535890154284,
+              "vx": -40.502613885835636,
+              "vy": 9.53589015428393,
+              "life": 0.5470904138032424,
+              "max": 0.7,
+              "size": 1.7436325923772322,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 893.4281242170703,
+              "y": 450.0389418055713,
+              "vx": -65.7187578292982,
+              "vy": -16.610581944286526,
+              "life": 0.3787305696169977,
+              "max": 0.7,
+              "size": 3.3684411406601473,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 899.0964844819127,
+              "y": 450.7655949192397,
+              "vx": -9.035155180873716,
+              "vy": -9.344050807603114,
+              "life": 0.4864483615418749,
+              "max": 0.7,
+              "size": 1.4576586659646442,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 907.0029889405403,
+              "y": 451.1491217318602,
+              "vx": 70.02988940540172,
+              "vy": -5.508782681398093,
+              "life": 0.23595337030521385,
+              "max": 0.7,
+              "size": 2.857636985843565,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 902.2830819170688,
+              "y": 449.3512871996977,
+              "vx": 22.830819170688372,
+              "vy": -23.487128003023262,
+              "life": 0.3640513866622626,
+              "max": 0.7,
+              "size": 3.219753206569123,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 903.6572530788483,
+              "y": 452.9282956335951,
+              "vx": 36.57253078848336,
+              "vy": 12.282956335950683,
+              "life": 0.14138684051212558,
+              "max": 0.7,
+              "size": 1.922905266104867,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 893.3652019864751,
+              "y": 454.2243593710341,
+              "vx": -66.34798013524994,
+              "vy": 25.243593710340914,
+              "life": 0.22842956488512006,
+              "max": 0.7,
+              "size": 3.7263300373739874,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.8264273808059,
+              "y": 450.94027181355113,
+              "vx": 68.2642738080589,
+              "vy": -7.597281864488697,
+              "life": 0.15449279517644526,
+              "max": 0.7,
+              "size": 3.4638927541628144,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 892.0777021947549,
+              "y": 454.5165040111789,
+              "vx": -79.22297805245083,
+              "vy": 28.165040111788255,
+              "life": 0.10565074605073431,
+              "max": 0.7,
+              "size": 3.15019962192258,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 900.8005513302826,
+              "y": 451.5217850109211,
+              "vx": 8.005513302825605,
+              "vy": -1.7821498907892745,
+              "life": 0.303124587791814,
+              "max": 0.7,
+              "size": 3.7474992448987416,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 893.998298047535,
+              "y": 449.58151099998304,
+              "vx": -60.017019524649896,
+              "vy": -21.18489000016942,
+              "life": 0.32906302813195915,
+              "max": 0.7,
+              "size": 2.2819888241474393,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 894.4682492756056,
+              "y": 448.10829349028825,
+              "vx": -55.31750724394415,
+              "vy": -35.91706509711721,
+              "life": 0.4779239981255563,
+              "max": 0.7,
+              "size": 2.969842415293919,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 893.4931565855297,
+              "y": 455.9345720478761,
+              "vx": -65.06843414470376,
+              "vy": 42.34572047876075,
+              "life": 0.47056320638705573,
+              "max": 0.7,
+              "size": 1.632097083831881,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 892.7437775694029,
+              "y": 447.8326084932175,
+              "vx": -72.56222430597086,
+              "vy": -38.673915067825206,
+              "life": 0.24755791266249744,
+              "max": 0.7,
+              "size": 2.6273547970508906,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 908.5839062492564,
+              "y": 452.7922927948964,
+              "vx": 85.83906249256464,
+              "vy": 10.922927948964439,
+              "life": 0.15486310039850337,
+              "max": 0.7,
+              "size": 2.6050955967105587,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 892.798898066753,
+              "y": 450.5246881093608,
+              "vx": -72.01101933247057,
+              "vy": -11.75311890639232,
+              "life": 0.5460206952111617,
+              "max": 0.7,
+              "size": 3.4185402595049976,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 901.2772844261058,
+              "y": 443.2898342705462,
+              "vx": 12.772844261058708,
+              "vy": -84.1016572945382,
+              "life": 0.17201696758310014,
+              "max": 0.7,
+              "size": 3.3644549853189636,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 906.2571499667431,
+              "y": 447.9719869649539,
+              "vx": 62.57149966743057,
+              "vy": -37.28013035046138,
+              "life": 0.5609627069566736,
+              "max": 0.7,
+              "size": 3.3401109134734366,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 901.7188533862713,
+              "y": 455.9256991865126,
+              "vx": 17.188533862712603,
+              "vy": 42.25699186512572,
+              "life": 0.3034926439780346,
+              "max": 0.7,
+              "size": 2.4646621862081863,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 898.2566293645823,
+              "y": 453.24220094577925,
+              "vx": -17.433706354176422,
+              "vy": 15.422009457792807,
+              "life": 0.5975208986371381,
+              "max": 0.7,
+              "size": 1.9931832076595368,
+              "type": "spark",
+              "color": "#e8aa65",
+              "ground": 494
+            },
+            {
+              "x": 900,
+              "y": 453.5,
+              "vx": 0,
+              "vy": 18.00000000000001,
+              "life": 0.25999999999999995,
+              "max": 0.36,
+              "size": 105,
+              "type": "ring",
+              "color": "#e8c794",
+              "ground": 494
+            },
+            {
+              "x": 900,
+              "y": 453.5,
+              "vx": 0,
+              "vy": 18.00000000000001,
+              "life": 0.5999999999999999,
+              "max": 0.7,
+              "size": 105,
+              "type": "ring",
+              "color": "#a8d3c6",
+              "ground": 494
+            }
+          ],
+          "floating": [
+            {
+              "x": 900,
+              "y": 401.4444148898992,
+              "text": "16",
+              "color": "#d9b2a0",
+              "life": 0.7,
+              "ground": 458.24441488989925,
+              "dl411TargetId": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "test": "Mousse : ralentissement sans dégâts conservé",
+      "ok": true,
+      "detail": {
+        "payload": "foam",
+        "damage": 0,
+        "stun": 0,
+        "slow": 0.5,
+        "effects": {
+          "projectiles": [],
+          "fires": [],
+          "tracers": [],
+          "particles": [],
+          "floating": []
+        }
+      }
+    },
+    {
+      "test": "Explosion attribuée au lanceur après changement d’arme",
+      "ok": true,
+      "detail": {
+        "active": "pistol",
+        "projectile": {
+          "kind": "grenade",
+          "x": 900,
+          "y": 446.75,
+          "tx": 900,
+          "ty": 446.75,
+          "startX": 1111.18125,
+          "startY": 553.20625,
+          "t": 0.44999999999999996,
+          "duration": 0.42,
+          "dl402Weapon": "launcher",
+          "dmg": 220.39999999999998,
+          "radius": 80,
+          "fire": false,
+          "dl408Launch": {
+            "view": "right",
+            "x": 1111.18125,
+            "y": 553.20625
+          },
+          "dead": true
+        },
+        "metrics": {
+          "launcher": {
+            "shots": 1,
+            "hits": 1,
+            "damage": 30,
+            "kills": 1
+          }
+        },
+        "masterDelta": 1
+      }
+    },
+    {
+      "test": "Le pistolet ne reçoit pas le crédit de l’explosion",
+      "ok": true,
+      "detail": {
+        "launcher": {
+          "shots": 1,
+          "hits": 1,
+          "damage": 30,
+          "kills": 1
+        }
+      }
+    },
+    {
+      "test": "Rapport après action contient la conversion utilisée",
+      "ok": true,
+      "detail": {
+        "launcher": {
+          "id": "launcher",
+          "hash": "60D5F1E1",
+          "label": "Charge de rupture",
+          "count": 0,
+          "active": {},
+          "tuning": {},
+          "conversion": "kit2_launcher_focus",
+          "aggregate": {
+            "damage": 1.16,
+            "rate": 1,
+            "reload": 1.16,
+            "spread": 1,
+            "range": 1,
+            "mag": 1,
+            "recoil": 1,
+            "switch": 1,
+            "blast": 0.76,
+            "pierceAdd": 0,
+            "magAdd": 0
+          }
+        }
+      }
+    },
+    {
+      "test": "Signature de mission identique au montage initial",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "La conversion survit à la validation des rapports",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Comparateur de presets inclut le mécanisme",
+      "ok": true,
+      "detail": {
+        "now": {
+          "id": "pump",
+          "hash": "2F228ECE",
+          "label": "Balle unique de poste",
+          "count": 0,
+          "active": {},
+          "tuning": {},
+          "conversion": "kit2_shot_slug",
+          "aggregate": {
+            "damage": 4.760000000000001,
+            "rate": 0.86,
+            "reload": 1,
+            "spread": 0.55,
+            "range": 1.25,
+            "mag": 1,
+            "recoil": 1,
+            "switch": 1,
+            "blast": 1,
+            "pierceAdd": 0,
+            "magAdd": 0
+          }
+        },
+        "preset": {
+          "id": "pump",
+          "hash": "2F228ECE",
+          "label": "Balle unique de poste",
+          "count": 0,
+          "active": {},
+          "tuning": {},
+          "conversion": "kit2_shot_slug",
+          "aggregate": {
+            "damage": 4.760000000000001,
+            "rate": 0.86,
+            "reload": 1,
+            "spread": 0.55,
+            "range": 1.25,
+            "mag": 1,
+            "recoil": 1,
+            "switch": 1,
+            "blast": 1,
+            "pierceAdd": 0,
+            "magAdd": 0
+          }
+        }
+      }
+    },
+    {
+      "test": "Profil antérieur sans conversions accepté sans cadeau",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Transition rapide effectivement inférieure à 0,18 s",
+      "ok": true,
+      "detail": {
+        "cd": 0.1636363636363636,
+        "rate": 1.1,
+        "active": "assault"
+      }
+    },
+    {
+      "test": "Production sans API de test",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Conversions accessibles avec la souris en production",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Comparaison accessible sans déblocage ni API de test",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "build utilisable à 1440×900",
+      "ok": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "test": "kits utilisable à 1440×900",
+      "ok": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "test": "plans utilisable à 1440×900",
+      "ok": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "test": "presets utilisable à 1440×900",
+      "ok": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "test": "build utilisable à 896×414",
+      "ok": true,
+      "detail": {
+        "w": 896,
+        "scroll": 896
+      }
+    },
+    {
+      "test": "kits utilisable à 896×414",
+      "ok": true,
+      "detail": {
+        "w": 896,
+        "scroll": 896
+      }
+    },
+    {
+      "test": "plans utilisable à 896×414",
+      "ok": true,
+      "detail": {
+        "w": 896,
+        "scroll": 896
+      }
+    },
+    {
+      "test": "presets utilisable à 896×414",
+      "ok": true,
+      "detail": {
+        "w": 896,
+        "scroll": 896
+      }
+    },
+    {
+      "test": "build utilisable à 414×896",
+      "ok": true,
+      "detail": {
+        "w": 414,
+        "scroll": 414
+      }
+    },
+    {
+      "test": "kits utilisable à 414×896",
+      "ok": true,
+      "detail": {
+        "w": 414,
+        "scroll": 414
+      }
+    },
+    {
+      "test": "plans utilisable à 414×896",
+      "ok": true,
+      "detail": {
+        "w": 414,
+        "scroll": 414
+      }
+    },
+    {
+      "test": "presets utilisable à 414×896",
+      "ok": true,
+      "detail": {
+        "w": 414,
+        "scroll": 414
+      }
+    },
+    {
+      "test": "Aucune erreur JavaScript dans cette passe",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

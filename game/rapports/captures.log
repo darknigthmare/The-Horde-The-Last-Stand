@@ -1,0 +1,13 @@
+avant-preparation
+accueil
+preparation
+devis
+defenseurs
+couverture-en-combat
+situation-poste
+preparation-zone-noire
+circuits-devis
+devis-paysage
+devis-portrait
+situation-portrait
+{"art": {"loaded": 252, "total": 252, "settled": true, "failures": [], "draws": {"background": 0, "actors": 0, "props": 0, "textures": 15}, "enabled": true, "actors": ["walker", "runner", "crawler", "armored", "bomber", "screamer", "swarm", "spitter", "sprinter", "brute", "shield", "northCable", "northBeacon", "vaulter", "deaf"]}, "errors": [], "captures": 12}

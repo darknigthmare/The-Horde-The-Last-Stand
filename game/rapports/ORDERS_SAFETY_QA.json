@@ -1,0 +1,771 @@
+{
+  "version": "0.40.7",
+  "passed": 50,
+  "total": 50,
+  "checks": [
+    {
+      "test": "Trente lectures ne changent ni run ni profil",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Préparation périmée refusée · __DL.readState().run.weapons.rifle.mag--",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Préparation périmée refusée · __DL.readState().run.allies.shooter.active=false",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Préparation périmée refusée · __DL.readState().run.loadout=[\"pistol\",null]",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Préparation périmée refusée · __DL.getData().meta.doctrines.marksman=1",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Solde protégée au crédit près · -1",
+      "ok": true,
+      "detail": {
+        "rows": [
+          {
+            "id": "health",
+            "name": "Soins au camp",
+            "amount": 13,
+            "cost": 26,
+            "desc": "Deux crédits par point manquant.",
+            "kind": "health"
+          }
+        ],
+        "cost": 26,
+        "fee": 120,
+        "after": -1,
+        "valid": true,
+        "ready": false
+      }
+    },
+    {
+      "test": "Solde protégée au crédit près · 0",
+      "ok": true,
+      "detail": {
+        "rows": [
+          {
+            "id": "health",
+            "name": "Soins au camp",
+            "amount": 13,
+            "cost": 26,
+            "desc": "Deux crédits par point manquant.",
+            "kind": "health"
+          }
+        ],
+        "cost": 26,
+        "fee": 120,
+        "after": 0,
+        "valid": true,
+        "ready": true
+      }
+    },
+    {
+      "test": "Chargement gratuit explicite sans aucun achat",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Défi sans soins ne propose pas de trousse",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Défi sans alliés garde les frais à zéro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Ancien devis incapable de toucher une nouvelle route",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Neuf préparations exportées et validées",
+      "ok": true,
+      "detail": [
+        "dark",
+        "operation",
+        "tower",
+        "water",
+        "highway",
+        "air",
+        "metro",
+        "north",
+        "campaign"
+      ]
+    },
+    {
+      "test": "Révision ne fusionne pas les huit autres préparations",
+      "ok": true,
+      "detail": [
+        "save"
+      ]
+    },
+    {
+      "test": "Défaite reprend le stock préparé sans nouvelle livraison",
+      "ok": true,
+      "detail": {
+        "phase": "camp",
+        "buttons": [
+          {
+            "id": "",
+            "text": "TROP FAIBLE"
+          },
+          {
+            "id": "",
+            "text": "JUSTE"
+          },
+          {
+            "id": "",
+            "text": "TROP FORTE"
+          },
+          {
+            "id": "",
+            "text": "1"
+          },
+          {
+            "id": "",
+            "text": "2"
+          },
+          {
+            "id": "",
+            "text": "3"
+          },
+          {
+            "id": "",
+            "text": "4"
+          },
+          {
+            "id": "",
+            "text": "5"
+          },
+          {
+            "id": "v21RetryNight",
+            "text": "REPRENDRE LA PRÉPARATION"
+          },
+          {
+            "id": "retryRun",
+            "text": "NOUVELLE DÉFENSE"
+          },
+          {
+            "id": "endMenu",
+            "text": "MENU"
+          }
+        ],
+        "cash": 854,
+        "before": 854
+      }
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · campaign",
+      "ok": true,
+      "detail": {
+        "mission": "Le signal",
+        "time": 0.12,
+        "wall": 170,
+        "max": 340,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 0,
+        "online": false,
+        "turret": 0,
+        "local": false,
+        "interacting": false,
+        "objective": "none",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · campaign",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · campaign",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · north",
+      "ok": true,
+      "detail": {
+        "mission": "Les feux sur la route",
+        "time": 0.12,
+        "wall": 170,
+        "max": 480,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 99.964,
+        "online": true,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · north",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · north",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · metro",
+      "ok": true,
+      "detail": {
+        "mission": "Les derniers sur le quai",
+        "time": 0.12,
+        "wall": 170,
+        "max": 500,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 149.96400000000003,
+        "online": true,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · metro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · metro",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · air",
+      "ok": true,
+      "detail": {
+        "mission": "Au-dessus des lampadaires",
+        "time": 0.12,
+        "wall": 170,
+        "max": 520,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 159.96400000000003,
+        "online": true,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · air",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · air",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · highway",
+      "ok": true,
+      "detail": {
+        "mission": "Sortie du dépôt",
+        "time": 0.12,
+        "wall": 170,
+        "max": 420,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 180,
+        "online": false,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · highway",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · highway",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · water",
+      "ok": true,
+      "detail": {
+        "mission": "Le sas de service",
+        "time": 0.12,
+        "wall": 170,
+        "max": 380,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 180,
+        "online": false,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · water",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · water",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · tower",
+      "ok": true,
+      "detail": {
+        "mission": "Niveau -4",
+        "time": 0.12,
+        "wall": 170,
+        "max": 500,
+        "health": 87,
+        "seen": [
+          1,
+          0
+        ],
+        "fuel": 139.96400000000003,
+        "online": true,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": null,
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · tower",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · tower",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Situation du poste : tous les timers figés · dark",
+      "ok": true,
+      "detail": {
+        "mission": "La première ampoule",
+        "time": 0.12,
+        "wall": 170,
+        "max": 480,
+        "health": 87,
+        "seen": [
+          0,
+          0
+        ],
+        "fuel": 169.96400000000003,
+        "online": true,
+        "turret": 0,
+        "local": true,
+        "interacting": false,
+        "objective": "radio",
+        "circuits": [
+          100,
+          0,
+          100,
+          100,
+          100,
+          100
+        ],
+        "hazard": "idle",
+        "crew": [
+          {
+            "id": "airGunner",
+            "pool": {
+              "value": 50,
+              "max": 50,
+              "unit": "cartouches"
+            }
+          },
+          {
+            "id": "towerTech",
+            "pool": {
+              "value": 2,
+              "max": 3,
+              "unit": "interventions"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "test": "Situation ne compte pas la silhouette cachée",
+      "ok": true,
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "test": "Un retour rejoint la pause et non le combat · dark",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Reprise active après la situation · dark",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Coupure électrique toujours signalée pendant la pause",
+      "ok": true,
+      "detail": {
+        "nights": [
+          10,
+          14,
+          19,
+          23
+        ],
+        "online": false,
+        "status": false
+      }
+    },
+    {
+      "test": "Devis sans débordement interne 1440×900",
+      "ok": true,
+      "detail": [
+        {
+          "name": "HTML",
+          "width": 1440,
+          "scroll": 1440
+        },
+        {
+          "name": "dialog dl43-dialog game-window",
+          "width": 818,
+          "scroll": 818
+        },
+        {
+          "name": "dl407-review",
+          "width": 696,
+          "scroll": 696
+        },
+        {
+          "name": "dl407-review-grid",
+          "width": 696,
+          "scroll": 696
+        }
+      ]
+    },
+    {
+      "test": "Contrôle sélectionné conserve le focus 1440×900",
+      "ok": true,
+      "detail": "dl407-pick-health"
+    },
+    {
+      "test": "Situation du poste lisible 1440×900",
+      "ok": true,
+      "detail": [
+        {
+          "name": "HTML",
+          "width": 1440,
+          "scroll": 1440
+        },
+        {
+          "name": "dialog dl43-dialog game-window",
+          "width": 818,
+          "scroll": 818
+        },
+        {
+          "name": "dl407-status",
+          "width": 696,
+          "scroll": 696
+        }
+      ]
+    },
+    {
+      "test": "Devis sans débordement interne 896×414",
+      "ok": true,
+      "detail": [
+        {
+          "name": "HTML",
+          "width": 896,
+          "scroll": 896
+        },
+        {
+          "name": "dialog dl43-dialog game-window",
+          "width": 786,
+          "scroll": 786
+        },
+        {
+          "name": "dl407-review",
+          "width": 681,
+          "scroll": 681
+        },
+        {
+          "name": "dl407-review-grid",
+          "width": 681,
+          "scroll": 681
+        }
+      ]
+    },
+    {
+      "test": "Contrôle sélectionné conserve le focus 896×414",
+      "ok": true,
+      "detail": "dl407-pick-health"
+    },
+    {
+      "test": "Situation du poste lisible 896×414",
+      "ok": true,
+      "detail": [
+        {
+          "name": "HTML",
+          "width": 896,
+          "scroll": 896
+        },
+        {
+          "name": "dialog dl43-dialog game-window",
+          "width": 786,
+          "scroll": 786
+        },
+        {
+          "name": "dl407-status",
+          "width": 681,
+          "scroll": 681
+        }
+      ]
+    },
+    {
+      "test": "Devis sans débordement interne 414×896",
+      "ok": true,
+      "detail": [
+        {
+          "name": "HTML",
+          "width": 414,
+          "scroll": 414
+        },
+        {
+          "name": "dialog dl43-dialog game-window",
+          "width": 362,
+          "scroll": 362
+        },
+        {
+          "name": "dl407-review",
+          "width": 272,
+          "scroll": 272
+        },
+        {
+          "name": "dl407-review-grid",
+          "width": 272,
+          "scroll": 272
+        }
+      ]
+    },
+    {
+      "test": "Contrôle sélectionné conserve le focus 414×896",
+      "ok": true,
+      "detail": "dl407-pick-health"
+    },
+    {
+      "test": "Situation du poste lisible 414×896",
+      "ok": true,
+      "detail": [
+        {
+          "name": "HTML",
+          "width": 414,
+          "scroll": 414
+        },
+        {
+          "name": "dialog dl43-dialog game-window",
+          "width": 362,
+          "scroll": 362
+        },
+        {
+          "name": "dl407-status",
+          "width": 272,
+          "scroll": 272
+        }
+      ]
+    },
+    {
+      "test": "Aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "method": "Moteur réel Chromium, cibles/stocks arrangés, images réduites seulement. Pause, transactions et reprise avec commandes natives."
+}

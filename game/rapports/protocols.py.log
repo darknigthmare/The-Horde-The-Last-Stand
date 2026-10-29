@@ -1,0 +1,140 @@
+OK 0.40.6 chargée
+OK Conditions communes dans le dialogue natif
+OK Stand libre conservé par défaut
+OK Six exercices sur les vrais ennemis
+OK Choix des conditions sans modifier le profil
+OK Parcours A dans la préparation réelle
+OK Six contrôles natifs fixés
+OK Autre arme refusée même par entrée directe
+OK Premier passage créé par le moteur
+OK Lot réel de 300 cartouches
+OK Consommables absents dans cette copie seule
+OK Le bouton secours ne change pas cette arme
+OK Ajout manuel de cibles refusé
+OK Pause fige le chronomètre
+OK Arrêt exact à 30 secondes
+OK Six passages avec alternance des voies
+OK Retour au bilan A sans mutation
+OK Passage B proposé explicitement
+OK Mêmes arrivées réelles pour A et B
+OK Comparaison prête et profil inchangé
+OK Export limité aux essais et à leur montage
+OK Vrai fichier JSON exporté
+OK Nouvelle série invalide l’ancienne comparaison
+OK Fermeture sans changement des stocks et presets
+OK Séquence réelle grouping · right
+OK Séquence réelle grouping · left
+OK Séquence réelle grouping · front
+OK Séquence réelle grouping · rear
+OK Séquence réelle protection · right
+OK Séquence réelle protection · left
+OK Séquence réelle protection · front
+OK Séquence réelle protection · rear
+OK Séquence réelle helmet · right
+OK Séquence réelle helmet · left
+OK Séquence réelle helmet · front
+OK Séquence réelle helmet · rear
+OK Séquence réelle rush · right
+OK Séquence réelle rush · left
+OK Séquence réelle rush · front
+OK Séquence réelle rush · rear
+OK Séquence réelle swarm · right
+OK Séquence réelle swarm · left
+OK Séquence réelle swarm · front
+OK Séquence réelle swarm · rear
+OK Séquence réelle heavy · right
+OK Séquence réelle heavy · left
+OK Séquence réelle heavy · front
+OK Séquence réelle heavy · rear
+OK Arme réelle A/B · pistol
+OK Essai court signalé incomplet · pistol
+OK Arme réelle A/B · smg
+OK Essai court signalé incomplet · smg
+OK Arme réelle A/B · pump
+OK Essai court signalé incomplet · pump
+OK Arme réelle A/B · revolver
+OK Essai court signalé incomplet · revolver
+OK Arme réelle A/B · rifle
+OK Essai court signalé incomplet · rifle
+OK Arme réelle A/B · assault
+OK Essai court signalé incomplet · assault
+OK Arme réelle A/B · autoshot
+OK Essai court signalé incomplet · autoshot
+OK Arme réelle A/B · sniper
+OK Essai court signalé incomplet · sniper
+OK Arme réelle A/B · lmg
+OK Essai court signalé incomplet · lmg
+OK Arme réelle A/B · launcher
+OK Essai court signalé incomplet · launcher
+OK Arme réelle A/B · crossbow
+OK Essai court signalé incomplet · crossbow
+OK Arme réelle A/B · dmr
+OK Essai court signalé incomplet · dmr
+OK Arme réelle A/B · flamer
+OK Essai court signalé incomplet · flamer
+OK Arme réelle A/B · antimaterial
+OK Essai court signalé incomplet · antimaterial
+OK Arme réelle A/B · double
+OK Essai court signalé incomplet · double
+OK Arme réelle A/B · burst
+OK Essai court signalé incomplet · burst
+OK Arme réelle A/B · flaregun
+OK Essai court signalé incomplet · flaregun
+OK Arme réelle A/B · harpoon
+OK Essai court signalé incomplet · harpoon
+OK Arme réelle A/B · lever
+OK Essai court signalé incomplet · lever
+OK Arme réelle A/B · nailer
+OK Essai court signalé incomplet · nailer
+OK Arme réelle A/B · flechette
+OK Essai court signalé incomplet · flechette
+OK Arme réelle A/B · netgun
+OK Essai court signalé incomplet · netgun
+OK Arme réelle A/B · drumgun
+OK Essai court signalé incomplet · drumgun
+OK Arme réelle A/B · breachgun
+OK Essai court signalé incomplet · breachgun
+OK Arme réelle A/B · foamgun
+OK Essai court signalé incomplet · foamgun
+OK Arme réelle A/B · northPatrol
+OK Essai court signalé incomplet · northPatrol
+OK Arme réelle A/B · northStopper
+OK Essai court signalé incomplet · northStopper
+OK Arme réelle A/B · northDriller
+OK Essai court signalé incomplet · northDriller
+OK Arme réelle A/B · northArc
+OK Essai court signalé incomplet · northArc
+OK Arme réelle A/B · metroCoach
+OK Essai court signalé incomplet · metroCoach
+OK Arme réelle A/B · metroAnchor
+OK Essai court signalé incomplet · metroAnchor
+OK Arme réelle A/B · metroShredder
+OK Essai court signalé incomplet · metroShredder
+OK Arme réelle A/B · airFlak
+OK Essai court signalé incomplet · airFlak
+OK Arme réelle A/B · airDoorGun
+OK Essai court signalé incomplet · airDoorGun
+OK Arme réelle A/B · airTether
+OK Essai court signalé incomplet · airTether
+OK Arme réelle A/B · airRocket
+OK Essai court signalé incomplet · airRocket
+OK Arme réelle A/B · deckCarbine
+OK Essai court signalé incomplet · deckCarbine
+OK Arme réelle A/B · marineHarpoon
+OK Essai court signalé incomplet · marineHarpoon
+OK Arme réelle A/B · flareMortar
+OK Essai court signalé incomplet · flareMortar
+OK Arme réelle A/B · towerCarbine
+OK Essai court signalé incomplet · towerCarbine
+OK Arme réelle A/B · boltDriver
+OK Essai court signalé incomplet · boltDriver
+OK Arme réelle A/B · doorScatter
+OK Essai court signalé incomplet · doorScatter
+OK Arme réelle A/B · traceCarbine
+OK Essai court signalé incomplet · traceCarbine
+OK Arme réelle A/B · magnesiumGun
+OK Essai court signalé incomplet · magnesiumGun
+OK Arme réelle A/B · signalLauncher
+OK Essai court signalé incomplet · signalLauncher
+OK Aucune erreur JavaScript
+{"passed": 139, "total": 139, "errors": []}

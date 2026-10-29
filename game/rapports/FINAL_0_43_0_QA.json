@@ -1,0 +1,58 @@
+{
+  "version": "0.43.0",
+  "codename": "Clarté de terrain",
+  "passed": 169,
+  "total": 169,
+  "ballistic_cases": 180,
+  "ballistic_bad": 0,
+  "suites": [
+    {
+      "file": "UI_0_43_0_QA.json",
+      "passed": 45,
+      "total": 45,
+      "cases": null
+    },
+    {
+      "file": "UI_0_43_0_RUNTIME.json",
+      "passed": 36,
+      "total": 36,
+      "cases": null
+    },
+    {
+      "file": "REGRESSION_0_43_0.json",
+      "passed": 51,
+      "total": 51,
+      "cases": null
+    },
+    {
+      "file": "SYNTAXE.json",
+      "passed": 4,
+      "total": 4,
+      "cases": null
+    },
+    {
+      "file": "FRONTS_0410_QA.json",
+      "passed": 20,
+      "total": 20,
+      "cases": null
+    },
+    {
+      "file": "DEPTH_0410_QA.json",
+      "passed": 9,
+      "total": 9,
+      "cases": null
+    },
+    {
+      "file": "BALLISTICS_0410_QA.json",
+      "passed": 4,
+      "total": 4,
+      "cases": 180
+    }
+  ],
+  "excluded": [
+    {
+      "suite": "spatial.py",
+      "reason": "Batch exhaustif interrompu par la fenêtre d’exécution ; non compté. Fronts, profondeur et 180 cas balistiques terminés."
+    }
+  ]
+}

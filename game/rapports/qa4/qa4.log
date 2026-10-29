@@ -1,0 +1,203 @@
+=== ui_v42.py ===
+OK Titre 0.42.0
+OK CSS dédié injecté une seule fois
+OK JS dédié injecté une seule fois
+OK Classe UI installée à l’exécution
+OK Boot cinématique local
+OK Transition de scène
+OK Plein écran natif
+OK Raccourci F10
+OK Bouton plein écran HUD
+OK Bouton plein écran menu
+OK Légende clavier/manette
+OK Navigation visuelle focus
+OK HUD tactique caméra
+OK Compteur contacts sans modifier les ennemis
+OK Menu traité comme poste de commandement
+OK Hub menu retravaillé
+OK Préparation retravaillée
+OK Rail de sections retravaillé
+OK Cartes retravaillées
+OK Renseignements retravaillés
+OK Dialogues briefing
+OK HUD combat retravaillé
+OK Boss HUD retravaillé
+OK Rythme de horde retravaillé
+OK Stand de tir retravaillé
+OK Formulaires non natifs
+OK Détails et tableaux cohérents
+OK Responsive tablette
+OK Responsive mobile
+OK Mode paysage court
+OK Reduced motion
+OK Aucun accès réseau dans la couche UI
+OK UI sans règle gameplay · run.cash=
+OK UI sans règle gameplay · ENEMIES[
+OK UI sans règle gameplay · damage=
+OK UI sans règle gameplay · dmg=
+OK UI sans règle gameplay · wave.list
+OK UI sans règle gameplay · totalSpent+=
+OK UI sans règle gameplay · hitZombie=function
+OK UI sans règle gameplay · fireGun=function
+OK Build reproductible référence CSS
+OK Build reproductible référence JS
+{"passed": 42, "total": 42, "failed": 0}
+STATUS ui_v42.py exit=0 sec=2
+=== ui_v43.py ===
+OK Titre 0.43.0
+OK CSS v43 injecté une fois
+OK JS v43 injecté une fois
+OK Couche v42 conservée
+OK Classe v43 progressive
+OK Mode détails contextuel
+OK Renseignements en tiroir
+OK Tiroir protégé des rerenders legacy
+OK Informations profondes masquées en essentiel
+OK Textes longs limités en essentiel
+OK Navigation camp horizontale
+OK Renseignements ne sont plus une colonne permanente
+OK Bande de contexte de section
+OK Comptage actions de section
+OK Réglages repliables
+OK Réglages legacy regroupés
+OK Une catégorie générale ouverte par défaut
+OK HUD actions groupées
+OK Labels action au survol/focus
+OK Marque HUD masquée au combat
+OK Crédits masqués au combat
+OK Statut arme contextuel
+OK Objectif compact
+OK Objectif secondaire vide supprimé
+OK États absents supprimés
+OK Pression calme supprimée
+OK Actions tactiques indisponibles supprimées
+OK Aide combat permanente supprimée
+OK Build arme combat masqué
+OK Boutons HUD compacts
+OK Responsive tablette
+OK Responsive mobile
+OK Paysage court
+OK Reduced motion
+OK Aucun réseau dans la couche v43
+OK UI v43 sans règle gameplay · run.cash=
+OK UI v43 sans règle gameplay · ENEMIES[
+OK UI v43 sans règle gameplay · damage=
+OK UI v43 sans règle gameplay · dmg=
+OK UI v43 sans règle gameplay · wave.list
+OK UI v43 sans règle gameplay · totalSpent+=
+OK UI v43 sans règle gameplay · hitZombie=function
+OK UI v43 sans règle gameplay · fireGun=function
+OK Build reproductible CSS v43
+OK Build reproductible JS v43
+{"passed": 45, "total": 45, "failed": 0}
+STATUS ui_v43.py exit=0 sec=2
+=== ui_v43_runtime.py ===
+OK Couche 0.43 active
+OK Titre runtime 0.43
+OK HUD combat absent du menu
+OK HUD combat absent du camp
+OK Détails fermés par défaut
+OK Contenu profond masqué par défaut
+OK Intel fermé par défaut
+OK Sous-menu mission limité
+OK Sous-menu equipment limité
+OK Sous-menu team limité
+OK Sous-menu archives limité
+OK Quatre familles principales seulement
+OK Bouton détails ouvre la profondeur
+OK Contenu profond réapparaît à la demande
+OK Tiroir renseignements réellement visible
+OK Tiroir renseignements reste dans le viewport
+OK ARIA renseignements synchronisé
+OK Échap ferme le tiroir
+OK Réglages en six catégories lisibles
+OK Une seule catégorie de réglages ouverte
+OK Aucun ancien réglage lâche
+OK Combat réel démarré
+OK Deux groupes action seulement
+OK Marque et crédits retirés du combat
+OK Objectif secondaire vide retiré
+OK États absents retirés
+OK Pression calme retirée
+OK Actions tactiques indisponibles retirées
+OK Actions tactiques disponibles conservées
+OK Build d’arme retiré du HUD
+OK Statut arme normal silencieux
+OK Combat bar visible
+OK Pression utile réapparaît
+OK Pas de débordement horizontal desktop
+OK Pas de débordement horizontal compact
+OK Aucune erreur JavaScript runtime
+{"passed": 36, "total": 36, "failed": 0, "errors": 0}
+STATUS ui_v43_runtime.py exit=0 sec=15
+=== visuel.py ===
+OK Accueil limité aux deux actions de départ
+OK Sous-menu campaigns: actions isolées
+OK Échap revient accueil depuis campaigns
+OK Sous-menu modes: actions isolées
+OK Échap revient accueil depuis modes
+OK Sous-menu dossiers: actions isolées
+OK Échap revient accueil depuis dossiers
+OK Sous-menu options: actions isolées
+OK Échap revient accueil depuis options
+OK Manuel natif accessible dans Dossiers
+OK Retour conserve le sous-menu courant
+FAIL À propos nouvelle version
+OK Groupe équipement affiche atelier et arsenal
+OK Groupe équipe donne accès aux alliés
+OK Groupe dossiers sans arsenal
+OK Préparation native visible dans Reprendre
+OK Cadres d’images contrôlés dans 48 contextes
+FAIL main: perspectives et passe d’arme uniques
+FAIL relief: perspectives et passe d’arme uniques
+FAIL north: perspectives et passe d’arme uniques
+FAIL metro: perspectives et passe d’arme uniques
+FAIL air: perspectives et passe d’arme uniques
+FAIL highway: perspectives et passe d’arme uniques
+FAIL water: perspectives et passe d’arme uniques
+FAIL tower: perspectives et passe d’arme uniques
+FAIL dark: perspectives et passe d’arme uniques
+OK Les 37 décors ont tous été rendus dans les 4 vues
+OK Option flashes réduits respectée par le départ
+OK 1920x1080: navigation home
+OK 1920x1080: navigation campaigns
+OK 1920x1080: navigation modes
+OK 1920x1080: navigation dossiers
+OK 1920x1080: navigation options
+OK 1920x1080: navigation resume
+OK 1920x1080: groupe camp mission
+OK 1920x1080: groupe camp equipment
+OK 1920x1080: groupe camp team
+OK 1920x1080: groupe camp archives
+OK 1280x720: navigation home
+OK 1280x720: navigation campaigns
+OK 1280x720: navigation modes
+OK 1280x720: navigation dossiers
+OK 1280x720: navigation options
+OK 1280x720: navigation resume
+OK 1280x720: groupe camp mission
+OK 1280x720: groupe camp equipment
+OK 1280x720: groupe camp team
+OK 1280x720: groupe camp archives
+OK 896x414: navigation home
+OK 896x414: navigation campaigns
+OK 896x414: navigation modes
+OK 896x414: navigation dossiers
+OK 896x414: navigation options
+OK 896x414: navigation resume
+OK 896x414: groupe camp mission
+OK 896x414: groupe camp equipment
+OK 896x414: groupe camp team
+OK 896x414: groupe camp archives
+OK 414x896: navigation home
+OK 414x896: navigation campaigns
+OK 414x896: navigation modes
+OK 414x896: navigation dossiers
+OK 414x896: navigation options
+OK 414x896: navigation resume
+OK 414x896: groupe camp mission
+OK 414x896: groupe camp equipment
+OK 414x896: groupe camp team
+OK 414x896: groupe camp archives
+OK Aucune erreur JavaScript pendant l’audit visuel
+{"passed": 59, "total": 69, "errors": []}

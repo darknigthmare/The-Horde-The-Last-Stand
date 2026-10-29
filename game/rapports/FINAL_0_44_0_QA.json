@@ -1,0 +1,125 @@
+{
+  "version": "0.44.0",
+  "name": "QA intégrale — Poste stabilisé",
+  "fully_completed_checks": 471,
+  "fully_completed_suites": 12,
+  "all_completed_suites_green": false,
+  "fixes": [
+    {
+      "id": "QA44-001",
+      "area": "Menu / À propos",
+      "fix": "Empêche les couches legacy de reprendre le bouton À propos en 0.41.0 après navigation; capture du clic et réassertion 0.44."
+    },
+    {
+      "id": "QA44-002",
+      "area": "Navigation clavier",
+      "fix": "Échap ferme À propos de manière fiable sans dépendre d’un état de phase écrasé par une couche legacy."
+    },
+    {
+      "id": "QA44-003",
+      "area": "HUD objectif",
+      "fix": "La compaction de l’objectif ne peut plus écraser le texte complet utilisé par le détail/tooltip."
+    },
+    {
+      "id": "QA44-004",
+      "area": "Accessibilité HUD",
+      "fix": "Pause/Reprendre, audio et plein écran exposent désormais un nom/état accessible cohérent."
+    },
+    {
+      "id": "QA44-005",
+      "area": "Pause / Situation du poste",
+      "fix": "Suppression du débordement horizontal de 26 px de la barre Retour à la pause, validé à 1440×900, 896×414 et 414×896."
+    }
+  ],
+  "suites": [
+    {
+      "suite": "QA ×4 intégrale",
+      "report": "rapports/QA4_0_44_0.json",
+      "passed": 30,
+      "total": 30,
+      "ok": true
+    },
+    {
+      "suite": "Architecture UI 0.44",
+      "report": "rapports/UI_0_44_0_QA.json",
+      "passed": 36,
+      "total": 36,
+      "ok": true
+    },
+    {
+      "suite": "Régression globale",
+      "report": "rapports/REGRESSION_0_44_0.json",
+      "passed": 51,
+      "total": 51,
+      "ok": true
+    },
+    {
+      "suite": "Syntaxe des scripts",
+      "report": "rapports/SYNTAXE.json",
+      "passed": 4,
+      "total": 4,
+      "ok": true
+    },
+    {
+      "suite": "Fronts / contrechamp",
+      "report": "rapports/FRONTS_0410_QA.json",
+      "passed": 20,
+      "total": 20,
+      "ok": true
+    },
+    {
+      "suite": "Profondeur / géométrie",
+      "report": "rapports/DEPTH_0410_QA.json",
+      "passed": 9,
+      "total": 9,
+      "ok": true
+    },
+    {
+      "suite": "Cohérence moteur / armurier",
+      "report": "rapports/COHERENCE_QA.json",
+      "passed": 31,
+      "total": 31,
+      "ok": true
+    },
+    {
+      "suite": "Balistique 45 armes × 4 vues",
+      "report": "rapports/BALLISTICS_0410_QA.json",
+      "passed": 180,
+      "total": 180,
+      "ok": false
+    },
+    {
+      "suite": "Spatial exhaustif ciblé",
+      "report": "rapports/SPATIAL_QA.json",
+      "passed": 38,
+      "total": 38,
+      "ok": true
+    },
+    {
+      "suite": "Sécurité montage",
+      "report": "rapports/MONTAGE_SAFETY_QA.json",
+      "passed": 18,
+      "total": 18,
+      "ok": true
+    },
+    {
+      "suite": "Sécurité ordres / pause",
+      "report": "rapports/ORDERS_SAFETY_QA.json",
+      "passed": 50,
+      "total": 50,
+      "ok": true
+    },
+    {
+      "suite": "Production protocoles",
+      "report": "rapports/PROTOCOLS_PROD_044.json",
+      "passed": 4,
+      "total": 4,
+      "ok": true
+    }
+  ],
+  "notes": [
+    "Les très anciennes suites monolithiques Atelier/Montage et Protocoles ont été explorées mais ne sont pas comptées lorsqu’elles dépassent la fenêtre d’exécution avant leur fin.",
+    "Le dernier segment production des protocoles a été isolé puis validé 4/4 sans API développeur.",
+    "La correction finale de Situation du poste est CSS uniquement; QA ×4, régression et syntaxe ont été rejouées après reconstruction."
+  ]
+}

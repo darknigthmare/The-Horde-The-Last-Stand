@@ -1,0 +1,9 @@
+{
+  "version": "0.40.7",
+  "patches": [
+    "Lina marking bonus applies only to the advertised direct player impacts",
+    "Native departure review, allies and paused post status",
+    "Scoped preparation and status layout"
+  ],
+  "bytes": 27898867
+}

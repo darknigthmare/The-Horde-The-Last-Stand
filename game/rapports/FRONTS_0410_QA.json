@@ -1,0 +1,293 @@
+{
+  "version": "0.41.0",
+  "passed": 20,
+  "total": 20,
+  "errors": [],
+  "checks": [
+    {
+      "qa": "QA1 contrechamp",
+      "test": "ancien survivant procédural absent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "qa": "QA1 contrechamp",
+      "test": "aucun rendu arme FPS arrière",
+      "ok": true,
+      "detail": [
+        0,
+        0
+      ]
+    },
+    {
+      "qa": "QA1 contrechamp",
+      "test": "un seul passage joueur arrière",
+      "ok": true,
+      "detail": 1
+    },
+    {
+      "qa": "QA1 contrechamp",
+      "test": "survivant arrière effectivement rendu",
+      "ok": true,
+      "detail": {
+        "version": "0.41.0",
+        "rearPlayerPasses": 2,
+        "wideProjectionPasses": 0,
+        "effectReanchors": 0,
+        "projectileLocks": 0,
+        "allyTraceLocks": 0
+      }
+    },
+    {
+      "qa": "QA2 largeur",
+      "test": "front · corridor largement occupé",
+      "ok": true,
+      "detail": [
+        410.1676525759707,
+        486.25055596738326,
+        0.8435314829819628
+      ]
+    },
+    {
+      "qa": "QA2 largeur",
+      "test": "front · deux bandes réellement exploitées",
+      "ok": true,
+      "detail": [
+        250.7132076840286,
+        322.3101184883227,
+        [
+          359.8254114158636,
+          359.8254114158635
+        ],
+        [
+          0.6967634850954705,
+          0.8957402903260131
+        ]
+      ]
+    },
+    {
+      "qa": "QA2 largeur",
+      "test": "front · bandes se recouvrent sans sortir du terrain",
+      "ok": true,
+      "detail": [
+        true,
+        0
+      ]
+    },
+    {
+      "qa": "QA2 largeur",
+      "test": "rear · corridor largement occupé",
+      "ok": true,
+      "detail": [
+        239.4174096023528,
+        293.73656970912725,
+        0.8150752554897607
+      ]
+    },
+    {
+      "qa": "QA2 largeur",
+      "test": "rear · deux bandes réellement exploitées",
+      "ok": true,
+      "detail": [
+        148.8811853017463,
+        195.6093092806184,
+        [
+          216.8762607823469,
+          217.36506158475413
+        ],
+        [
+          0.6864798607495395,
+          0.8999114570413478
+        ]
+      ]
+    },
+    {
+      "qa": "QA2 largeur",
+      "test": "rear · bandes se recouvrent sans sortir du terrain",
+      "ok": true,
+      "detail": [
+        true,
+        0
+      ]
+    },
+    {
+      "qa": "QA3 impacts",
+      "test": "hit-test suit la silhouette élargie",
+      "ok": true,
+      "detail": {
+        "x": 650.0155129807781,
+        "feet": 347.774419859687,
+        "size": 0.4442525634106854,
+        "head": 312.2342147868321,
+        "body": 327.78305450620616,
+        "scale": 0.423097679438748
+      }
+    },
+    {
+      "qa": "QA3 impacts",
+      "test": "particules raccordées à la position visible",
+      "ok": true,
+      "detail": [
+        650.0155129807781,
+        650.0155129807781
+      ]
+    },
+    {
+      "qa": "QA3 impacts",
+      "test": "trace allié en coordonnées écran",
+      "ok": true,
+      "detail": {
+        "x": 664.4520939548435,
+        "y": 286.7365440640932,
+        "tx": 658.9241791970078,
+        "ty": 316.33953951912855,
+        "life": 0.1,
+        "ally": true,
+        "actorId": "shooter",
+        "screen": true,
+        "dl411TargetId": 8888
+      }
+    },
+    {
+      "qa": "QA3 impacts",
+      "test": "trace allié termine sur le corps visible",
+      "ok": true,
+      "detail": [
+        {
+          "x": 664.4520939548435,
+          "y": 286.7365440640932,
+          "tx": 658.9241791970078,
+          "ty": 316.33953951912855,
+          "life": 0.1,
+          "ally": true,
+          "actorId": "shooter",
+          "screen": true,
+          "dl411TargetId": 8888
+        },
+        {
+          "x": 658.9241791970078,
+          "y": 316.33953951912855,
+          "scale": 0.366656175186824
+        }
+      ]
+    },
+    {
+      "qa": "QA3 impacts",
+      "test": "grenade mémorise le réticule profondeur",
+      "ok": true,
+      "detail": {
+        "view": "rear",
+        "x": 1075,
+        "y": 510
+      }
+    },
+    {
+      "qa": "QA3 impacts",
+      "test": "grenade termine visuellement au réticule",
+      "ok": true,
+      "detail": {
+        "x": 1075,
+        "y": 510,
+        "scale": 1.072
+      }
+    },
+    {
+      "qa": "QA4 transitions",
+      "test": "aucun rig ne revient après plusieurs bascules arrière",
+      "ok": true,
+      "detail": [
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "draws": 2
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "draws": 4
+        }
+      ]
+    },
+    {
+      "qa": "QA4 transitions",
+      "test": "rig avant reste unique après bascules",
+      "ok": true,
+      "detail": [
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "draws": 2
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "left",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "right",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "rear",
+          "gun": 0,
+          "player": 1,
+          "draws": 2
+        },
+        {
+          "view": "front",
+          "gun": 1,
+          "player": 0,
+          "draws": 4
+        }
+      ]
+    },
+    {
+      "qa": "QA4 transitions",
+      "test": "pause/reprise sans erreur",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "qa": "QA4 transitions",
+      "test": "aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+=== fronts_0410.py ===
+OK QA1 contrechamp · ancien survivant procédural absent
+OK QA1 contrechamp · aucun rendu arme FPS arrière
+OK QA1 contrechamp · un seul passage joueur arrière
+OK QA1 contrechamp · survivant arrière effectivement rendu
+OK QA2 largeur · front · corridor largement occupé
+OK QA2 largeur · front · deux bandes réellement exploitées
+OK QA2 largeur · front · bandes se recouvrent sans sortir du terrain
+OK QA2 largeur · rear · corridor largement occupé
+OK QA2 largeur · rear · deux bandes réellement exploitées
+OK QA2 largeur · rear · bandes se recouvrent sans sortir du terrain
+OK QA3 impacts · hit-test suit la silhouette élargie
+OK QA3 impacts · particules raccordées à la position visible
+OK QA3 impacts · trace allié en coordonnées écran
+OK QA3 impacts · trace allié termine sur le corps visible
+OK QA3 impacts · grenade mémorise le réticule profondeur
+OK QA3 impacts · grenade termine visuellement au réticule
+OK QA4 transitions · aucun rig ne revient après plusieurs bascules arrière
+OK QA4 transitions · rig avant reste unique après bascules
+OK QA4 transitions · pause/reprise sans erreur
+OK QA4 transitions · aucune erreur JavaScript
+{"passed": 20, "total": 20, "errors": []}
+STATUS fronts_0410.py exit=0 sec=6
+=== depth_0410.py ===
+OK Vue arrière sans arme FPS
+OK Joueur distant visible
+OK Muzzle arrière distant
+OK Voie répartie sur large bande
+OK Bandes A/B se recouvrent
+OK Hit-test suit projection
+OK Front conserve arme FPS
+OK Traceur part du joueur distant
+OK Aucune erreur JS
+{"passed": 9, "total": 9, "errors": [], "checks": [{"test": "Vue arrière sans arme FPS", "ok": true, "detail": [0, 0]}, {"test": "Joueur distant visible", "ok": true, "detail": {"x": 720, "feet": 316.3765477057538, "height": 43.967953386744355, "scale": 0.2855061908230153, "flip": false}}, {"test": "Muzzle arrière distant", "ok": true, "detail": {"x": 733.8773852876911, "y": 289.03397669337215}}, {"test": "Voie répartie sur large bande", "ok": true, "detail": [354.5190259835041, 894.7209148157208]}, {"test": "Bandes A/B se recouvrent", "ok": true, "detail": [362.42324786324775, 886.1375999891211, 559.1937588446041, 1015.4315842110119]}, {"test": "Hit-test suit projection", "ok": true, "detail": null}, {"test": "Front conserve arme FPS", "ok": true, "detail": [1, 2]}, {"test": "Traceur part du joueur distant", "ok": true, "detail": [{"screen": true, "x": 734.7017844136926, "y": 289.03397669337215, "tx": 1273.5678139534884, "ty": 810, "life": 0.06, "heavy": false}, {"x": 734.7017844136926, "y": 289.03397669337215}]}, {"test": "Aucune erreur JS", "ok": true, "detail": []}]}
+STATUS depth_0410.py exit=0 sec=11
+=== ballistics_0410.py ===
+OK Balistique stable — right: 45/45
+OK Balistique stable — left: 45/45
+OK Balistique stable — front: 45/45
+OK Balistique stable — rear: 45/45
+{"passed": 4, "total": 4, "cases": 180, "bad": 0}

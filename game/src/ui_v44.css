@@ -1,0 +1,157 @@
+/* DERNIERE LIGNE 0.44.0 — CLARTE DE TERRAIN
+   Less chrome, progressive disclosure, readable submenus and compact combat HUD. */
+#shell.dl43-ui{--dl43-panel:#071317f4;--dl43-panel2:#0b1b20f2;--dl43-line:#71877c34;--dl43-line2:#d5b66b55;--dl43-accent:#e0bf70;--dl43-muted:#899b92;--dl43-safe:clamp(12px,1.5vw,26px)}
+
+/* Global de-cluttering: scene chrome is contextual, not permanent. */
+#shell.dl43-ui[data-phase="camp"] :is(#hud,#waveStrip,#objective,#assaultStatus,#bossPanel,#dl42TopStamp,#dl42ControlLegend,#dl42TacticalLine),
+#shell.dl43-ui[data-phase="menu"] :is(#hud,#waveStrip,#objective,#assaultStatus,#bossPanel,#dl42TacticalLine),
+#shell.dl43-ui[data-phase="dialog"] :is(#hud,#waveStrip,#objective,#assaultStatus,#bossPanel,#dl42TacticalLine){display:none!important}
+#shell.dl43-ui[data-phase="combat"] #dl42TopStamp,#shell.dl43-ui[data-phase="combat"] #dl42ControlLegend,#shell.dl43-ui[data-phase="combat"] #dl42TacticalLine{display:none!important}
+
+/* CAMP / SUBMENUS — one content plane, two levels of navigation, optional intel drawer. */
+#shell.dl43-ui .camp-wrap{left:var(--dl43-safe)!important;right:var(--dl43-safe)!important;top:var(--dl43-safe)!important;bottom:var(--dl43-safe)!important;width:auto!important;max-width:none!important;display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto auto minmax(0,1fr) auto!important;overflow:hidden!important}
+#shell.dl43-ui .camp-heading{grid-row:1!important;display:grid!important;grid-template-columns:minmax(240px,1fr) auto auto!important;grid-template-rows:auto auto!important;align-items:center!important;gap:6px 18px!important;padding:15px 18px 0!important;min-height:94px!important}
+#shell.dl43-ui .camp-heading:before{left:18px!important;top:7px!important;opacity:.72}
+#shell.dl43-ui .camp-heading>div:first-child{grid-column:1;grid-row:1;min-width:0;padding-top:5px}
+#shell.dl43-ui .camp-heading h2{font-size:clamp(21px,2vw,29px)!important;line-height:1!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#shell.dl43-ui .camp-heading p{margin-top:5px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:8px!important}
+#shell.dl43-ui .camp-heading .budget{grid-column:2;grid-row:1;font-size:21px!important;align-self:center}
+#shell.dl43-ui #campStatusBar{display:none!important}
+#shell.dl43-ui #profileWarning{grid-column:1/-1;grid-row:2;display:grid!important;grid-template-columns:1fr auto auto!important;align-items:center;gap:7px!important;margin:0 -18px!important;padding:6px 18px!important;min-height:33px!important;border-left:0!important;border-top:1px solid #a7695140!important;border-bottom:1px solid #a7695140!important;font-size:8px!important}
+#shell.dl43-ui #profileWarning.hidden{display:none!important}
+#shell.dl43-ui #profileWarning button{min-height:25px!important;padding:4px 9px!important;font-size:7px!important}
+#shell.dl43-ui #dl403-groupnav{grid-column:1/-1;grid-row:3;margin:7px -18px 0!important;padding:0 18px!important;border:0!important;border-top:1px solid var(--dl43-line)!important;background:#050e11b8!important;display:flex!important;overflow-x:auto!important;gap:0!important}
+#shell.dl43-ui #dl403-groupnav button{min-height:35px!important;padding:8px 17px!important;font-size:8px!important;border-bottom-width:2px!important;flex:0 0 auto}
+#dl43CampTools{grid-column:3;grid-row:1;display:flex;align-items:center;gap:5px}
+#dl43CampTools button{min-height:34px!important;padding:6px 10px!important;font-size:7px!important;display:flex;align-items:center;gap:6px!important;clip-path:none!important;background:#071418c9!important;box-shadow:none!important}
+#dl43CampTools button b{font:13px var(--mono);color:var(--dl43-accent)}
+#dl43CampTools button[aria-pressed="true"]{border-color:#d8b86d88!important;color:#f0d69a!important;background:#d8b86d12!important}
+
+/* Secondary tabs become a compact horizontal strip instead of a permanent left rail. */
+#shell.dl43-ui .tabs{grid-row:2!important;grid-column:1!important;display:flex!important;flex-direction:row!important;align-items:stretch!important;gap:0!important;padding:0 18px!important;overflow-x:auto!important;overflow-y:hidden!important;border:0!important;border-bottom:1px solid var(--dl43-line)!important;border-right:0!important;background:#061115ef!important;min-height:41px!important}
+#shell.dl43-ui .tabs:before{content:'SOUS-MENU';display:flex!important;align-items:center!important;padding:0 15px 0 0!important;margin-right:4px!important;border-right:1px solid var(--dl43-line)!important;font:6px var(--mono)!important;letter-spacing:.18em;color:#61766d;flex:none}
+#shell.dl43-ui .tabs button[data-dl403-tab-hidden="false"]:not(.hidden){display:flex!important;align-items:center!important;justify-content:center!important;min-height:40px!important;min-width:auto!important;padding:0 14px!important;border:0!important;border-bottom:2px solid transparent!important;border-left:0!important;background:transparent!important;font-size:7px!important;letter-spacing:.08em!important;clip-path:none!important;flex:0 0 auto}
+#shell.dl43-ui .tabs button[data-dl403-tab-hidden="false"]:not(.hidden):before{content:attr(data-icon);font-size:10px;margin-right:7px;color:#789087}
+#shell.dl43-ui .tabs button[data-dl403-tab-hidden="false"]:not(.hidden):after{content:attr(data-label);font-size:7px;color:inherit}
+#shell.dl43-ui .tabs button[data-dl403-tab-hidden="false"]:not(.hidden){font-size:0!important}
+#shell.dl43-ui .tabs button[data-dl403-tab-hidden="true"],#shell.dl43-ui .tabs button.hidden{display:none!important}
+#shell.dl43-ui .tabs button.selected{border-bottom-color:var(--dl43-accent)!important;background:linear-gradient(0deg,#d8b86d13,transparent)!important;color:#ead9a7!important}
+#shell.dl43-ui .tabs button.selected:before{color:var(--dl43-accent)}
+
+#shell.dl43-ui #shopBody{grid-row:3!important;grid-column:1!important;padding:12px clamp(14px,2vw,28px) 22px!important;background:linear-gradient(180deg,#0b181c94,#0611157a)!important;scroll-padding-top:60px}
+#shell.dl43-ui #shopBody>*:not(#dl43SectionBand){max-width:1180px;margin-left:auto;margin-right:auto}
+#dl43SectionBand{position:sticky;top:-12px;z-index:8;max-width:none!important;margin:-12px calc(clamp(14px,2vw,28px)*-1) 12px!important;padding:10px clamp(14px,2vw,28px)!important;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(180deg,#071418 82%,#071418e8);border-bottom:1px solid var(--dl43-line);box-shadow:0 10px 20px #0004}
+#dl43SectionBand>div{display:grid;grid-template-columns:auto auto;grid-template-rows:auto auto;align-items:end;gap:2px 12px;min-width:0}
+#dl43SectionKicker{grid-column:1/-1;font:6px var(--mono);letter-spacing:.18em;color:#687d73}
+#dl43SectionTitle{font:17px var(--display);font-weight:normal;letter-spacing:.04em;color:#ecece2}
+#dl43SectionCopy{font:9px var(--sans);color:#8fa098;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;align-self:center}
+#dl43SectionCount{flex:none;font:7px var(--mono);letter-spacing:.12em;color:#b69e63;border:1px solid #8b784b55;padding:5px 7px}
+#shell.dl43-ui #shopBody .shop-grid{gap:9px!important}
+#shell.dl43-ui #shopBody :is(.card,.game-card,article.card){padding:12px 13px!important;min-height:0!important}
+#shell.dl43-ui #shopBody .card h3,#shell.dl43-ui #shopBody .game-card h3{font-size:13px!important;margin-bottom:4px!important}
+#shell.dl43-ui #shopBody .card .tag,#shell.dl43-ui #shopBody .section-label{font-size:7px!important;margin:3px 0 8px!important}
+#shell.dl43-ui #shopBody .dl43-copy,#shell.dl43-ui #shopBody .card>p{font-size:10px!important;line-height:1.48!important;margin:7px 0!important}
+#shell.dl43-ui:not(.dl43-details-open) #shopBody .dl43-copy,#shell.dl43-ui:not(.dl43-details-open) #shopBody .card>p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#shell.dl43-ui:not(.dl43-details-open) #shopBody .dl43-deep{display:none!important}
+#shell.dl43-ui:not(.dl43-details-open) #shopBody .stats{max-height:38px;overflow:hidden;margin-bottom:7px!important;font-size:8px!important;line-height:1.45!important}
+#shell.dl43-ui #shopBody .card-actions{gap:5px!important;padding-top:7px!important;margin-top:7px!important}
+#shell.dl43-ui #shopBody .card-actions button{min-height:31px!important;padding:6px 8px!important;font-size:8px!important}
+#shell.dl43-ui #shopBody .v28-card-art{max-height:84px;overflow:hidden}
+#shell.dl43-ui #shopBody .v24-camp-scene{min-height:105px!important;margin-bottom:10px!important}
+#shell.dl43-ui #shopBody .v28-ready-line{padding:8px 12px!important;margin-bottom:9px!important;display:flex!important;align-items:center!important;gap:16px!important}
+#shell.dl43-ui #shopBody .v28-ready-line p{margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#shell.dl43-ui #shopBody .notice{padding:9px 11px!important;margin-bottom:9px!important;font-size:9px!important;line-height:1.5!important}
+#shell.dl43-ui #shopBody .operation-intro{padding:10px 0!important;margin-bottom:8px!important}
+
+/* Footer only contains state + the two actual exit/launch decisions. */
+#shell.dl43-ui .camp-bottom{grid-row:4!important;grid-column:1!important;min-height:53px!important;padding:7px 18px!important;gap:8px!important}
+#shell.dl43-ui .camp-bottom:before{display:none!important}
+#shell.dl43-ui .camp-bottom .ledger{font-size:7px!important;line-height:1.45!important;max-width:390px}
+#shell.dl43-ui .camp-bottom button{min-height:35px!important;padding:7px 13px!important;font-size:8px!important}
+#shell.dl43-ui .camp-bottom button.primary{min-width:205px!important}
+
+/* Intel is no longer a permanent third column. It is an on-demand drawer. */
+#shell.dl43-ui .intel{position:absolute!important;z-index:28!important;right:var(--dl43-safe)!important;top:var(--dl43-safe)!important;bottom:var(--dl43-safe)!important;width:min(365px,34vw)!important;padding:22px 20px!important;transform:translateX(calc(100% + 40px));opacity:0;visibility:hidden;pointer-events:none;box-shadow:-28px 0 80px #000c!important}
+#shell.dl43-ui.dl43-intel-open .intel{transform:none!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important}
+#shell.dl43-ui .intel .night{font-size:64px!important}.dl43-ui .intel p{font-size:10px!important;line-height:1.65!important}.dl43-ui .intel .sub{font-size:7px!important;margin:5px 0 13px!important}.dl43-ui .intel h3{font-size:10px!important;margin-bottom:10px!important}.dl43-ui .intel .intel-bottom{font-size:8px!important}
+
+/* DIALOGS / SETTINGS — fixed actions, compact grids, settings folded into readable categories. */
+#shell.dl43-ui .dialog{width:min(820px,88vw)!important;max-height:min(760px,86vh)!important;padding:38px 26px 20px!important;overflow:auto!important}
+#shell.dl43-ui .dialog h2{font-size:clamp(30px,4vw,47px)!important;margin:7px 0 12px!important}
+#shell.dl43-ui .dialog p{font-size:11px!important;line-height:1.62!important;margin:8px 0!important}
+#shell.dl43-ui .dialog .notice{padding:9px 11px!important;margin:9px 0!important;font-size:9px!important;line-height:1.5!important}
+#shell.dl43-ui .dialog .buttons,#shell.dl43-ui .dialog .dl43-dialog-actions{position:sticky;bottom:-20px;z-index:10;margin:16px -26px -20px!important;padding:12px 26px 14px!important;background:linear-gradient(0deg,#061115 72%,#061115e7);border-top:1px solid var(--dl43-line)!important;box-shadow:0 -15px 30px #061115b8}
+#shell.dl43-ui .dialog .buttons button{min-height:36px!important;padding:8px 12px!important;font-size:8px!important}
+#shell.dl43-ui .operations-grid,#shell.dl43-ui .dossier-grid,#shell.dl43-ui .guide-grid{gap:8px!important}
+#shell.dl43-ui .operations-grid article,#shell.dl43-ui .dossier-grid article{padding:12px!important}
+#shell.dl43-ui .help-grid{grid-template-columns:100px minmax(0,1fr)!important;gap:7px 14px!important;font-size:10px!important;line-height:1.55!important}
+#shell.dl43-ui .save-textarea{max-height:145px!important;min-height:105px!important}
+.dl43-settings-fold{border:1px solid var(--dl43-line)!important;margin:7px 0!important;padding:0!important;background:#0714189e!important}
+.dl43-settings-fold>summary{display:flex!important;align-items:center!important;gap:10px!important;min-height:40px;padding:8px 12px!important;margin:0!important;border:0!important;cursor:pointer;color:#a8b6af!important;list-style:none!important}
+.dl43-settings-fold>summary:before{display:none!important}.dl43-settings-fold>summary::-webkit-details-marker{display:none!important}.dl43-settings-fold>summary span{font:7px var(--mono);color:#7f9289;border-right:1px solid var(--dl43-line);padding-right:9px}.dl43-settings-fold>summary strong{font:9px var(--mono);letter-spacing:.1em;font-weight:normal}.dl43-settings-fold>summary:after{content:'+';margin-left:auto;font:16px var(--mono);color:#8da097}.dl43-settings-fold[open]>summary{color:#ecd9a6;border-bottom:1px solid var(--dl43-line)!important}.dl43-settings-fold[open]>summary:after{content:'−';color:var(--dl43-accent)}
+.dl43-settings-fold>.settings-panel{border:0!important;margin:0!important;padding:8px 12px 11px!important;background:transparent!important;box-shadow:none!important}.dl43-settings-fold>.settings-panel>.setting-heading{display:none!important}.dl43-settings-fold .setting-row{padding:8px 0!important;font-size:10px!important}.dl43-settings-fold .settings-lead{font-size:9px!important;color:#879b91!important;margin:0 0 6px!important}.dl43-settings-fold .audio-meter-row{padding:6px 0!important}
+.dl43-settings-cluster{padding:8px 12px 11px!important}.dl43-settings-cluster>p{font-size:9px!important;color:#879b91!important;margin:5px 0 9px!important}.dl43-settings-cluster>button{margin:4px 0 8px!important}.dl43-settings-fold:not([open]){background:#06111575!important}.dl43-settings-fold:not([open])>summary{min-height:36px!important}
+
+/* COMBAT HUD — vital data only, small status area, compact grouped controls. */
+#shell.dl43-ui[data-phase="combat"] #hud,#shell.dl43-ui[data-phase="paused"] #hud{left:var(--dl43-safe)!important;right:var(--dl43-safe)!important;top:var(--dl43-safe)!important;gap:5px!important;align-items:start!important}
+#shell.dl43-ui[data-phase="combat"] #hud .brand,#shell.dl43-ui[data-phase="paused"] #hud .brand{display:none!important}
+#shell.dl43-ui[data-phase="combat"] .hudstat.cash,#shell.dl43-ui[data-phase="paused"] .hudstat.cash{display:none!important}
+#shell.dl43-ui .hudstat{min-width:88px!important;padding:6px 8px!important;background:#061216c9!important;border-color:#71877c2f!important;box-shadow:none!important}
+#shell.dl43-ui .hudstat .label{font-size:5px!important;margin-bottom:3px!important}.dl43-ui .hudstat strong{font-size:14px!important}.dl43-ui .hudstat .meter{width:78px!important;height:2px!important;margin-top:4px!important}
+#shell.dl43-ui .hud-end{margin-left:auto!important;gap:3px!important}.dl43-ui .hud-end button{min-width:34px!important;width:34px!important;min-height:31px!important;height:31px!important;padding:4px!important;font-size:11px!important;clip-path:none!important;background:#061216c9!important;border-color:#71877c2f!important}
+#shell.dl43-ui #waveStrip{left:var(--dl43-safe)!important;right:var(--dl43-safe)!important;top:57px!important;height:1px!important;opacity:.75}
+#shell.dl43-ui #objective{top:65px!important;right:var(--dl43-safe)!important;left:auto!important;width:auto!important;max-width:360px!important;padding:4px 7px!important;background:#061216b8!important;border:0!important;border-right:1px solid #d8b86d55!important;font-size:7px!important;letter-spacing:.07em!important;white-space:nowrap}
+#shell.dl43-ui #assaultStatus{top:65px!important;left:var(--dl43-safe)!important;padding:4px 7px!important;border-left:1px solid #d8b86d55!important;font-size:7px!important;background:#061216b8!important}
+#shell.dl43-ui #bossPanel{top:86px!important;left:50%!important;transform:translateX(-50%)!important;width:min(430px,42vw)!important;padding:7px 10px!important}.dl43-ui #bossPanel .boss-title{font-size:8px!important}.dl43-ui #bossAction{font-size:7px!important;line-height:1.35!important}
+#shell.dl43-ui #v22PressurePanel{top:64px!important;width:min(260px,28vw)!important;padding:5px 8px!important;box-shadow:none!important;background:#061216cf!important}.dl43-ui #v22PressurePanel .v22-pressure-head span{display:none!important}.dl43-ui #v22PressurePanel .v22-pressure-head strong{font:8px var(--mono)!important}.dl43-ui #v22PressurePanel .v22-flow-line{font-size:6px!important;margin-top:3px!important}.dl43-ui #v22PressurePanel :is(.v22-pressure-track,.v22-momentum-track){height:2px!important;margin-top:3px!important}
+#shell.dl43-ui #targetHint{left:var(--dl43-safe)!important;bottom:86px!important;max-width:270px!important;padding:7px 9px!important;font-size:9px!important;box-shadow:none!important;background:#061216d9!important}.dl43-ui #targetHint strong{font-size:10px!important}.dl43-ui #targetHint small{display:none!important}
+#shell.dl43-ui #secondaryStatus,#shell.dl43-ui #tacticalStatus{left:var(--dl43-safe)!important;max-width:300px!important;padding:6px 8px!important;font-size:8px!important;line-height:1.4!important;background:#061216d9!important;box-shadow:none!important}
+
+#shell.dl43-ui .dl43-silent,#shell.dl43-ui .dl43-muted-state,#shell.dl43-ui #v22PressurePanel.dl43-passive{display:none!important}
+#shell.dl43-ui #tacticalActions button:disabled{display:none!important}
+#shell.dl43-ui #tacticalStatus:empty{display:none!important}
+#shell.dl43-ui #combatBar.hidden{display:none!important}
+#shell.dl43-ui #tacticalActions.hidden,#shell.dl43-ui #secondaryStatus.hidden,#shell.dl43-ui #tacticalStatus.hidden{display:none!important}
+#shell.dl43-ui #combatBar{left:var(--dl43-safe)!important;right:var(--dl43-safe)!important;bottom:max(var(--dl43-safe),env(safe-area-inset-bottom))!important;display:flex!important;align-items:flex-end!important;gap:6px!important}
+#shell.dl43-ui #weaponReadout{min-width:220px!important;width:220px!important;padding:7px 10px!important;background:#061216d9!important;box-shadow:none!important;border-color:#71877c32!important}
+#shell.dl43-ui #weaponHudThumb{display:none!important}#shell.dl43-ui #weaponReadout .label{display:none!important;font-size:5px!important;margin-bottom:1px!important}#shell.dl43-ui #weaponReadout .label.dl43-critical{display:block!important;color:#e8c97b!important}.dl43-ui #weaponName{font-size:13px!important}.dl43-ui #ammo{font-size:20px!important}.dl43-ui #ammo small{font-size:9px!important}#shell.dl43-ui #v36-combat-build{display:none!important}.dl43-ui #reloadTrack{margin-top:4px!important}
+#shell.dl43-ui #actions{display:flex!important;align-items:flex-end!important;gap:5px!important;max-width:none!important;width:auto!important;flex-wrap:nowrap!important}
+#shell.dl43-ui .dl43-action-group{position:relative;display:flex;gap:3px;padding-top:9px}
+#shell.dl43-ui .dl43-action-group:before{content:attr(data-label);position:absolute;top:0;left:2px;font:5px var(--mono);letter-spacing:.15em;color:#687d73}
+#shell.dl43-ui #actions button{width:43px!important;min-width:43px!important;height:39px!important;min-height:39px!important;padding:4px!important;display:grid!important;place-items:center!important;background:#061216cf!important;border-color:#71877c35!important;clip-path:none!important;box-shadow:none!important;font-size:0!important;text-align:center!important}
+#shell.dl43-ui #actions button b{float:none!important;margin:0!important;min-width:24px!important;height:23px!important;font-size:9px!important;border-color:#87774f66!important;background:#050d10!important;padding:0 3px!important}
+#shell.dl43-ui #actions button.active{border-color:#d8b86d99!important;background:#d8b86d12!important}.dl43-ui #actions button.active b{color:#f2d58c!important;border-color:#d8b86d99!important}
+#shell.dl43-ui #actions .dl43-action-label{display:none!important}
+#shell.dl43-ui #actions button:hover .dl43-action-label,#shell.dl43-ui #actions button:focus-visible .dl43-action-label{display:block!important;position:absolute;bottom:45px;left:50%;transform:translateX(-50%);z-index:18;white-space:nowrap;padding:5px 7px;background:#061216ef;border:1px solid #71877c55;font:7px var(--mono)!important;color:#d5ddd6!important;pointer-events:none}
+#shell.dl43-ui #combatTip{display:none!important}
+#shell.dl43-ui #tacticalActions{right:var(--dl43-safe)!important;left:auto!important;bottom:calc(max(var(--dl43-safe),env(safe-area-inset-bottom)) + 82px)!important;max-width:360px!important;gap:3px!important;justify-content:flex-end!important;z-index:12!important}
+#shell.dl43-ui #tacticalActions button{min-width:42px!important;min-height:32px!important;padding:4px 6px!important;font-size:6px!important;background:#061216d9!important;border-color:#71877c35!important;clip-path:none!important}.dl43-ui #tacticalActions button b{display:inline-block!important;margin-right:4px!important;color:#e0bf70!important;font-size:7px!important}
+#shell.dl43-ui #toast{bottom:77px!important;max-width:520px!important;padding:8px 12px!important;font-size:8px!important;box-shadow:0 10px 28px #0007!important}
+#shell.dl43-ui #bigAnnouncement{font-size:clamp(34px,4vw,58px)!important}
+
+/* Breather remains a deliberate modal moment, but not a full dashboard. */
+#shell.dl43-ui #v22BreatherPanel{width:min(560px,88vw)!important;padding:14px 16px!important}.dl43-ui .v22-breather-title span{font-size:19px!important}.dl43-ui .v22-breather-title+p{font-size:8px!important;margin:4px 0 9px!important}.dl43-ui .v22-breather-actions{gap:5px!important}.dl43-ui #v22BreatherPanel .v22-breather-actions button{min-height:52px!important;padding:7px 8px!important;font-size:8px!important}.dl43-ui #v22BreatherPanel .v22-breather-actions button small{font-size:6px!important}
+
+/* Responsive: preserve hierarchy, not every label. */
+@media(max-width:980px){
+ #shell.dl43-ui .camp-heading{grid-template-columns:minmax(180px,1fr) auto!important}.dl43-ui #dl43CampTools{grid-column:1/-1;grid-row:2;justify-content:flex-end}.dl43-ui #profileWarning{grid-row:3}.dl43-ui #dl403-groupnav{grid-row:4}.dl43-ui .camp-heading{grid-template-rows:auto auto auto auto!important;min-height:124px!important}
+ #shell.dl43-ui .tabs:before{display:none!important}.dl43-ui #dl43SectionCopy{display:none}.dl43-ui .intel{width:min(365px,70vw)!important}
+ #shell.dl43-ui #actions button{width:38px!important;min-width:38px!important}.dl43-ui #weaponReadout{width:190px!important;min-width:190px!important}
+}
+@media(max-width:720px){
+ #shell.dl43-ui .camp-wrap{left:7px!important;right:7px!important;top:7px!important;bottom:7px!important}.dl43-ui .camp-heading{padding-left:11px!important;padding-right:11px!important}.dl43-ui .camp-heading:before{display:none}.dl43-ui #profileWarning{margin-left:-11px!important;margin-right:-11px!important;padding-left:11px!important;padding-right:11px!important}.dl43-ui #dl403-groupnav{margin-left:-11px!important;margin-right:-11px!important;padding-left:11px!important;padding-right:11px!important}.dl43-ui #dl403-groupnav button{padding-inline:10px!important}.dl43-ui .tabs{padding-inline:8px!important}.dl43-ui .tabs button:not(.hidden){padding-inline:9px!important}.dl43-ui .tabs button:not(.hidden):before{margin-right:4px}.dl43-ui #shopBody .shop-grid{grid-template-columns:1fr!important}.dl43-ui #dl43SectionCount{display:none}.dl43-ui .camp-bottom .ledger{display:none!important}.dl43-ui .camp-bottom button.primary{min-width:0!important;flex:1}.dl43-ui .intel{width:calc(100% - 14px)!important;right:7px!important;top:7px!important;bottom:7px!important}
+ #shell.dl43-ui #hud .hudstat:first-of-type{display:none!important}.dl43-ui .hudstat{min-width:70px!important}.dl43-ui #objective{max-width:260px!important}.dl43-ui #v22PressurePanel{width:42vw!important}.dl43-ui #weaponReadout{width:150px!important;min-width:150px!important}.dl43-ui #actions button{width:34px!important;min-width:34px!important;height:36px!important;min-height:36px!important}.dl43-ui .dl43-action-group{gap:2px}.dl43-ui #tacticalActions{max-width:70vw!important;overflow-x:auto!important;flex-wrap:nowrap!important}
+}
+@media(max-height:600px) and (min-aspect-ratio:1/1){
+ #shell.dl43-ui .camp-wrap{top:6px!important;bottom:6px!important}.dl43-ui .camp-heading{min-height:70px!important;padding-top:10px!important}.dl43-ui .camp-heading p{display:none}.dl43-ui #dl403-groupnav button{min-height:28px!important;padding-block:5px!important}.dl43-ui .tabs{min-height:33px!important}.dl43-ui .tabs button:not(.hidden){min-height:32px!important}.dl43-ui .camp-bottom{min-height:42px!important;padding-block:4px!important}.dl43-ui #shopBody{padding-top:8px!important}.dl43-ui #dl43SectionBand{top:-8px;margin-top:-8px!important;padding-block:6px!important}.dl43-ui #dl43SectionCopy{display:none}
+ #shell.dl43-ui #hud{top:5px!important}.dl43-ui #waveStrip{top:45px!important}.dl43-ui #objective,.dl43-ui #assaultStatus{top:51px!important}.dl43-ui #v22PressurePanel{top:50px!important}.dl43-ui #bossPanel{top:69px!important}.dl43-ui #combatBar{bottom:5px!important}.dl43-ui #weaponReadout{padding:4px 7px!important;height:36px!important}.dl43-ui #weaponReadout .label{display:none}.dl43-ui #actions button{height:32px!important;min-height:32px!important}.dl43-ui .dl43-action-group{padding-top:6px}.dl43-ui .dl43-action-group:before{display:none}.dl43-ui #tacticalActions{bottom:42px!important}.dl43-ui #toast{bottom:48px!important}.dl43-ui #targetHint{bottom:49px!important}
+}
+@media(prefers-reduced-motion:reduce){#shell.dl43-ui .intel{transition:none!important}}
+
+/* 0.44 QA: nested pause status owns the dialog content width; the generic
+   full-bleed action footer must not extend 26px outside this inner grid. */
+#shell.dl43-ui .dl407-status>.buttons.dl43-dialog-actions{
+  margin:16px 0 -20px!important;
+  padding:12px 0 14px!important;
+  width:100%;box-sizing:border-box;
+}

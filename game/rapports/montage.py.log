@@ -1,0 +1,98 @@
+OK Version 0.40.5 chargée
+OK Commande dans le vrai Armurier
+OK Fenêtre native avec 8 emplacements
+OK Ouverture ne modifie ni profil ni inventaire
+OK Prévisualisation de pièce sans montage
+OK Conversion prévisualisée sans changer la vraie gerbe
+OK Le comparateur montre le projectile unique prévu
+OK Réglage isolé
+OK Six presets consultables, aucun emplacement écrasé
+OK Annulation restitue l’Armurier sans effet
+OK Trois plans natifs proposés
+OK Plan comparé sans mutation
+OK Validation applique le montage complet au camp
+OK Validation conserve le total de cartouches
+OK Validation ne remplace aucun preset
+OK Profil monté exportable et validé
+OK Sixième pièce réellement refusée
+OK Montage modifié ailleurs : commit refusé
+OK Comparaison verrouillée disponible sans débloquer
+OK Essai B et application verrouillés
+OK Échec des actions verrouillées conserve le profil
+OK pump A/B réel · right
+OK pump deux bilans reliés aux bons montages · right
+OK pump fermeture après A/B sans mutation · right
+OK pump A/B réel · left
+OK pump deux bilans reliés aux bons montages · left
+OK pump fermeture après A/B sans mutation · left
+OK pump A/B réel · front
+OK pump deux bilans reliés aux bons montages · front
+OK pump fermeture après A/B sans mutation · front
+OK pump A/B réel · rear
+OK pump deux bilans reliés aux bons montages · rear
+OK pump fermeture après A/B sans mutation · rear
+OK launcher A/B réel · right
+OK launcher deux bilans reliés aux bons montages · right
+OK launcher fermeture après A/B sans mutation · right
+OK launcher A/B réel · left
+OK launcher deux bilans reliés aux bons montages · left
+OK launcher fermeture après A/B sans mutation · left
+OK launcher A/B réel · front
+OK launcher deux bilans reliés aux bons montages · front
+OK launcher fermeture après A/B sans mutation · front
+OK launcher A/B réel · rear
+OK launcher deux bilans reliés aux bons montages · rear
+OK launcher fermeture après A/B sans mutation · rear
+OK flamer A/B réel · right
+OK flamer deux bilans reliés aux bons montages · right
+OK flamer fermeture après A/B sans mutation · right
+OK flamer A/B réel · left
+OK flamer deux bilans reliés aux bons montages · left
+OK flamer fermeture après A/B sans mutation · left
+OK flamer A/B réel · front
+OK flamer deux bilans reliés aux bons montages · front
+OK flamer fermeture après A/B sans mutation · front
+OK flamer A/B réel · rear
+OK flamer deux bilans reliés aux bons montages · rear
+OK flamer fermeture après A/B sans mutation · rear
+OK netgun A/B réel · right
+OK netgun deux bilans reliés aux bons montages · right
+OK netgun fermeture après A/B sans mutation · right
+OK netgun A/B réel · left
+OK netgun deux bilans reliés aux bons montages · left
+OK netgun fermeture après A/B sans mutation · left
+OK netgun A/B réel · front
+OK netgun deux bilans reliés aux bons montages · front
+OK netgun fermeture après A/B sans mutation · front
+OK netgun A/B réel · rear
+OK netgun deux bilans reliés aux bons montages · rear
+OK netgun fermeture après A/B sans mutation · rear
+OK revolver A/B réel · right
+OK revolver deux bilans reliés aux bons montages · right
+OK revolver fermeture après A/B sans mutation · right
+OK revolver A/B réel · left
+OK revolver deux bilans reliés aux bons montages · left
+OK revolver fermeture après A/B sans mutation · left
+OK revolver A/B réel · front
+OK revolver deux bilans reliés aux bons montages · front
+OK revolver fermeture après A/B sans mutation · front
+OK revolver A/B réel · rear
+OK revolver deux bilans reliés aux bons montages · rear
+OK revolver fermeture après A/B sans mutation · rear
+OK Production sans __DL
+OK Production : montage à blanc par commandes réelles
+OK Échap retrouve l’Armurier
+OK Montage parts sans débordement à 1440×900
+OK Montage kits sans débordement à 1440×900
+OK Montage plans sans débordement à 1440×900
+OK Montage presets sans débordement à 1440×900
+OK Montage parts sans débordement à 896×414
+OK Montage kits sans débordement à 896×414
+OK Montage plans sans débordement à 896×414
+OK Montage presets sans débordement à 896×414
+OK Montage parts sans débordement à 414×896
+OK Montage kits sans débordement à 414×896
+OK Montage plans sans débordement à 414×896
+OK Montage presets sans débordement à 414×896
+OK Aucune erreur JavaScript
+{"passed": 97, "total": 97, "errors": []}

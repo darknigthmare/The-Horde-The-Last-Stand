@@ -1,0 +1,27 @@
+{
+  "passed": 4,
+  "total": 4,
+  "checks": [
+    {
+      "test": "Production : parcours clics jusqu’au chronomètre",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production : retour au bilan sans outil développeur",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production : introduction du convoi conservée après le stand",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production : aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

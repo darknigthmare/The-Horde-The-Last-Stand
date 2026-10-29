@@ -1,0 +1,10 @@
+{
+  "version": "0.42.0",
+  "passed": 42,
+  "total": 42,
+  "failed": [],
+  "sha256": {
+    "css": "55f9ca48578ee50f7f10b3dc9f16d5e4e70fd487390007ff9aab112fe6e4f25c",
+    "js": "214968ff68cd2c9a9bf0ebe0674c9869168ac6dd2eb07e74a685b5434497c7e2"
+  }
+}

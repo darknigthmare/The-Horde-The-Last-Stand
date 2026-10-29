@@ -1,0 +1,2892 @@
+{
+  "version": "0.40.5",
+  "passed": 97,
+  "total": 97,
+  "checks": [
+    {
+      "test": "Version 0.40.5 chargée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Commande dans le vrai Armurier",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Fenêtre native avec 8 emplacements",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Ouverture ne modifie ni profil ni inventaire",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Prévisualisation de pièce sans montage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Conversion prévisualisée sans changer la vraie gerbe",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Le comparateur montre le projectile unique prévu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Réglage isolé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Six presets consultables, aucun emplacement écrasé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Annulation restitue l’Armurier sans effet",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Trois plans natifs proposés",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Plan comparé sans mutation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Validation applique le montage complet au camp",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Validation conserve le total de cartouches",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Validation ne remplace aucun preset",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Profil monté exportable et validé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Sixième pièce réellement refusée",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Montage modifié ailleurs : commit refusé",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Comparaison verrouillée disponible sans débloquer",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Essai B et application verrouillés",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Échec des actions verrouillées conserve le profil",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump A/B réel · right",
+      "ok": true,
+      "detail": {
+        "weapon": "pump",
+        "view": "right",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 109.7599999999511,
+            "level": 1,
+            "projectiles": 7,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 7,
+              "damage": 109.7599999999511,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_shot_slug",
+            "spent": 1,
+            "damage": 74.63679999999295,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 74.63679999999295,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "pump deux bilans reliés aux bons montages · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump fermeture après A/B sans mutation · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump A/B réel · left",
+      "ok": true,
+      "detail": {
+        "weapon": "pump",
+        "view": "left",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 109.7599999999511,
+            "level": 1,
+            "projectiles": 7,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 7,
+              "damage": 109.7599999999511,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_shot_slug",
+            "spent": 1,
+            "damage": 74.63679999999295,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 74.63679999999295,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "pump deux bilans reliés aux bons montages · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump fermeture après A/B sans mutation · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump A/B réel · front",
+      "ok": true,
+      "detail": {
+        "weapon": "pump",
+        "view": "front",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 109.7599999999511,
+            "level": 1,
+            "projectiles": 7,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 7,
+              "damage": 109.7599999999511,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_shot_slug",
+            "spent": 1,
+            "damage": 74.63679999999295,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 74.63679999999295,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "pump deux bilans reliés aux bons montages · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump fermeture après A/B sans mutation · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump A/B réel · rear",
+      "ok": true,
+      "detail": {
+        "weapon": "pump",
+        "view": "rear",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 109.7599999999511,
+            "level": 1,
+            "projectiles": 7,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 7,
+              "damage": 109.7599999999511,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_shot_slug",
+            "spent": 1,
+            "damage": 74.63679999999295,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "pump",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 74.63679999999295,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "pump deux bilans reliés aux bons montages · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "pump fermeture après A/B sans mutation · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher A/B réel · right",
+      "ok": true,
+      "detail": {
+        "weapon": "launcher",
+        "view": "right",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 207.67703703703592,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 207.67703703703592,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_launcher_focus",
+            "spent": 1,
+            "damage": 239.0482888888946,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 239.0482888888946,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "launcher deux bilans reliés aux bons montages · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher fermeture après A/B sans mutation · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher A/B réel · left",
+      "ok": true,
+      "detail": {
+        "weapon": "launcher",
+        "view": "left",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 207.67703703703592,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 207.67703703703592,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_launcher_focus",
+            "spent": 1,
+            "damage": 239.0482888888946,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 239.0482888888946,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "launcher deux bilans reliés aux bons montages · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher fermeture après A/B sans mutation · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher A/B réel · front",
+      "ok": true,
+      "detail": {
+        "weapon": "launcher",
+        "view": "front",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 207.67703703703592,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 207.67703703703592,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_launcher_focus",
+            "spent": 1,
+            "damage": 239.0482888888946,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 239.0482888888946,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "launcher deux bilans reliés aux bons montages · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher fermeture après A/B sans mutation · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher A/B réel · rear",
+      "ok": true,
+      "detail": {
+        "weapon": "launcher",
+        "view": "rear",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 207.67703703703592,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 207.67703703703592,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_launcher_focus",
+            "spent": 1,
+            "damage": 239.0482888888946,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "launcher",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 239.0482888888946,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "launcher deux bilans reliés aux bons montages · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "launcher fermeture après A/B sans mutation · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer A/B réel · right",
+      "ok": true,
+      "detail": {
+        "weapon": "flamer",
+        "view": "right",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_tool_long",
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "flamer deux bilans reliés aux bons montages · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer fermeture après A/B sans mutation · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer A/B réel · left",
+      "ok": true,
+      "detail": {
+        "weapon": "flamer",
+        "view": "left",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_tool_long",
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "flamer deux bilans reliés aux bons montages · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer fermeture après A/B sans mutation · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer A/B réel · front",
+      "ok": true,
+      "detail": {
+        "weapon": "flamer",
+        "view": "front",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_tool_long",
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "flamer deux bilans reliés aux bons montages · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer fermeture après A/B sans mutation · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer A/B réel · rear",
+      "ok": true,
+      "detail": {
+        "weapon": "flamer",
+        "view": "rear",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_tool_long",
+            "spent": 1,
+            "damage": 39.039999999906286,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "flamer",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 39.039999999906286,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "flamer deux bilans reliés aux bons montages · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "flamer fermeture après A/B sans mutation · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun A/B réel · right",
+      "ok": true,
+      "detail": {
+        "weapon": "netgun",
+        "view": "right",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 19.674666666673147,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 19.674666666673147,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_cable_fast",
+            "spent": 1,
+            "damage": 17.707200000004377,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 17.707200000004377,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "netgun deux bilans reliés aux bons montages · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun fermeture après A/B sans mutation · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun A/B réel · left",
+      "ok": true,
+      "detail": {
+        "weapon": "netgun",
+        "view": "left",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 19.674666666673147,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 19.674666666673147,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_cable_fast",
+            "spent": 1,
+            "damage": 17.707200000004377,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 17.707200000004377,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "netgun deux bilans reliés aux bons montages · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun fermeture après A/B sans mutation · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun A/B réel · front",
+      "ok": true,
+      "detail": {
+        "weapon": "netgun",
+        "view": "front",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 19.674666666673147,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 19.674666666673147,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_cable_fast",
+            "spent": 1,
+            "damage": 17.707200000004377,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 17.707200000004377,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "netgun deux bilans reliés aux bons montages · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun fermeture après A/B sans mutation · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun A/B réel · rear",
+      "ok": true,
+      "detail": {
+        "weapon": "netgun",
+        "view": "rear",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 19.674666666673147,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 19.674666666673147,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_cable_fast",
+            "spent": 1,
+            "damage": 17.707200000004377,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "netgun",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 0,
+              "damage": 17.707200000004377,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "netgun deux bilans reliés aux bons montages · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "netgun fermeture après A/B sans mutation · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver A/B réel · right",
+      "ok": true,
+      "detail": {
+        "weapon": "revolver",
+        "view": "right",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 69.44000000000233,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 69.44000000000233,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_hand_heavy",
+            "spent": 1,
+            "damage": 85.41120000000228,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "right",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 85.41120000000228,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "revolver deux bilans reliés aux bons montages · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver fermeture après A/B sans mutation · right",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver A/B réel · left",
+      "ok": true,
+      "detail": {
+        "weapon": "revolver",
+        "view": "left",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 69.44000000000233,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 69.44000000000233,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_hand_heavy",
+            "spent": 1,
+            "damage": 85.41120000000228,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "left",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 85.41120000000228,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "revolver deux bilans reliés aux bons montages · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver fermeture après A/B sans mutation · left",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver A/B réel · front",
+      "ok": true,
+      "detail": {
+        "weapon": "revolver",
+        "view": "front",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 69.44000000000233,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 69.44000000000233,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_hand_heavy",
+            "spent": 1,
+            "damage": 85.41120000000228,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "front",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 85.41120000000228,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "revolver deux bilans reliés aux bons montages · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver fermeture après A/B sans mutation · front",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver A/B réel · rear",
+      "ok": true,
+      "detail": {
+        "weapon": "revolver",
+        "view": "rear",
+        "modes": [
+          {
+            "phase": "combat",
+            "kit": null,
+            "spent": 1,
+            "damage": 69.44000000000233,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 69.44000000000233,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "a",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          },
+          {
+            "phase": "combat",
+            "kit": "kit2_hand_heavy",
+            "spent": 1,
+            "damage": 85.41120000000228,
+            "level": 1,
+            "projectiles": 1,
+            "snapshot": {
+              "gun": "revolver",
+              "enemy": "walker",
+              "view": "rear",
+              "motion": "still",
+              "shots": 1,
+              "impacts": 1,
+              "damage": 85.41120000000228,
+              "kills": 0,
+              "heads": 0,
+              "seconds": 0.8,
+              "groups": 1
+            },
+            "mode": "b",
+            "begun": true,
+            "opened": true,
+            "back": true,
+            "noMutation": true
+          }
+        ]
+      }
+    },
+    {
+      "test": "revolver deux bilans reliés aux bons montages · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "revolver fermeture après A/B sans mutation · rear",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production sans __DL",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Production : montage à blanc par commandes réelles",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Échap retrouve l’Armurier",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "test": "Montage parts sans débordement à 1440×900",
+      "ok": true,
+      "detail": {
+        "vw": 1440,
+        "sw": 1440,
+        "bw": 1440,
+        "dw": 1198,
+        "ds": 1198,
+        "gw": 1128,
+        "gs": 1128
+      }
+    },
+    {
+      "test": "Montage kits sans débordement à 1440×900",
+      "ok": true,
+      "detail": {
+        "vw": 1440,
+        "sw": 1440,
+        "bw": 1440,
+        "dw": 1198,
+        "ds": 1198,
+        "gw": 1128,
+        "gs": 1128
+      }
+    },
+    {
+      "test": "Montage plans sans débordement à 1440×900",
+      "ok": true,
+      "detail": {
+        "vw": 1440,
+        "sw": 1440,
+        "bw": 1440,
+        "dw": 1198,
+        "ds": 1198,
+        "gw": 1128,
+        "gs": 1128
+      }
+    },
+    {
+      "test": "Montage presets sans débordement à 1440×900",
+      "ok": true,
+      "detail": {
+        "vw": 1440,
+        "sw": 1440,
+        "bw": 1440,
+        "dw": 1198,
+        "ds": 1198,
+        "gw": 1128,
+        "gs": 1128
+      }
+    },
+    {
+      "test": "Montage parts sans débordement à 896×414",
+      "ok": true,
+      "detail": {
+        "vw": 896,
+        "sw": 896,
+        "bw": 896,
+        "dw": 858,
+        "ds": 858,
+        "gw": 804,
+        "gs": 804
+      }
+    },
+    {
+      "test": "Montage kits sans débordement à 896×414",
+      "ok": true,
+      "detail": {
+        "vw": 896,
+        "sw": 896,
+        "bw": 896,
+        "dw": 858,
+        "ds": 858,
+        "gw": 804,
+        "gs": 804
+      }
+    },
+    {
+      "test": "Montage plans sans débordement à 896×414",
+      "ok": true,
+      "detail": {
+        "vw": 896,
+        "sw": 896,
+        "bw": 896,
+        "dw": 858,
+        "ds": 858,
+        "gw": 804,
+        "gs": 804
+      }
+    },
+    {
+      "test": "Montage presets sans débordement à 896×414",
+      "ok": true,
+      "detail": {
+        "vw": 896,
+        "sw": 896,
+        "bw": 896,
+        "dw": 858,
+        "ds": 858,
+        "gw": 804,
+        "gs": 804
+      }
+    },
+    {
+      "test": "Montage parts sans débordement à 414×896",
+      "ok": true,
+      "detail": {
+        "vw": 414,
+        "sw": 414,
+        "bw": 414,
+        "dw": 395,
+        "ds": 395,
+        "gw": 357,
+        "gs": 357
+      }
+    },
+    {
+      "test": "Montage kits sans débordement à 414×896",
+      "ok": true,
+      "detail": {
+        "vw": 414,
+        "sw": 414,
+        "bw": 414,
+        "dw": 395,
+        "ds": 395,
+        "gw": 357,
+        "gs": 357
+      }
+    },
+    {
+      "test": "Montage plans sans débordement à 414×896",
+      "ok": true,
+      "detail": {
+        "vw": 414,
+        "sw": 414,
+        "bw": 414,
+        "dw": 395,
+        "ds": 395,
+        "gw": 357,
+        "gs": 357
+      }
+    },
+    {
+      "test": "Montage presets sans débordement à 414×896",
+      "ok": true,
+      "detail": {
+        "vw": 414,
+        "sw": 414,
+        "bw": 414,
+        "dw": 395,
+        "ds": 395,
+        "gw": 357,
+        "gs": 357
+      }
+    },
+    {
+      "test": "Aucune erreur JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "actualPracticeCases": [
+    {
+      "weapon": "pump",
+      "view": "right",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 109.7599999999511,
+          "level": 1,
+          "projectiles": 7,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 7,
+            "damage": 109.7599999999511,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_shot_slug",
+          "spent": 1,
+          "damage": 74.63679999999295,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 74.63679999999295,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "pump",
+      "view": "left",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 109.7599999999511,
+          "level": 1,
+          "projectiles": 7,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 7,
+            "damage": 109.7599999999511,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_shot_slug",
+          "spent": 1,
+          "damage": 74.63679999999295,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 74.63679999999295,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "pump",
+      "view": "front",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 109.7599999999511,
+          "level": 1,
+          "projectiles": 7,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 7,
+            "damage": 109.7599999999511,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_shot_slug",
+          "spent": 1,
+          "damage": 74.63679999999295,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 74.63679999999295,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "pump",
+      "view": "rear",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 109.7599999999511,
+          "level": 1,
+          "projectiles": 7,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 7,
+            "damage": 109.7599999999511,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_shot_slug",
+          "spent": 1,
+          "damage": 74.63679999999295,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "pump",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 74.63679999999295,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "launcher",
+      "view": "right",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 207.67703703703592,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 207.67703703703592,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_launcher_focus",
+          "spent": 1,
+          "damage": 239.0482888888946,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 239.0482888888946,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "launcher",
+      "view": "left",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 207.67703703703592,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 207.67703703703592,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_launcher_focus",
+          "spent": 1,
+          "damage": 239.0482888888946,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 239.0482888888946,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "launcher",
+      "view": "front",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 207.67703703703592,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 207.67703703703592,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_launcher_focus",
+          "spent": 1,
+          "damage": 239.0482888888946,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 239.0482888888946,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "launcher",
+      "view": "rear",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 207.67703703703592,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 207.67703703703592,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_launcher_focus",
+          "spent": 1,
+          "damage": 239.0482888888946,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "launcher",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 239.0482888888946,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "flamer",
+      "view": "right",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_tool_long",
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "flamer",
+      "view": "left",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_tool_long",
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "flamer",
+      "view": "front",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_tool_long",
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "flamer",
+      "view": "rear",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_tool_long",
+          "spent": 1,
+          "damage": 39.039999999906286,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "flamer",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 39.039999999906286,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "netgun",
+      "view": "right",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 19.674666666673147,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 19.674666666673147,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_cable_fast",
+          "spent": 1,
+          "damage": 17.707200000004377,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 17.707200000004377,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "netgun",
+      "view": "left",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 19.674666666673147,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 19.674666666673147,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_cable_fast",
+          "spent": 1,
+          "damage": 17.707200000004377,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 17.707200000004377,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "netgun",
+      "view": "front",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 19.674666666673147,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 19.674666666673147,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_cable_fast",
+          "spent": 1,
+          "damage": 17.707200000004377,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 17.707200000004377,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "netgun",
+      "view": "rear",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 19.674666666673147,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 19.674666666673147,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_cable_fast",
+          "spent": 1,
+          "damage": 17.707200000004377,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "netgun",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 0,
+            "damage": 17.707200000004377,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "revolver",
+      "view": "right",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 69.44000000000233,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 69.44000000000233,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_hand_heavy",
+          "spent": 1,
+          "damage": 85.41120000000228,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "right",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 85.41120000000228,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "revolver",
+      "view": "left",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 69.44000000000233,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 69.44000000000233,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_hand_heavy",
+          "spent": 1,
+          "damage": 85.41120000000228,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "left",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 85.41120000000228,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "revolver",
+      "view": "front",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 69.44000000000233,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 69.44000000000233,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_hand_heavy",
+          "spent": 1,
+          "damage": 85.41120000000228,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "front",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 85.41120000000228,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    },
+    {
+      "weapon": "revolver",
+      "view": "rear",
+      "modes": [
+        {
+          "phase": "combat",
+          "kit": null,
+          "spent": 1,
+          "damage": 69.44000000000233,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 69.44000000000233,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "a",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        },
+        {
+          "phase": "combat",
+          "kit": "kit2_hand_heavy",
+          "spent": 1,
+          "damage": 85.41120000000228,
+          "level": 1,
+          "projectiles": 1,
+          "snapshot": {
+            "gun": "revolver",
+            "enemy": "walker",
+            "view": "rear",
+            "motion": "still",
+            "shots": 1,
+            "impacts": 1,
+            "damage": 85.41120000000228,
+            "kills": 0,
+            "heads": 0,
+            "seconds": 0.8,
+            "groups": 1
+          },
+          "mode": "b",
+          "begun": true,
+          "opened": true,
+          "back": true,
+          "noMutation": true
+        }
+      ]
+    }
+  ],
+  "method": "Chromium. Moteur réel, images réduites à un pixel dans la matrice. Les cibles sont arrangées ; aucun résultat de playtest humain revendiqué."
+}

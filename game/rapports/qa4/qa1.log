@@ -1,0 +1,56 @@
+=== syntaxe.py ===
+{"passed": 4, "total": 4}
+STATUS syntaxe.py exit=0 sec=4
+=== regression_043.py ===
+OK Titre de la build inspectée
+OK Menu sans panneaux parasites
+OK Événements non bloqués
+OK Armurier véritable affiché
+OK Six emplacements de presets
+OK Catalogue conservé
+OK Cinq montages conservés après rendu
+OK Sixième pièce refusée
+OK Montage sans création de munitions
+OK Recalcul sans accumulation des bonus
+OK Preset 1 restitué
+OK Preset 2 restitué
+OK Preset 3 restitué
+OK Preset 4 restitué
+OK Preset 5 restitué
+OK Preset 6 restitué
+OK Démontage conserve le stock total
+OK Six presets dans le profil validé
+OK Zone Noire démarre
+OK Six circuits du moteur
+OK Panne A2 isolée
+OK Cible masquée seulement dans A2
+OK Panne cohérente vue right
+OK Panne cohérente vue left
+OK Panne cohérente vue front
+OK Panne cohérente vue rear
+OK Q répare seulement A2
+OK Q consomme un fusible du jeu
+OK Q ne répare pas la barricade
+OK Bouton réparation actif sans charge de soutien
+OK Bouton natif répare B2
+OK Pas de réparation sans fusible
+OK Fusée révèle temporairement A3
+OK Extinction revient après la fusée
+OK Incident déclenché par le temps de vague
+OK Circuits exportés et validés
+OK Circuits malformés refusés
+OK Ancien profil sans circuits accepté
+OK HUD lumière retiré au menu
+OK Départ combat Convoi
+OK Départ combat Nord
+OK Départ combat Métro
+OK Départ combat Avion
+OK Départ combat Autoroute
+OK Départ combat Eaux Noires
+OK Départ combat Ascension
+OK Production sans API de test
+OK Parcours souris de production
+OK Armurier sans débordement 896x414
+OK Armurier sans débordement 414x896
+OK Aucune erreur JavaScript
+{"passed": 51, "total": 51, "errors": []}

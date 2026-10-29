@@ -1,0 +1,151 @@
+{
+  "version": "0.40.8",
+  "browser": {
+    "passed": 761,
+    "total": 761,
+    "errors": []
+  },
+  "resources": {
+    "passed": 268,
+    "total": 268
+  },
+  "fullArt": {
+    "avant": {
+      "loaded": 252,
+      "total": 252,
+      "settled": true,
+      "failures": []
+    },
+    "apres": {
+      "loaded": 252,
+      "total": 252,
+      "settled": true,
+      "failures": []
+    }
+  },
+  "captureCount": 40,
+  "galleryCount": 148,
+  "suites": [
+    {
+      "script": "syntaxe.py",
+      "exit": 0,
+      "seconds": 1.58,
+      "passed": 2,
+      "total": 2,
+      "errors": null
+    },
+    {
+      "script": "regression_0401.py",
+      "exit": 0,
+      "seconds": 9.67,
+      "passed": 51,
+      "total": 51,
+      "errors": []
+    },
+    {
+      "script": "atelier.py",
+      "exit": 0,
+      "seconds": 31.08,
+      "passed": 79,
+      "total": 79,
+      "errors": []
+    },
+    {
+      "script": "coherence.py",
+      "exit": 0,
+      "seconds": 13.34,
+      "passed": 31,
+      "total": 31,
+      "errors": []
+    },
+    {
+      "script": "visuel.py",
+      "exit": 0,
+      "seconds": 20.45,
+      "passed": 69,
+      "total": 69,
+      "errors": []
+    },
+    {
+      "script": "gestes.py",
+      "exit": 0,
+      "seconds": 24.0,
+      "passed": 35,
+      "total": 35,
+      "errors": []
+    },
+    {
+      "script": "images.py",
+      "exit": 0,
+      "seconds": 3.49,
+      "passed": 268,
+      "total": 268,
+      "errors": null
+    },
+    {
+      "script": "montage.py",
+      "exit": 0,
+      "seconds": 43.71,
+      "passed": 97,
+      "total": 97,
+      "errors": []
+    },
+    {
+      "script": "montage_safety.py",
+      "exit": 0,
+      "seconds": 7.72,
+      "passed": 18,
+      "total": 18,
+      "errors": []
+    },
+    {
+      "script": "protocols.py",
+      "exit": 0,
+      "seconds": 130.02,
+      "passed": 139,
+      "total": 139,
+      "errors": []
+    },
+    {
+      "script": "protocols_safety.py",
+      "exit": 0,
+      "seconds": 23.06,
+      "passed": 50,
+      "total": 50,
+      "errors": []
+    },
+    {
+      "script": "orders.py",
+      "exit": 0,
+      "seconds": 28.32,
+      "passed": 99,
+      "total": 99,
+      "errors": []
+    },
+    {
+      "script": "orders_safety.py",
+      "exit": 0,
+      "seconds": 17.84,
+      "passed": 50,
+      "total": 50,
+      "errors": []
+    },
+    {
+      "script": "before_after_0407.py",
+      "exit": 0,
+      "seconds": 3.57,
+      "passed": 6,
+      "total": 6,
+      "errors": []
+    },
+    {
+      "script": "spatial.py",
+      "exit": 0,
+      "passed": 37,
+      "total": 37,
+      "errors": [],
+      "note": "Exécuté séparément après la compilation finale ; même HTML."
+    }
+  ],
+  "limits": "Tests natifs automatisés et scènes arrangées dans Chromium. Pas de certification matériel mobile, Safari, manette physique ou playtest humain complet."
+}

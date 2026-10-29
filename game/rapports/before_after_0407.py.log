@@ -1,0 +1,70 @@
+{
+  "method": "Deux builds natives (.40.6 jointe et .40.7 reconstruite), mêmes cas arrangés. Ressources graphiques seules réduites.",
+  "passed": 6,
+  "total": 6,
+  "checks": [
+    {
+      "test": "Renfort Noor désormais actif hors de sa route",
+      "ok": true
+    },
+    {
+      "test": "Boss récent reconnu par priorité spéciale",
+      "ok": true
+    },
+    {
+      "test": "Bonus de marquage retiré des balles alliées",
+      "ok": true
+    },
+    {
+      "test": "Fin du marquage sur infecté terrestre",
+      "ok": true
+    },
+    {
+      "test": "Électricité de pause cohérente avec la coupure",
+      "ok": true
+    },
+    {
+      "test": "Aucune erreur native dans les reproductions",
+      "ok": true
+    }
+  ],
+  "results": {
+    "0.40.6": {
+      "airGunnerElsewhere": {
+        "damage": 0,
+        "shotsLeft": null
+      },
+      "specialPriority": "walker",
+      "allyDamageOnMarked": 11.799999999999997,
+      "landMarkAfter6s": 6,
+      "sanaElsewhereHidden": {
+        "hp": 84,
+        "shots": null,
+        "visible": false
+      },
+      "blackout": {
+        "combat": false,
+        "pause": true
+      }
+    },
+    "0.40.7": {
+      "airGunnerElsewhere": {
+        "damage": 42,
+        "shotsLeft": 49
+      },
+      "specialPriority": "darkBoss",
+      "allyDamageOnMarked": 10,
+      "landMarkAfter6s": 0,
+      "sanaElsewhereHidden": {
+        "hp": 84,
+        "shots": 42,
+        "visible": false
+      },
+      "blackout": {
+        "combat": false,
+        "pause": false
+      }
+    }
+  },
+  "errors": []
+}

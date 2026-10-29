@@ -1,0 +1,14 @@
+{'script': 'syntaxe.py', 'exit': 0, 'seconds': 1.92, 'passed': 2, 'total': 2, 'errors': None}
+{'script': 'regression_0401.py', 'exit': 0, 'seconds': 9.05, 'passed': 51, 'total': 51, 'errors': []}
+{'script': 'atelier.py', 'exit': 0, 'seconds': 28.24, 'passed': 79, 'total': 79, 'errors': []}
+{'script': 'coherence.py', 'exit': 0, 'seconds': 13.67, 'passed': 31, 'total': 31, 'errors': []}
+{'script': 'visuel.py', 'exit': 0, 'seconds': 20.25, 'passed': 69, 'total': 69, 'errors': []}
+{'script': 'gestes.py', 'exit': 0, 'seconds': 22.94, 'passed': 35, 'total': 35, 'errors': []}
+{'script': 'images.py', 'exit': 0, 'seconds': 3.16, 'passed': 268, 'total': 268, 'errors': None}
+{'script': 'montage.py', 'exit': 0, 'seconds': 44.4, 'passed': 97, 'total': 97, 'errors': []}
+{'script': 'montage_safety.py', 'exit': 0, 'seconds': 6.96, 'passed': 18, 'total': 18, 'errors': []}
+{'script': 'protocols.py', 'exit': 0, 'seconds': 136.76, 'passed': 139, 'total': 139, 'errors': []}
+{'script': 'protocols_safety.py', 'exit': 0, 'seconds': 23.19, 'passed': 50, 'total': 50, 'errors': []}
+{'script': 'orders.py', 'exit': 0, 'seconds': 27.64, 'passed': 99, 'total': 99, 'errors': []}
+{'script': 'orders_safety.py', 'exit': 0, 'seconds': 18.09, 'passed': 50, 'total': 50, 'errors': []}
+{'script': 'before_after_0407.py', 'exit': 0, 'seconds': 3.5, 'passed': 6, 'total': 6, 'errors': []}

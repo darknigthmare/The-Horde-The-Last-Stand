@@ -1,0 +1,51 @@
+OK Trente lectures ne changent ni run ni profil
+OK Préparation périmée refusée · __DL.readState().run.weapons.rifle.mag--
+OK Préparation périmée refusée · __DL.readState().run.allies.shooter.active=false
+OK Préparation périmée refusée · __DL.readState().run.loadout=["pistol",null]
+OK Préparation périmée refusée · __DL.getData().meta.doctrines.marksman=1
+OK Solde protégée au crédit près · -1
+OK Solde protégée au crédit près · 0
+OK Chargement gratuit explicite sans aucun achat
+OK Défi sans soins ne propose pas de trousse
+OK Défi sans alliés garde les frais à zéro
+OK Ancien devis incapable de toucher une nouvelle route
+OK Neuf préparations exportées et validées
+OK Révision ne fusionne pas les huit autres préparations
+OK Défaite reprend le stock préparé sans nouvelle livraison
+OK Situation du poste : tous les timers figés · campaign
+OK Un retour rejoint la pause et non le combat · campaign
+OK Reprise active après la situation · campaign
+OK Situation du poste : tous les timers figés · north
+OK Un retour rejoint la pause et non le combat · north
+OK Reprise active après la situation · north
+OK Situation du poste : tous les timers figés · metro
+OK Un retour rejoint la pause et non le combat · metro
+OK Reprise active après la situation · metro
+OK Situation du poste : tous les timers figés · air
+OK Un retour rejoint la pause et non le combat · air
+OK Reprise active après la situation · air
+OK Situation du poste : tous les timers figés · highway
+OK Un retour rejoint la pause et non le combat · highway
+OK Reprise active après la situation · highway
+OK Situation du poste : tous les timers figés · water
+OK Un retour rejoint la pause et non le combat · water
+OK Reprise active après la situation · water
+OK Situation du poste : tous les timers figés · tower
+OK Un retour rejoint la pause et non le combat · tower
+OK Reprise active après la situation · tower
+OK Situation du poste : tous les timers figés · dark
+OK Situation ne compte pas la silhouette cachée
+OK Un retour rejoint la pause et non le combat · dark
+OK Reprise active après la situation · dark
+OK Coupure électrique toujours signalée pendant la pause
+OK Devis sans débordement interne 1440×900
+OK Contrôle sélectionné conserve le focus 1440×900
+OK Situation du poste lisible 1440×900
+OK Devis sans débordement interne 896×414
+OK Contrôle sélectionné conserve le focus 896×414
+OK Situation du poste lisible 896×414
+OK Devis sans débordement interne 414×896
+OK Contrôle sélectionné conserve le focus 414×896
+OK Situation du poste lisible 414×896
+OK Aucune erreur JavaScript
+{"passed": 50, "total": 50, "errors": []}

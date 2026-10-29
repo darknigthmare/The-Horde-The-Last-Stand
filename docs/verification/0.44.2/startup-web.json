@@ -1,0 +1,697 @@
+{
+  "started": "2026-10-29T13:01:47.287Z",
+  "finished": "2026-10-29T13:02:03.054Z",
+  "version": "0.44.2",
+  "game": "/workspace/scratch/da2d120b6763/the-horde-the-last-stand/game/JOUER_DERNIERE_LIGNE.html",
+  "sha256": "7edd451c079b5d72ab31acf6cc49aba4e805801271afd24972d36e49ba65e1d1",
+  "testScriptSha256": "4f79668466dd139329f3f4cfc8775a8393c41ad04dd66cdccc2b5753dd1a924d",
+  "browser": "156.0.8078.73",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "protocols": [
+    "file:",
+    "http:"
+  ],
+  "originalImages": true,
+  "testAPIEnabled": false,
+  "passed": 55,
+  "total": 55,
+  "checks": [
+    {
+      "name": "file: initial splash identifies current build",
+      "ok": true,
+      "details": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ]
+    },
+    {
+      "name": "file: production has no game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: menu: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: menu: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: menu: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: About identifies current build",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: return from About: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: return from About: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: return from About: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: preparation: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: preparation: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: preparation: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: combat: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: combat: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: combat: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: pause: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: pause: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: pause: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: resume: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: resume: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: resume: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: return to menu: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "file: return to menu: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "file: return to menu: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: initial splash identifies current build",
+      "ok": true,
+      "details": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ]
+    },
+    {
+      "name": "http: production has no game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: menu: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: menu: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: menu: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: About identifies current build",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: return from About: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: return from About: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: return from About: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: preparation: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: preparation: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: preparation: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: combat: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: combat: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: combat: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: optional audio catalogue loads successfully",
+      "ok": true,
+      "details": {
+        "status": 200,
+        "catalog": {
+          "samples": {}
+        }
+      }
+    },
+    {
+      "name": "http: manifest points at the playable HTML",
+      "ok": true,
+      "details": {
+        "status": 200,
+        "body": {
+          "name": "Dernière Ligne — Zéro Repli",
+          "short_name": "Dernière Ligne",
+          "description": "Préparez votre poste et défendez la dernière ligne jusqu’au convoi.",
+          "lang": "fr",
+          "start_url": "./JOUER_DERNIERE_LIGNE.html",
+          "scope": "./",
+          "display": "standalone",
+          "background_color": "#080e11",
+          "theme_color": "#071216",
+          "icons": [
+            {
+              "src": "assets/icons/icon.svg",
+              "sizes": "any",
+              "type": "image/svg+xml",
+              "purpose": "any"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "http: manifest icons exist",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: no absent service worker requested",
+      "ok": true,
+      "details": [
+        "/JOUER_DERNIERE_LIGNE.html",
+        "/assets/icons/icon.svg",
+        "/assets/audio/manifest.json",
+        "/assets/icons/icon.svg",
+        "/assets/audio/manifest.json",
+        "/manifest.webmanifest",
+        "/assets/icons/icon.svg"
+      ]
+    },
+    {
+      "name": "http: no service worker caches an obsolete build",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "http: pause: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: pause: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: pause: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: resume: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: resume: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: resume: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "http: return to menu: splash created once",
+      "ok": true,
+      "details": {
+        "count": 1
+      }
+    },
+    {
+      "name": "http: return to menu: splash stays closed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "http: return to menu: current version stays consistent",
+      "ok": true,
+      "details": {
+        "boots": [
+          "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+        ],
+        "bootVisible": false,
+        "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+        "stamp": "0.44.2",
+        "version": "0.44.2",
+        "testAPI": false
+      }
+    },
+    {
+      "name": "file: no HTTP(S) dependency",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "No JavaScript, console or resource errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "views": [
+    {
+      "protocol": "file:",
+      "stage": "menu",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "file:",
+      "stage": "return from About",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "file:",
+      "stage": "preparation",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "file:",
+      "stage": "combat",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "file:",
+      "stage": "pause",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "file:",
+      "stage": "resume",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "file:",
+      "stage": "return to menu",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "menu",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "return from About",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "preparation",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "combat",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "pause",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "resume",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    },
+    {
+      "protocol": "http:",
+      "stage": "return to menu",
+      "boots": [
+        "CONVOI // TERMINAL DE DEFENSEDERNIERELIGNEZERO REPLIPOSTE 07 · SYNCHRONISATION LOCALE · 0.44.2"
+      ],
+      "bootVisible": false,
+      "title": "Dernière Ligne — Poste stabilisé 0.44.2",
+      "stamp": "0.44.2",
+      "version": "0.44.2",
+      "testAPI": false
+    }
+  ],
+  "diagnostics": [],
+  "requests": [
+    {
+      "protocol": "http:",
+      "url": "http://127.0.0.1:37147/JOUER_DERNIERE_LIGNE.html"
+    },
+    {
+      "protocol": "http:",
+      "url": "http://127.0.0.1:37147/assets/icons/icon.svg"
+    },
+    {
+      "protocol": "http:",
+      "url": "http://127.0.0.1:37147/assets/audio/manifest.json"
+    },
+    {
+      "protocol": "http:",
+      "url": "http://127.0.0.1:37147/assets/icons/icon.svg"
+    },
+    {
+      "protocol": "http:",
+      "url": "http://127.0.0.1:37147/manifest.webmanifest"
+    }
+  ],
+  "servedRequests": [
+    "/JOUER_DERNIERE_LIGNE.html",
+    "/assets/icons/icon.svg",
+    "/assets/audio/manifest.json",
+    "/assets/icons/icon.svg",
+    "/assets/audio/manifest.json",
+    "/manifest.webmanifest",
+    "/assets/icons/icon.svg"
+  ],
+  "error": null,
+  "limitations": [
+    "Local HTTP only; no public hosting or installability certification.",
+    "Procedural audio activation and catalogue fallback checked, without listening validation."
+  ]
+}

@@ -1,7 +1,7 @@
 /* DERNIERE LIGNE 0.42.0 — POSTE DE COMMANDEMENT UI */
 (()=>{
 'use strict';
-const VERSION='0.44.1';
+const VERSION='0.44.2';
 const $id=id=>document.getElementById(id);
 const shell=$id('shell');
 if(!shell||shell.dataset.dl42Installed==='1')return;
@@ -51,7 +51,7 @@ function showDL42About(){
 }
 function aboutPass(){const b=$id('aboutGame');if(b&&!b.dataset.dl42About){b.dataset.dl42About='1';b.onclick=showDL42About;}}
 function inputLegend(){
- const pad=shell.classList.contains('gamepad-connected');shell.dataset.dl42Input=pad?'gamepad':'keyboard';
+ const mode=shell.dataset.input||'keyboard',pad=mode==='gamepad';shell.dataset.dl42Input=mode;
  const legend=$id('dl42ControlLegend');if(!legend)return;legend.querySelectorAll('[data-kb]').forEach(e=>e.hidden=pad);legend.querySelectorAll('[data-pad]').forEach(e=>e.hidden=!pad);
 }
 function combatLine(){
@@ -87,7 +87,8 @@ if(typeof showMenu==='function'){
 window.addEventListener('keydown',e=>{if(e.code==='F10'){e.preventDefault();toggleFullscreen();}},true);
 document.addEventListener('fullscreenchange',fullscreenLabel);
 document.addEventListener('focusin',focusPass,true);document.addEventListener('focusout',()=>queueMicrotask(focusPass),true);
-document.addEventListener('pointerdown',()=>{shell.dataset.dl42Input='mouse';},true);
+document.addEventListener('pointerdown',()=>queueMicrotask(inputLegend),true);
+document.addEventListener('keydown',()=>queueMicrotask(inputLegend),true);
 window.addEventListener('gamepadconnected',()=>setTimeout(inputLegend,50));window.addEventListener('gamepaddisconnected',()=>setTimeout(inputLegend,50));
 
 // Keep combat chrome synchronized with the real HUD update without touching combat values.

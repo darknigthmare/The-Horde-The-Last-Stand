@@ -2,7 +2,7 @@
 
 ## Objectif
 
-Première application aux sources après l'import : [suivi de la version 0.44.1](SUIVI_0_44_1.md), avec les défauts reproduits, corrections d'IA et de cadence, mesures de projection, tests de sauvegarde et tâches restantes.
+Application courante : [suivi de la version 0.44.2](SUIVI_0_44_2.md), avec reprises de campagnes, commandes, réglages audio et protection des profils. La [première passe 0.44.1](SUIVI_0_44_1.md) conserve les défauts reproduits, corrections d'IA et de cadence, mesures de projection et preuves précédentes.
 
 Relier chaque chantier à une méthode et à un résultat observable. Le jeu utilise son moteur HTML/JavaScript existant ; ses sources actives, ses règles et ses sauvegardes déterminent l'implémentation.
 

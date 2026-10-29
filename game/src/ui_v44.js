@@ -1,8 +1,8 @@
-/* DERNIERE LIGNE 0.44.1 — QA INTÉGRALE
+/* DERNIERE LIGNE 0.44.2 — POSTE STABILISÉ
    Progressive disclosure / compact HUD. Presentation only. */
 (()=>{
 'use strict';
-const VERSION='0.44.1';
+const VERSION='0.44.2';
 const $=id=>document.getElementById(id),shell=$('shell');
 if(!shell||shell.dataset.dl44Installed==='1')return;
 shell.dataset.dl44Installed='1';shell.classList.add('dl43-ui');
@@ -86,10 +86,17 @@ function compactObjective(){
   if(current!==compact)o.textContent=compact;
  }else{o.dataset.dl43Compact='';o.title=full;}
 }
+function syncAudioState(){
+ const sound=$('soundBtn');if(!sound)return;
+ const enabled=sound.dataset.audioEnabled==='true',label=enabled?'Audio activé':'Audio désactivé';
+ if(sound.title!==label)sound.title=label;if(sound.textContent!=='♪')sound.textContent='♪';
+ if(sound.getAttribute('aria-label')!==label)sound.setAttribute('aria-label',label);
+ if(sound.getAttribute('aria-pressed')!==String(enabled))sound.setAttribute('aria-pressed',String(enabled));
+}
 function compactCombatChrome(){
  ensureActionGroups();
  const brand=document.querySelector('#hud .brand');if(brand)brand.setAttribute('aria-hidden','true');
- const sound=$('soundBtn');if(sound){const enabled=typeof data!=='undefined'&&!!data.settings?.sound;sound.title=enabled?'Audio activé':'Audio désactivé';sound.textContent='♪';sound.setAttribute('aria-label',sound.title);sound.setAttribute('aria-pressed',String(enabled));}
+ syncAudioState();
  const pause=$('pauseBtn');if(pause){const paused=shell.dataset.phase==='paused';pause.title=paused?'Reprendre':'Pause';pause.textContent=paused?'▶':'Ⅱ';pause.setAttribute('aria-label',pause.title);}
  const fs=$('dl42FullscreenBtn');if(fs){fs.title='Plein écran (F10)';fs.setAttribute('aria-label','Basculer le plein écran');}
  const status=$('weaponStatus');if(status){const important=/RECHARG|CHARGEUR VIDE|RÉPARATION|TRANSMISSION|INSERTION|SUSPENDU/i.test(status.textContent||'');status.classList.toggle('dl43-critical',important);}
@@ -160,5 +167,5 @@ document.addEventListener('pointerdown',e=>{if(intelOpen&&shell.dataset.phase===
 setInterval(()=>{versionPass();installAbout();if(shell.dataset.phase==='combat'){compactObjective();compactCombatChrome();}},240);
 
 installAbout();decorate();
-window.DL44UI={version:VERSION,syncVersion:versionPass,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
+window.DL44UI={version:VERSION,syncVersion:versionPass,syncAudioState,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
 })();

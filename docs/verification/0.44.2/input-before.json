@@ -1,0 +1,303 @@
+{
+  "at": "2026-10-29T12:53:26.035Z",
+  "game": "/tmp/horde-input-0441-game/JOUER_DERNIERE_LIGNE.html",
+  "sha256": "41cbdef473793442577e366212f229cce62f73d73e4951837da12115207921e4",
+  "browser": "156.0.8078.73",
+  "transport": "file://, offline",
+  "testAPI": false,
+  "inputEmulation": {
+    "keyboard": "Playwright keyboard events",
+    "gamepad": "navigator.getGamepads fixture and connection events",
+    "touch": "Chromium CDP Input.dispatchTouchEvent; 960×540, hasTouch/isMobile",
+    "blur": "synthetic window blur event through the production listener"
+  },
+  "physicalHardwareTested": false,
+  "observations": [
+    {
+      "label": "keyboard",
+      "title": "Dernière Ligne — Poste stabilisé 0.44.1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "label": "gamepad",
+      "title": "Dernière Ligne — Poste stabilisé 0.44.1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "label": "touch",
+      "title": "Dernière Ligne — Poste stabilisé 0.44.1",
+      "viewport": {
+        "width": 960,
+        "height": 540
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "keyboard: production has no game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "rebind keeps focus on its replacement button",
+      "ok": false,
+      "details": {
+        "focus": null
+      }
+    },
+    {
+      "name": "Escape cancels capture without leaving Settings",
+      "ok": false,
+      "details": {
+        "phase": "menu"
+      }
+    },
+    {
+      "name": "the key after Escape cannot silently change a binding",
+      "ok": false,
+      "details": {
+        "before": "R",
+        "after": "Y"
+      }
+    },
+    {
+      "name": "Tab cancels capture and advances keyboard focus",
+      "ok": false,
+      "details": {
+        "label": "APPUYEZ SUR UNE TOUCHE…",
+        "focus": null
+      }
+    },
+    {
+      "name": "leaving Settings discards a pending binding capture",
+      "ok": false,
+      "details": {
+        "before": "R",
+        "after": "U"
+      }
+    },
+    {
+      "name": "conflicting binding swaps the two existing actions",
+      "ok": true,
+      "details": {
+        "reload": "G",
+        "grenade": "R"
+      }
+    },
+    {
+      "name": "completed rebind preserves keyboard focus",
+      "ok": false,
+      "details": {
+        "focus": null
+      }
+    },
+    {
+      "name": "rebound controls persist after a production reload",
+      "ok": true,
+      "details": {
+        "reload": "G",
+        "grenade": "R"
+      }
+    },
+    {
+      "name": "reset restores every original keyboard action",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Tab stays in the modal after its last control",
+      "ok": true,
+      "details": {
+        "inside": true,
+        "id": ""
+      }
+    },
+    {
+      "name": "Shift+Tab returns to the last modal control",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Escape closes Settings after capture is finished",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "closing the modal restores its opener focus",
+      "ok": true,
+      "details": "settingsBtn"
+    },
+    {
+      "name": "gamepad: production has no game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "a connected active gamepad displays its prompts",
+      "ok": true,
+      "details": {
+        "mode": "gamepad",
+        "legend": "gamepad",
+        "padClass": true,
+        "keyboardShown": false,
+        "padShown": true
+      }
+    },
+    {
+      "name": "keyboard input replaces idle gamepad prompts",
+      "ok": false,
+      "details": {
+        "mode": "keyboard",
+        "legend": "gamepad",
+        "padClass": true,
+        "keyboardShown": false,
+        "padShown": true
+      }
+    },
+    {
+      "name": "a gamepad menu action selects gamepad prompts",
+      "ok": false,
+      "details": {
+        "mode": "keyboard",
+        "legend": "gamepad",
+        "padClass": true,
+        "keyboardShown": false,
+        "padShown": true
+      }
+    },
+    {
+      "name": "gamepad Back resumes without selecting keyboard prompts",
+      "ok": false,
+      "details": {
+        "mode": "keyboard",
+        "legend": "gamepad",
+        "padClass": true,
+        "keyboardShown": false,
+        "padShown": true
+      }
+    },
+    {
+      "name": "a fresh trigger press fires in combat",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "pause stops a held trigger",
+      "ok": true,
+      "details": {
+        "before": 11,
+        "after": 11
+      }
+    },
+    {
+      "name": "a trigger held through pause cannot fire on resume",
+      "ok": false,
+      "details": {
+        "before": 11,
+        "after": 8
+      }
+    },
+    {
+      "name": "releasing then pressing the trigger rearms fire",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "the production blur handler pauses combat",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "a trigger held through blur cannot fire on resume",
+      "ok": false,
+      "details": {
+        "before": 11,
+        "after": 8
+      }
+    },
+    {
+      "name": "disconnecting stops fire and removes gamepad prompts",
+      "ok": false,
+      "details": {
+        "before": 8,
+        "after": 8,
+        "mode": "pointer",
+        "legend": "gamepad",
+        "padClass": true,
+        "keyboardShown": false,
+        "padShown": true
+      }
+    },
+    {
+      "name": "connecting a held trigger requires a release",
+      "ok": false,
+      "details": {
+        "before": 8,
+        "after": 5
+      }
+    },
+    {
+      "name": "fire works after a reconnect and fresh trigger press",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "touch: production has no game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "a held primary touch fires",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "releasing a second touch preserves primary fire",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "a second finger activates Reload during primary aim",
+      "ok": true,
+      "details": {
+        "before": 10,
+        "after": 12
+      }
+    },
+    {
+      "name": "continuous touch resumes fire after that reload",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "releasing primary touch stops fire",
+      "ok": true,
+      "details": {
+        "before": 11,
+        "after": 11
+      }
+    },
+    {
+      "name": "touch cancellation stops fire",
+      "ok": true,
+      "details": {
+        "before": 10,
+        "after": 10
+      }
+    },
+    {
+      "name": "no browser JavaScript exceptions or scenario errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "passed": 23,
+  "total": 36
+}

@@ -1,6 +1,6 @@
-> **Livraison courante : 0.44.1.** Ouvrir `JOUER_DERNIERE_LIGNE.html` pour jouer.
-> Les corrections, commandes et résultats actuels sont décrits dans le [README du dépôt](../README.md) et le [suivi 0.44.1](../docs/SUIVI_0_44_1.md).
-> Le document ci-dessous conserve les descriptions et totaux historiques de septembre pour la 0.44.0 ; ces totaux ne désignent pas les tests exécutés pour la 0.44.1.
+> **Livraison courante : 0.44.2.** Ouvrir `JOUER_DERNIERE_LIGNE.html` pour jouer.
+> Les corrections, commandes et résultats actuels sont décrits dans le [README du dépôt](../README.md) et le [suivi 0.44.2](../docs/SUIVI_0_44_2.md).
+> Le document ci-dessous conserve les descriptions et totaux historiques de septembre pour la 0.44.0 ; ces totaux ne désignent pas les tests exécutés pour la 0.44.2.
 
 ---
 

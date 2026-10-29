@@ -1,0 +1,281 @@
+{
+  "started": "2026-10-29T12:43:09.394Z",
+  "finished": "2026-10-29T12:43:56.598Z",
+  "browser": "156.0.8078.73",
+  "gameSha256": "41cbdef473793442577e366212f229cce62f73d73e4951837da12115207921e4",
+  "testScriptSha256": "29b5595fc7d619ad5626ef2652c9450325e70b51c95e305bf345ec189267e521",
+  "originalImages": true,
+  "productionUI": true,
+  "testAPI": false,
+  "protocol": "http-localhost",
+  "passed": 39,
+  "total": 44,
+  "checks": [
+    {
+      "name": "profile summaries: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Recovery-copy previews name all eight saved campaigns",
+      "ok": false,
+      "details": "Zone Noire · secteur 1 / 12 / Ascension · étage 1 / 12 / Eaux Noires · traversée 1 / 12 / Autoroute · traversée 1 / 12 / ARGO-17 · sortie 1 / 12"
+    },
+    {
+      "name": "The save manager describes every preparation and the current schema",
+      "ok": false,
+      "details": null
+    },
+    {
+      "name": "Import confirmation names all eight campaigns before replacement",
+      "ok": false,
+      "details": "Rang 9 · 25 000 XP\nPréparation de la nuit 1 · 1 991 CR\nAutre préparation conservée : Ascension · étage 1 / 12 · 1 878 CR\nTroisième préparation : Eaux Noires · traversée 1 / 12\nPréparation métro : Autoroute · traversée 1 / 12\nPréparation aérienne : ARGO-17 · sortie 1 / 12"
+    },
+    {
+      "name": "Import confirmation displays every independent budget",
+      "ok": false,
+      "details": "Rang 9 · 25 000 XP\nPréparation de la nuit 1 · 1 991 CR\nAutre préparation conservée : Ascension · étage 1 / 12 · 1 878 CR\nTroisième préparation : Eaux Noires · traversée 1 / 12\nPréparation métro : Autoroute · traversée 1 / 12\nPréparation aérienne : ARGO-17 · sortie 1 / 12"
+    },
+    {
+      "name": "Reading and cancelling complete profile summaries does not write storage",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "quota: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "A primary write failure keeps the previous stored bytes",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "A primary write failure exposes a persistent warning and retry action",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Retry commits the pending setting and clears the warning",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Retry preserves all eight campaign preparations",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "The successful retry survives a complete document reload",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "recovery quota: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "A recovery-copy failure does not roll back the successful primary save",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "A recovery-copy failure is distinguished from an unsaved game",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Recovery resumes after space becomes available",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "first tab: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "second tab: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "A real storage event opens the stale-tab conflict choice",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Keeping a session separate cannot overwrite the newer tab",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "The separate session keeps its export warning visible",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "The separate session can export its own settings and preparations",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Exporting a separate session does not mutate browser storage",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "late import: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "late writer: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Import confirmation rechecks storage when event delivery is suppressed",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "The conflict choice names all eight campaigns in the newer profile",
+      "ok": false,
+      "details": "Zone Noire · secteur 1 / 12 / Ascension · étage 1 / 12 / Eaux Noires · traversée 1 / 12 / Autoroute · traversée 1 / 12 / ARGO-17 · sortie 1 / 12"
+    },
+    {
+      "name": "Adopting the newer profile loads its setting without merging profiles",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Late import conflict preserves eight independent preparations",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "corrupt stored profile: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "corrupt stored profile: initial load keeps the protected bytes",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "corrupt stored profile: editing a setting cannot overwrite the protected bytes",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "corrupt stored profile: the protection warning remains visible",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "future stored profile: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "future stored profile: initial load keeps the protected bytes",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "future stored profile: editing a setting cannot overwrite the protected bytes",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "future stored profile: the protection warning remains visible",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "blocked storage: production without the game test API",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Blocked storage does not prevent the production menu from opening",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "A preparation stays playable with blocked storage and a visible warning",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Blocked browser storage still allows a portable JSON export",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "Blocked storage leaves the inaccessible original profile intact",
+      "ok": true,
+      "details": null
+    },
+    {
+      "name": "No uncaught JavaScript errors during storage failures",
+      "ok": true,
+      "details": []
+    },
+    {
+      "name": "No browser console errors during storage failures",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "profile-summaries",
+      "routes": 8,
+      "previewsOnly": true
+    },
+    {
+      "id": "primary-quota",
+      "realReload": true,
+      "originalPreparations": 8
+    },
+    {
+      "id": "recovery-quota",
+      "historyEntries": 1
+    },
+    {
+      "id": "two-tabs",
+      "event": "native StorageEvent",
+      "separateSessionExport": true
+    },
+    {
+      "id": "late-import",
+      "eventDeliverySuppressed": true,
+      "readBeforeWriteGuard": true
+    },
+    {
+      "id": "corrupt stored profile",
+      "originalBytesPreserved": true
+    },
+    {
+      "id": "future stored profile",
+      "originalBytesPreserved": true
+    },
+    {
+      "id": "blocked-storage",
+      "exception": "SecurityError",
+      "portableExport": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "error": null,
+  "limitations": [
+    "Storage failures are deliberately injected into browser Storage methods; this is not a physical full-disk test.",
+    "Concurrent writes are guarded optimistically; this does not prove an atomic cross-tab lock."
+  ]
+}

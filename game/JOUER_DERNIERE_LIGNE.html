@@ -10,7 +10,7 @@
 <meta name="application-name" content="Dernière Ligne">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Dernière Ligne — Poste stabilisé 0.44.1</title>
+<title>Dernière Ligne — Poste stabilisé 0.44.2</title>
 <style>
 :root{--ink:#e8e8db;--muted:#97a3a0;--accent:#ecc481;--red:#e66d55;--green:#9fbfa5;--line:#62736c44;--panel:#10191bf5;--sans:Arial,Helvetica,sans-serif;--display:Impact,'Arial Narrow',sans-serif;--mono:'Courier New',monospace}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#080e11;color:var(--ink);font-family:var(--sans)}body{display:flex;align-items:center;justify-content:center}button,input{font:inherit}button{cursor:pointer;border:1px solid var(--line);color:var(--ink);background:#263233;padding:11px 15px;font-size:12px;letter-spacing:.04em;transition:background .15s,border-color .15s,transform .15s;border-radius:2px;min-height:40px}button:hover:not(:disabled){background:#344342;border-color:var(--accent)}button:active:not(:disabled){transform:translateY(1px)}button:disabled{opacity:.38;cursor:not-allowed}button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button.primary{background:var(--accent);color:#142021;border-color:var(--accent);font-weight:800}button.primary:hover{background:#f8dbaa}button.danger{border-color:#da735b88;color:#f3a28b}button.small{min-height:32px;padding:7px 10px;font-size:11px}button.icon{padding:8px 11px}.hidden{display:none!important}#shell{position:relative;width:100%;height:100dvh;max-width:1920px;max-height:1200px;overflow:hidden;background:#080e11;isolation:isolate}#game{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;touch-action:none;user-select:none}#vignette{position:absolute;inset:0;box-shadow:inset 0 0 120px #02070966;pointer-events:none}#hud{z-index:7;position:absolute;left:3%;right:3%;top:max(18px,env(safe-area-inset-top));display:flex;gap:32px;align-items:flex-start;pointer-events:none}#hud>*{pointer-events:auto}.brand{font-family:var(--display);font-size:20px;letter-spacing:2px;border-right:1px solid var(--line);padding-right:24px}.brand small{display:block;font:9px var(--mono);color:var(--muted);letter-spacing:3px;margin-top:5px}.hudstat .label{color:var(--muted);font:10px var(--mono);letter-spacing:1.3px;display:block;margin-bottom:7px}.hudstat strong{font:22px var(--mono)}.hudstat .meter{width:128px;height:4px;background:#ffffff15;margin-top:7px}.hudstat .meter i{display:block;width:100%;height:100%;background:var(--green);transition:width .15s}.hudstat.health .meter i{background:var(--red)}.hudstat.cash strong{color:var(--accent)}.hud-end{margin-left:auto;display:flex;gap:7px}#waveStrip{position:absolute;top:104px;left:3%;right:3%;height:2px;background:#ffffff13;pointer-events:none}#waveStrip i{height:100%;display:block;background:var(--accent);width:0;transition:width .25s}#objective{position:absolute;right:3%;top:124px;text-align:right;font:11px var(--mono);color:#ced3c6;letter-spacing:1px;pointer-events:none}#toast{position:absolute;left:50%;transform:translateX(-50%);bottom:130px;z-index:12;background:#111c20ef;border:1px solid #dbb97a66;border-left:3px solid var(--accent);font-size:13px;padding:13px 20px;max-width:85%;text-align:center;pointer-events:none;opacity:0;transition:opacity .2s}#toast.visible{opacity:1}#bigAnnouncement{position:absolute;left:50%;top:26%;transform:translateX(-50%);text-align:center;pointer-events:none;width:90%;font:45px var(--display);letter-spacing:4px;text-shadow:0 3px 25px #000;opacity:0;transition:opacity .3s}#bigAnnouncement small{display:block;font:11px var(--mono);letter-spacing:3px;margin-top:10px;color:var(--accent)}#bigAnnouncement.visible{opacity:1}#combatBar{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));left:3%;right:3%;display:flex;align-items:end;gap:12px}#weaponReadout{background:#111b1fdc;border-left:3px solid var(--accent);padding:13px 19px;min-width:240px}#weaponReadout .label{font:10px var(--mono);color:var(--accent);letter-spacing:2px}#weaponName{font:19px var(--display);letter-spacing:1px;margin-top:4px}#ammo{font:28px var(--mono);margin-left:10px;float:right}#ammo small{font-size:14px;color:var(--muted)}#reloadTrack{height:3px;background:#ffffff15;margin-top:8px}#reloadTrack i{display:block;height:100%;background:var(--accent);width:0}#actions{display:flex;gap:6px;flex-wrap:wrap;max-width:760px}#actions button{background:#122023e8;text-align:left;min-width:92px;font-size:11px;padding:10px 12px}#actions button b{font:10px var(--mono);color:var(--accent);display:block;margin-bottom:4px}#actions button.active{border-color:var(--accent)}#actions button span{color:var(--muted)}#combatTip{margin-left:auto;font:10px/1.8 var(--mono);color:var(--muted);text-align:right}.screen{position:absolute;inset:0;z-index:5}.scrim{position:absolute;inset:0;background:linear-gradient(90deg,#080f12f5 0%,#0a121acc 39%,#101a1d38 75%,transparent)}.menu-content{position:absolute;left:8%;top:21%;max-width:610px;width:68%}.eyebrow{font:11px var(--mono);letter-spacing:4px;color:var(--accent);text-transform:uppercase}.menu-content h1{font-family:var(--display);font-weight:normal;line-height:.88;font-size:clamp(58px,7.8vw,116px);letter-spacing:1px;margin:24px 0 9px}.subtitle{font:18px var(--mono);letter-spacing:11px;color:var(--accent)}.menu-desc{font:14px/1.8 var(--sans);max-width:380px;color:#b1bfbc;margin:25px 0}.menu-buttons{display:flex;flex-wrap:wrap;gap:9px;max-width:460px}.menu-buttons button{min-height:48px;padding:14px 21px}.menu-footer{position:absolute;left:8%;bottom:6%;font:10px/1.9 var(--mono);color:var(--muted);letter-spacing:1px}#menuProgress{margin-top:23px;font:11px/1.8 var(--mono);color:var(--green)}.version-tag{position:absolute;right:3%;bottom:5%;font:10px var(--mono);color:#899896;writing-mode:vertical-rl;letter-spacing:2px}.camp-shade{position:absolute;inset:0;background:#071116b8;backdrop-filter:blur(3px)}.camp-wrap{position:absolute;left:4%;top:135px;bottom:6%;width:65%;max-width:1000px;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);box-shadow:0 20px 90px #0005}.camp-heading{display:flex;align-items:center;justify-content:space-between;padding:20px 23px 17px;border-bottom:1px solid var(--line);gap:12px}.camp-heading h2{font:29px var(--display);letter-spacing:1px;margin:0}.camp-heading p{font:11px var(--mono);color:var(--muted);margin:7px 0 0}.camp-heading .budget{color:var(--accent);font:26px var(--mono);white-space:nowrap}.tabs{display:flex;padding:0 14px;border-bottom:1px solid var(--line);flex:none;overflow-x:auto}.tabs button{background:none;border:0;border-bottom:2px solid transparent;border-radius:0;font-size:11px;padding:15px 12px;color:var(--muted);white-space:nowrap}.tabs button.selected{border-bottom-color:var(--accent);color:var(--accent)}#shopBody{overflow-y:auto;padding:18px 21px;flex:1;overscroll-behavior:contain;scrollbar-color:#53635d #172022}.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{position:relative;border:1px solid var(--line);background:linear-gradient(140deg,#243031aa,#19242688);padding:15px;display:flex;flex-direction:column;min-width:0}.card.locked{opacity:.55}.card-top{display:flex;align-items:center;gap:13px}.card-icon{width:66px;height:37px;flex:none;color:#b7c6ba}.card-icon svg{width:100%;height:100%;fill:currentColor}.card h3{font-size:14px;letter-spacing:.2px;margin:0 0 5px}.card .tag{font:9px var(--mono);color:var(--accent);letter-spacing:1px}.card p{font:11px/1.65 var(--sans);color:#a7b6b0;margin:12px 0}.stats{font:10px/1.9 var(--mono);color:#cad1c6;margin-bottom:12px;flex:1}.card-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.card-actions button{flex:1;white-space:nowrap;min-height:33px;padding:8px;font-size:10px}.card .price{font:12px var(--mono);color:var(--accent)}.camp-bottom{padding:15px 21px;border-top:1px solid var(--line);display:flex;align-items:center;gap:13px;background:#141e21;flex:none}.camp-bottom button.primary{margin-left:auto;min-width:195px}.camp-bottom .ledger{font:10px/1.7 var(--mono);color:var(--muted)}.camp-bottom .ledger strong{color:var(--ink)}.intel{position:absolute;right:4%;width:24%;top:157px;bottom:8%;display:flex;flex-direction:column}.intel h3{font:13px var(--mono);letter-spacing:2px;color:var(--accent);margin:0 0 17px}.intel .night{font:88px var(--display);line-height:1;color:#d7dfd2}.intel .sub{font:10px var(--mono);letter-spacing:3px;color:var(--muted);margin:8px 0 22px}.intel p{font:12px/1.9 var(--sans);color:#b3c1ba}.intel hr{border:0;border-top:1px solid var(--line);margin:18px 0}.intel .intel-bottom{margin-top:auto;font:11px/1.8 var(--mono);color:#96a99d}.notice{border-left:2px solid var(--accent);background:#e5bc7310;padding:12px 14px;font:11px/1.8 var(--sans);color:#d3d6c7;margin:0 0 14px}.notice strong{color:var(--accent)}.slotgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.slotgrid button{padding:10px 7px;background:#1f2c2d;font:10px/1.7 var(--mono)}.slotgrid button.selected{border-color:var(--accent);color:var(--accent)}.section-label{font:10px var(--mono);letter-spacing:2px;color:var(--muted);margin:5px 0 12px}.fullcard{grid-column:1/-1}.summaryline{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font:12px var(--mono);gap:15px}.summaryline em{font-style:normal;color:var(--accent)}.center-shade{position:absolute;inset:0;background:#071014d9;backdrop-filter:blur(5px)}.dialog{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(590px,90%);max-height:86%;overflow:auto;background:#111d21;border:1px solid var(--line);padding:34px}.dialog h2{font:48px var(--display);letter-spacing:2px;margin:10px 0 17px}.dialog p{font:13px/1.9 var(--sans);color:#b7c4bd}.dialog .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.help-grid{display:grid;grid-template-columns:80px 1fr;gap:10px;font:12px/1.7 var(--sans)}.help-grid b{font-family:var(--mono);color:var(--accent)}#rotateNotice{display:none;position:absolute;top:110px;left:10%;right:10%;font:11px/1.7 var(--mono);text-align:center;color:var(--muted);pointer-events:none}.status-pill{display:inline-block;background:#d4b27313;color:var(--accent);border:1px solid #d4b27333;padding:4px 8px;font:9px var(--mono);margin-left:7px}.test-info{font:10px var(--mono);color:var(--muted)}
@@ -1031,6 +1031,18 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
   padding:12px 0 14px!important;
   width:100%;box-sizing:border-box;
 }
+
+/* 0.44.2: keep every saved route and its budget readable before replacement. */
+#shell.dl43-ui .dl442-profile-list{margin:12px 0 0;padding:0}
+#shell.dl43-ui .dl442-profile-row{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;
+  gap:4px 12px;padding:8px 0;border-top:1px solid #c6d4ca20;
+  font:12px/1.5 var(--mono);
+}
+#shell.dl43-ui .dl442-profile-row dt,
+#shell.dl43-ui .dl442-profile-row dd{margin:0}
+#shell.dl43-ui .dl442-profile-row dd{white-space:nowrap;color:var(--accent)}
+#shell.dl43-ui #confirmImport,#shell.dl43-ui #cancelImport{min-height:44px}
 </style>
 </head>
 <body>
@@ -1289,7 +1301,7 @@ function drawScene(){ctx.clearRect(0,0,W,H);ctx.save();if(data.settings.motion&&
 if(run)run.traps.forEach((t,i)=>drawTrap(t,i,phase==='camp'));for(const f of fires){for(let i=0;i<10;i++){const x=f.x-80+i*17,y=f.y-6;ellipse(x,y,13,5,'#e7a15c33');ctx.fillStyle=`rgba(222,143,63,${Math.min(.7,f.life/2)})`;ctx.beginPath();ctx.moveTo(x-7,y);ctx.quadraticCurveTo(x-10,y-24,x+Math.sin(worldTime*10+i)*9,y-29-(Math.sin(i+worldTime*7)+1)*15);ctx.quadraticCurveTo(x+12,y-20,x+9,y);ctx.fill();}}
 [...enemies].sort((a,b)=>a.feet-b.feet||a.id-b.id).forEach(z=>drawZombie(z));drawOccluders();drawBarricade();drawPlayer();drawEquipment();for(const p of projectiles){if(p.kind==='grenade'){ellipse(p.x,p.y,5,5,'#d5be84');line(p.x,p.y,p.x+7,p.y-5,'#899270',2);}else{ellipse(p.x,p.y,9,5,'#b6b776');ellipse(p.x-12,p.y,9,3,'#b6b77655');}}
 for(const t of tracers){ctx.globalAlpha=clamp(t.life/.09,0,1);line(t.x,t.y,t.tx,t.ty,t.ally?'#b6c5a0':t.heavy?'#f0d5a0':'#dfc18c',t.heavy?2:1);}ctx.globalAlpha=1;
-for(const p of particles){ctx.globalAlpha=clamp(p.life/p.max,0,1);if(p.type==='ring'){ctx.strokeStyle=p.color;ctx.lineWidth=4*p.life/p.max;ctx.beginPath();ctx.arc(p.x,p.y,p.size*(1-p.life/p.max),0,Math.PI*2);ctx.stroke();}else rect(p.x,p.y,p.size,p.size,p.color);}ctx.globalAlpha=1;
+for(const p of particles){ctx.globalAlpha=clamp(p.life/p.max,0,1)*(p.type==='spark'||p.type==='ring'?dl442FlashOpacity():1);if(p.type==='ring'){ctx.strokeStyle=p.color;ctx.lineWidth=4*p.life/p.max;ctx.beginPath();ctx.arc(p.x,p.y,p.size*(1-p.life/p.max),0,Math.PI*2);ctx.stroke();}else rect(p.x,p.y,p.size,p.size,p.color);}ctx.globalAlpha=1;
 for(const f of floating){ctx.globalAlpha=clamp(f.life/.6,0,1);label(f.text,f.x,f.y,11,f.color,'center');}ctx.globalAlpha=1;
 // Rain and near foreground are independent depth layers; no camera scrolling is required.
 if(conditionFor()===CONDITIONS.rain||siteFor().id==='depot'){ctx.strokeStyle='#93bacb22';ctx.lineWidth=1;ctx.beginPath();for(const r of rains){const y=(r.y+worldTime*r.s)%H,x=(r.x+worldTime*40)%W;ctx.moveTo(x,y);ctx.lineTo(x-5,y+r.len);}ctx.stroke();}rect(0,745,W,65,'#0e1c20');line(0,745,W,745,'#344744',2);for(let x=20;x<900;x+=98)rect(x,746,46,4,'#80795733');
@@ -2835,7 +2847,7 @@ function depthEffects(){
  for(const p of projectiles){const feet=p.ground??(p.ty<530?494:620),q=p.kind==='grenade'?depthThrownScreen(p):worldScreen(p.x,p.y,feet);ellipse(q.x,q.y,(p.kind==='acid'?8:5)*q.scale,(p.kind==='acid'?6:5)*q.scale,p.kind==='acid'?'#c6ce8c':'#f1c899');}
  for(const t of tracers){const a=t.screen?t:t.ally?depthSupportMuzzle(t):worldScreen(t.x,t.y,inferFeet(t.x,t.y)),b=t.screen?{x:t.tx,y:t.ty}:worldScreen(t.tx,t.ty,inferFeet(t.tx,t.ty));ctx.globalAlpha=clamp(t.life/.09,0,1);line(a.x,a.y,b.x,b.y,t.ally?'#b7d6bd':'#f1d69d',t.heavy?2:1);}
  ctx.globalAlpha=1;
- for(const p of particles){const q=worldScreen(p.x,p.y,p.ground??null);ctx.globalAlpha=clamp(p.life/p.max,0,1);if(p.type==='ring'){ctx.strokeStyle=p.color;ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(q.x,q.y,Math.max(.1,p.size*(1-p.life/p.max)*q.scale),Math.max(.1,p.size*.35*(1-p.life/p.max)*q.scale),0,0,Math.PI*2);ctx.stroke();}else rect(q.x,q.y,p.size*Math.min(q.scale,2),p.size*Math.min(q.scale,2),p.color);}
+ for(const p of particles){const q=worldScreen(p.x,p.y,p.ground??null);ctx.globalAlpha=clamp(p.life/p.max,0,1)*(p.type==='spark'||p.type==='ring'?dl442FlashOpacity():1);if(p.type==='ring'){ctx.strokeStyle=p.color;ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(q.x,q.y,Math.max(.1,p.size*(1-p.life/p.max)*q.scale),Math.max(.1,p.size*.35*(1-p.life/p.max)*q.scale),0,0,Math.PI*2);ctx.stroke();}else rect(q.x,q.y,p.size*Math.min(q.scale,2),p.size*Math.min(q.scale,2),p.color);}
  ctx.globalAlpha=1;for(const f of floating){const p=worldScreen(f.x,f.y,f.ground??null);ctx.globalAlpha=clamp(f.life/.6,0,1);label(f.text,p.x,p.y,12,f.color,'center');}ctx.globalAlpha=1;
  for(const d of decoys){const p=depthGround(d.x,d.lane===0?494:620);ellipse(p.x,p.y,15*p.scale,6*p.scale,'#e9d19988');ctx.strokeStyle='#e4cd9670';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(p.x,p.y,(25+(worldTime*35)%45)*p.scale,10*p.scale,0,0,Math.PI*2);ctx.stroke();}
 }
@@ -4691,6 +4703,7 @@ showScreen=function(id){
 };
 window.addEventListener('keydown',e=>{
  if(e.ctrlKey||e.metaKey||e.altKey||e.isComposing||e.repeat||$('dialogScreen').classList.contains('hidden'))return;
+ if(v442HandleBindingSafety(e))return;
  if(e.key==='Tab'){
   const items=modalControls(),active=document.activeElement;let to=null;
   if(!items.length)to=$('dialogBody');
@@ -4809,7 +4822,7 @@ function showProfileConflict(){
  clearCombatInput();const current=profileStorageRaw();let candidate=null;
  try{if(current.ok&&current.raw)candidate=decodeSave(current.raw);}catch(_){}
  phase='profileConflict';showScreen('dialogScreen');
- const label=candidate?[candidate.save,candidate.reserve,candidate.northReserve,candidate.metroReserve,candidate.airReserve].filter(Boolean).map(checkpointLabel).join(' / '):'La copie du navigateur est absente ou illisible.';
+ const label=candidate?dl442ProfilePreparations(candidate).map(checkpointLabel).join(' / '):'La copie du navigateur est absente ou illisible.';
  $('dialogBody').innerHTML=`<div class="eyebrow">SAUVEGARDE PROTÉGÉE</div><h2>DEUX SESSIONS, DEUX CHOIX</h2><p>La copie du navigateur a changé ou ne peut plus être lue. Vos préparatifs n’ont pas été écrits par-dessus. Exportez cette session avant de choisir ce que vous gardez.</p><p class="notice">${escapeHTML(label||'Profil sans préparation.')}</p><p>Reprendre la copie du navigateur abandonne les changements non enregistrés de cette session. Les deux profils ne seront pas mélangés.</p><div class="buttons"><button id="exportConflict">EXPORTER CETTE SESSION</button><button id="adoptStored" ${candidate?'':'disabled'}>REPRENDRE LA COPIE DU NAVIGATEUR</button><button id="keepLocalSession" class="primary">GARDER CETTE SESSION À PART</button></div><p class="save-note">À part : le jeu reste utilisable, mais seule une copie JSON conserve vos changements.</p>`;
  $('exportConflict').onclick=exportProfile;$('adoptStored').onclick=adoptStoredProfile;$('keepLocalSession').onclick=keepProfileSeparate;
  refreshProfileWarning();
@@ -4846,9 +4859,9 @@ const safekeepingSaveManager=showSaveManager;
 showSaveManager=function(){safekeepingSaveManager();if(phase!=='saveManager')return;
  const entries=readRecoveryEntries();let invalid=null;
  try{const raw=localStorage.getItem(STORE+'-invalid');if(raw)invalid=raw;}catch(_){}
- const rows=entries.map((e,i)=>{const p=decodeSave(e.text),date=new Date(e.at).toLocaleString('fr-FR'),labels=[p.save,p.reserve,p.northReserve,p.metroReserve,p.airReserve].filter(Boolean).map(checkpointLabel).join(' / ');
+ const rows=entries.map((e,i)=>{const p=decodeSave(e.text),date=new Date(e.at).toLocaleString('fr-FR'),labels=dl442ProfilePreparations(p).map(checkpointLabel).join(' / ');
   return `<article class="recovery-entry"><h3>${escapeHTML(labels||'Progression seule')}</h3><p>${escapeHTML(date)} · ${fmt(p.meta.xp)} XP</p><button data-restore-history="${i}">EXAMINER CETTE COPIE</button></article>`;}).join('');
- $('dialogBody').insertAdjacentHTML('beforeend',`<section class="recovery-section"><div class="section-label">COPIES DE SECOURS</div><h3>Revenir sur ses pas</h3><p>Jusqu’à trois états récents sont conservés dans ce navigateur, lorsque le stockage le permet. Les examiner ne charge rien. La confirmation d’import remplace le profil complet, avec ses deux préparations.</p>${rows||'<p>Aucune copie de secours utilisable pour le moment.</p>'}${invalid?'<p>Une ancienne copie illisible a été laissée intacte. Elle n’est pas proposée comme point de reprise.</p>':''}<p class="save-note">Ces copies restent sur cet appareil : elles ne remplacent pas un export JSON.</p></section>`);
+ $('dialogBody').insertAdjacentHTML('beforeend',`<section class="recovery-section"><div class="section-label">COPIES DE SECOURS</div><h3>Revenir sur ses pas</h3><p>Jusqu’à trois états récents sont conservés dans ce navigateur, lorsque le stockage le permet. Les examiner ne charge rien. La confirmation d’import remplace le profil complet, avec toutes ses préparations indépendantes.</p>${rows||'<p>Aucune copie de secours utilisable pour le moment.</p>'}${invalid?'<p>Une ancienne copie illisible a été laissée intacte. Elle n’est pas proposée comme point de reprise.</p>':''}<p class="save-note">Ces copies restent sur cet appareil : elles ne remplacent pas un export JSON.</p></section>`);
  $('dialogBody').querySelectorAll('[data-restore-history]').forEach(b=>b.onclick=()=>{const e=entries[Number(b.dataset.restoreHistory)];if(e)stageImport(e.text,'copie de secours');});
 };
 // Destructive trap removal gets a reversible preparation step, never a refund or a refill.
@@ -6985,7 +6998,7 @@ function v20ScreenMuzzle(){if(isDepth())return depthMuzzle();const m=muzzle(),p=
 function v20DrawFeedback(){
  if(!['combat','paused'].includes(phase))return;for(const c of v20Feedback.casings){ctx.save();ctx.translate(c.x,c.y);ctx.rotate(c.rot);rect(-3,-1,c.heavy?8:6,2,c.heavy?'#d0a85f':'#bea56d');ctx.restore();}
  const c=screenCursor(),spread=12+v20Feedback.bloom;ctx.strokeStyle=v20Feedback.kill>0?'#f2d889':v20Feedback.hit>0?'#dbe8d8':'#aebcb2';ctx.lineWidth=v20Feedback.kill>0?2.4:1.5;ctx.globalAlpha=.5+Math.min(.5,v20Feedback.hit*3);line(c.x-spread,c.y,c.x-spread/2,c.y,ctx.strokeStyle,ctx.lineWidth);line(c.x+spread/2,c.y,c.x+spread,c.y,ctx.strokeStyle,ctx.lineWidth);line(c.x,c.y-spread,c.x,c.y-spread/2,ctx.strokeStyle,ctx.lineWidth);line(c.x,c.y+spread/2,c.x,c.y+spread,ctx.strokeStyle,ctx.lineWidth);if(v20Feedback.hit>0){const s=v20Feedback.kill>0?11:8;line(c.x-s,c.y-s,c.x-2,c.y-2,ctx.strokeStyle,ctx.lineWidth);line(c.x+s,c.y-s,c.x+2,c.y-2,ctx.strokeStyle,ctx.lineWidth);line(c.x-s,c.y+s,c.x-2,c.y+2,ctx.strokeStyle,ctx.lineWidth);line(c.x+s,c.y+s,c.x+2,c.y+2,ctx.strokeStyle,ctx.lineWidth);}ctx.globalAlpha=1;
- if(v20Feedback.damage>0||v20Feedback.blast>0){const a=Math.max(v20Feedback.damage*.36,v20Feedback.blast*.22);const g=ctx.createRadialGradient(W/2,H/2,160,W/2,H/2,720);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,v20Feedback.damage>v20Feedback.blast?`rgba(150,24,18,${a})`:`rgba(220,144,55,${a})`);ctx.fillStyle=g;ctx.fillRect(0,0,W,H);}
+ if(v20Feedback.damage>0||v20Feedback.blast>0){const a=Math.max(v20Feedback.damage*.36,v20Feedback.blast*.22)*dl442FlashOpacity();const g=ctx.createRadialGradient(W/2,H/2,160,W/2,H/2,720);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,v20Feedback.damage>v20Feedback.blast?`rgba(150,24,18,${a})`:`rgba(220,144,55,${a})`);ctx.fillStyle=g;ctx.fillRect(0,0,W,H);}
  v20DrawCrewPresence();
 }
 function v20CrewColor(id){let h=0;for(const c of id)h=(h*31+c.charCodeAt(0))%360;return `hsl(${h} 22% 46%)`;}
@@ -8336,7 +8349,7 @@ function exportProfile(){try{const text=exportText(),blob=new Blob([text],{type:
 function displaySaveError(message){let el=$('saveError');if(el){el.textContent=message;el.classList.remove('hidden');}else notify(message);}
 function stageImport(text,source='fichier'){const importBase=profileStorageRaw();let candidate;try{candidate=decodeSave(text);}catch(e){displaySaveError('Import refusé : '+e.message);return false;}phase='saveConfirm';showScreen('dialogScreen');$('dialogBody').innerHTML=`<div class="eyebrow">IMPORT ${escapeHTML(source.toUpperCase())}</div><h2>REMPLACER LE PROFIL ?</h2><p>Le profil actuel sera conservé dans une copie de secours locale lorsque le stockage est disponible. L’import remplace la progression et la partie, sans les fusionner.</p><div class="save-stats">Rang ${rankOf(candidate.meta.xp)} · ${fmt(candidate.meta.xp)} XP<br>${candidate.save?'Préparation de la nuit '+candidate.save.night+' · '+fmt(candidate.save.cash)+' CR':'Aucune partie en cours'}</div><div class="buttons"><button id="confirmImport" class="primary">REMPLACER ET CHARGER</button><button id="cancelImport">ANNULER</button></div>`;
 $('confirmImport').onclick=()=>{if(!authorizeProfileReplacement(importBase))return;try{localStorage.setItem(STORE+'-backup',JSON.stringify(data));}catch(e){}data=candidate;run=null;resetWorld();persist();loadNotice='Profil importé et validé.';showMenu();};$('cancelImport').onclick=showSaveManager;return true;}
-function showSaveManager(){if(!['menu','saveManager','saveConfirm'].includes(phase))return;phase='saveManager';showScreen('dialogScreen');$('dialogBody').innerHTML=`<div class="eyebrow">PROFIL / TRANSFERT LOCAL</div><h2>GARDER LA LIGNE</h2><p>Exportez votre progression et la dernière préparation de nuit dans un fichier JSON. Importer remplace le profil après confirmation. Aucune connexion, aucun compte.</p><div class="buttons"><button id="exportSave" class="primary">EXPORTER LE PROFIL</button><button id="importSave">IMPORTER UN FICHIER</button><button id="restoreBackup">COPIE DE SECOURS</button></div><p class="save-note">Le stockage d’un fichier HTML ouvert directement peut varier selon le navigateur et son chemin. L’export JSON évite de dépendre de ce stockage pour transférer le profil. Les sauvegardes v1, v2, v3, v4, v5, v6, v7 et v8 sont migrées seulement lorsqu’elles sont accessibles depuis cette page, ou via import.</p><label for="savePaste" class="section-label">OU COLLER UNE SAUVEGARDE JSON V1 / V2 / V3 / V4 / V5 / V6 / V7 / V8 / V9 / V10 / V11</label><textarea id="savePaste" class="save-textarea" spellcheck="false" placeholder="Collez le contenu du fichier de sauvegarde ici"></textarea><div id="saveError" class="notice hidden"></div><div class="buttons"><button id="importPaste">VÉRIFIER CE TEXTE</button><button id="leaveSaves">RETOUR AU MENU</button></div>`;$('exportSave').onclick=exportProfile;$('importSave').onclick=()=>{$('saveFile').value='';$('saveFile').click();};$('importPaste').onclick=()=>stageImport($('savePaste').value,'texte');$('restoreBackup').onclick=()=>{try{const t=localStorage.getItem(STORE+'-backup');if(t)stageImport(t,'copie locale');else displaySaveError('Aucune copie de secours disponible.');}catch(e){displaySaveError('Stockage inaccessible.');}};$('leaveSaves').onclick=showMenu;}
+function showSaveManager(){if(!['menu','saveManager','saveConfirm'].includes(phase))return;phase='saveManager';showScreen('dialogScreen');$('dialogBody').innerHTML=`<div class="eyebrow">PROFIL / TRANSFERT LOCAL</div><h2>GARDER LA LIGNE</h2><p>Exportez votre progression et la dernière préparation de nuit dans un fichier JSON. Importer remplace le profil après confirmation. Aucune connexion, aucun compte.</p><div class="buttons"><button id="exportSave" class="primary">EXPORTER LE PROFIL</button><button id="importSave">IMPORTER UN FICHIER</button><button id="restoreBackup">COPIE DE SECOURS</button></div><p class="save-note">Le stockage d’un fichier HTML ouvert directement peut varier selon le navigateur et son chemin. L’export JSON évite de dépendre de ce stockage pour transférer le profil. Les sauvegardes des versions 1 à 12 sont prises en charge lorsqu’elles sont accessibles depuis cette page, ou via import.</p><label for="savePaste" class="section-label">OU COLLER UNE SAUVEGARDE JSON · VERSIONS 1 À 12</label><textarea id="savePaste" class="save-textarea" spellcheck="false" placeholder="Collez le contenu du fichier de sauvegarde ici"></textarea><div id="saveError" class="notice hidden"></div><div class="buttons"><button id="importPaste">VÉRIFIER CE TEXTE</button><button id="leaveSaves">RETOUR AU MENU</button></div>`;$('exportSave').onclick=exportProfile;$('importSave').onclick=()=>{$('saveFile').value='';$('saveFile').click();};$('importPaste').onclick=()=>stageImport($('savePaste').value,'texte');$('restoreBackup').onclick=()=>{try{const t=localStorage.getItem(STORE+'-backup');if(t)stageImport(t,'copie locale');else displaySaveError('Aucune copie de secours disponible.');}catch(e){displaySaveError('Stockage inaccessible.');}};$('leaveSaves').onclick=showMenu;}
 $('saveManagerBtn').onclick=showSaveManager;
 $('saveFile').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;if(f.size>2000000){displaySaveError('Fichier trop volumineux : maximum 2 Mo.');return;}try{const t=await f.text();if(phase==='saveManager')stageImport(t);}catch(e){displaySaveError('Lecture impossible.');}});
 
@@ -9923,7 +9936,7 @@ function drawWeapon(p){
  if(/flame/.test(id)){ctx.strokeStyle='#b79662';ctx.lineWidth=7;ctx.beginPath();ctx.moveTo(receiverX+30,Wd*.55);ctx.quadraticCurveTo(receiverX+65,Wd*1.3,barrelX+12,Wd*.3);ctx.stroke();}
  if(/net/.test(id)){ctx.strokeStyle='#9eaa91';ctx.lineWidth=2;for(let i=0;i<4;i++){ctx.beginPath();ctx.moveTo(barrelX+12+i*10,-Wd*.45);ctx.lineTo(barrelX+12+i*10,Wd*.45);ctx.stroke();}}
  if(typeof flash==='number'&&flash>0&&gamePhase()==='combat'&&!(typeof v26EffectsEnabled==='function'&&v26EffectsEnabled())){
-   const mx=L,my=0,g=ctx.createRadialGradient(mx,my,0,mx,my,Wd*1.8);g.addColorStop(0,'#fffbd3');g.addColorStop(.24,'#ffd069');g.addColorStop(1,'rgba(255,102,24,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(mx,my,Wd*1.8,0,Math.PI*2);ctx.fill();
+   ctx.globalAlpha*=dl442FlashOpacity();const mx=L,my=0,g=ctx.createRadialGradient(mx,my,0,mx,my,Wd*1.8);g.addColorStop(0,'#fffbd3');g.addColorStop(.24,'#ffd069');g.addColorStop(1,'rgba(255,102,24,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(mx,my,Wd*1.8,0,Math.PI*2);ctx.fill();
  }
  ctx.restore();
  V35.draws++;
@@ -11441,7 +11454,7 @@ function dl410DrawRearPlayer(){
  const p=dl410RearPlayerPlan(),art=dl408PlayerArt();ctx.save();ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
  ellipse(p.x,p.feet,Math.max(5,23*p.scale),Math.max(2,5*p.scale),'#051014b0');
  if(!v26ActorsEnabled()||!dl403Figure(art,p.x,p.feet,p.height,p.flip))dl408FallbackFigure(p.x,p.feet,p.height,p.flip);
- if(flash>0){const m=dl410RearMuzzle();ellipse(m.x,m.y,Math.max(2,5*p.scale),Math.max(1,3*p.scale),'#ffe3a6cc');}
+ if(flash>0){const m=dl410RearMuzzle();ctx.globalAlpha*=dl442FlashOpacity();ellipse(m.x,m.y,Math.max(2,5*p.scale),Math.max(1,3*p.scale),'#ffe3a6cc');}
  ctx.restore();DL410.rearPlayerDraws++;DL403.playerPasses++;DL410.lastRearPlayer=p;return true;
 }
 function dl410RearMuzzle(){const p=dl410RearPlayerPlan(),r=p.height/320,a=DL408_ART_MUZZLE[dl408PlayerArt().replace('v26-player-','')]||DL408_ART_MUZZLE.idle;return{x:p.x+(a[0]-160)*r,y:p.feet+(a[1]-302)*r};}
@@ -11564,6 +11577,255 @@ function dl441CancelRoadJump(z) {
   z.road.warn = 0;
   z.road.jump = 6;
 }
+
+/* 0.44.2 — Every route shares the after-action report and preparation retry. */
+
+function dl442OfferDefeatRetry(checkpoint) {
+  // This is the exact preparation captured by the native departure flow. It is
+  // never rebuilt from a starting kit and never merged with another route.
+  v21DefeatCheckpoint = checkpoint;
+  if (!checkpoint) return;
+  const body = $('dialogBody'), buttons = body?.querySelector('.buttons');
+  if (!buttons || $('v21RetryNight')) return;
+  const button = document.createElement('button');
+  button.id = 'v21RetryNight';
+  button.className = 'primary';
+  button.textContent = 'REPRENDRE LA PRÉPARATION';
+  button.onclick = v21RestoreDefeatCheckpoint;
+  buttons.prepend(button);
+  const notice = document.createElement('div');
+  notice.className = 'notice';
+  notice.textContent = 'Point de reprise disponible : retour au budget, aux munitions et aux consommables de la préparation avant départ. La progression de profil déjà acquise reste conservée.';
+  const paragraph = body.querySelector('p');
+  if (paragraph) paragraph.after(notice);
+  else buttons.before(notice);
+}
+
+// The later Highway, Water, Tower and Dark handlers return before the older
+// telemetry/retry wrappers. Reconcile their common aftermath at the outer edge,
+// while retaining each route's native defeat screen and settlement rules.
+const dl442EndRunPrior = endRun;
+endRun = function(victory) {
+  const endedRun = run, endedWave = wave;
+  const checkpoint = !victory && !practiceSession && endedWave?.v21RetryCheckpoint
+    ? clone(endedWave.v21RetryCheckpoint) : null;
+  const out = dl442EndRunPrior(victory);
+  if (victory || phase !== 'defeat' || practiceSession || run !== endedRun || wave !== endedWave) return out;
+  // The native recorded flag makes this a no-op for routes already handled by
+  // the older wrapper. Repeated end notifications cannot add a second report.
+  const session = v21CommitSession('defeat');
+  if (session) v21InjectDialogReport(session);
+  dl442OfferDefeatRetry(checkpoint);
+  return out;
+};
+
+queueMicrotask(() => {
+  if (window.__DL) window.__DL.endRun = endRun;
+});
+
+/* 0.44.2 — Input ownership, safe rebinding and resumed fire.
+ * Injected inside the engine closure, after its existing input handlers.
+ * Hardware state stays in padState; no save schema or action mapping changes.
+ */
+let v442PadFireNeedsRelease=false;
+let v442LastNonPadMode=inputMode==='pointer'?'pointer':'keyboard';
+function v442PadTrigger(p){return padValue(p,7)>.35||padPressed(p,7);}
+
+const v442ClearInputPrior=clearCombatInput;
+clearCombatInput=function(){
+ // A held trigger must be released after a pause, blur or screen transition,
+ // just as a pointer must be pressed again after losing its capture.
+ v442PadFireNeedsRelease=true;
+ padState.shooting=false;
+ return v442ClearInputPrior.apply(this,arguments);
+};
+const v442PadAimPrior=updatePadAim;
+updatePadAim=function(p,dt){
+ if(!v442PadTrigger(p))v442PadFireNeedsRelease=false;
+ const out=v442PadAimPrior(p,dt);
+ if(v442PadFireNeedsRelease&&aimPointerId===null){shootHeld=false;padState.shooting=false;}
+ return out;
+};
+
+const v442InputModePrior=setInputMode;
+setInputMode=function(mode){
+ if(mode!=='gamepad')v442LastNonPadMode=mode;
+ const out=v442InputModePrior(mode);
+ // Legacy CSS uses this class for its action glyphs and help text. Its visual
+ // state follows the device being used; padState retains connection status.
+ $('shell').classList.toggle('gamepad-connected',mode==='gamepad'&&padState.connected);
+ return out;
+};
+const v442GamepadPrior=tickGamepad;
+tickGamepad=function(now,dt){
+ const p=activePad();
+ let usedPad=false;
+ const previousNonPadMode=v442LastNonPadMode;
+ if(p){
+  if(!padState.connected)v442PadFireNeedsRelease=true;
+  if(!v442PadTrigger(p))v442PadFireNeedsRelease=false;
+  const buttonEdge=p.buttons.some((b,i)=>b.pressed&&!padState.buttons[i]);
+  const movingStick=p.axes.some((_,i)=>axisValue(p,i)!==0);
+  usedPad=buttonEdge||movingStick||(!v442PadFireNeedsRelease&&v442PadTrigger(p)&&!padState.shooting);
+ }
+ const out=v442GamepadPrior(now,dt);
+ if(p&&usedPad){
+  // Let aiming read the previous device before changing it: the first stick
+  // motion starts at the pointer's position. Pad B also emits a synthetic
+  // Escape, which must not make the prompt switch back to keyboard.
+  v442LastNonPadMode=previousNonPadMode;
+  setInputMode('gamepad');
+ }else if(!p){
+  // The disconnect event clears connected before the old polling handler can
+  // remove its CSS class. Reconcile it even when no new pad event arrives.
+  if(padState.shooting&&aimPointerId===null)shootHeld=false;
+  padState.shooting=false;
+  if(inputMode==='gamepad')setInputMode(v442LastNonPadMode);
+ }
+ $('shell').classList.toggle('gamepad-connected',!!p&&inputMode==='gamepad');
+ return out;
+};
+
+const v442BindingUIPrior=v21RefreshBindingUI;
+v21RefreshBindingUI=function(){
+ const focused=document.activeElement?.dataset?.v21Bind;
+ const out=v442BindingUIPrior();
+ if(focused&&phase==='settings'){
+  const button=[...($('v21BindingList')?.querySelectorAll('[data-v21-bind]')||[])].find(b=>b.dataset.v21Bind===focused);
+  button?.focus({preventScroll:true});
+ }
+ return out;
+};
+
+// Called by the existing window capture listener before its modal focus trap.
+// Escape cancels capture in place; Tab cancels capture then keeps normal focus
+// navigation. Neither key can become a gameplay binding.
+function v442HandleBindingSafety(e){
+ if(!v21BindingCapture)return false;
+ if(e.key!=='Escape'&&e.key!=='Tab')return false;
+ v21BindingCapture=null;
+ v21RefreshBindingUI();
+ if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();return true;}
+ return false;
+}
+const v442InputScreenPrior=showScreen;
+showScreen=function(id){
+ if(phase!=='settings'||id!=='dialogScreen')v21BindingCapture=null;
+ return v442InputScreenPrior.apply(this,arguments);
+};
+document.addEventListener('pointerdown',e=>{
+ if(v21BindingCapture&&!e.target?.closest?.('[data-v21-bind]')){
+  v21BindingCapture=null;v21RefreshBindingUI();
+ }
+},true);
+
+/* 0.44.2 — Audio controls and motion preferences apply to the complete feedback path.
+   Injected inside the engine closure. No simulation, economy or save-schema changes. */
+const DL442Feedback={version:'0.44.2',routedHums:new WeakSet(),gainTargets:new WeakMap(),routedCount:0};
+
+function dl442RouteLegacyAmbience(){
+ const c=dlAudio.ctx,bus=dlAudio.ambience;
+ if(!c||!bus)return;
+ // These route-specific sources predate or follow the unified mixer and used to
+ // bypass both the master slider and the ambience slider via c.destination.
+ for(const hum of [metroHum,airHum,highwayHum,waterHum,towerHum,darkHum]){
+  const gain=hum?.gain;if(!gain||DL442Feedback.routedHums.has(gain))continue;
+  try{gain.disconnect(c.destination);gain.connect(bus);DL442Feedback.routedHums.add(gain);DL442Feedback.routedCount++;}
+  catch(_){/* Audio-device failures must not interrupt the game. */}
+ }
+}
+
+// Keep the existing slider curve, bus levels and compressor settings. Zero is a
+// true mute after a short fade; rapid off/on changes cannot retain a pending mute.
+syncAudioMix=function(immediate=false){
+ const c=dlAudio.ctx;if(!c)return;ensureAudioSettings();const t=c.currentTime;
+ for(const [node,value] of [[dlAudio.master,audioMasterLevel()],[dlAudio.sfx,audioValue('sfxVolume')],[dlAudio.ambience,audioValue('ambienceVolume')],[dlAudio.music,audioValue('musicVolume')]]){
+  if(!node)continue;const gain=node.gain;
+  if(!immediate&&DL442Feedback.gainTargets.get(gain)===value)continue;
+  DL442Feedback.gainTargets.set(gain,value);const current=gain.value;
+  gain.cancelScheduledValues(t);gain.setValueAtTime(current,t);
+  if(immediate)gain.setValueAtTime(value,t);
+  else if(value===0)gain.linearRampToValueAtTime(0,t+.025);
+  else gain.setTargetAtTime(value,t,.08);
+ }
+ if(dlAudio.compressor){dlAudio.compressor.threshold.setTargetAtTime(data.settings.nightMix?-30:-16,t,.08);dlAudio.compressor.ratio.setTargetAtTime(data.settings.nightMix?8:4,t,.08);}
+};
+
+function dl442PublishAudioState(){
+ const button=$('soundBtn'),enabled=String(!!data.settings.sound);
+ if(button&&button.dataset.audioEnabled!==enabled)button.dataset.audioEnabled=enabled;
+ window.DL44UI?.syncAudioState?.();
+}
+
+const dl442FeedbackHUDPrior=updateHUD;
+updateHUD=function(...args){
+ const out=dl442FeedbackHUDPrior.apply(this,args);
+ if(dlAudio.ctx){dl442RouteLegacyAmbience();syncAudioMix();}
+ dl442PublishAudioState();return out;
+};
+
+// The original motion switch already disables the Canvas shake. It must also
+// disable the later CSS recoil transform on that same Canvas.
+const dl442CanvasImpactPrior=v20ApplyCanvasImpact;
+v20ApplyCanvasImpact=function(){
+ if(data.settings.motion===false){const el=$('game');if(el)el.style.transform='';return;}
+ return dl442CanvasImpactPrior();
+};
+
+// Share one comfort factor between image effects and their procedural fallbacks.
+// Leave impact markers, blood, smoke, tracers and threat warnings readable.
+function dl442FlashOpacity(){return data.settings.reducedFlashes ? 0.25 : 1;}
+const dl442FlashingEffects=new Set(['muzzle1','muzzle2','sparks','explosion']);
+const dl442EffectImagePrior=v26DrawEffectImage;
+v26DrawEffectImage=function(name,x,y,size,alpha=1,rotation=0){
+ return dl442EffectImagePrior(name,x,y,size,alpha*(dl442FlashingEffects.has(name)?dl442FlashOpacity():1),rotation);
+};
+
+dl442RouteLegacyAmbience();if(dlAudio.ctx)syncAudioMix();dl442PublishAudioState();
+queueMicrotask(()=>{if(window.__DL)window.__DL.feedback442={
+ version:DL442Feedback.version,
+ audio:()=>({context:dlAudio.ctx?.state||'absent',master:dlAudio.master?.gain.value??null,sfx:dlAudio.sfx?.gain.value??null,ambience:dlAudio.ambience?.gain.value??null,music:dlAudio.music?.gain.value??null,routedHums:DL442Feedback.routedCount}),
+ sync:immediate=>syncAudioMix(immediate)
+};});
+
+/* 0.44.2 — Profile previews describe all independent preparations.
+   Read-only presentation; validation, confirmation and storage guards stay native. */
+function dl442ProfilePreparations(profile) {
+  return V33_CHECKPOINT_KEYS.map(key => profile?.[key]).filter(Boolean);
+}
+
+const dl442StageImportPrior = stageImport;
+stageImport = function(text, source = 'fichier') {
+  const result = dl442StageImportPrior(text, source);
+  if (!result || phase !== 'saveConfirm') return result;
+  const candidate = decodeSave(text), stats = $('dialogBody').querySelector('.save-stats');
+  if (!stats) return result;
+  const preparations = dl442ProfilePreparations(candidate);
+  stats.textContent = 'Rang ' + rankOf(candidate.meta.xp) + ' · ' + fmt(candidate.meta.xp) + ' XP';
+  if (preparations.length) {
+    const list = document.createElement('dl');
+    list.className = 'dl442-profile-list';
+    for (const preparation of preparations) {
+      const item = document.createElement('div');
+      item.className = 'dl442-profile-row';
+      const label = document.createElement('dt'), budget = document.createElement('dd');
+      label.textContent = checkpointLabel(preparation);
+      budget.textContent = fmt(preparation.cash) + ' CR';
+      item.append(label, budget);
+      list.appendChild(item);
+    }
+    stats.appendChild(list);
+  } else {
+    const empty = document.createElement('p');
+    empty.textContent = 'Aucune préparation enregistrée.';
+    stats.appendChild(empty);
+  }
+  return result;
+};
+
+queueMicrotask(() => {
+  if (window.__DL) window.__DL.stageImport = stageImport;
+});
 
 
 })();
@@ -11756,7 +12018,7 @@ ensureLayer();requestAnimationFrame(tick);requestAnimationFrame(gamepadTick);
 <script id="dl42-ui-script">/* DERNIERE LIGNE 0.42.0 — POSTE DE COMMANDEMENT UI */
 (()=>{
 'use strict';
-const VERSION='0.44.1';
+const VERSION='0.44.2';
 const $id=id=>document.getElementById(id);
 const shell=$id('shell');
 if(!shell||shell.dataset.dl42Installed==='1')return;
@@ -11806,7 +12068,7 @@ function showDL42About(){
 }
 function aboutPass(){const b=$id('aboutGame');if(b&&!b.dataset.dl42About){b.dataset.dl42About='1';b.onclick=showDL42About;}}
 function inputLegend(){
- const pad=shell.classList.contains('gamepad-connected');shell.dataset.dl42Input=pad?'gamepad':'keyboard';
+ const mode=shell.dataset.input||'keyboard',pad=mode==='gamepad';shell.dataset.dl42Input=mode;
  const legend=$id('dl42ControlLegend');if(!legend)return;legend.querySelectorAll('[data-kb]').forEach(e=>e.hidden=pad);legend.querySelectorAll('[data-pad]').forEach(e=>e.hidden=!pad);
 }
 function combatLine(){
@@ -11842,7 +12104,8 @@ if(typeof showMenu==='function'){
 window.addEventListener('keydown',e=>{if(e.code==='F10'){e.preventDefault();toggleFullscreen();}},true);
 document.addEventListener('fullscreenchange',fullscreenLabel);
 document.addEventListener('focusin',focusPass,true);document.addEventListener('focusout',()=>queueMicrotask(focusPass),true);
-document.addEventListener('pointerdown',()=>{shell.dataset.dl42Input='mouse';},true);
+document.addEventListener('pointerdown',()=>queueMicrotask(inputLegend),true);
+document.addEventListener('keydown',()=>queueMicrotask(inputLegend),true);
 window.addEventListener('gamepadconnected',()=>setTimeout(inputLegend,50));window.addEventListener('gamepaddisconnected',()=>setTimeout(inputLegend,50));
 
 // Keep combat chrome synchronized with the real HUD update without touching combat values.
@@ -11855,11 +12118,11 @@ addChrome();decorate();combatLine();
 window.DL42UI={version:VERSION,toggleFullscreen,decorate,combatLine,sceneFlash};
 })();
 </script>
-<script id="dl44-ui-script">/* DERNIERE LIGNE 0.44.1 — QA INTÉGRALE
+<script id="dl44-ui-script">/* DERNIERE LIGNE 0.44.2 — POSTE STABILISÉ
    Progressive disclosure / compact HUD. Presentation only. */
 (()=>{
 'use strict';
-const VERSION='0.44.1';
+const VERSION='0.44.2';
 const $=id=>document.getElementById(id),shell=$('shell');
 if(!shell||shell.dataset.dl44Installed==='1')return;
 shell.dataset.dl44Installed='1';shell.classList.add('dl43-ui');
@@ -11943,10 +12206,17 @@ function compactObjective(){
   if(current!==compact)o.textContent=compact;
  }else{o.dataset.dl43Compact='';o.title=full;}
 }
+function syncAudioState(){
+ const sound=$('soundBtn');if(!sound)return;
+ const enabled=sound.dataset.audioEnabled==='true',label=enabled?'Audio activé':'Audio désactivé';
+ if(sound.title!==label)sound.title=label;if(sound.textContent!=='♪')sound.textContent='♪';
+ if(sound.getAttribute('aria-label')!==label)sound.setAttribute('aria-label',label);
+ if(sound.getAttribute('aria-pressed')!==String(enabled))sound.setAttribute('aria-pressed',String(enabled));
+}
 function compactCombatChrome(){
  ensureActionGroups();
  const brand=document.querySelector('#hud .brand');if(brand)brand.setAttribute('aria-hidden','true');
- const sound=$('soundBtn');if(sound){const enabled=typeof data!=='undefined'&&!!data.settings?.sound;sound.title=enabled?'Audio activé':'Audio désactivé';sound.textContent='♪';sound.setAttribute('aria-label',sound.title);sound.setAttribute('aria-pressed',String(enabled));}
+ syncAudioState();
  const pause=$('pauseBtn');if(pause){const paused=shell.dataset.phase==='paused';pause.title=paused?'Reprendre':'Pause';pause.textContent=paused?'▶':'Ⅱ';pause.setAttribute('aria-label',pause.title);}
  const fs=$('dl42FullscreenBtn');if(fs){fs.title='Plein écran (F10)';fs.setAttribute('aria-label','Basculer le plein écran');}
  const status=$('weaponStatus');if(status){const important=/RECHARG|CHARGEUR VIDE|RÉPARATION|TRANSMISSION|INSERTION|SUSPENDU/i.test(status.textContent||'');status.classList.toggle('dl43-critical',important);}
@@ -12017,7 +12287,7 @@ document.addEventListener('pointerdown',e=>{if(intelOpen&&shell.dataset.phase===
 setInterval(()=>{versionPass();installAbout();if(shell.dataset.phase==='combat'){compactObjective();compactCombatChrome();}},240);
 
 installAbout();decorate();
-window.DL44UI={version:VERSION,syncVersion:versionPass,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
+window.DL44UI={version:VERSION,syncVersion:versionPass,syncAudioState,decorate,setDetails:v=>{detailsOpen=!!v;applyDensity();},setIntel:v=>{intelOpen=!!v;applyIntel();}};
 })();
 </script>
 </body>

@@ -1,5 +1,7 @@
 # Suivi de développement — 0.44.1
 
+> Bilan historique conservé. La livraison courante et les validations suivantes figurent dans le [suivi 0.44.2](SUIVI_0_44_2.md).
+
 Passe du **29 octobre 2026**, poursuivant le PR d'import des guides après sa fusion dans `main` (`86f491c`). Les corrections sont intégrées dans le moteur existant et dans le HTML autonome livré. Les bases historiques, les guides verrouillés et les rapports de septembre sont conservés.
 
 ## Résultats livrés

@@ -99,7 +99,7 @@ def verify_build_and_syntax():
         shutil.copytree(GAME / "src", temp / "src")
         build = subprocess.run(["node", str(temp / "build.mjs")], cwd=temp, check=True,
                                capture_output=True, text=True)
-        outputs = ["JOUER_DERNIERE_LIGNE.html", "rapports/PATCHES_0_44_1.json"]
+        outputs = ["JOUER_DERNIERE_LIGNE.html", "rapports/PATCHES_0_44_2.json"]
         for relative in outputs:
             if (temp / relative).read_bytes() != (GAME / relative).read_bytes():
                 raise ValueError(f"Build output differs from the shipped release: {relative}")

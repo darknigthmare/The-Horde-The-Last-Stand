@@ -22,7 +22,7 @@ function option(name, fallback) {
 }
 const gameDir = path.resolve(option('--game-dir', path.join(root, 'game')));
 const game = path.join(gameDir, 'JOUER_DERNIERE_LIGNE.html');
-const version = option('--version', '0.44.1');
+const version = option('--version', '0.44.2');
 const out = path.resolve(option('--out', path.join(root, 'artifacts', 'startup-web')));
 const checks = [], diagnostics = [], requests = [], servedRequests = [], views = [];
 let browser, server;

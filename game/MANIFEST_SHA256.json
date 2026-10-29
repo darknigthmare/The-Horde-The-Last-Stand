@@ -1,5 +1,5 @@
 {
-  "version": "0.44.1",
+  "version": "0.44.2",
   "files": [
     {
       "path": "GALERIE_TERRAINS.html",
@@ -8,8 +8,8 @@
     },
     {
       "path": "JOUER_DERNIERE_LIGNE.html",
-      "bytes": 28009917,
-      "sha256": "41cbdef473793442577e366212f229cce62f73d73e4951837da12115207921e4"
+      "bytes": 28022243,
+      "sha256": "7edd451c079b5d72ab31acf6cc49aba4e805801271afd24972d36e49ba65e1d1"
     },
     {
       "path": "RAPPORT_GEOMETRIE_0_41_0.html",
@@ -39,7 +39,7 @@
     {
       "path": "README.md",
       "bytes": 3354,
-      "sha256": "0fdfadd20257fabfaf16ce969dcb625cde0cf769cb8a38f7e4ecefe004a85ac7"
+      "sha256": "6fb2c6e3d0683a5aab3f318ec2b7f128eedf61b29239c58ac74d4f5caffba427"
     },
     {
       "path": "assets/audio/manifest.json",
@@ -528,8 +528,8 @@
     },
     {
       "path": "build.mjs",
-      "bytes": 9904,
-      "sha256": "18b8065f277f92696ffc181947599245a9578fc1e44a3bebdb53ecdc681f8adb"
+      "bytes": 13286,
+      "sha256": "fef25e43e5eb48026cf0fd4a851dfde36e842e0e5040f9cae4ca066fb996f2a8"
     },
     {
       "path": "docs/CHANGEMENTS_0407.md",
@@ -1912,6 +1912,11 @@
       "sha256": "f63132cd6dbba0f5059d1b277ed3e69d8a5e6e700bb156571c6b8b760d594280"
     },
     {
+      "path": "rapports/PATCHES_0_44_2.json",
+      "bytes": 2555,
+      "sha256": "694f8b41b028aaf5df86b47ea600f4b86870bdaf818867c646ef38a634696851"
+    },
+    {
       "path": "rapports/PROTOCOLS_PROD_044.json",
       "bytes": 545,
       "sha256": "501ad84f2693693d92ea67e0354a2a96fd06dc72566d095c87505076c4636c2e"
@@ -2107,6 +2112,16 @@
       "sha256": "05ab5959fcc976ecda1754abea1e8f8f181428ff73415501f0caef8505a3a069"
     },
     {
+      "path": "src/feedback_v442.js",
+      "bytes": 3775,
+      "sha256": "82f76a634341b5c5297c7133b9fccc1cf43d666824aa933c55bbd52e56fcd931"
+    },
+    {
+      "path": "src/input_v442.js",
+      "bytes": 3901,
+      "sha256": "8b7f13dc338b2296e23b9f27130e98bf2767aec9a52d8639b398765caa98d151"
+    },
+    {
       "path": "src/orders.css",
       "bytes": 4775,
       "sha256": "1cb746522c51a91ae975b46562aa0acff4793c3054c236d29f787206c278a667"
@@ -2115,6 +2130,16 @@
       "path": "src/orders.js",
       "bytes": 29565,
       "sha256": "bca2bb78fa6af151005af5f9292a514cf6e66fda73953d7b01809d84b84e3831"
+    },
+    {
+      "path": "src/profile_ui_v442.js",
+      "bytes": 1585,
+      "sha256": "07fc0f13fe7cf9b1878de08d7b28fb8dbf95057400cb95d9a1b7fe05a3c36716"
+    },
+    {
+      "path": "src/progression_v442.js",
+      "bytes": 2111,
+      "sha256": "6771ef07af0e0a1a5bef2b57dbc626fee79d9e86f7f6b94b01ee92bb581d5f8b"
     },
     {
       "path": "src/spatial.js",
@@ -2128,8 +2153,8 @@
     },
     {
       "path": "src/ui_v42.js",
-      "bytes": 9249,
-      "sha256": "1befe9601121e1a9bd448cdd0bff2740eaf2d2768fdf4dd7e019c4e436cdfe79"
+      "bytes": 9305,
+      "sha256": "f2969f859fb0e18d89de950095cfee248b528ef1f226e79b80dc77e373bbd0d9"
     },
     {
       "path": "src/ui_v43.css",
@@ -2143,13 +2168,13 @@
     },
     {
       "path": "src/ui_v44.css",
-      "bytes": 25814,
-      "sha256": "c8563c7d89d0fd1cd39933f18456c85a1786f697b3efccff3e46a54da1171ed7"
+      "bytes": 26399,
+      "sha256": "3bd7860a6ba9ddfbcd95e2255e674bc24a0ce021e3051d726f78caf7d9bf783f"
     },
     {
       "path": "src/ui_v44.js",
-      "bytes": 17249,
-      "sha256": "5ea66e07f9780a97a0db2e5477162d4e34cb2f3a179a4945ef477bfd6f8b7a28"
+      "bytes": 17473,
+      "sha256": "3fd9ca230e29bf6e1161698e05226d08c9dd9213ed19a08831283f1181adc2f0"
     },
     {
       "path": "tests/atelier.py",

@@ -1,0 +1,138 @@
+{
+  "version": "0.44.2",
+  "gameSha256": "7edd451c079b5d72ab31acf6cc49aba4e805801271afd24972d36e49ba65e1d1",
+  "gameChecks": 499,
+  "projectionCases": 61824,
+  "counts": {
+    "combat.json": 67,
+    "startup-web.json": 55,
+    "integration.json": 61,
+    "progression-after.json": 131,
+    "input-after.json": 36,
+    "feedback-after.json": 54,
+    "storage-after.json": 44,
+    "smoke-game.json": 51
+  },
+  "proofs": [
+    {
+      "path": "camp-414x896.png",
+      "bytes": 281612,
+      "sha256": "c310dbcba47ba5b6eaa5cc4265d6c2aa7d30c959ecc96dc4a4ab9a3261cd75ac"
+    },
+    {
+      "path": "combat-1440x900.png",
+      "bytes": 903668,
+      "sha256": "5177c32cd93d37ac4b699da0f7f591df01d0a93bd3bdd09913bc4e507bddcfa3"
+    },
+    {
+      "path": "combat.json",
+      "bytes": 68068,
+      "sha256": "8d2e28c473cbb6d480d89b480dddd67719d11a0f037624af3030af923c27b966"
+    },
+    {
+      "path": "feedback-after.json",
+      "bytes": 74641,
+      "sha256": "2edd33dc97c78a7299632af00485cff88b38e46e176c787c7ed6bb358a322a0d"
+    },
+    {
+      "path": "feedback-before.json",
+      "bytes": 78569,
+      "sha256": "653a55786c41d4a12bcafd7875851225eb5ccf9042dda1c18ba5e8da58f6ebfc"
+    },
+    {
+      "path": "flashes-front-normal.png",
+      "bytes": 1320460,
+      "sha256": "79cae206800d284ce95d6394323a907acb6721be1fbf9b42cdbd5b231797adf7"
+    },
+    {
+      "path": "flashes-front-reduced.png",
+      "bytes": 993841,
+      "sha256": "788cceeb9400990d7be2b959ff1bd0679732d7f8aa415d47be9de4e19fea162e"
+    },
+    {
+      "path": "flashes-sprites-normal.png",
+      "bytes": 1037251,
+      "sha256": "bbdc856bfc6294e27bde3dde7f52cbba45efc2063a07b84c7395f3fd7c3d7276"
+    },
+    {
+      "path": "flashes-sprites-reduced.png",
+      "bytes": 1030707,
+      "sha256": "803720321949ec4a6282706b900daa29747121773fb392985b5d070856332f26"
+    },
+    {
+      "path": "input-after.json",
+      "bytes": 6898,
+      "sha256": "cfdeb9b3fe437d2283efc1e9064676de18565aba7773668dae2a16eb9b58f86e"
+    },
+    {
+      "path": "input-before.json",
+      "bytes": 6881,
+      "sha256": "58bf45ce2fa34299b03d66e5a676b393d6526f2cf934d4db47699caf793107af"
+    },
+    {
+      "path": "integration.json",
+      "bytes": 22936,
+      "sha256": "b2cb01ba0b982d97e4a3ee08131b934f79a01c457707d2447ac2d364d97ec602"
+    },
+    {
+      "path": "profile-import-414x896.png",
+      "bytes": 141928,
+      "sha256": "fba85683137849040386e70ddcc2ba516a51ee0fb547bad5b106ad1439ebdbca"
+    },
+    {
+      "path": "profile-preview.json",
+      "bytes": 1248,
+      "sha256": "c30ae9522eaac5f4cfaf97720cb18c28f0be845709bd1de4245e906bcaec0f89"
+    },
+    {
+      "path": "progression-after-full.json.gz",
+      "bytes": 187232,
+      "sha256": "e0c21f7aa72b32de3db30f2450fe3720b60918d13f29e8e7e2ed6a8191203649"
+    },
+    {
+      "path": "progression-after.json",
+      "bytes": 272048,
+      "sha256": "07f6c4e5e10fb41b1cd184d813b1ce5089091e6b5d3ff89f1fe8f6db4a094bc1"
+    },
+    {
+      "path": "progression-before-full.json.gz",
+      "bytes": 144412,
+      "sha256": "7ef3f22c214f775726bfb29fe9a81ae0308fac8fba40a113873a3034f7ce363e"
+    },
+    {
+      "path": "progression-before.json",
+      "bytes": 237032,
+      "sha256": "095d95a49e46f951727302fe580667de06955bc1d1e5bdfabe29cc8f0665f3fc"
+    },
+    {
+      "path": "projection-correctness.json",
+      "bytes": 1611,
+      "sha256": "833cbbc0bbbb4b630bd811bf927ce14d4cfbd1f596e9a39bb091061301e85a34"
+    },
+    {
+      "path": "repository-verification.json",
+      "bytes": 731,
+      "sha256": "6e514be7f6831243f41a3867df608f7cb05b6ce630a109b9cd957138c946d9a1"
+    },
+    {
+      "path": "smoke-game.json",
+      "bytes": 7288,
+      "sha256": "2d86c720914c9af1ebfca7f04fc71940d3aaf0e289617a0cac2a0e8d33d2489d"
+    },
+    {
+      "path": "startup-web.json",
+      "bytes": 18911,
+      "sha256": "d17e6bc1160911ccf4d2ae6642922fe7091c610ab70e311d458ec24b1ce58cbd"
+    },
+    {
+      "path": "storage-after.json",
+      "bytes": 8351,
+      "sha256": "7935d63848da7312db45da75151665055cd33b4e5acc7f7d0f360b2d52e7cef0"
+    },
+    {
+      "path": "storage-before.json",
+      "bytes": 8154,
+      "sha256": "0c8ab0780c7848cabd938dd61cf5a1329f57c43a018c03488e40f33e185f22de"
+    }
+  ]
+}

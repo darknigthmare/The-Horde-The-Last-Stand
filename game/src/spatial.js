@@ -236,22 +236,24 @@ function dl411Hash01(z){
  for(let i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),2246822519)>>>0;h^=h>>>13;}
  h=Math.imul(h^(h>>>16),3266489917)>>>0;return (h>>>0)/4294967295;
 }
-function dl411Corridor(z,view=currentView()){
- const p=depthGround(z.x,z.feet,view),a=depthGround(z.x,426,view),b=depthGround(z.x,688,view),left=Math.min(a.x,b.x),right=Math.max(a.x,b.x),width=Math.max(24,right-left);
+function dl411Corridor(z,view=currentView(),projection=null){
+ // A frame uses one depth/scale for a given x; the corridor edges only change feet.
+ const p=projection||depthGround(z.x,z.feet,view),a=720+(426-557)*3.0*p.scale,b=720+(688-557)*3.0*p.scale,left=Math.min(a,b),right=Math.max(a,b),width=Math.max(24,right-left);
  const margin=clamp((14+6*(z.size||1))*p.scale,3,Math.max(4,width*.09)),innerL=left+margin,innerR=right-margin,center=(innerL+innerR)/2,overlap=(innerR-innerL)*.24;
  const lane=Number(z.lane)||0,lo=lane===0?innerL:center-overlap,hi=lane===0?center+overlap:innerR;
  return {left,right,innerL,innerR,lo,hi,width,scale:p.scale,center};
 }
-function dl411ProjectedX(z,view=currentView()){
+function dl411ProjectedX(z,view=currentView(),projection=null){
  if(view!=='front'&&view!=='rear')return dl410ProjectedPrior(z,view).x;
- const c=dl411Corridor(z,view),u=dl411Hash01(z),phase=(u+((Number(z.id)||0)*.618033988749895))%1;
+ const c=dl411Corridor(z,view,projection),u=dl411Hash01(z),phase=(u+((Number(z.id)||0)*.618033988749895))%1;
  const sway=Math.sin((z.step||0)*.34+u*Math.PI*2)*Math.min(12,(c.hi-c.lo)*.035);
  return clamp(c.lo+(c.hi-c.lo)*phase+sway,c.innerL,c.innerR);
 }
 const dl411ProjectedPrior=projectedEnemy;
 projectedEnemy=function(z,view=currentView()){
- const p=dl411ProjectedPrior(z,view);
- if(view==='front'||view==='rear'){p.x=dl411ProjectedX(z,view);DL411.wideProjectionPasses++;}
+ // 0.41 owns the final horizontal position; earlier 0.40.9/0.40.10 offsets were overwritten.
+ const p=dl409ProjectedEnemyPrior(z,view);
+ if(view==='front'||view==='rear'){p.x=dl411ProjectedX(z,view,p);DL411.wideProjectionPasses++;}
  return p;
 };
 function dl411VisualFeet(z,view=currentView()){

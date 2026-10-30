@@ -2,6 +2,8 @@
 
 ## Objectif
 
+Application courante : [suivi de la version 0.44.2](SUIVI_0_44_2.md), avec reprises de campagnes, commandes, réglages audio et protection des profils. La [première passe 0.44.1](SUIVI_0_44_1.md) conserve les défauts reproduits, corrections d'IA et de cadence, mesures de projection et preuves précédentes.
+
 Relier chaque chantier à une méthode et à un résultat observable. Le jeu utilise son moteur HTML/JavaScript existant ; ses sources actives, ses règles et ses sauvegardes déterminent l'implémentation.
 
 Les 12 guides et leurs ressources sont copiés depuis [la révision 19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9](https://github.com/gamedev-skills/awesome-gamedev-agent-skills/tree/19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9) du dépôt amont. Le [verrou](../.agents/gamedev-skills.lock.json) conserve les chemins source, tailles, modes et empreintes. Seule la sélection utile à ce jeu est installée.

@@ -1,21 +1,26 @@
 /* DERNIERE LIGNE 0.42.0 — POSTE DE COMMANDEMENT UI */
 (()=>{
 'use strict';
-const VERSION='0.42.0';
+const VERSION='0.44.2';
 const $id=id=>document.getElementById(id);
 const shell=$id('shell');
 if(!shell||shell.dataset.dl42Installed==='1')return;
 shell.dataset.dl42Installed='1';shell.classList.add('dl42-ui');
 
 function safe(fn){try{return fn();}catch(e){console.warn('[DL42 UI]',e);}}
+// A scene refresh must never restart the document's opening animation.
+let bootShown=false;
 function addChrome(){
  const testMode=/[?&]test=1(?:&|$)/.test(location.search);
- if(!testMode&&!$id('dl42Boot')){
-  const boot=document.createElement('div');boot.id='dl42Boot';boot.innerHTML='<div class="dl42-boot-core"><div class="dl42-boot-kicker">CONVOI // TERMINAL DE DEFENSE</div><div class="dl42-boot-title">DERNIERE<br>LIGNE</div><div class="dl42-boot-sub">ZERO REPLI</div><div class="dl42-boot-line"><i></i></div><div class="dl42-boot-state">POSTE 07 · SYNCHRONISATION LOCALE · 0.42.0</div></div>';shell.appendChild(boot);
-  let hidden=false;const close=()=>{if(hidden)return;hidden=true;boot.classList.add('hide');setTimeout(()=>boot.remove(),650)};setTimeout(close,1150);window.addEventListener('pointerdown',close,{once:true,capture:true});window.addEventListener('keydown',close,{once:true,capture:true});
+ if(!testMode&&!bootShown){
+  bootShown=true;
+  const boot=document.createElement('div');boot.id='dl42Boot';boot.innerHTML='<div class="dl42-boot-core"><div class="dl42-boot-kicker">CONVOI // TERMINAL DE DEFENSE</div><div class="dl42-boot-title">DERNIERE<br>LIGNE</div><div class="dl42-boot-sub">ZERO REPLI</div><div class="dl42-boot-line"><i></i></div><div class="dl42-boot-state">POSTE 07 · SYNCHRONISATION LOCALE · '+VERSION+'</div></div>';shell.appendChild(boot);
+  let hidden=false,closeTimer;
+  const close=()=>{if(hidden)return;hidden=true;clearTimeout(closeTimer);window.removeEventListener('pointerdown',close,true);window.removeEventListener('keydown',close,true);boot.classList.add('hide');setTimeout(()=>boot.remove(),650);};
+  closeTimer=setTimeout(close,1150);window.addEventListener('pointerdown',close,{once:true,capture:true});window.addEventListener('keydown',close,{once:true,capture:true});
  }
  if(!$id('dl42SceneWipe')){const e=document.createElement('div');e.id='dl42SceneWipe';shell.appendChild(e);}
- if(!$id('dl42TopStamp')){const e=document.createElement('div');e.id='dl42TopStamp';e.innerHTML='<i class="dl42-live-dot"></i><span>POSTE 07</span><span>//</span><span>RESEAU LOCAL</span><span>//</span><span>0.42.0</span>';shell.appendChild(e);}
+ if(!$id('dl42TopStamp')){const e=document.createElement('div');e.id='dl42TopStamp';e.innerHTML='<i class="dl42-live-dot"></i><span>POSTE 07</span><span>//</span><span>RESEAU LOCAL</span><span>//</span><span>'+VERSION+'</span>';shell.appendChild(e);}
  if(!$id('dl42ControlLegend')){const e=document.createElement('div');e.id='dl42ControlLegend';e.innerHTML='<span data-kb><kbd>↑↓←→</kbd>NAVIGUER</span><span data-kb><kbd>ENTRÉE</kbd>VALIDER</span><span data-kb><kbd>ÉCHAP</kbd>RETOUR</span><span data-pad hidden><kbd>LS</kbd>NAVIGUER</span><span data-pad hidden><kbd>A</kbd>VALIDER</span><span data-pad hidden><kbd>B</kbd>RETOUR</span><span><kbd>F10</kbd>PLEIN ÉCRAN</span>';shell.appendChild(e);}
  if(!$id('dl42TacticalLine')){const e=document.createElement('div');e.id='dl42TacticalLine';e.innerHTML='<span id="dl42Route">POSTE</span><span>•</span><b id="dl42View">VUE AVANT</b><span>•</span><span id="dl42Contacts">CONTACTS 0</span>';shell.appendChild(e);}
 }
@@ -28,21 +33,25 @@ function ensureFullscreenControls(){
  fullscreenLabel();
 }
 function versionPass(){
- document.title='Dernière Ligne — Poste de commandement 0.42.0';
- const tag=document.querySelector('.version-tag');if(tag)tag.textContent='0.42.0 // POSTE DE COMMANDEMENT';
- const foot=document.querySelector('.menu-footer');if(foot)foot.innerHTML='LA ROUTE RESTE OUVERTE TANT QUE VOUS TENEZ.<br>Version 0.42.0 · Interface de terrain';
+ // The current UI owns release labels once its layer is installed.
+ if(typeof window.DL44UI?.syncVersion==='function')window.DL44UI.syncVersion();
+ else{
+  document.title='Dernière Ligne — Poste stabilisé '+VERSION;
+  const tag=document.querySelector('.version-tag');if(tag)tag.textContent=VERSION+' // POSTE STABILISÉ';
+  const foot=document.querySelector('.menu-footer');if(foot)foot.innerHTML='LA ROUTE RESTE OUVERTE TANT QUE VOUS TENEZ.<br>Version '+VERSION+' · Interface de terrain';
+ }
  const desc=document.querySelector('#menuScreen .menu-desc');if(desc&&!desc.dataset.dl42){desc.dataset.dl42='1';desc.innerHTML='Un poste. Une barricade. Aucun repli.<br>Préparez la défense, choisissez votre route et tenez jusqu’au convoi.';}
 }
 function showDL42About(){
  safe(()=>{if(typeof clearCombatInput==='function')clearCombatInput();});
  if(typeof showScreen==='function')showScreen('dialogScreen');
  const body=$id('dialogBody');if(!body)return;
- body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · 0.42.0</div><h2>POSTE DE COMMANDEMENT</h2><p>Cette version unifie l’accueil, la préparation, le combat et les écrans système sous une même interface de terrain.</p><div class="notice"><strong>Gameplay conservé.</strong> 45 armes, six presets, Armurier, campagnes, Zone Noire et sauvegardes schéma 12 restent compatibles.</div><p>F10 bascule le plein écran. La légende de commandes suit automatiquement le clavier ou la manette détectée. Aucune donnée n’est envoyée en ligne.</p><div class="buttons"><button id="dl42-about-back" class="primary">RETOUR AU POSTE</button></div>';
+ body.innerHTML='<div class="eyebrow">DERNIÈRE LIGNE · '+VERSION+'</div><h2>POSTE DE COMMANDEMENT</h2><p>Cette version unifie l’accueil, la préparation, le combat et les écrans système sous une même interface de terrain.</p><div class="notice"><strong>Gameplay conservé.</strong> 45 armes, six presets, Armurier, campagnes, Zone Noire et sauvegardes schéma 12 restent compatibles.</div><p>F10 bascule le plein écran. La légende de commandes suit automatiquement le clavier ou la manette détectée. Aucune donnée n’est envoyée en ligne.</p><div class="buttons"><button id="dl42-about-back" class="primary">RETOUR AU POSTE</button></div>';
  const back=$id('dl42-about-back');if(back)back.onclick=()=>{if(typeof showMenu==='function')showMenu();};
 }
 function aboutPass(){const b=$id('aboutGame');if(b&&!b.dataset.dl42About){b.dataset.dl42About='1';b.onclick=showDL42About;}}
 function inputLegend(){
- const pad=shell.classList.contains('gamepad-connected');shell.dataset.dl42Input=pad?'gamepad':'keyboard';
+ const mode=shell.dataset.input||'keyboard',pad=mode==='gamepad';shell.dataset.dl42Input=mode;
  const legend=$id('dl42ControlLegend');if(!legend)return;legend.querySelectorAll('[data-kb]').forEach(e=>e.hidden=pad);legend.querySelectorAll('[data-pad]').forEach(e=>e.hidden=!pad);
 }
 function combatLine(){
@@ -78,7 +87,8 @@ if(typeof showMenu==='function'){
 window.addEventListener('keydown',e=>{if(e.code==='F10'){e.preventDefault();toggleFullscreen();}},true);
 document.addEventListener('fullscreenchange',fullscreenLabel);
 document.addEventListener('focusin',focusPass,true);document.addEventListener('focusout',()=>queueMicrotask(focusPass),true);
-document.addEventListener('pointerdown',()=>{shell.dataset.dl42Input='mouse';},true);
+document.addEventListener('pointerdown',()=>queueMicrotask(inputLegend),true);
+document.addEventListener('keydown',()=>queueMicrotask(inputLegend),true);
 window.addEventListener('gamepadconnected',()=>setTimeout(inputLegend,50));window.addEventListener('gamepaddisconnected',()=>setTimeout(inputLegend,50));
 
 // Keep combat chrome synchronized with the real HUD update without touching combat values.

@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-29T13:04:03.377Z",
+  "browser": "156.0.8078.73",
+  "gameSha256": "7edd451c079b5d72ab31acf6cc49aba4e805801271afd24972d36e49ba65e1d1",
+  "production": true,
+  "testAPI": false,
+  "text": "Rang 9 · 25 000 XP\nZone Noire · secteur 1 / 12\n1 991 CR\nAscension · étage 1 / 12\n1 878 CR\nEaux Noires · traversée 1 / 12\n1 765 CR\nAutoroute · traversée 1 / 12\n1 652 CR\nARGO-17 · sortie 1 / 12\n1 539 CR\nMétro · trajet 1 / 12\n1 426 CR\nNord · nuit 1 / 16\n1 313 CR\nCampagne · nuit 1\n1 200 CR",
+  "layout": {
+    "width": 414,
+    "height": 896,
+    "scrollWidth": 414,
+    "rows": [
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      },
+      {
+        "left": 84.84375,
+        "right": 329.15625
+      }
+    ],
+    "buttonHeight": 36
+  },
+  "errors": []
+}

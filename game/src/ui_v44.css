@@ -155,3 +155,15 @@
   padding:12px 0 14px!important;
   width:100%;box-sizing:border-box;
 }
+
+/* 0.44.2: keep every saved route and its budget readable before replacement. */
+#shell.dl43-ui .dl442-profile-list{margin:12px 0 0;padding:0}
+#shell.dl43-ui .dl442-profile-row{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;
+  gap:4px 12px;padding:8px 0;border-top:1px solid #c6d4ca20;
+  font:12px/1.5 var(--mono);
+}
+#shell.dl43-ui .dl442-profile-row dt,
+#shell.dl43-ui .dl442-profile-row dd{margin:0}
+#shell.dl43-ui .dl442-profile-row dd{white-space:nowrap;color:var(--accent)}
+#shell.dl43-ui #confirmImport,#shell.dl43-ui #cancelImport{min-height:44px}

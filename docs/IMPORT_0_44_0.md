@@ -1,5 +1,7 @@
 # Import de la version 0.44.0
 
+> Document historique du premier import, conservé pour sa provenance. Les commandes sur la branche courante vérifient maintenant la 0.44.1 ; pour reproduire exactement cet import, utiliser le commit `f7a3c3cf53e9a9fb6056033db8e84a3bacffee68`. Voir le [suivi actuel](SUIVI_0_44_1.md).
+
 ## Source et contenu
 
 - Archive complète : `DERNIERE_LIGNE_0_44_0_PROJET_COMPLET.zip`.

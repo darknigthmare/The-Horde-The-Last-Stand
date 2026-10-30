@@ -1,0 +1,3298 @@
+{
+  "started": "2026-10-29T13:03:10.248Z",
+  "finished": "2026-10-29T13:03:48.189Z",
+  "html": "/workspace/scratch/da2d120b6763/the-horde-the-last-stand/game/JOUER_DERNIERE_LIGNE.html",
+  "htmlSha256": "7edd451c079b5d72ab31acf6cc49aba4e805801271afd24972d36e49ba65e1d1",
+  "browser": "156.0.8078.73",
+  "viewport": [
+    1440,
+    900
+  ],
+  "protocol": "file:",
+  "offline": true,
+  "originalImages": true,
+  "testAPI": true,
+  "inputMethods": [
+    "Test API for reproducible route and combat setup",
+    "Production AUDIO button",
+    "Production range inputs driven with Home/End keys",
+    "Native Canvas calls and pixel readback around the actual effect draw"
+  ],
+  "passed": 54,
+  "total": 54,
+  "checks": [
+    {
+      "name": "Audio graph runs and synthesizes a measurable signal",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 0.8199999928474426,
+          "masterAutomations": 2,
+          "sfx": 0.8799999952316284,
+          "ambience": 0.41999998688697815,
+          "music": 0.25999999046325684,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.017864005640149117,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.006930165608086634
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 0.82,
+            "sfxVolume": 0.88,
+            "ambienceVolume": 0.42,
+            "musicVolume": 0.26,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "true",
+          "title": "Audio activé"
+        },
+        "waveTime": 1.0000000000000013
+      }
+    },
+    {
+      "name": "Audio button exposes its actual enabled state",
+      "ok": true,
+      "detail": {
+        "pressed": "true",
+        "title": "Audio activé"
+      }
+    },
+    {
+      "name": "Highway motor passes through the unified mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 8,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 0.8199999928474426,
+        "masterAutomations": 2,
+        "sfx": 0.8799999952316284,
+        "ambience": 0.41999998688697815,
+        "music": 0.25999999046325684,
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0.017864005640149117,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "HUD AUDIO OFF reaches true master zero during an active game loop",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 0,
+          "masterAutomations": 4,
+          "sfx": 0.8799999952316284,
+          "ambience": 0.41999998688697815,
+          "music": 0.25999999046325684,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.001237822463735938,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0
+          }
+        ],
+        "audio": {
+          "enabled": false,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 0.82,
+            "sfxVolume": 0.88,
+            "ambienceVolume": 0.42,
+            "musicVolume": 0.26,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "false",
+          "title": "Audio désactivé"
+        },
+        "waveTime": 1.9999999999999978
+      }
+    },
+    {
+      "name": "Audio button exposes its actual muted state",
+      "ok": true,
+      "detail": {
+        "pressed": "false",
+        "title": "Audio désactivé"
+      }
+    },
+    {
+      "name": "HUD AUDIO OFF silences the real output signal",
+      "ok": true,
+      "detail": [
+        {
+          "source": "DynamicsCompressorNode",
+          "rms": 0
+        }
+      ]
+    },
+    {
+      "name": "Muting audio leaves the combat simulation advancing",
+      "ok": true,
+      "detail": {
+        "before": 1.4,
+        "after": 1.9999999999999978
+      }
+    },
+    {
+      "name": "Rapid off/on toggles restore the configured master level",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 0.81960529088974,
+          "masterAutomations": 10,
+          "sfx": 0.8799999952316284,
+          "ambience": 0.41999998688697815,
+          "music": 0.25999999046325684,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.0174105204641819,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.012484779866492273
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 0.82,
+            "sfxVolume": 0.88,
+            "ambienceVolume": 0.42,
+            "musicVolume": 0.26,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "true",
+          "title": "Audio activé"
+        },
+        "waveTime": 2.749999999999995
+      }
+    },
+    {
+      "name": "Unchanged master level does not restart audio automation",
+      "ok": true,
+      "detail": {
+        "before": 10,
+        "after": 10
+      }
+    },
+    {
+      "name": "Rapid toggles ending OFF leave no delayed unmute",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 0,
+          "masterAutomations": 16,
+          "sfx": 0.8799999952316284,
+          "ambience": 0.41999998688697815,
+          "music": 0.25999999046325684,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.002772941719740629,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0
+          }
+        ],
+        "audio": {
+          "enabled": false,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 0.82,
+            "sfxVolume": 0.88,
+            "ambienceVolume": 0.42,
+            "musicVolume": 0.26,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "false",
+          "title": "Audio désactivé"
+        },
+        "waveTime": 3.599999999999992
+      }
+    },
+    {
+      "name": "General volume slider zero silences highway ambience",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 0,
+          "masterAutomations": 20,
+          "sfx": 0.8799999952316284,
+          "ambience": 0.41999998688697815,
+          "music": 0.25999999046325684,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.01797947846353054,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 0,
+            "sfxVolume": 0.88,
+            "ambienceVolume": 0.42,
+            "musicVolume": 0.26,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "true",
+          "title": "Audio activé"
+        },
+        "waveTime": 3.8833333333333244
+      }
+    },
+    {
+      "name": "Ambience slider zero controls route motors as well as procedural wind",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 1,
+          "masterAutomations": 22,
+          "sfx": 0,
+          "ambience": 0,
+          "music": 0,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.01799815148115158,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 1,
+            "sfxVolume": 0,
+            "ambienceVolume": 0,
+            "musicVolume": 0,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "true",
+          "title": "Audio activé"
+        },
+        "waveTime": 3.8833333333333244
+      }
+    },
+    {
+      "name": "SFX and music sliders also reach exact zero",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 8,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 0,
+        "music": 0,
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0.01799815148115158,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ambience resumes at the selected volume without resetting other sliders",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 8,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 1,
+          "masterAutomations": 22,
+          "sfx": 0,
+          "ambience": 1,
+          "music": 0,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0.01799815148115158,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.030725325792835108
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 1,
+            "sfxVolume": 0,
+            "ambienceVolume": 1,
+            "musicVolume": 0,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "combat",
+        "soundButton": {
+          "pressed": "true",
+          "title": "Audio activé"
+        },
+        "waveTime": 3.8833333333333244
+      }
+    },
+    {
+      "name": "metro: route ambience uses the mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 9,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.027974087744951248,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "metro: previous route motors fade out and the current ambience is active",
+      "ok": true,
+      "detail": {
+        "scene": "metro",
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.027974087744951248,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ],
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.0958430286364387
+          }
+        ]
+      }
+    },
+    {
+      "name": "air: route ambience uses the mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 9,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0.06999178975820541,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "air: previous route motors fade out and the current ambience is active",
+      "ok": true,
+      "detail": {
+        "scene": "air",
+        "engineThroughAmbience": 0.06999178975820541,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ],
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.0504749499953657
+          }
+        ]
+      }
+    },
+    {
+      "name": "highway: route ambience uses the mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 9,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0.0024146437644958496,
+        "legacy": [
+          {
+            "gain": 0.01794118992984295,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "highway: previous route motors fade out and the current ambience is active",
+      "ok": true,
+      "detail": {
+        "scene": "ground",
+        "engineThroughAmbience": 0.0024146437644958496,
+        "legacy": [
+          {
+            "gain": 0.01794118992984295,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ],
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.02936299091625328
+          }
+        ]
+      }
+    },
+    {
+      "name": "water: route ambience uses the mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 10,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0.00007603492849739268,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.014924897812306881,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "water: previous route motors fade out and the current ambience is active",
+      "ok": true,
+      "detail": {
+        "scene": "ground",
+        "engineThroughAmbience": 0.00007603492849739268,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.014924897812306881,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ],
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.03578985942257157
+          }
+        ]
+      }
+    },
+    {
+      "name": "tower: route ambience uses the mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 11,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.013922401703894138,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "tower: previous route motors fade out and the current ambience is active",
+      "ok": true,
+      "detail": {
+        "scene": "ground",
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.013922401703894138,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ],
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.030227489590252097
+          }
+        ]
+      }
+    },
+    {
+      "name": "dark: route ambience uses the mixer",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 12,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.00004850858749705367,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.007865634746849537,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "dark: previous route motors fade out and the current ambience is active",
+      "ok": true,
+      "detail": {
+        "scene": "ground",
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.00004850858749705367,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.007865634746849537,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ],
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.023341614366970277
+          }
+        ]
+      }
+    },
+    {
+      "name": "Returning to menu silences every route-specific motor",
+      "ok": true,
+      "detail": {
+        "contexts": 1,
+        "activeSources": 12,
+        "outputs": [
+          "DynamicsCompressorNode"
+        ],
+        "master": 1,
+        "masterAutomations": 22,
+        "sfx": 0,
+        "ambience": 1,
+        "music": 0,
+        "engineThroughAmbience": 0,
+        "legacy": [
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0,
+            "routedToAmbience": true,
+            "direct": false
+          },
+          {
+            "gain": 0.0001012845168588683,
+            "routedToAmbience": true,
+            "direct": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Six routes reuse one AudioContext and the same five legacy motors",
+      "ok": true,
+      "detail": {
+        "first": {
+          "contexts": 1,
+          "activeSources": 12,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 1,
+          "masterAutomations": 22,
+          "sfx": 0,
+          "ambience": 1,
+          "music": 0,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0.00004644196815206669,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0.007870236411690712,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "second": {
+          "contexts": 1,
+          "activeSources": 12,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 1,
+          "masterAutomations": 22,
+          "sfx": 0,
+          "ambience": 1,
+          "music": 0,
+          "engineThroughAmbience": 0.00007066679245326668,
+          "legacy": [
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0.007905148901045322,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Persistent audio sources stay at twelve after repeated route changes",
+      "ok": true,
+      "detail": {
+        "before": 12,
+        "after": 12
+      }
+    },
+    {
+      "name": "Pause fades the route motors and preserves chosen mixer levels",
+      "ok": true,
+      "detail": {
+        "graph": {
+          "contexts": 1,
+          "activeSources": 12,
+          "outputs": [
+            "DynamicsCompressorNode"
+          ],
+          "master": 1,
+          "masterAutomations": 22,
+          "sfx": 0,
+          "ambience": 1,
+          "music": 0,
+          "engineThroughAmbience": 0,
+          "legacy": [
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0,
+              "routedToAmbience": true,
+              "direct": false
+            },
+            {
+              "gain": 0.00019029167015105486,
+              "routedToAmbience": true,
+              "direct": false
+            }
+          ]
+        },
+        "signals": [
+          {
+            "source": "DynamicsCompressorNode",
+            "rms": 0.022335657820640634
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "scene": "ground",
+          "context": "running",
+          "source": "procedural",
+          "settings": {
+            "masterVolume": 1,
+            "sfxVolume": 0,
+            "ambienceVolume": 1,
+            "musicVolume": 0,
+            "nightMix": false,
+            "audioSubtitles": true
+          }
+        },
+        "phase": "paused",
+        "soundButton": {
+          "pressed": "true",
+          "title": "Audio activé"
+        },
+        "waveTime": 0
+      }
+    },
+    {
+      "name": "Motion OFF suppresses the later CSS recoil transform",
+      "ok": true,
+      "detail": {
+        "afterShot": 7,
+        "disabled": "",
+        "enabled": "translate(-0.02px, 0.89px) rotate(-0.035deg) scale(1)",
+        "cameraDisabled": "",
+        "simulationUnchanged": true
+      }
+    },
+    {
+      "name": "Motion ON retains existing recoil and the separate camera-impact switch works",
+      "ok": true,
+      "detail": {
+        "afterShot": 7,
+        "disabled": "",
+        "enabled": "translate(-0.02px, 0.89px) rotate(-0.035deg) scale(1)",
+        "cameraDisabled": "",
+        "simulationUnchanged": true
+      }
+    },
+    {
+      "name": "Feedback preferences leave ammunition and simulation rules intact",
+      "ok": true,
+      "detail": {
+        "afterShot": 7,
+        "disabled": "",
+        "enabled": "translate(-0.02px, 0.89px) rotate(-0.035deg) scale(1)",
+        "cameraDisabled": "",
+        "simulationUnchanged": true
+      }
+    },
+    {
+      "name": "muzzle1: reduced flashes attenuate actual sprite pixels",
+      "ok": true,
+      "detail": {
+        "normal": {
+          "kind": "sprite:muzzle1",
+          "alpha": 1,
+          "pixels": {
+            "region": [
+              129,
+              149,
+              162,
+              162
+            ],
+            "rgbDelta": 98400,
+            "changedPixels": 2018
+          }
+        },
+        "reduced": {
+          "kind": "sprite:muzzle1",
+          "alpha": 0.25,
+          "pixels": {
+            "region": [
+              129,
+              149,
+              162,
+              162
+            ],
+            "rgbDelta": 25273,
+            "changedPixels": 1639
+          }
+        },
+        "pixelDeltaRatio": 0.25683943089430894
+      }
+    },
+    {
+      "name": "muzzle2: reduced flashes attenuate actual sprite pixels",
+      "ok": true,
+      "detail": {
+        "normal": {
+          "kind": "sprite:muzzle2",
+          "alpha": 1,
+          "pixels": {
+            "region": [
+              469,
+              149,
+              162,
+              162
+            ],
+            "rgbDelta": 104513,
+            "changedPixels": 2671
+          }
+        },
+        "reduced": {
+          "kind": "sprite:muzzle2",
+          "alpha": 0.25,
+          "pixels": {
+            "region": [
+              469,
+              149,
+              162,
+              162
+            ],
+            "rgbDelta": 27231,
+            "changedPixels": 2201
+          }
+        },
+        "pixelDeltaRatio": 0.260551318974673
+      }
+    },
+    {
+      "name": "sparks: reduced flashes attenuate actual sprite pixels",
+      "ok": true,
+      "detail": {
+        "normal": {
+          "kind": "sprite:sparks",
+          "alpha": 1,
+          "pixels": {
+            "region": [
+              808,
+              148,
+              164,
+              164
+            ],
+            "rgbDelta": 259399,
+            "changedPixels": 2422
+          }
+        },
+        "reduced": {
+          "kind": "sprite:sparks",
+          "alpha": 0.25,
+          "pixels": {
+            "region": [
+              808,
+              148,
+              164,
+              164
+            ],
+            "rgbDelta": 64405,
+            "changedPixels": 2126
+          }
+        },
+        "pixelDeltaRatio": 0.2482854598514258
+      }
+    },
+    {
+      "name": "explosion: reduced flashes attenuate actual sprite pixels",
+      "ok": true,
+      "detail": {
+        "normal": {
+          "kind": "sprite:explosion",
+          "alpha": 1,
+          "pixels": {
+            "region": [
+              1148,
+              148,
+              164,
+              164
+            ],
+            "rgbDelta": 553039,
+            "changedPixels": 9627
+          }
+        },
+        "reduced": {
+          "kind": "sprite:explosion",
+          "alpha": 0.25,
+          "pixels": {
+            "region": [
+              1148,
+              148,
+              164,
+              164
+            ],
+            "rgbDelta": 140522,
+            "changedPixels": 8434
+          }
+        },
+        "pixelDeltaRatio": 0.25409057950705105
+      }
+    },
+    {
+      "name": "Blood, smoke, tracer and debris sprites retain their opacity and pixel contribution",
+      "ok": true,
+      "detail": [
+        {
+          "name": "blood",
+          "normal": {
+            "kind": "sprite:blood",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                127,
+                407,
+                166,
+                166
+              ],
+              "rgbDelta": 121983,
+              "changedPixels": 4509
+            }
+          },
+          "reduced": {
+            "kind": "sprite:blood",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                127,
+                407,
+                166,
+                166
+              ],
+              "rgbDelta": 121983,
+              "changedPixels": 4509
+            }
+          }
+        },
+        {
+          "name": "smoke",
+          "normal": {
+            "kind": "sprite:smoke",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                467,
+                407,
+                166,
+                166
+              ],
+              "rgbDelta": 316375,
+              "changedPixels": 15569
+            }
+          },
+          "reduced": {
+            "kind": "sprite:smoke",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                467,
+                407,
+                166,
+                166
+              ],
+              "rgbDelta": 316375,
+              "changedPixels": 15569
+            }
+          }
+        },
+        {
+          "name": "tracer",
+          "normal": {
+            "kind": "sprite:tracer",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                806,
+                406,
+                168,
+                168
+              ],
+              "rgbDelta": 36180,
+              "changedPixels": 896
+            }
+          },
+          "reduced": {
+            "kind": "sprite:tracer",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                806,
+                406,
+                168,
+                168
+              ],
+              "rgbDelta": 36180,
+              "changedPixels": 896
+            }
+          }
+        },
+        {
+          "name": "debris",
+          "normal": {
+            "kind": "sprite:debris",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                1146,
+                406,
+                168,
+                168
+              ],
+              "rgbDelta": 117170,
+              "changedPixels": 2803
+            }
+          },
+          "reduced": {
+            "kind": "sprite:debris",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                1146,
+                406,
+                168,
+                168
+              ],
+              "rgbDelta": 117170,
+              "changedPixels": 2803
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Restoring normal flashes restores the exact frozen Canvas frame",
+      "ok": true,
+      "detail": {
+        "changedChannels": 0
+      }
+    },
+    {
+      "name": "right: procedural explosion sparks and rings respect reduced flashes",
+      "ok": true,
+      "detail": {
+        "normalSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          }
+        ],
+        "reducedSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          }
+        ],
+        "normalRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.5
+          }
+        ],
+        "reducedRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "name": "right: blast vignette dims its actual Canvas pixel contribution",
+      "ok": true,
+      "detail": {
+        "normal": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.1056,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 11493016,
+              "changedPixels": 1025850
+            }
+          }
+        ],
+        "reduced": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.0264,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 2875932,
+              "changedPixels": 800047
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "right: damage, ammunition, hit markers and simulation survive the comfort setting",
+      "ok": true,
+      "detail": {
+        "normalRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "reducedRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "renderUnchanged": true,
+        "markers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ],
+        "reducedMarkers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "name": "left: procedural explosion sparks and rings respect reduced flashes",
+      "ok": true,
+      "detail": {
+        "normalSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          }
+        ],
+        "reducedSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          }
+        ],
+        "normalRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.5
+          }
+        ],
+        "reducedRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "name": "left: blast vignette dims its actual Canvas pixel contribution",
+      "ok": true,
+      "detail": {
+        "normal": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.1056,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 11494517,
+              "changedPixels": 1025965
+            }
+          }
+        ],
+        "reduced": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.0264,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 2875568,
+              "changedPixels": 799925
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "left: damage, ammunition, hit markers and simulation survive the comfort setting",
+      "ok": true,
+      "detail": {
+        "normalRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "reducedRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "renderUnchanged": true,
+        "markers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ],
+        "reducedMarkers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "name": "front: procedural explosion sparks and rings respect reduced flashes",
+      "ok": true,
+      "detail": {
+        "normalSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          }
+        ],
+        "reducedSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          }
+        ],
+        "normalRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.5
+          }
+        ],
+        "reducedRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "name": "front: blast vignette dims its actual Canvas pixel contribution",
+      "ok": true,
+      "detail": {
+        "normal": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.1056,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 11924128,
+              "changedPixels": 1028253
+            }
+          }
+        ],
+        "reduced": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.0264,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 2991133,
+              "changedPixels": 820163
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "front: damage, ammunition, hit markers and simulation survive the comfort setting",
+      "ok": true,
+      "detail": {
+        "normalRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "reducedRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "renderUnchanged": true,
+        "markers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ],
+        "reducedMarkers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "name": "front: procedural muzzle flash dims while remaining visible",
+      "ok": true,
+      "detail": {
+        "normal": [
+          {
+            "kind": "fps-muzzle",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                907,
+                586,
+                123,
+                123
+              ],
+              "rgbDelta": 832466,
+              "changedPixels": 6297
+            }
+          }
+        ],
+        "reduced": [
+          {
+            "kind": "fps-muzzle",
+            "alpha": 0.25,
+            "pixels": {
+              "region": [
+                907,
+                586,
+                123,
+                123
+              ],
+              "rgbDelta": 191404,
+              "changedPixels": 5988
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "rear: procedural explosion sparks and rings respect reduced flashes",
+      "ok": true,
+      "detail": {
+        "normalSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.5
+          }
+        ],
+        "reducedSparks": [
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          },
+          {
+            "kind": "spark",
+            "alpha": 0.125
+          }
+        ],
+        "normalRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.5
+          }
+        ],
+        "reducedRings": [
+          {
+            "kind": "ring",
+            "alpha": 0.125
+          }
+        ]
+      }
+    },
+    {
+      "name": "rear: blast vignette dims its actual Canvas pixel contribution",
+      "ok": true,
+      "detail": {
+        "normal": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.1056,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 11405798,
+              "changedPixels": 1026004
+            }
+          }
+        ],
+        "reduced": [
+          {
+            "kind": "vignette",
+            "alpha": 1,
+            "gradientAlpha": 0.0264,
+            "pixels": {
+              "region": [
+                0,
+                0,
+                1440,
+                810
+              ],
+              "rgbDelta": 2856789,
+              "changedPixels": 806678
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "rear: damage, ammunition, hit markers and simulation survive the comfort setting",
+      "ok": true,
+      "detail": {
+        "normalRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "reducedRules": {
+          "hit": 20,
+          "blast": 30,
+          "shot": 25,
+          "ammo": 7,
+          "hp": 925
+        },
+        "renderUnchanged": true,
+        "markers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ],
+        "reducedMarkers": [
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          },
+          {
+            "kind": "impact-marker",
+            "alpha": 0.8300000000000001
+          }
+        ]
+      }
+    },
+    {
+      "name": "rear: procedural muzzle flash dims while remaining visible",
+      "ok": true,
+      "detail": {
+        "normal": [
+          {
+            "kind": "rear-muzzle",
+            "alpha": 1,
+            "pixels": {
+              "region": [
+                732,
+                288,
+                5,
+                3
+              ],
+              "rgbDelta": 2300,
+              "changedPixels": 10
+            }
+          }
+        ],
+        "reduced": [
+          {
+            "kind": "rear-muzzle",
+            "alpha": 0.25,
+            "pixels": {
+              "region": [
+                732,
+                288,
+                5,
+                3
+              ],
+              "rgbDelta": 550,
+              "changedPixels": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "limitations": [
+    "WebAudio gains, connections and actual synthesized sample signals measured in headless Chromium.",
+    "No subjective listening or loudness certification on headphones/speakers.",
+    "Short repeated-route lifecycle coverage; not a multi-hour physical-device endurance test.",
+    "Reduced-flash checks measure opacity and composite RGB change in frozen rendered scenes, not display luminance, frequency thresholds or photosensitivity certification."
+  ]
+}

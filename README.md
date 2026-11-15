@@ -43,7 +43,7 @@ Voir le [bilan courant et les points restant à traiter](docs/SUIVI_0_44_2.md). 
 | [`game/`](game/) | Jeu autonome, sources, assets, tests historiques et rapports de livraison. |
 | [`game/build.mjs`](game/build.mjs) | Reconstruction avec Node.js, sans paquet externe. |
 | [`game/MANIFEST_SHA256.json`](game/MANIFEST_SHA256.json) | Inventaire et empreintes de la livraison courante. |
-| [`.agents/skills/`](.agents/skills/) | 12 guides, références, ressources et provenance verrouillée. |
+| [`.agents/skills/`](.agents/skills/) | 12 guides gamedev verrouillés et le skill Obscura indépendant. |
 | [`AGENTS.md`](AGENTS.md) | Instructions adaptées au moteur et aux invariants du jeu. |
 | [`docs/DEVELOPPEMENT_GAMEDEV.md`](docs/DEVELOPPEMENT_GAMEDEV.md) | Choix des guides et critères d'acceptation. |
 | [`docs/verification/0.44.2/`](docs/verification/0.44.2/) | Rapports courants, comparaisons avant/après et captures. |
@@ -58,7 +58,7 @@ Avec Python 3.11+ et Node.js 24 :
 python3 scripts/verify_repository.py --report artifacts/repository-verification.json
 ```
 
-Cette commande vérifie le manifeste courant, les guides, la syntaxe JavaScript et la reconstruction exacte du HTML et du rapport de patches. Les fichiers livrés restent intacts.
+Cette commande vérifie le manifeste courant, les guides, les six fichiers du paquet Obscura, la syntaxe JavaScript et la reconstruction exacte du HTML et du rapport de patches. Les fichiers livrés restent intacts.
 
 Pour reconstruire volontairement :
 
@@ -87,6 +87,8 @@ node scripts/smoke_game.cjs --out artifacts/smoke-0442
 La comparaison de projection nécessite l'historique Git contenant le commit `f7a3c3c`. Un Chromium installé peut être choisi avec `HORDE_BROWSER_EXECUTABLE`. La CI exécute huit suites sur le HTML livré et la comparaison isolée de projection, puis publie les rapports et captures. Les noms des suites 0441 restent stables pour conserver leurs régressions ; elles sont aussi rejouées sur la version courante. Le benchmark complet, sans `--correctness-only`, ajoute les mesures CPU ; les chronométrages ne sont pas un seuil de réussite CI.
 
 ### Guides et provenance
+
+Le [guide Obscura](.ai-tools/obscura/README.md) documente son utilisation par Codex et Claude Code, la révision épinglée et l'installation explicite de son exécutable. Voir la [note d'intégration du 16 novembre 2026](docs/OUTILLAGE_OBSCURA_2026-11-16.md) pour les contrôles effectués.
 
 Les guides proviennent de [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills), révision `19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9`. La sélection couvre le routeur, l'IA, les performances, les sensations de jeu, les assets, l'interface, l'audio, le level design, les sauvegardes, les entrées, la physique et la défense par vagues.
 

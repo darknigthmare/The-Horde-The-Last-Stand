@@ -15,6 +15,15 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 GAME = ROOT / "game"
+OBSCURA_FILES = {
+    ".agents/skills/obscura/LICENSE": (11324, "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"),
+    ".agents/skills/obscura/SKILL.md": (5976, "2ab71d43ffa87c4d0fa0efcd895258a7319592f4949bf18a2294a9953ad9a065"),
+    ".claude/skills/obscura/LICENSE": (11324, "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"),
+    ".claude/skills/obscura/SKILL.md": (5976, "2ab71d43ffa87c4d0fa0efcd895258a7319592f4949bf18a2294a9953ad9a065"),
+    ".ai-tools/obscura/README.md": (4795, "c856d14393876f06b04d579a4ea7e34add28522f943ffcf8edca0c105314ed6d"),
+    ".ai-tools/obscura/source.json": (2801, "272e03889f6bf42c5c77bb8718f49954d858d839266f7e4f6103d84d92e23368"),
+}
+OBSCURA_AGENT_FILES = {path for path in OBSCURA_FILES if path.startswith(".agents/")}
 
 
 def safe_file(base, relative):
@@ -61,11 +70,11 @@ def verify_skills():
         expected.add(item["path"])
         verify_bytes(safe_file(ROOT, item["path"]), item["size_bytes"], item["sha256"], item["git_blob_sha"])
     actual = {p.relative_to(ROOT).as_posix() for p in (ROOT / ".agents").rglob("*") if p.is_file()}
-    if actual != expected | {".agents/gamedev-skills.lock.json"}:
+    if actual != expected | {".agents/gamedev-skills.lock.json"} | OBSCURA_AGENT_FILES:
         raise ValueError("The installed guide inventory differs from its lock file")
     names = set(lock["selection"])
     found = {p.parent.name for p in (ROOT / ".agents/skills").glob("*/SKILL.md")}
-    if found != names:
+    if found != names | {"obscura"}:
         raise ValueError("Selected skills and installed SKILL.md files differ")
     local_references = 0
     for name in sorted(names):
@@ -86,6 +95,25 @@ def verify_skills():
         ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
     return {"skills": len(names), "upstream_files": len(expected), "local_references": local_references,
             "python_scripts_parsed": len(python_files), "revision": lock["upstream"]["revision"]}
+
+
+def verify_obscura():
+    """Validate the independent package without changing the gamedev guide lock."""
+    for relative, (size, sha256) in OBSCURA_FILES.items():
+        verify_bytes(safe_file(ROOT, relative), size, sha256)
+    directories = {str(PurePosixPath(path).parent) for path in OBSCURA_FILES}
+    actual = {
+        path.relative_to(ROOT).as_posix()
+        for directory in directories
+        for path in (ROOT / directory).rglob("*")
+        if path.is_file()
+    }
+    if actual != set(OBSCURA_FILES):
+        raise ValueError("The independent Obscura package inventory differs")
+    source = json.loads((ROOT / ".ai-tools/obscura/source.json").read_text(encoding="utf-8"))
+    return {"files": len(OBSCURA_FILES), "client_copies": len(source["installation"]["copies"]),
+            "repository": source["repository"], "revision": source["commit"],
+            "binary_installed": source["installation"]["binary_installed_by_this_integration"]}
 
 
 def verify_build_and_syntax():
@@ -125,7 +153,8 @@ def main():
         parser.error("Write the report outside the imported game and upstream guides")
     result = {"checked_at": datetime.now(timezone.utc).isoformat(), "checks": {}, "ok": False}
     try:
-        for label, action in [("game_manifest", verify_game), ("gamedev_guides", verify_skills),
+        for label, action in [("game_manifest", verify_game), ("obscura_package", verify_obscura),
+                              ("gamedev_guides", verify_skills),
                               ("reproducible_build_and_syntax", verify_build_and_syntax)]:
             result["checks"][label] = action()
         result["ok"] = True

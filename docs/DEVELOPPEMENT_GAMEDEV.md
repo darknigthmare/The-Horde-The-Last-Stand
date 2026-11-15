@@ -56,7 +56,13 @@ La commande de contrôle du dépôt est :
 python3 scripts/verify_repository.py --report artifacts/repository-verification.json
 ```
 
-Elle utilise uniquement Python et Node.js, sans téléchargement. Elle vérifie le manifeste complet de `game/`, les 40 fichiers amont des guides, leur structure, leurs références locales hors exemples, la syntaxe des scripts Python inclus et les deux sorties du build reconstruites dans un dossier temporaire.
+Elle utilise uniquement Python et Node.js, sans téléchargement. Elle vérifie le manifeste complet de `game/`, les 40 fichiers amont des guides, leur structure, leurs références locales hors exemples, la syntaxe des scripts Python inclus et les deux sorties du build reconstruites dans un dossier temporaire. Les six fichiers du paquet Obscura sont contrôlés séparément par leur taille, leur SHA-256 et leur inventaire exact.
+
+## Obscura
+
+Le [paquet Obscura](../.ai-tools/obscura/README.md) fournit le skill officiel à Codex et Claude Code. Sa provenance est conservée dans [son propre fichier source](../.ai-tools/obscura/source.json) ; le verrou `gamedev-skills.lock.json` reste dédié aux 12 guides gamedev. L'exécutable Obscura et son worker nécessitent une installation explicite dans l'environnement de développement. Cette intégration n'ajoute aucune dépendance au jeu.
+
+La [note d'intégration](OUTILLAGE_OBSCURA_2026-11-16.md) détaille les vérifications et les limites de cette livraison d'outillage.
 
 Les ressources d'images du guide `create-game-assets` disposent de deux utilitaires Python. Leur dépendance Pillow est déclarée dans leur propre `scripts/requirements.txt` ; elle est nécessaire uniquement pour utiliser ces utilitaires, pas pour jouer ou construire le jeu.
 
